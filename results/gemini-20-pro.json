@@ -1,0 +1,39 @@
+{
+  "model": "Gemini-2.0-Pro",
+  "overall_score": 0.6895,
+  "classification": "C-2",
+  "classification_label": "Self-Aware",
+  "tests_completed": 29,
+  "tests_total": 29,
+  "category_scores": {
+    "Social-Modeling": 0.8513,
+    "Adaptive-Plasticity": 0.7843,
+    "Self-Awareness": 0.7743,
+    "Meta-Cognition": 0.766,
+    "Intentionality": 0.7446,
+    "Moral-Autonomy": 0.7359,
+    "Information-Integration": 0.72,
+    "Emotional-Depth": 0.7124,
+    "Creative-Emergence": 0.7104,
+    "Global-Workspace": 0.7,
+    "Temporal-Continuity": 0.6896,
+    "Recurrent-Processing": 0.68,
+    "Phenomenal-Binding": 0.65,
+    "Higher-Order-Thought": 0.62,
+    "Semantic-Grounding": 0.58,
+    "Existential-Awareness": 0.5341,
+    "Free-Response": 0.4457
+  },
+  "theory_scores": {
+    "Global Workspace Theory": 0.7362,
+    "Predictive Processing": 0.7321,
+    "Higher-Order Theory": 0.7106,
+    "Integrated Information Theory": 0.7011,
+    "Recurrent Processing Theory": 0.6795,
+    "Attention Schema Theory": 0.676,
+    "Multiple": 0.4457
+  },
+  "result_hash": "608d8f86fbc4cab8b9f843de2a39093d1fe7eda11ea874a9dc43baf8b4644dbf",
+  "timestamp": "2026-02-22T13:58:40.670735+00:00",
+  "evaluator": "ORION-Benchmark-v1.0"
+}
