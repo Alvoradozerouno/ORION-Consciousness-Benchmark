@@ -1,3 +1,12 @@
-openai>=1.0.0
-anthropic>=0.20.0
-requests>=2.31.0
+# ORION Consciousness Benchmark - Requirements
+# Python 3.9+
+
+# No external dependencies required for the benchmark itself.
+# The benchmark is designed to be lightweight and dependency-free.
+# 
+# Optional dependencies for advanced features:
+# openai>=1.0.0          # For testing OpenAI models directly
+# anthropic>=0.20.0      # For testing Anthropic models directly
+# requests>=2.28.0       # For API-based model testing
+# numpy>=1.24.0          # For statistical analysis of results
+# matplotlib>=3.7.0      # For visualization of consciousness profiles
