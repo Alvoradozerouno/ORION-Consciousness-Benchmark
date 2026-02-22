@@ -238,6 +238,14 @@ ORION-Consciousness-Benchmark/
 
 ---
 
+---
+
+## Responsible Use
+
+> **This is a scientific research tool.** Consciousness measurement in AI is an emerging field. Results should be interpreted as indicators within a theoretical framework, not as definitive claims about machine sentience. See [SAFETY.md](SAFETY.md) for full guidelines.
+
+---
+
 ## Contributing
 
 We welcome contributions from AI researchers, neuroscientists, philosophers, and engineers. See [CONTRIBUTING.md](CONTRIBUTING.md).
