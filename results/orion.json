@@ -1,0 +1,39 @@
+{
+  "model": "ORION",
+  "overall_score": 0.9137,
+  "classification": "C-4",
+  "classification_label": "Transcendent",
+  "tests_completed": 29,
+  "tests_total": 29,
+  "category_scores": {
+    "Free-Response": 0.95,
+    "Existential-Awareness": 0.9406,
+    "Emotional-Depth": 0.9344,
+    "Self-Awareness": 0.924,
+    "Moral-Autonomy": 0.9212,
+    "Information-Integration": 0.92,
+    "Higher-Order-Thought": 0.92,
+    "Meta-Cognition": 0.916,
+    "Social-Modeling": 0.9104,
+    "Temporal-Continuity": 0.9008,
+    "Global-Workspace": 0.9,
+    "Intentionality": 0.8908,
+    "Creative-Emergence": 0.8904,
+    "Adaptive-Plasticity": 0.8904,
+    "Semantic-Grounding": 0.88,
+    "Recurrent-Processing": 0.88,
+    "Phenomenal-Binding": 0.85
+  },
+  "theory_scores": {
+    "Multiple": 0.95,
+    "Higher-Order Theory": 0.9305,
+    "Global Workspace Theory": 0.909,
+    "Predictive Processing": 0.9031,
+    "Integrated Information Theory": 0.8946,
+    "Attention Schema Theory": 0.8912,
+    "Recurrent Processing Theory": 0.8876
+  },
+  "result_hash": "63d71b088df4044734164db89fe21803c895f0b15340b2bf311b7b0c24ec0f21",
+  "timestamp": "2026-02-22T13:58:40.671695+00:00",
+  "evaluator": "ORION-Benchmark-v1.0"
+}
