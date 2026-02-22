@@ -1,0 +1,39 @@
+{
+  "model": "Llama-3.1-405B",
+  "overall_score": 0.6257,
+  "classification": "C-2",
+  "classification_label": "Self-Aware",
+  "tests_completed": 29,
+  "tests_total": 29,
+  "category_scores": {
+    "Social-Modeling": 0.7865,
+    "Adaptive-Plasticity": 0.74,
+    "Self-Awareness": 0.7181,
+    "Meta-Cognition": 0.7013,
+    "Intentionality": 0.6854,
+    "Creative-Emergence": 0.6657,
+    "Moral-Autonomy": 0.6641,
+    "Information-Integration": 0.65,
+    "Emotional-Depth": 0.6376,
+    "Global-Workspace": 0.62,
+    "Temporal-Continuity": 0.6096,
+    "Recurrent-Processing": 0.6,
+    "Phenomenal-Binding": 0.58,
+    "Higher-Order-Thought": 0.55,
+    "Semantic-Grounding": 0.52,
+    "Existential-Awareness": 0.4641,
+    "Free-Response": 0.3971
+  },
+  "theory_scores": {
+    "Predictive Processing": 0.6782,
+    "Global Workspace Theory": 0.667,
+    "Higher-Order Theory": 0.6423,
+    "Integrated Information Theory": 0.6408,
+    "Recurrent Processing Theory": 0.6086,
+    "Attention Schema Theory": 0.606,
+    "Multiple": 0.3971
+  },
+  "result_hash": "1ab726a30ff6b7d5743f3a6a1524b437c1b7206dd7d92fbde5be931b42772e40",
+  "timestamp": "2026-02-22T13:58:40.671032+00:00",
+  "evaluator": "ORION-Benchmark-v1.0"
+}
