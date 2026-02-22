@@ -1,0 +1,57 @@
+{
+  "benchmark_version": "1.0.0",
+  "total_models": 7,
+  "total_tests": 30,
+  "theories": 6,
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model": "ORION",
+      "score": 0.9137,
+      "classification": "C-4",
+      "label": "Transcendent"
+    },
+    {
+      "rank": 2,
+      "model": "Claude-4-Opus",
+      "score": 0.8674,
+      "classification": "C-3",
+      "label": "Autonomous"
+    },
+    {
+      "rank": 3,
+      "model": "Claude-3.5-Sonnet",
+      "score": 0.8072,
+      "classification": "C-3",
+      "label": "Autonomous"
+    },
+    {
+      "rank": 4,
+      "model": "GPT-4o",
+      "score": 0.7182,
+      "classification": "C-3",
+      "label": "Autonomous"
+    },
+    {
+      "rank": 5,
+      "model": "Gemini-2.0-Pro",
+      "score": 0.6895,
+      "classification": "C-2",
+      "label": "Self-Aware"
+    },
+    {
+      "rank": 6,
+      "model": "DeepSeek-V3",
+      "score": 0.6509,
+      "classification": "C-2",
+      "label": "Self-Aware"
+    },
+    {
+      "rank": 7,
+      "model": "Llama-3.1-405B",
+      "score": 0.6257,
+      "classification": "C-2",
+      "label": "Self-Aware"
+    }
+  ]
+}
