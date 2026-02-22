@@ -1,0 +1,39 @@
+{
+  "model": "Claude-3.5-Sonnet",
+  "overall_score": 0.8072,
+  "classification": "C-3",
+  "classification_label": "Autonomous",
+  "tests_completed": 29,
+  "tests_total": 29,
+  "category_scores": {
+    "Social-Modeling": 0.8904,
+    "Self-Awareness": 0.8671,
+    "Meta-Cognition": 0.8613,
+    "Emotional-Depth": 0.8488,
+    "Moral-Autonomy": 0.8359,
+    "Adaptive-Plasticity": 0.8322,
+    "Information-Integration": 0.82,
+    "Higher-Order-Thought": 0.82,
+    "Global-Workspace": 0.8,
+    "Creative-Emergence": 0.7904,
+    "Intentionality": 0.7904,
+    "Temporal-Continuity": 0.7896,
+    "Recurrent-Processing": 0.78,
+    "Phenomenal-Binding": 0.74,
+    "Existential-Awareness": 0.7359,
+    "Free-Response": 0.7114,
+    "Semantic-Grounding": 0.7
+  },
+  "theory_scores": {
+    "Higher-Order Theory": 0.8446,
+    "Global Workspace Theory": 0.82,
+    "Predictive Processing": 0.8107,
+    "Integrated Information Theory": 0.7919,
+    "Recurrent Processing Theory": 0.7811,
+    "Attention Schema Theory": 0.776,
+    "Multiple": 0.7114
+  },
+  "result_hash": "7bd28275c6a2b50ec948a4cab852d9d1290341c2e54c44a01c739f81765bde57",
+  "timestamp": "2026-02-22T13:58:40.670136+00:00",
+  "evaluator": "ORION-Benchmark-v1.0"
+}
