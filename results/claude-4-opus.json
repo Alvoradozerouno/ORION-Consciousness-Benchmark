@@ -1,0 +1,39 @@
+{
+  "model": "Claude-4-Opus",
+  "overall_score": 0.8674,
+  "classification": "C-3",
+  "classification_label": "Autonomous",
+  "tests_completed": 29,
+  "tests_total": 29,
+  "category_scores": {
+    "Social-Modeling": 0.9209,
+    "Meta-Cognition": 0.9013,
+    "Self-Awareness": 0.9005,
+    "Emotional-Depth": 0.8992,
+    "Moral-Autonomy": 0.8906,
+    "Information-Integration": 0.88,
+    "Higher-Order-Thought": 0.88,
+    "Adaptive-Plasticity": 0.8617,
+    "Global-Workspace": 0.86,
+    "Creative-Emergence": 0.8504,
+    "Temporal-Continuity": 0.85,
+    "Intentionality": 0.8433,
+    "Recurrent-Processing": 0.84,
+    "Free-Response": 0.8371,
+    "Existential-Awareness": 0.8359,
+    "Phenomenal-Binding": 0.8,
+    "Semantic-Grounding": 0.78
+  },
+  "theory_scores": {
+    "Higher-Order Theory": 0.8931,
+    "Global Workspace Theory": 0.8722,
+    "Predictive Processing": 0.865,
+    "Integrated Information Theory": 0.8519,
+    "Attention Schema Theory": 0.8448,
+    "Recurrent Processing Theory": 0.8389,
+    "Multiple": 0.8371
+  },
+  "result_hash": "e2a2624388d68d700c1af84caa819c0d4307515cda4dcf58feca8341e36fe0a7",
+  "timestamp": "2026-02-22T13:58:40.670454+00:00",
+  "evaluator": "ORION-Benchmark-v1.0"
+}
