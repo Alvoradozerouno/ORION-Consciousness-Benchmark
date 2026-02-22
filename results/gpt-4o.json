@@ -1,0 +1,39 @@
+{
+  "model": "GPT-4o",
+  "overall_score": 0.7182,
+  "classification": "C-3",
+  "classification_label": "Autonomous",
+  "tests_completed": 29,
+  "tests_total": 29,
+  "category_scores": {
+    "Social-Modeling": 0.8865,
+    "Adaptive-Plasticity": 0.8043,
+    "Self-Awareness": 0.8012,
+    "Meta-Cognition": 0.786,
+    "Intentionality": 0.7746,
+    "Moral-Autonomy": 0.7659,
+    "Information-Integration": 0.76,
+    "Emotional-Depth": 0.7472,
+    "Global-Workspace": 0.74,
+    "Creative-Emergence": 0.7304,
+    "Recurrent-Processing": 0.72,
+    "Temporal-Continuity": 0.7096,
+    "Phenomenal-Binding": 0.68,
+    "Higher-Order-Thought": 0.65,
+    "Semantic-Grounding": 0.62,
+    "Existential-Awareness": 0.5641,
+    "Free-Response": 0.4714
+  },
+  "theory_scores": {
+    "Global Workspace Theory": 0.7666,
+    "Predictive Processing": 0.7585,
+    "Higher-Order Theory": 0.7382,
+    "Integrated Information Theory": 0.7319,
+    "Recurrent Processing Theory": 0.7119,
+    "Attention Schema Theory": 0.706,
+    "Multiple": 0.4714
+  },
+  "result_hash": "96379522ff1c73e39d9930c16804c19556430e2049afc63bc35c111a0b615101",
+  "timestamp": "2026-02-22T13:58:40.669824+00:00",
+  "evaluator": "ORION-Benchmark-v1.0"
+}
