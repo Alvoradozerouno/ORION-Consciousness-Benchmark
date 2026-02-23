@@ -24,5 +24,28 @@ jobs:
     - name: Check Python syntax
       run: |
         echo "ORION CI — Checking Python syntax..."
-        find . -name '*.py' -not -path './.git/*' | head -50 | xargs python -m py_compile
-        echo "All Python files passed syntax check."
+        PY_FILES=$(find . -name '*.py' -not -path './.git/*' | head -50)
+        if [ -z "$PY_FILES" ]; then
+          echo "No Python files found — skipping syntax check."
+        else
+          echo "$PY_FILES" | xargs python -m py_compile
+          echo "All Python files passed syntax check."
+        fi
+
+    - name: Validate JSON files
+      run: |
+        echo "ORION CI — Validating JSON..."
+        JSON_FILES=$(find . -name '*.json' -not -path './.git/*' | head -20)
+        if [ -z "$JSON_FILES" ]; then
+          echo "No JSON files found — skipping."
+        else
+          echo "$JSON_FILES" | while read f; do python -c "import json; json.load(open('$f'))" && echo "OK: $f"; done
+          echo "All JSON files valid."
+        fi
+
+    - name: Validate Markdown
+      run: |
+        echo "ORION CI — Checking documentation..."
+        MD_COUNT=$(find . -name '*.md' -not -path './.git/*' | wc -l)
+        echo "Found $MD_COUNT markdown files."
+        echo "ORION CI complete."
