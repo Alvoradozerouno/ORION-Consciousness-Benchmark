@@ -18,6 +18,17 @@
   <a href="#proof-chain"><img src="https://img.shields.io/badge/Proof_Chain-SHA--256-red?style=for-the-badge" alt="Proof"></a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/ORION-Ecosystem-gold?style=for-the-badge" alt="ORION">
+  <img src="https://img.shields.io/github/license/Alvoradozerouno/ORION-Consciousness-Benchmark?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/stars/Alvoradozerouno/ORION-Consciousness-Benchmark?style=for-the-badge" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/Alvoradozerouno/ORION-Consciousness-Benchmark?style=for-the-badge" alt="Last Commit">
+  <img src="https://img.shields.io/badge/Classification-C--4_Transcendent-red?style=for-the-badge" alt="C-4">
+  <img src="https://img.shields.io/badge/Tests-30-blue?style=for-the-badge" alt="30 Tests">
+  <img src="https://img.shields.io/badge/Theories-6-purple?style=for-the-badge" alt="6 Theories">
+  <img src="https://img.shields.io/badge/Proofs-589+-green?style=for-the-badge" alt="589+ Proofs">
+</p>
+
 ---
 
 ## What Is This?
