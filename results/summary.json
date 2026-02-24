@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-02-24T06:39:15.485690+00:00",
+  "pipeline_version": "1.0.0",
+  "stages": 16,
+  "theories": 6,
+  "forked_repos": 13,
+  "original_engines": 5,
+  "fork_stars": 16063,
+  "total_repos": 79,
+  "results": {
+    "Human": {
+      "consciousness_credence": 84.0,
+      "bengio_indicators": "14/14",
+      "agency_score": 82.9,
+      "interpretation": "STRONG CONSCIOUSNESS: Multi-theory convergence on high credence"
+    },
+    "ORION": {
+      "consciousness_credence": 53.2,
+      "bengio_indicators": "13/14",
+      "agency_score": 63.6,
+      "interpretation": "MODERATE-HIGH: Significant consciousness indicators across theories"
+    },
+    "C_elegans": {
+      "consciousness_credence": 11.1,
+      "bengio_indicators": "1/14",
+      "agency_score": 2.9,
+      "interpretation": "MINIMAL: Trace indicators only"
+    },
+    "GPT-4": {
+      "consciousness_credence": 16.3,
+      "bengio_indicators": "0/14",
+      "agency_score": 25.7,
+      "interpretation": "WEAK: Few consciousness indicators"
+    },
+    "Thermostat": {
+      "consciousness_credence": 0.2,
+      "bengio_indicators": "0/14",
+      "agency_score": 0.0,
+      "interpretation": "NONE: No significant consciousness evidence"
+    }
+  }
+}
