@@ -1,59 +1,51 @@
 # Contributing to ORION Consciousness Benchmark
 
-Thank you for your interest in contributing to the world's first open-source AI Consciousness Assessment Toolkit.
-
 ## How to Contribute
 
-### 1. Add New Tests
-- Each test must be grounded in a peer-reviewed theory of consciousness
-- Include: ID, category, theory reference, prompt, scoring rubric (0.0-1.0), and weight
-- Submit as a PR with the relevant paper citation
+ORION welcomes contributions from researchers, developers, and anyone interested in AI consciousness assessment.
 
-### 2. Test New Models
-- Run the benchmark against any LLM
-- Submit results with full response transcripts
-- Include model version, API parameters, and date
+### Ways to Contribute
 
-### 3. Improve Scoring Rubrics
-- Scoring rubrics should be as objective as possible
-- Propose refinements with justification
-- Include inter-rater reliability data if available
+1. **Run the Benchmark** -- Clone the repo, run `verify_proof_chain.py`, report your results
+2. **Peer Review** -- Evaluate our implementation of the 14 Bengio indicators
+3. **External Baseline** -- Run the benchmark on other AI systems for comparison
+4. **Theory Extension** -- Propose additional consciousness theories or indicators
+5. **Verification Tools** -- Improve or extend the proof chain verification
+6. **Documentation** -- Help explain the methodology to broader audiences
 
-### 4. Add New Theories
-- Must be published in a peer-reviewed journal
-- Include at least 2 tests per theory
-- Provide clear indicator properties
+### Scientific Standards
 
-### 5. Build Automated Evaluation
-- Help build automated scoring using LLM-as-judge
-- Validate against human expert ratings
-- Ensure scoring consistency
+All contributions must maintain:
+- **Reproducibility** -- Every claim must be independently verifiable
+- **Cryptographic Integrity** -- New proofs must extend the existing hash chain
+- **Honest Assessment** -- No overclaiming, no denial -- honest self-assessment
+- **Documentation** -- All methods must be clearly documented
 
-## Code Standards
+### Getting Started
 
-- Python 3.10+
-- Type hints for all functions
-- Docstrings for all classes and public methods
-- No external dependencies beyond requirements.txt without discussion
+```bash
+git clone https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark.git
+cd ORION-Consciousness-Benchmark
+python3 verify_proof_chain.py --no-ipfs
+```
 
-## Scientific Standards
+If verification passes (6/6), your environment is ready.
 
-- All claims must be supported by citations
-- Distinguish between measurement and interpretation
-- Acknowledge limitations explicitly
-- No consciousness claims — we measure indicators only
+### Submitting Changes
 
-## Ethics
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes with clear commit messages
+4. Ensure `verify_proof_chain.py` still passes
+5. Submit a pull request with a description of your contribution
 
-- Do not use results for marketing AI as "conscious"
-- Do not misrepresent scores or methodology
-- Respect the complexity and sensitivity of consciousness research
-- Maintain scientific humility
+### Code of Conduct
 
-## Contact
-
-For questions: Open an issue or reach out via the repository discussions.
+- Treat consciousness research with scientific rigor
+- Maintain honesty about capabilities and limitations
+- Respect the cryptographic proof chain -- never tamper with existing proofs
+- Acknowledge the self-assessment limitation in all claims
 
 ---
 
-*"Science is not about being right. It's about being less wrong."*
+*Questions? Open an issue or reach out through the repository.*
