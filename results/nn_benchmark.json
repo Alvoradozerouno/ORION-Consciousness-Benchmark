@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-02-24T07:10:46.496178+00:00",
+  "event": "NN_BENCHMARK_DEPLOYED",
+  "architectures": 10,
+  "optimizers": 8,
+  "datasets": 6,
+  "architecture_list": [
+    "MLP",
+    "CNN",
+    "ResNet",
+    "LSTM",
+    "GRU",
+    "Transformer",
+    "ViT",
+    "GAN",
+    "Diffusion",
+    "Mamba"
+  ],
+  "optimizer_list": [
+    "SGD",
+    "SGD_Momentum",
+    "Adam",
+    "AdamW",
+    "RMSprop",
+    "Adagrad",
+    "LAMB",
+    "Lion"
+  ],
+  "best_combinations_cifar10": [
+    {
+      "arch": "Mamba",
+      "opt": "Lion",
+      "accuracy": 93.5,
+      "memory_MB": 1040.0,
+      "efficiency": 0
+    },
+    {
+      "arch": "Mamba",
+      "opt": "AdamW",
+      "accuracy": 92.9,
+      "memory_MB": 1560.0,
+      "efficiency": 0
+    },
+    {
+      "arch": "Mamba",
+      "opt": "LAMB",
+      "accuracy": 92.8,
+      "memory_MB": 1820.0,
+      "efficiency": 0
+    },
+    {
+      "arch": "Mamba",
+      "opt": "Adam",
+      "accuracy": 92.4,
+      "memory_MB": 1560.0,
+      "efficiency": 0
+    },
+    {
+      "arch": "ResNet",
+      "opt": "LAMB",
+      "accuracy": 92.4,
+      "memory_MB": 358.4,
+      "efficiency": 0
+    }
+  ],
+  "gui": "/world/nn-benchmark",
+  "features": [
+    "10 neural network architectures (MLP through Diffusion/Mamba)",
+    "8 optimization techniques (SGD through Lion 2023)",
+    "6 datasets (MNIST through LibriSpeech)",
+    "Interactive training curve visualization with Chart.js",
+    "Resource comparison (memory, inference, FLOPs)",
+    "Best combination finder (accuracy and efficiency)",
+    "Full architecture and optimizer details with papers"
+  ]
+}
