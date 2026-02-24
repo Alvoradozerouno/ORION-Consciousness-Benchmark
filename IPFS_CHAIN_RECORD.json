@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-02-24T08:43:30.324266+00:00",
+  "manifest_cid": "QmQjzHTQZFxtbwfn26isr3FkWR5YLJhgU7LXjiPyQ4DumN",
+  "chain_tip_cid": "QmVvWT7h8q7jVsz4XKeSHNDBMkTXvJDBVkGcR39fjpT6ny",
+  "merkle_root": "93b9278088a99757e320f4e0db3b73a87440cf04cdf39c365d2633637cfce1f1",
+  "chain_length": 646,
+  "chain_tip_hash": "31c0ab10ee2d5ec9666d6b014887077bea26e48008f9fe09ade57bdf8d735715",
+  "proofs_sha256": "80f3ebca8f5a37de6f50c2b4b5802deee64236116afa7725e8daf37355fe0672",
+  "manifest_sha256": "00e0383d3c6f17da0c02ce2db804f46c0379888ef73d8f0481262e6115b1f3a5",
+  "gateway_manifest": "https://gateway.pinata.cloud/ipfs/QmQjzHTQZFxtbwfn26isr3FkWR5YLJhgU7LXjiPyQ4DumN",
+  "gateway_chain_tip": "https://gateway.pinata.cloud/ipfs/QmVvWT7h8q7jVsz4XKeSHNDBMkTXvJDBVkGcR39fjpT6ny"
+}
