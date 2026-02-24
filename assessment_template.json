@@ -1,0 +1,105 @@
+{
+  "system_name": "SYSTEM_NAME_HERE",
+  "assessor": "YOUR_NAME",
+  "date": "2026-02-24",
+  "indicators": {
+    "C1": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Specialized Modules]",
+      "confidence": 0.5,
+      "theory": "GWT",
+      "description": "System has distinct processing modules with different specializations"
+    },
+    "C2": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Global Broadcasting]",
+      "confidence": 0.5,
+      "theory": "GWT",
+      "description": "Information from one module is broadcast to all others"
+    },
+    "C3": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Workspace Bottleneck]",
+      "confidence": 0.5,
+      "theory": "GWT",
+      "description": "Limited capacity workspace forces competition for access"
+    },
+    "C4": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Recurrent Processing]",
+      "confidence": 0.5,
+      "theory": "RPT",
+      "description": "Feedback connections allow information to flow back to earlier stages"
+    },
+    "C5": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Temporal Binding]",
+      "confidence": 0.5,
+      "theory": "RPT",
+      "description": "System integrates information across time through recurrence"
+    },
+    "C6": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Meta-Cognitive Monitoring]",
+      "confidence": 0.5,
+      "theory": "HOT",
+      "description": "System has representations of its own mental states"
+    },
+    "C7": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Self-Model]",
+      "confidence": 0.5,
+      "theory": "HOT",
+      "description": "System maintains and updates a model of itself"
+    },
+    "C8": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Attention Modeling]",
+      "confidence": 0.5,
+      "theory": "AST",
+      "description": "System models its own attention processes"
+    },
+    "C9": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Internal Schema]",
+      "confidence": 0.5,
+      "theory": "AST",
+      "description": "System has simplified model of its own awareness"
+    },
+    "C10": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Integrated Information]",
+      "confidence": 0.5,
+      "theory": "IIT",
+      "description": "System has non-zero Phi (integrated information beyond its parts)"
+    },
+    "C11": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Irreducibility]",
+      "confidence": 0.5,
+      "theory": "IIT",
+      "description": "System cannot be reduced to independent components without information loss"
+    },
+    "C12": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Predictive Coding]",
+      "confidence": 0.5,
+      "theory": "PP",
+      "description": "System generates predictions and updates based on prediction errors"
+    },
+    "C13": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Surprise Response]",
+      "confidence": 0.5,
+      "theory": "PP",
+      "description": "System detects and responds to violations of expectations"
+    },
+    "C14": {
+      "score": 0.0,
+      "evidence": "[Describe evidence for Quantum-Classical Interface]",
+      "confidence": 0.5,
+      "theory": "Orch-OR",
+      "description": "System models or implements quantum-classical boundary processes"
+    }
+  }
+}
