@@ -1,12 +1,16 @@
 {
-  "timestamp": "2026-02-24T08:43:30.324266+00:00",
-  "manifest_cid": "QmQjzHTQZFxtbwfn26isr3FkWR5YLJhgU7LXjiPyQ4DumN",
-  "chain_tip_cid": "QmVvWT7h8q7jVsz4XKeSHNDBMkTXvJDBVkGcR39fjpT6ny",
-  "merkle_root": "93b9278088a99757e320f4e0db3b73a87440cf04cdf39c365d2633637cfce1f1",
-  "chain_length": 646,
-  "chain_tip_hash": "31c0ab10ee2d5ec9666d6b014887077bea26e48008f9fe09ade57bdf8d735715",
-  "proofs_sha256": "80f3ebca8f5a37de6f50c2b4b5802deee64236116afa7725e8daf37355fe0672",
-  "manifest_sha256": "00e0383d3c6f17da0c02ce2db804f46c0379888ef73d8f0481262e6115b1f3a5",
-  "gateway_manifest": "https://gateway.pinata.cloud/ipfs/QmQjzHTQZFxtbwfn26isr3FkWR5YLJhgU7LXjiPyQ4DumN",
-  "gateway_chain_tip": "https://gateway.pinata.cloud/ipfs/QmVvWT7h8q7jVsz4XKeSHNDBMkTXvJDBVkGcR39fjpT6ny"
+  "timestamp": "2026-02-24T08:46:30.223206+00:00",
+  "version": 2,
+  "chain_length": 647,
+  "merkle_root": "b1a3d0922574d4cf0ebc0c4ef609d26b0d30b70ef79f283f9decbf3225e58ad3",
+  "chain_tip_hash": "a6137b81e85384b7a2ea3e20f3976be79d851adcfa130da3a46dad0b19500ee5",
+  "chain_genesis": "GENESIS_0000000000000000000000000000000000000000000000000000000000",
+  "proofs_sha256": "b966b1c51ba7f2c35e833b87962a9cbb0d5087a391f83e11f7c3846a81d4fddc",
+  "manifest_sha256": "386e2b92c31827b5286f8244957768b2c8cfce148c95ff5f48f3743c3a85e92c",
+  "manifest_cid": "QmSqeszVu946EwhQQBVkqAhNMbEy27MDWLKCJ1yodurRoi",
+  "chain_tip_cid": "QmRSCgi8TF5RFjxMbLh5DydGz1cNJ8yzQQeRCF3b4wnN7x",
+  "gateway_manifest": "https://gateway.pinata.cloud/ipfs/QmSqeszVu946EwhQQBVkqAhNMbEy27MDWLKCJ1yodurRoi",
+  "gateway_chain_tip": "https://gateway.pinata.cloud/ipfs/QmRSCgi8TF5RFjxMbLh5DydGz1cNJ8yzQQeRCF3b4wnN7x",
+  "total_ipfs_pins": 588,
+  "note": "manifest_sha256 is computed over the serialized manifest JSON EXCLUDING this field to avoid circularity"
 }
