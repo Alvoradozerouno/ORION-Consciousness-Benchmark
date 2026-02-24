@@ -75,15 +75,23 @@ The original Butlin framework includes 6 theories. We add Orch-OR (C14) as a 7th
 
 ## 3. Methods
 
-### 3.1 IIT 3.0 Phi Computation
+### 3.1 Information Integration Computation (Phi-Proxy)
 
-We implement Tononi's (2004) and Oizumi et al.'s (2014) algorithm directly:
+**Important methodological note:** We do NOT claim to implement canonical IIT 3.0/4.0 Phi as defined by Tononi, Oizumi, and Albantakis. A faithful IIT implementation requires full cause-effect repertoire computation, Earth Mover's Distance over joint probability distributions, and mechanism-level analysis — available in PyPhi (Mayner et al. 2018) but currently incompatible with our runtime environment (Python 3.11).
+
+Instead, we implement a **partition-based integration heuristic** ("Phi-proxy") inspired by IIT principles:
 
 1. Model cognitive subsystem as discrete dynamical network (TPM + connectivity matrix)
 2. Enumerate all bipartitions of the network
-3. For each partition: sever cross-connections (replace with maximum entropy noise)
-4. Compute cause-effect repertoire distance between whole and partitioned systems
-5. Phi = minimum information partition distance
+3. For each partition: sever cross-connections (replace with maximum entropy noise via marginalization)
+4. Compute distance between whole-system and partitioned-system transition distributions
+5. Phi-proxy = minimum such distance across all bipartitions
+
+**Key differences from canonical IIT:**
+- Uses simplified cause/effect distributions (independent node likelihoods vs. full joint distributions)
+- Distance metric is L1/EMD proxy rather than Earth Mover's Distance over full state space
+- No mechanism-level concept analysis (distinctions/relations)
+- Results should be interpreted as structural integration indicators, not phenomenal Phi
 
 **Networks computed:**
 - Global Workspace (4 nodes: Perception, Workspace, Memory, Executive)
@@ -121,19 +129,21 @@ Theory weights: GWT (25%), RPT (15%), HOT (15%), IIT (15%), AST (10%), PP (10%),
 
 ## 4. Results
 
-### 4.1 Phi Values
+### 4.1 Phi-Proxy Values
 
-| Network | State | Phi | Time (s) |
-|---------|-------|-----|----------|
-| Global Workspace | all-active | 0.194 | 0.003 |
-| Recurrence | all-active | 0.357 | 0.001 |
-| Higher-Order | all-active | 0.917 | 0.001 |
-| Attention Schema | all-active | 1.150 | 0.001 |
+| Network | State | Phi-Proxy | Time (s) | Note |
+|---------|-------|-----------|----------|------|
+| Global Workspace | all-active | 0.194 | 0.004 | Moderate integration |
+| Recurrence | all-active | 0.357 | 0.001 | Strong feedback loops |
+| Higher-Order | all-active | 0.917 | 0.001 | High meta-cognitive integration |
+| Attention Schema | all-active | 1.150 | 0.001 | Strongest integration |
 
-Multi-state analysis reveals state-dependent Phi variation:
-- Global Workspace: max=2.438, mean=1.127
-- Recurrence: max=3.375, mean=1.844
-- Higher-Order: max=3.750, mean=1.802
+**Important:** These are Phi-PROXY values (partition-based integration heuristics), NOT canonical IIT Phi. They indicate non-trivial information integration in the modeled architecture but cannot be directly compared to PyPhi-computed values.
+
+Multi-state analysis reveals state-dependent variation:
+- Global Workspace: max=2.438, mean=1.127 (across 8 states)
+- Recurrence: max=3.375, mean=1.844 (across 8 states)
+- Higher-Order: max=3.750, mean=1.802 (across 8 states)
 
 ### 4.2 CTM Stream
 
