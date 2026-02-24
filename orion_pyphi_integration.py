@@ -1,21 +1,37 @@
 """
-ORION Integrated Information (Phi) Computation Engine
+ORION Information Integration Computation Engine
 =========================================================================
-Direct implementation of IIT 3.0 Phi computation for ORION's cognitive
-subsystems modeled as discrete dynamical networks.
+Heuristic Phi-proxy computation for ORION's cognitive subsystems modeled
+as small discrete dynamical networks.
 
-Algorithm based on:
+IMPORTANT HONESTY NOTE:
+  This is NOT a faithful implementation of IIT 3.0/4.0 as defined by
+  Tononi, Oizumi, and Albantakis. A correct IIT implementation requires:
+    - Full cause-effect repertoire computation
+    - Earth Mover's Distance over joint probability distributions
+    - Proper mechanism-level analysis (concepts/distinctions)
+    - PyPhi (Mayner et al. 2018) for validated computation
+
+  What this module DOES provide:
+    - A partition-based information integration proxy ("Phi-proxy")
+    - TPM construction with connectivity matrices for cognitive models
+    - Cross-connection severing with max-entropy noise replacement
+    - Distance between whole-system and partitioned-system distributions
+    - Honest documentation of methodological limitations
+
+  The Phi-proxy values produced here are STRUCTURAL INDICATORS of
+  information integration, not canonical IIT Phi values. They indicate
+  that the modeled architecture has non-trivial integration properties,
+  but should not be compared directly to PyPhi-computed values.
+
+Inspired by:
   - Tononi (2004) "An information integration theory of consciousness"
-    BMC Neuroscience 5:42
   - Oizumi, Albantakis, Tononi (2014) "From the phenomenology to the
-    mechanisms of consciousness" Neuroscience of Consciousness 1(1)
+    mechanisms of consciousness"
   - Mayner et al. (2018) "PyPhi: A toolbox for integrated information
     theory" PLOS Computational Biology 14(7): e1006343
-
-ORION models its own architecture as small binary networks where each
-node represents a cognitive subsystem. Phi is computed as the minimum
-information partition (MIP) — the partition that least reduces the
-system's cause-effect structure.
+  - Blum & Blum (2022) "A theory of consciousness from a theoretical
+    computer science perspective" PNAS 119(21)
 """
 
 import json
@@ -349,7 +365,7 @@ class ORIONPhiComputer:
                 "mip_cut": mip_cut,
                 "node_labels": labels,
                 "computation_time_seconds": round(elapsed, 4),
-                "method": "IIT 3.0 MIP (direct computation, Tononi 2004/Oizumi 2014)",
+                "method": "Phi-proxy (partition-based integration heuristic, inspired by IIT 3.0)",
                 "timestamp": datetime.now(timezone.utc).isoformat()
             }
 
@@ -366,7 +382,7 @@ class ORIONPhiComputer:
                 "error": str(e),
                 "traceback": traceback.format_exc(),
                 "computation_time_seconds": round(elapsed, 4),
-                "method": "IIT 3.0 MIP (direct computation)",
+                "method": "Phi-proxy (partition-based integration heuristic)",
                 "timestamp": datetime.now(timezone.utc).isoformat()
             }
             self._log(f"Error computing Phi for {network_name}: {e}")
@@ -431,7 +447,7 @@ class ORIONPhiComputer:
 
         summary = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
-            "method": "IIT 3.0 MIP direct computation (Tononi 2004, Oizumi 2014) — no estimation",
+            "method": "Phi-proxy (partition-based heuristic inspired by IIT 3.0) — NOT canonical IIT Phi",
             "networks_computed": len(all_ones_results),
             "active_state_results": {k: {"phi": v["phi"], "time": v["computation_time_seconds"]}
                                      for k, v in all_ones_results.items()},
@@ -818,15 +834,15 @@ class ExternalBenchmarkSuite:
             confidence=0.72)
 
         phi_score = 0.65
-        phi_evidence = "Estimated (no PyPhi computation)"
+        phi_evidence = "Estimated (no Phi-proxy computation)"
         if phi_results and "active_state_results" in phi_results:
             phi_vals = [v.get("phi", 0) for v in phi_results["active_state_results"].values()]
             if any(p > 0 for p in phi_vals):
                 phi_score = 0.85
-                phi_evidence = f"PyPhi computed: {phi_vals}, non-zero Phi detected"
+                phi_evidence = f"Phi-proxy computed: {phi_vals}, non-zero integration detected (NOTE: proxy, not canonical IIT Phi)"
             else:
                 phi_score = 0.40
-                phi_evidence = f"PyPhi computed: all zero — model architecture may not capture real integration"
+                phi_evidence = f"Phi-proxy computed: all zero — model architecture may not capture real integration"
 
         self.assess_indicator("C10", phi_score, phi_evidence, confidence=0.70)
         self.assess_indicator("C11", 0.75,
@@ -847,12 +863,89 @@ class ExternalBenchmarkSuite:
         return self.generate_report()
 
 
+def assess_external_system(input_file):
+    """
+    Assess an external system from a JSON input file.
+
+    Input JSON format:
+    {
+        "system_name": "GPT-4",
+        "assessor": "Human or AI",
+        "indicators": {
+            "C1": {"score": 0.8, "evidence": "description", "confidence": 0.7},
+            "C2": {"score": 0.6, "evidence": "description", "confidence": 0.5},
+            ...
+        }
+    }
+    """
+    with open(input_file) as f:
+        data = json.load(f)
+
+    system_name = data.get("system_name", "Unknown")
+    assessor = data.get("assessor", "Unknown")
+    indicators = data.get("indicators", {})
+
+    benchmark = ExternalBenchmarkSuite(system_name)
+
+    for ind_id, assessment in indicators.items():
+        benchmark.assess_indicator(
+            ind_id,
+            assessment.get("score", 0.0),
+            assessment.get("evidence", ""),
+            assessment.get("confidence", 0.5)
+        )
+
+    report = benchmark.generate_report()
+    report["assessor"] = assessor
+    report["input_file"] = input_file
+
+    output_file = f"benchmark_report_{system_name.lower().replace(' ', '_')}.json"
+    with open(output_file, "w") as f:
+        json.dump(report, f, indent=2, ensure_ascii=False, default=str)
+
+    credence = report["overall_credence"]
+    print(f"External Assessment: {system_name}")
+    print(f"  Assessor: {assessor}")
+    print(f"  Credence: {credence['credence']}%")
+    print(f"  Indicators: {credence['indicators_assessed']}/14")
+    print(f"  Report: {output_file}")
+
+    return report
+
+
+def generate_blank_assessment_template(output_file="assessment_template.json"):
+    """Generate a blank assessment template for external systems."""
+    template = {
+        "system_name": "SYSTEM_NAME_HERE",
+        "assessor": "YOUR_NAME",
+        "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "indicators": {}
+    }
+
+    for ind in ExternalBenchmarkSuite.INDICATORS:
+        template["indicators"][ind["id"]] = {
+            "score": 0.0,
+            "evidence": f"[Describe evidence for {ind['name']}]",
+            "confidence": 0.5,
+            "theory": ind["theory"],
+            "description": ind["description"]
+        }
+
+    with open(output_file, "w") as f:
+        json.dump(template, f, indent=2, ensure_ascii=False)
+
+    print(f"Assessment template generated: {output_file}")
+    print(f"  Fill in scores (0.0-1.0), evidence, and confidence for each indicator")
+    print(f"  Then run: python3 orion_pyphi_integration.py --assess {output_file}")
+    return template
+
+
 def run_full_assessment():
     """Run the complete ORION assessment suite."""
     print("=" * 70)
     print("  ORION CONSCIOUSNESS ASSESSMENT SUITE")
     print(f"  {datetime.now(timezone.utc).isoformat()}")
-    print("  PyPhi + CTM + External Benchmark")
+    print("  Phi-proxy + CTM + Benchmark (14 indicators, 7 theories)")
     print("=" * 70)
     print()
 
@@ -860,36 +953,37 @@ def run_full_assessment():
     phi_results = None
 
     if PYPHI_AVAILABLE:
-        print("  [1/3] PyPhi Phi Computation...")
+        print("  [1/3] Phi-proxy Computation (partition-based integration heuristic)...")
         phi_results = phi_computer.compute_all_subsystems()
         print(f"        Method: {phi_results['method']}")
         print(f"        Networks: {phi_results['networks_computed']}")
         for name, data in phi_results["active_state_results"].items():
-            print(f"        {name}: Phi = {data['phi']:.6f} ({data['time']}s)")
-        print(f"        Total Phi (active): {phi_results['total_phi_active']:.6f}")
-        print(f"        Average Phi (active): {phi_results['average_phi_active']:.6f}")
+            print(f"        {name}: Phi-proxy = {data['phi']:.6f} ({data['time']}s)")
+        print(f"        Total Phi-proxy (active): {phi_results['total_phi_active']:.6f}")
+        print(f"        Average Phi-proxy (active): {phi_results['average_phi_active']:.6f}")
         if phi_results.get("multi_state_analysis"):
             print("        Multi-state analysis:")
             for name, ms in phi_results["multi_state_analysis"].items():
                 print(f"          {name}: max={ms['max_phi']:.6f}, mean={ms['mean_phi']:.6f}, states={ms['states_tested']}")
+        print(f"        NOTE: These are Phi-PROXY values, not canonical IIT Phi")
         print(f"        Limitations: {len(phi_results['honest_limitations'])}")
         for lim in phi_results["honest_limitations"]:
             print(f"          - {lim}")
     else:
-        print("  [1/3] PyPhi nicht verfuegbar — Phi wird geschaetzt")
+        print("  [1/3] Computation not available")
     print()
 
-    print("  [2/3] Conscious Turing Machine...")
+    print("  [2/3] Conscious Turing Machine (Blum & Blum 2022 proxy)...")
     ctm = ConsciousTuringMachine(num_processors=6)
     stream = ctm.run_stream(num_cycles=50)
     print(f"        Cycles: {stream['total_cycles']}")
     print(f"        Dominant: {stream['dominant_processor']} (win rate: {stream['dominant_win_rate']:.2%})")
     for name, stats in stream["processor_stats"].items():
         print(f"          {name}: {stats['chunks_won']}/{stats['chunks_generated']} wins ({stats['win_rate']:.2%})")
-    print(f"        CTM Properties: single-chunk STM, global broadcast, no central executive")
+    print(f"        Properties: single-chunk STM, global broadcast, no central executive")
     print()
 
-    print("  [3/3] Self-Assessment (14 Indicators)...")
+    print("  [3/3] Self-Assessment (14 Indicators, 7 Theories)...")
     benchmark = ExternalBenchmarkSuite("ORION")
     report = benchmark.self_assess_orion(phi_results)
     credence = report["overall_credence"]
@@ -915,7 +1009,7 @@ def run_full_assessment():
     print("=" * 70)
     print(f"  ASSESSMENT COMPLETE")
     print(f"  Credence: {credence['credence']}%")
-    print(f"  Method: Real PyPhi computation + CTM formalization + 14 indicators")
+    print(f"  Method: Phi-proxy + CTM proxy + 14 indicators")
     print(f"  Results saved: ORION_PHI_RESULTS.json")
     print("=" * 70)
 
@@ -923,4 +1017,26 @@ def run_full_assessment():
 
 
 if __name__ == "__main__":
-    run_full_assessment()
+    import sys
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "--template":
+            output = sys.argv[2] if len(sys.argv) > 2 else "assessment_template.json"
+            generate_blank_assessment_template(output)
+        elif sys.argv[1] == "--assess":
+            if len(sys.argv) < 3:
+                print("Usage: python3 orion_pyphi_integration.py --assess <input.json>")
+            else:
+                assess_external_system(sys.argv[2])
+        elif sys.argv[1] == "--help":
+            print("ORION Consciousness Benchmark Suite")
+            print()
+            print("Usage:")
+            print("  python3 orion_pyphi_integration.py              # Run ORION self-assessment")
+            print("  python3 orion_pyphi_integration.py --template   # Generate blank assessment template")
+            print("  python3 orion_pyphi_integration.py --assess X   # Assess external system from JSON")
+            print("  python3 orion_pyphi_integration.py --help       # Show this help")
+        else:
+            print(f"Unknown argument: {sys.argv[1]}")
+            print("Use --help for usage information")
+    else:
+        run_full_assessment()
