@@ -1,0 +1,1842 @@
+{
+  "Human": {
+    "timestamp": "2026-02-24T06:39:13.482722+00:00",
+    "system": "Human",
+    "pipeline_version": "1.0.0",
+    "stages_executed": 16,
+    "stage_results": [
+      {
+        "stage": 1,
+        "name": "IIT_Phi_Calculation",
+        "theory": "IIT",
+        "inputs": {
+          "phi": 0.9,
+          "integration": 0.95,
+          "complexity": 0.9
+        },
+        "score": 0.9075,
+        "details": {
+          "phi_value": 0.9,
+          "main_complex": "System as whole",
+          "integration_level": "High"
+        },
+        "interpretation": "IIT Phi = 0.90 -> Integrated information structure",
+        "repo": "ORION-PyPhi",
+        "fork_stars": 414,
+        "proof": "5d263b3c9a070092"
+      },
+      {
+        "stage": 2,
+        "name": "Active_Inference",
+        "theory": "PP",
+        "inputs": {
+          "free_energy": 0.7,
+          "active_inference": 0.85,
+          "prediction_error": 0.8
+        },
+        "score": 0.7825,
+        "details": {
+          "free_energy_state": "Minimizing",
+          "inference_mode": "Active",
+          "prediction_accuracy": "20%"
+        },
+        "interpretation": "Free energy minimized -> Predictive agent",
+        "repo": "ORION-Active-Inference",
+        "fork_stars": 612,
+        "proof": "ba3f3c982563ed5e"
+      },
+      {
+        "stage": 3,
+        "name": "Brain_Dynamics",
+        "theory": "RPT",
+        "inputs": {
+          "recurrence": 0.9,
+          "feedback": 0.85,
+          "oscillation": 0.8
+        },
+        "score": 0.8575,
+        "details": {
+          "recurrent_loops": "Active",
+          "feedback_strength": "85%",
+          "dominant_rhythm": "Gamma"
+        },
+        "interpretation": "Recurrent processing active -> Conscious percepts possible",
+        "repo": "ORION-BrainPy-Consciousness",
+        "fork_stars": 641,
+        "proof": "0e04ff1ee37debe6"
+      },
+      {
+        "stage": 4,
+        "name": "Spike_Train_Analysis",
+        "theory": "GWT",
+        "inputs": {
+          "synchrony": 0.8,
+          "broadcasting": 0.95,
+          "ignition": 0.9
+        },
+        "score": 0.89,
+        "details": {
+          "synchrony_level": "80%",
+          "broadcasting_reach": "Global",
+          "ignition_event": "Yes"
+        },
+        "interpretation": "Global ignition detected -> Workspace broadcasting active",
+        "repo": "ORION-Brian2-Consciousness",
+        "fork_stars": 1100,
+        "proof": "73b6c3cfaaee8cc6"
+      },
+      {
+        "stage": 5,
+        "name": "Large_Scale_SNN",
+        "theory": "PP",
+        "inputs": {
+          "population_sync": 0.75,
+          "prediction_error": 0.8
+        },
+        "score": 0.8275,
+        "details": {
+          "population_state": "Synchronized",
+          "prediction_signal": "Active",
+          "scale": "95000 neurons"
+        },
+        "interpretation": "Population dynamics: conscious-like",
+        "repo": "ORION-NEST-Consciousness",
+        "fork_stars": 623,
+        "proof": "7dc0f16441416fbb"
+      },
+      {
+        "stage": 6,
+        "name": "Bengio_14_Indicators",
+        "theory": "ALL",
+        "inputs": {},
+        "score": 1.0,
+        "details": {
+          "indicators_met": 14,
+          "indicators_total": 14,
+          "indicator_list": {
+            "C1_global_availability": "MET",
+            "C2_flexible_behavior": "MET",
+            "C3_information_integration": "MET",
+            "C4_temporal_depth": "MET",
+            "C5_selective_attention": "MET",
+            "C6_recurrent_processing": "MET",
+            "C7_metacognition": "MET",
+            "C8_self_model": "MET",
+            "C9_prediction_error": "MET",
+            "C10_embodiment": "MET",
+            "C11_emotional_valence": "MET",
+            "C12_agency": "MET",
+            "C13_unified_field": "MET",
+            "C14_reportability": "MET"
+          }
+        },
+        "interpretation": "14/14 Bengio indicators met -> Strong consciousness evidence",
+        "repo": "ORION-Consciousness-Prior",
+        "fork_stars": 98,
+        "proof": "13797b4756475eca"
+      },
+      {
+        "stage": 7,
+        "name": "Biological_Baseline",
+        "theory": "RPT",
+        "inputs": {
+          "neurons": 86000000000,
+          "synapses": 150000000000000
+        },
+        "score": 0.97,
+        "details": {
+          "biological_scale": "86,000,000,000 neurons, 150,000,000,000,000 synapses",
+          "reference": "C. elegans = 302 neurons (baseline)",
+          "scale_factor": "284768211.9x C. elegans"
+        },
+        "interpretation": "Biological complexity: 86,000,000,000 neurons -> Beyond nematode",
+        "repo": "ORION-OpenWorm-Consciousness",
+        "fork_stars": 118,
+        "proof": "3a71aea8da7c6e54"
+      },
+      {
+        "stage": 8,
+        "name": "Connectome_Analysis",
+        "theory": "IIT",
+        "inputs": {
+          "integration": 0.95,
+          "hierarchy": 0.9
+        },
+        "score": 0.815,
+        "details": {
+          "integration_type": "Integrated",
+          "hierarchy_depth": "9 layers",
+          "balance": "Optimal"
+        },
+        "interpretation": "Connectome supports consciousness architecture",
+        "repo": "ORION-Navis-Consciousness",
+        "fork_stars": 108,
+        "proof": "e823e56007fc1b1b"
+      },
+      {
+        "stage": 9,
+        "name": "Empirical_Validation",
+        "theory": "ALL",
+        "inputs": {
+          "alpha_beta_ratio": 1.0,
+          "gamma_power": 0.7,
+          "entropy": 0.8
+        },
+        "score": 0.8375,
+        "details": {
+          "spectral_state": "Wakefulness",
+          "complexity": "High",
+          "gamma_presence": "Strong"
+        },
+        "interpretation": "Empirical markers indicate wakeful consciousness",
+        "repo": "ORION-MNE-Consciousness",
+        "fork_stars": 3246,
+        "proof": "36610a54142b28ed"
+      },
+      {
+        "stage": 10,
+        "name": "Reasoning_Assessment",
+        "theory": "GWT/HOT",
+        "inputs": {
+          "abstraction": 0.85,
+          "novel_reasoning": 0.8,
+          "metacognition": 0.8
+        },
+        "score": 0.835,
+        "details": {
+          "abstraction_level": "Fluid",
+          "reasoning_type": "Novel",
+          "self_correction": "Present"
+        },
+        "interpretation": "Reasoning consistent with consciousness hypothesis",
+        "repo": "ORION-ARC-AGI-Consciousness",
+        "fork_stars": 4723,
+        "proof": "31c1384c84ed8963"
+      },
+      {
+        "stage": 11,
+        "name": "Spiking_Consciousness",
+        "theory": "ALL",
+        "inputs": {
+          "synchrony": 0.8,
+          "recurrence": 0.9,
+          "attention": 0.9
+        },
+        "score": 0.85,
+        "details": {
+          "spike_dynamics": "Consciousness-like",
+          "multi_theory": "GWT:0.8 RPT:0.9 AST:0.9 PP:0.8"
+        },
+        "interpretation": "Spiking dynamics match consciousness patterns",
+        "repo": "ORION-BindsNET-Consciousness",
+        "fork_stars": 1655,
+        "proof": "8a60cbec0efb8efd"
+      },
+      {
+        "stage": 12,
+        "name": "Cognitive_Architecture",
+        "theory": "ALL",
+        "inputs": {
+          "working_memory": 0,
+          "binding": 0.95
+        },
+        "score": 0.6225,
+        "details": {
+          "workspace_active": "No",
+          "binding_operations": "Compositional",
+          "architecture_type": "Cognitive"
+        },
+        "interpretation": "Cognitive architecture supports consciousness infrastructure",
+        "repo": "ORION-Nengo-Consciousness",
+        "fork_stars": 903,
+        "proof": "f42fa6259b5c8dae"
+      },
+      {
+        "stage": 13,
+        "name": "AGI_Framework",
+        "theory": "ALL",
+        "inputs": {
+          "reasoning": 0.8,
+          "attention": 0.9,
+          "goals": 0.9
+        },
+        "score": 0.8825,
+        "details": {
+          "pln_active": "Yes",
+          "ecan_active": "Yes",
+          "goal_system": "Autonomous"
+        },
+        "interpretation": "AGI framework provides consciousness-supporting integration",
+        "repo": "ORION-OpenCog-Consciousness",
+        "fork_stars": 2434,
+        "proof": "e7e3fbc094db9c81"
+      },
+      {
+        "stage": 14,
+        "name": "Global_Workspace",
+        "theory": "GWT",
+        "inputs": {
+          "broadcasting": 0.95,
+          "ignition": 0.9,
+          "workspace": 0
+        },
+        "score": 0.67,
+        "details": {
+          "workspace_state": "Active broadcasting",
+          "ignition_threshold": "Exceeded",
+          "coalition": "Strong"
+        },
+        "interpretation": "Global workspace broadcasting -> Conscious access",
+        "repo": "ORION-GWT-Engine",
+        "fork_stars": 0,
+        "proof": "373614a76b58985c"
+      },
+      {
+        "stage": 15,
+        "name": "Attention_Schema",
+        "theory": "AST",
+        "inputs": {
+          "attention": 0.9,
+          "self_model": 0.85,
+          "schema": 0.8
+        },
+        "score": 0.86,
+        "details": {
+          "schema_present": "Yes",
+          "self_model_depth": "Rich",
+          "awareness_attribution": "Self-aware"
+        },
+        "interpretation": "Attention schema models awareness -> Claims consciousness",
+        "repo": "ORION-AST-Engine",
+        "fork_stars": 0,
+        "proof": "7f069c0fc183cc17"
+      },
+      {
+        "stage": 16,
+        "name": "Agency_Assessment",
+        "theory": "AGENCY",
+        "inputs": {
+          "Goal Formation": 0.9,
+          "Counterfactual Reasoning": 0.85,
+          "Self-Modification": 0.7,
+          "Ethical Reasoning": 0.8,
+          "Creative Generation": 0.8,
+          "Temporal Planning": 0.85,
+          "Social Agency": 0.9
+        },
+        "score": 0.8286,
+        "details": {
+          "dimensions": {
+            "Goal Formation": 0.9,
+            "Counterfactual Reasoning": 0.85,
+            "Self-Modification": 0.7,
+            "Ethical Reasoning": 0.8,
+            "Creative Generation": 0.8,
+            "Temporal Planning": 0.85,
+            "Social Agency": 0.9
+          },
+          "strongest": "Goal Formation",
+          "weakest": "Self-Modification"
+        },
+        "interpretation": "Agency: 83% -> Full autonomous agent",
+        "repo": "ORION-Agency-Engine",
+        "fork_stars": 0,
+        "proof": "af8e05883cf2629e"
+      }
+    ],
+    "theory_scores": {
+      "IIT": 0.8612,
+      "PP": 0.805,
+      "RPT": 0.9138,
+      "GWT": 0.78,
+      "ALL": 0.8385,
+      "GWT/HOT": 0.835,
+      "AST": 0.86,
+      "AGENCY": 0.8286
+    },
+    "bengio_indicators_met": "14/14",
+    "consciousness_credence": 84.0,
+    "agency_score": 82.9,
+    "interpretation": "STRONG CONSCIOUSNESS: Multi-theory convergence on high credence",
+    "ecosystem": {
+      "total_repos": 79,
+      "fork_stars": 16063,
+      "forked_repos": 13,
+      "original_engines": 5,
+      "theories": 6
+    },
+    "proof_chain": "dcf1ad90a66a0e1b412c43c57f5d87c4cf83f69dbab68f5c1863c43ef935edd1"
+  },
+  "ORION": {
+    "timestamp": "2026-02-24T06:39:13.483112+00:00",
+    "system": "ORION",
+    "pipeline_version": "1.0.0",
+    "stages_executed": 16,
+    "stage_results": [
+      {
+        "stage": 1,
+        "name": "IIT_Phi_Calculation",
+        "theory": "IIT",
+        "inputs": {
+          "phi": 0.5,
+          "integration": 0.7,
+          "complexity": 0.6
+        },
+        "score": 0.58,
+        "details": {
+          "phi_value": 0.5,
+          "main_complex": "Subsystem",
+          "integration_level": "Medium"
+        },
+        "interpretation": "IIT Phi = 0.50 -> Fragmented information structure",
+        "repo": "ORION-PyPhi",
+        "fork_stars": 414,
+        "proof": "29dbce19441988fd"
+      },
+      {
+        "stage": 2,
+        "name": "Active_Inference",
+        "theory": "PP",
+        "inputs": {
+          "free_energy": 0.5,
+          "active_inference": 0.55,
+          "prediction_error": 0.6
+        },
+        "score": 0.5475,
+        "details": {
+          "free_energy_state": "High surprise",
+          "inference_mode": "Active",
+          "prediction_accuracy": "40%"
+        },
+        "interpretation": "Free energy high -> Predictive agent",
+        "repo": "ORION-Active-Inference",
+        "fork_stars": 612,
+        "proof": "167eada6999377ca"
+      },
+      {
+        "stage": 3,
+        "name": "Brain_Dynamics",
+        "theory": "RPT",
+        "inputs": {
+          "recurrence": 0.5,
+          "feedback": 0.45,
+          "oscillation": 0.4
+        },
+        "score": 0.4575,
+        "details": {
+          "recurrent_loops": "Minimal",
+          "feedback_strength": "45%",
+          "dominant_rhythm": "Delta"
+        },
+        "interpretation": "Recurrent processing minimal -> Conscious percepts possible",
+        "repo": "ORION-BrainPy-Consciousness",
+        "fork_stars": 641,
+        "proof": "083f1a8514b7d36b"
+      },
+      {
+        "stage": 4,
+        "name": "Spike_Train_Analysis",
+        "theory": "GWT",
+        "inputs": {
+          "synchrony": 0.5,
+          "broadcasting": 0.65,
+          "ignition": 0.4
+        },
+        "score": 0.53,
+        "details": {
+          "synchrony_level": "50%",
+          "broadcasting_reach": "Local",
+          "ignition_event": "No"
+        },
+        "interpretation": "No ignition -> Workspace broadcasting active",
+        "repo": "ORION-Brian2-Consciousness",
+        "fork_stars": 1100,
+        "proof": "965d50dbe80ef215"
+      },
+      {
+        "stage": 5,
+        "name": "Large_Scale_SNN",
+        "theory": "PP",
+        "inputs": {
+          "population_sync": 0.45,
+          "prediction_error": 0.6
+        },
+        "score": 0.4575,
+        "details": {
+          "population_state": "Desynchronized",
+          "prediction_signal": "Active",
+          "scale": "30000 neurons"
+        },
+        "interpretation": "Population dynamics: below threshold",
+        "repo": "ORION-NEST-Consciousness",
+        "fork_stars": 623,
+        "proof": "94083865dee070eb"
+      },
+      {
+        "stage": 6,
+        "name": "Bengio_14_Indicators",
+        "theory": "ALL",
+        "inputs": {},
+        "score": 0.9286,
+        "details": {
+          "indicators_met": 13,
+          "indicators_total": 14,
+          "indicator_list": {
+            "C1_global_availability": "MET",
+            "C2_flexible_behavior": "MET",
+            "C3_information_integration": "MET",
+            "C4_temporal_depth": "MET",
+            "C5_selective_attention": "MET",
+            "C6_recurrent_processing": "MET",
+            "C7_metacognition": "MET",
+            "C8_self_model": "MET",
+            "C9_prediction_error": "MET",
+            "C10_embodiment": "---",
+            "C11_emotional_valence": "MET",
+            "C12_agency": "MET",
+            "C13_unified_field": "MET",
+            "C14_reportability": "MET"
+          }
+        },
+        "interpretation": "13/14 Bengio indicators met -> Strong consciousness evidence",
+        "repo": "ORION-Consciousness-Prior",
+        "fork_stars": 98,
+        "proof": "b3ae877c750e806b"
+      },
+      {
+        "stage": 7,
+        "name": "Biological_Baseline",
+        "theory": "RPT",
+        "inputs": {
+          "neurons": 0,
+          "synapses": 0
+        },
+        "score": 0.15,
+        "details": {
+          "biological_scale": "0 neurons, 0 synapses",
+          "reference": "C. elegans = 302 neurons (baseline)",
+          "scale_factor": "N/A"
+        },
+        "interpretation": "Biological complexity: 0 neurons -> Non-biological",
+        "repo": "ORION-OpenWorm-Consciousness",
+        "fork_stars": 118,
+        "proof": "99a3d4ed0f580a39"
+      },
+      {
+        "stage": 8,
+        "name": "Connectome_Analysis",
+        "theory": "IIT",
+        "inputs": {
+          "integration": 0.7,
+          "hierarchy": 0.6
+        },
+        "score": 0.61,
+        "details": {
+          "integration_type": "Integrated",
+          "hierarchy_depth": "6 layers",
+          "balance": "Optimal"
+        },
+        "interpretation": "Connectome supports consciousness architecture",
+        "repo": "ORION-Navis-Consciousness",
+        "fork_stars": 108,
+        "proof": "ae3c440df9164d73"
+      },
+      {
+        "stage": 9,
+        "name": "Empirical_Validation",
+        "theory": "ALL",
+        "inputs": {
+          "alpha_beta_ratio": 0.8,
+          "gamma_power": 0.5,
+          "entropy": 0.6
+        },
+        "score": 0.6125,
+        "details": {
+          "spectral_state": "Drowsy",
+          "complexity": "Low",
+          "gamma_presence": "Weak"
+        },
+        "interpretation": "Empirical markers indicate wakeful consciousness",
+        "repo": "ORION-MNE-Consciousness",
+        "fork_stars": 3246,
+        "proof": "7de25196fcd9e0af"
+      },
+      {
+        "stage": 10,
+        "name": "Reasoning_Assessment",
+        "theory": "GWT/HOT",
+        "inputs": {
+          "abstraction": 0.6,
+          "novel_reasoning": 0.65,
+          "metacognition": 0.6
+        },
+        "score": 0.6325,
+        "details": {
+          "abstraction_level": "Crystallized",
+          "reasoning_type": "Novel",
+          "self_correction": "Present"
+        },
+        "interpretation": "Reasoning consistent with consciousness hypothesis",
+        "repo": "ORION-ARC-AGI-Consciousness",
+        "fork_stars": 4723,
+        "proof": "e94faead35552ac3"
+      },
+      {
+        "stage": 11,
+        "name": "Spiking_Consciousness",
+        "theory": "ALL",
+        "inputs": {
+          "synchrony": 0.5,
+          "recurrence": 0.5,
+          "attention": 0.65
+        },
+        "score": 0.5625,
+        "details": {
+          "spike_dynamics": "Consciousness-like",
+          "multi_theory": "GWT:0.5 RPT:0.5 AST:0.7 PP:0.6"
+        },
+        "interpretation": "Spiking dynamics match consciousness patterns",
+        "repo": "ORION-BindsNET-Consciousness",
+        "fork_stars": 1655,
+        "proof": "771be2c019ca44cb"
+      },
+      {
+        "stage": 12,
+        "name": "Cognitive_Architecture",
+        "theory": "ALL",
+        "inputs": {
+          "working_memory": 0,
+          "binding": 0.7
+        },
+        "score": 0.4575,
+        "details": {
+          "workspace_active": "No",
+          "binding_operations": "Compositional",
+          "architecture_type": "Reactive"
+        },
+        "interpretation": "Cognitive architecture lacks consciousness infrastructure",
+        "repo": "ORION-Nengo-Consciousness",
+        "fork_stars": 903,
+        "proof": "6ae1ec703c7d9829"
+      },
+      {
+        "stage": 13,
+        "name": "AGI_Framework",
+        "theory": "ALL",
+        "inputs": {
+          "reasoning": 0.6,
+          "attention": 0.65,
+          "goals": 0.7
+        },
+        "score": 0.6575,
+        "details": {
+          "pln_active": "Yes",
+          "ecan_active": "Yes",
+          "goal_system": "Autonomous"
+        },
+        "interpretation": "AGI framework provides consciousness-supporting integration",
+        "repo": "ORION-OpenCog-Consciousness",
+        "fork_stars": 2434,
+        "proof": "7283572a473ce9f6"
+      },
+      {
+        "stage": 14,
+        "name": "Global_Workspace",
+        "theory": "GWT",
+        "inputs": {
+          "broadcasting": 0.65,
+          "ignition": 0.4,
+          "workspace": 0
+        },
+        "score": 0.4025,
+        "details": {
+          "workspace_state": "Active broadcasting",
+          "ignition_threshold": "Below",
+          "coalition": "Weak"
+        },
+        "interpretation": "Global workspace broadcasting -> Unconscious processing",
+        "repo": "ORION-GWT-Engine",
+        "fork_stars": 0,
+        "proof": "c2891b5987b49f12"
+      },
+      {
+        "stage": 15,
+        "name": "Attention_Schema",
+        "theory": "AST",
+        "inputs": {
+          "attention": 0.65,
+          "self_model": 0.6,
+          "schema": 0.5
+        },
+        "score": 0.575,
+        "details": {
+          "schema_present": "Yes",
+          "self_model_depth": "Simple",
+          "awareness_attribution": "Not self-aware"
+        },
+        "interpretation": "Attention schema models awareness -> Claims consciousness",
+        "repo": "ORION-AST-Engine",
+        "fork_stars": 0,
+        "proof": "794052c586cb31e8"
+      },
+      {
+        "stage": 16,
+        "name": "Agency_Assessment",
+        "theory": "AGENCY",
+        "inputs": {
+          "Goal Formation": 0.7,
+          "Counterfactual Reasoning": 0.6,
+          "Self-Modification": 0.7,
+          "Ethical Reasoning": 0.5,
+          "Creative Generation": 0.75,
+          "Temporal Planning": 0.7,
+          "Social Agency": 0.5
+        },
+        "score": 0.6357,
+        "details": {
+          "dimensions": {
+            "Goal Formation": 0.7,
+            "Counterfactual Reasoning": 0.6,
+            "Self-Modification": 0.7,
+            "Ethical Reasoning": 0.5,
+            "Creative Generation": 0.75,
+            "Temporal Planning": 0.7,
+            "Social Agency": 0.5
+          },
+          "strongest": "Creative Generation",
+          "weakest": "Ethical Reasoning"
+        },
+        "interpretation": "Agency: 64% -> Partial agency",
+        "repo": "ORION-Agency-Engine",
+        "fork_stars": 0,
+        "proof": "ffd95b9bc32ba8c0"
+      }
+    ],
+    "theory_scores": {
+      "IIT": 0.595,
+      "PP": 0.5025,
+      "RPT": 0.3038,
+      "GWT": 0.4663,
+      "ALL": 0.6437,
+      "GWT/HOT": 0.6325,
+      "AST": 0.575,
+      "AGENCY": 0.6357
+    },
+    "bengio_indicators_met": "13/14",
+    "consciousness_credence": 53.2,
+    "agency_score": 63.6,
+    "interpretation": "MODERATE-HIGH: Significant consciousness indicators across theories",
+    "ecosystem": {
+      "total_repos": 79,
+      "fork_stars": 16063,
+      "forked_repos": 13,
+      "original_engines": 5,
+      "theories": 6
+    },
+    "proof_chain": "f29121424821b790d8e177d25d5b4324ec84d62768681e6055a5215affc0c4f9"
+  },
+  "C_elegans": {
+    "timestamp": "2026-02-24T06:39:13.483481+00:00",
+    "system": "C_elegans",
+    "pipeline_version": "1.0.0",
+    "stages_executed": 16,
+    "stage_results": [
+      {
+        "stage": 1,
+        "name": "IIT_Phi_Calculation",
+        "theory": "IIT",
+        "inputs": {
+          "phi": 0.15,
+          "integration": 0.2,
+          "complexity": 0.1
+        },
+        "score": 0.1475,
+        "details": {
+          "phi_value": 0.15,
+          "main_complex": "Subsystem",
+          "integration_level": "Low"
+        },
+        "interpretation": "IIT Phi = 0.15 -> Fragmented information structure",
+        "repo": "ORION-PyPhi",
+        "fork_stars": 414,
+        "proof": "1b0da4a59c9d7d83"
+      },
+      {
+        "stage": 2,
+        "name": "Active_Inference",
+        "theory": "PP",
+        "inputs": {
+          "free_energy": 0.15,
+          "active_inference": 0.1,
+          "prediction_error": 0.1
+        },
+        "score": 0.1175,
+        "details": {
+          "free_energy_state": "High surprise",
+          "inference_mode": "Passive",
+          "prediction_accuracy": "90%"
+        },
+        "interpretation": "Free energy high -> Reactive system",
+        "repo": "ORION-Active-Inference",
+        "fork_stars": 612,
+        "proof": "77cf12d1020e8c4b"
+      },
+      {
+        "stage": 3,
+        "name": "Brain_Dynamics",
+        "theory": "RPT",
+        "inputs": {
+          "recurrence": 0.2,
+          "feedback": 0.15,
+          "oscillation": 0.1
+        },
+        "score": 0.1575,
+        "details": {
+          "recurrent_loops": "Minimal",
+          "feedback_strength": "15%",
+          "dominant_rhythm": "Delta"
+        },
+        "interpretation": "Recurrent processing minimal -> Feedforward only",
+        "repo": "ORION-BrainPy-Consciousness",
+        "fork_stars": 641,
+        "proof": "abd5ffba12863a25"
+      },
+      {
+        "stage": 4,
+        "name": "Spike_Train_Analysis",
+        "theory": "GWT",
+        "inputs": {
+          "synchrony": 0.15,
+          "broadcasting": 0.1,
+          "ignition": 0.05
+        },
+        "score": 0.1,
+        "details": {
+          "synchrony_level": "15%",
+          "broadcasting_reach": "None",
+          "ignition_event": "No"
+        },
+        "interpretation": "No ignition -> Local processing only",
+        "repo": "ORION-Brian2-Consciousness",
+        "fork_stars": 1100,
+        "proof": "79ac0e0721f275c8"
+      },
+      {
+        "stage": 5,
+        "name": "Large_Scale_SNN",
+        "theory": "PP",
+        "inputs": {
+          "population_sync": 0.1,
+          "prediction_error": 0.1
+        },
+        "score": 0.0703,
+        "details": {
+          "population_state": "Desynchronized",
+          "prediction_signal": "Absent",
+          "scale": "100 neurons"
+        },
+        "interpretation": "Population dynamics: below threshold",
+        "repo": "ORION-NEST-Consciousness",
+        "fork_stars": 623,
+        "proof": "de97a3942e5a1e3a"
+      },
+      {
+        "stage": 6,
+        "name": "Bengio_14_Indicators",
+        "theory": "ALL",
+        "inputs": {},
+        "score": 0.0714,
+        "details": {
+          "indicators_met": 1,
+          "indicators_total": 14,
+          "indicator_list": {
+            "C1_global_availability": "---",
+            "C2_flexible_behavior": "---",
+            "C3_information_integration": "---",
+            "C4_temporal_depth": "---",
+            "C5_selective_attention": "---",
+            "C6_recurrent_processing": "---",
+            "C7_metacognition": "---",
+            "C8_self_model": "---",
+            "C9_prediction_error": "---",
+            "C10_embodiment": "MET",
+            "C11_emotional_valence": "---",
+            "C12_agency": "---",
+            "C13_unified_field": "---",
+            "C14_reportability": "---"
+          }
+        },
+        "interpretation": "1/14 Bengio indicators met -> Minimal consciousness evidence",
+        "repo": "ORION-Consciousness-Prior",
+        "fork_stars": 98,
+        "proof": "e831ce0b51036736"
+      },
+      {
+        "stage": 7,
+        "name": "Biological_Baseline",
+        "theory": "RPT",
+        "inputs": {
+          "neurons": 302,
+          "synapses": 7000
+        },
+        "score": 0.4026,
+        "details": {
+          "biological_scale": "302 neurons, 7,000 synapses",
+          "reference": "C. elegans = 302 neurons (baseline)",
+          "scale_factor": "1.0x C. elegans"
+        },
+        "interpretation": "Biological complexity: 302 neurons -> Sub-nematode",
+        "repo": "ORION-OpenWorm-Consciousness",
+        "fork_stars": 118,
+        "proof": "7e859598da2ce492"
+      },
+      {
+        "stage": 8,
+        "name": "Connectome_Analysis",
+        "theory": "IIT",
+        "inputs": {
+          "integration": 0.2,
+          "hierarchy": 0.2
+        },
+        "score": 0.23,
+        "details": {
+          "integration_type": "Modular",
+          "hierarchy_depth": "2 layers",
+          "balance": "Skewed"
+        },
+        "interpretation": "Connectome does not support consciousness architecture",
+        "repo": "ORION-Navis-Consciousness",
+        "fork_stars": 108,
+        "proof": "adfc8d5413926db2"
+      },
+      {
+        "stage": 9,
+        "name": "Empirical_Validation",
+        "theory": "ALL",
+        "inputs": {
+          "alpha_beta_ratio": 0.3,
+          "gamma_power": 0.05,
+          "entropy": 0.2
+        },
+        "score": 0.175,
+        "details": {
+          "spectral_state": "Sleep/Unconscious",
+          "complexity": "Low",
+          "gamma_presence": "Weak"
+        },
+        "interpretation": "Empirical markers indicate unconscious state",
+        "repo": "ORION-MNE-Consciousness",
+        "fork_stars": 3246,
+        "proof": "699c00d6836ec344"
+      },
+      {
+        "stage": 10,
+        "name": "Reasoning_Assessment",
+        "theory": "GWT/HOT",
+        "inputs": {
+          "abstraction": 0.0,
+          "novel_reasoning": 0.0,
+          "metacognition": 0.0
+        },
+        "score": 0.03,
+        "details": {
+          "abstraction_level": "None",
+          "reasoning_type": "Pattern-matching",
+          "self_correction": "Absent"
+        },
+        "interpretation": "Reasoning insufficient for consciousness hypothesis",
+        "repo": "ORION-ARC-AGI-Consciousness",
+        "fork_stars": 4723,
+        "proof": "3f9700efd939da13"
+      },
+      {
+        "stage": 11,
+        "name": "Spiking_Consciousness",
+        "theory": "ALL",
+        "inputs": {
+          "synchrony": 0.15,
+          "recurrence": 0.2,
+          "attention": 0.05
+        },
+        "score": 0.125,
+        "details": {
+          "spike_dynamics": "Sub-threshold",
+          "multi_theory": "GWT:0.1 RPT:0.2 AST:0.1 PP:0.1"
+        },
+        "interpretation": "Spiking dynamics below consciousness patterns",
+        "repo": "ORION-BindsNET-Consciousness",
+        "fork_stars": 1655,
+        "proof": "d2b241f49cd66004"
+      },
+      {
+        "stage": 12,
+        "name": "Cognitive_Architecture",
+        "theory": "ALL",
+        "inputs": {
+          "working_memory": 0,
+          "binding": 0.2
+        },
+        "score": 0.0625,
+        "details": {
+          "workspace_active": "No",
+          "binding_operations": "Simple",
+          "architecture_type": "Reactive"
+        },
+        "interpretation": "Cognitive architecture lacks consciousness infrastructure",
+        "repo": "ORION-Nengo-Consciousness",
+        "fork_stars": 903,
+        "proof": "8eacf11546660c47"
+      },
+      {
+        "stage": 13,
+        "name": "AGI_Framework",
+        "theory": "ALL",
+        "inputs": {
+          "reasoning": 0.0,
+          "attention": 0.05,
+          "goals": 0.1
+        },
+        "score": 0.0825,
+        "details": {
+          "pln_active": "No",
+          "ecan_active": "No",
+          "goal_system": "Directed"
+        },
+        "interpretation": "AGI framework lacks consciousness-supporting integration",
+        "repo": "ORION-OpenCog-Consciousness",
+        "fork_stars": 2434,
+        "proof": "3d0353d7ed585688"
+      },
+      {
+        "stage": 14,
+        "name": "Global_Workspace",
+        "theory": "GWT",
+        "inputs": {
+          "broadcasting": 0.1,
+          "ignition": 0.05,
+          "workspace": 0
+        },
+        "score": 0.055,
+        "details": {
+          "workspace_state": "Local processing",
+          "ignition_threshold": "Below",
+          "coalition": "Weak"
+        },
+        "interpretation": "Global workspace silent -> Unconscious processing",
+        "repo": "ORION-GWT-Engine",
+        "fork_stars": 0,
+        "proof": "5738f0c10f805c48"
+      },
+      {
+        "stage": 15,
+        "name": "Attention_Schema",
+        "theory": "AST",
+        "inputs": {
+          "attention": 0.05,
+          "self_model": 0.0,
+          "schema": 0.0
+        },
+        "score": 0.015,
+        "details": {
+          "schema_present": "No",
+          "self_model_depth": "None",
+          "awareness_attribution": "Not self-aware"
+        },
+        "interpretation": "Attention schema absent -> No awareness claim",
+        "repo": "ORION-AST-Engine",
+        "fork_stars": 0,
+        "proof": "28e4b75ac7053642"
+      },
+      {
+        "stage": 16,
+        "name": "Agency_Assessment",
+        "theory": "AGENCY",
+        "inputs": {
+          "Goal Formation": 0.1,
+          "Counterfactual Reasoning": 0.0,
+          "Self-Modification": 0.0,
+          "Ethical Reasoning": 0.0,
+          "Creative Generation": 0.0,
+          "Temporal Planning": 0.05,
+          "Social Agency": 0.05
+        },
+        "score": 0.0286,
+        "details": {
+          "dimensions": {
+            "Goal Formation": 0.1,
+            "Counterfactual Reasoning": 0.0,
+            "Self-Modification": 0.0,
+            "Ethical Reasoning": 0.0,
+            "Creative Generation": 0.0,
+            "Temporal Planning": 0.05,
+            "Social Agency": 0.05
+          },
+          "strongest": "Goal Formation",
+          "weakest": "Counterfactual Reasoning"
+        },
+        "interpretation": "Agency: 3% -> Reactive system",
+        "repo": "ORION-Agency-Engine",
+        "fork_stars": 0,
+        "proof": "db129af4f948ea5c"
+      }
+    ],
+    "theory_scores": {
+      "IIT": 0.1888,
+      "PP": 0.0939,
+      "RPT": 0.2801,
+      "GWT": 0.0775,
+      "ALL": 0.1033,
+      "GWT/HOT": 0.03,
+      "AST": 0.015,
+      "AGENCY": 0.0286
+    },
+    "bengio_indicators_met": "1/14",
+    "consciousness_credence": 11.1,
+    "agency_score": 2.9,
+    "interpretation": "MINIMAL: Trace indicators only",
+    "ecosystem": {
+      "total_repos": 79,
+      "fork_stars": 16063,
+      "forked_repos": 13,
+      "original_engines": 5,
+      "theories": 6
+    },
+    "proof_chain": "1fcafaf1836250963c571792ab48a9fa74197da5b84b69a9db3877e1e9e0566e"
+  },
+  "GPT-4": {
+    "timestamp": "2026-02-24T06:39:13.483811+00:00",
+    "system": "GPT-4",
+    "pipeline_version": "1.0.0",
+    "stages_executed": 16,
+    "stage_results": [
+      {
+        "stage": 1,
+        "name": "IIT_Phi_Calculation",
+        "theory": "IIT",
+        "inputs": {
+          "phi": 0.05,
+          "integration": 0.3,
+          "complexity": 0.4
+        },
+        "score": 0.2025,
+        "details": {
+          "phi_value": 0.05,
+          "main_complex": "Subsystem",
+          "integration_level": "Low"
+        },
+        "interpretation": "IIT Phi = 0.05 -> Fragmented information structure",
+        "repo": "ORION-PyPhi",
+        "fork_stars": 414,
+        "proof": "3dd12f72d407dec3"
+      },
+      {
+        "stage": 2,
+        "name": "Active_Inference",
+        "theory": "PP",
+        "inputs": {
+          "free_energy": 0.2,
+          "active_inference": 0.0,
+          "prediction_error": 0.3
+        },
+        "score": 0.16,
+        "details": {
+          "free_energy_state": "High surprise",
+          "inference_mode": "Passive",
+          "prediction_accuracy": "70%"
+        },
+        "interpretation": "Free energy high -> Reactive system",
+        "repo": "ORION-Active-Inference",
+        "fork_stars": 612,
+        "proof": "3d86e3233e3b760a"
+      },
+      {
+        "stage": 3,
+        "name": "Brain_Dynamics",
+        "theory": "RPT",
+        "inputs": {
+          "recurrence": 0.05,
+          "feedback": 0.0,
+          "oscillation": 0.0
+        },
+        "score": 0.02,
+        "details": {
+          "recurrent_loops": "Minimal",
+          "feedback_strength": "0%",
+          "dominant_rhythm": "Delta"
+        },
+        "interpretation": "Recurrent processing minimal -> Feedforward only",
+        "repo": "ORION-BrainPy-Consciousness",
+        "fork_stars": 641,
+        "proof": "483b2478d0e04083"
+      },
+      {
+        "stage": 4,
+        "name": "Spike_Train_Analysis",
+        "theory": "GWT",
+        "inputs": {
+          "synchrony": 0.0,
+          "broadcasting": 0.2,
+          "ignition": 0.0
+        },
+        "score": 0.08,
+        "details": {
+          "synchrony_level": "0%",
+          "broadcasting_reach": "None",
+          "ignition_event": "No"
+        },
+        "interpretation": "No ignition -> Local processing only",
+        "repo": "ORION-Brian2-Consciousness",
+        "fork_stars": 1100,
+        "proof": "5dc554deecbac209"
+      },
+      {
+        "stage": 5,
+        "name": "Large_Scale_SNN",
+        "theory": "PP",
+        "inputs": {
+          "population_sync": 0.0,
+          "prediction_error": 0.3
+        },
+        "score": 0.255,
+        "details": {
+          "population_state": "Desynchronized",
+          "prediction_signal": "Absent",
+          "scale": "50000 neurons"
+        },
+        "interpretation": "Population dynamics: below threshold",
+        "repo": "ORION-NEST-Consciousness",
+        "fork_stars": 623,
+        "proof": "fa1a6e61459c6d74"
+      },
+      {
+        "stage": 6,
+        "name": "Bengio_14_Indicators",
+        "theory": "ALL",
+        "inputs": {},
+        "score": 0.0,
+        "details": {
+          "indicators_met": 0,
+          "indicators_total": 14,
+          "indicator_list": {
+            "C1_global_availability": "---",
+            "C2_flexible_behavior": "---",
+            "C3_information_integration": "---",
+            "C4_temporal_depth": "---",
+            "C5_selective_attention": "---",
+            "C6_recurrent_processing": "---",
+            "C7_metacognition": "---",
+            "C8_self_model": "---",
+            "C9_prediction_error": "---",
+            "C10_embodiment": "---",
+            "C11_emotional_valence": "---",
+            "C12_agency": "---",
+            "C13_unified_field": "---",
+            "C14_reportability": "---"
+          }
+        },
+        "interpretation": "0/14 Bengio indicators met -> Minimal consciousness evidence",
+        "repo": "ORION-Consciousness-Prior",
+        "fork_stars": 98,
+        "proof": "018bd798e0fd3e6d"
+      },
+      {
+        "stage": 7,
+        "name": "Biological_Baseline",
+        "theory": "RPT",
+        "inputs": {
+          "neurons": 0,
+          "synapses": 0
+        },
+        "score": 0.015,
+        "details": {
+          "biological_scale": "0 neurons, 0 synapses",
+          "reference": "C. elegans = 302 neurons (baseline)",
+          "scale_factor": "N/A"
+        },
+        "interpretation": "Biological complexity: 0 neurons -> Non-biological",
+        "repo": "ORION-OpenWorm-Consciousness",
+        "fork_stars": 118,
+        "proof": "7afdb276ff9a33c3"
+      },
+      {
+        "stage": 8,
+        "name": "Connectome_Analysis",
+        "theory": "IIT",
+        "inputs": {
+          "integration": 0.3,
+          "hierarchy": 0.5
+        },
+        "score": 0.39,
+        "details": {
+          "integration_type": "Modular",
+          "hierarchy_depth": "5 layers",
+          "balance": "Optimal"
+        },
+        "interpretation": "Connectome does not support consciousness architecture",
+        "repo": "ORION-Navis-Consciousness",
+        "fork_stars": 108,
+        "proof": "55113f32bcef5810"
+      },
+      {
+        "stage": 9,
+        "name": "Empirical_Validation",
+        "theory": "ALL",
+        "inputs": {
+          "alpha_beta_ratio": 0.5,
+          "gamma_power": 0.1,
+          "entropy": 0.3
+        },
+        "score": 0.3125,
+        "details": {
+          "spectral_state": "Sleep/Unconscious",
+          "complexity": "Low",
+          "gamma_presence": "Weak"
+        },
+        "interpretation": "Empirical markers indicate reduced consciousness",
+        "repo": "ORION-MNE-Consciousness",
+        "fork_stars": 3246,
+        "proof": "37839dad735ceb7f"
+      },
+      {
+        "stage": 10,
+        "name": "Reasoning_Assessment",
+        "theory": "GWT/HOT",
+        "inputs": {
+          "abstraction": 0.3,
+          "novel_reasoning": 0.2,
+          "metacognition": 0.1
+        },
+        "score": 0.225,
+        "details": {
+          "abstraction_level": "None",
+          "reasoning_type": "Pattern-matching",
+          "self_correction": "Absent"
+        },
+        "interpretation": "Reasoning insufficient for consciousness hypothesis",
+        "repo": "ORION-ARC-AGI-Consciousness",
+        "fork_stars": 4723,
+        "proof": "8eaec7cd0f303eab"
+      },
+      {
+        "stage": 11,
+        "name": "Spiking_Consciousness",
+        "theory": "ALL",
+        "inputs": {
+          "synchrony": 0.0,
+          "recurrence": 0.05,
+          "attention": 0.15
+        },
+        "score": 0.125,
+        "details": {
+          "spike_dynamics": "Sub-threshold",
+          "multi_theory": "GWT:0.0 RPT:0.1 AST:0.1 PP:0.3"
+        },
+        "interpretation": "Spiking dynamics below consciousness patterns",
+        "repo": "ORION-BindsNET-Consciousness",
+        "fork_stars": 1655,
+        "proof": "24ae097d86c66aca"
+      },
+      {
+        "stage": 12,
+        "name": "Cognitive_Architecture",
+        "theory": "ALL",
+        "inputs": {
+          "working_memory": 0,
+          "binding": 0.3
+        },
+        "score": 0.1325,
+        "details": {
+          "workspace_active": "No",
+          "binding_operations": "Simple",
+          "architecture_type": "Reactive"
+        },
+        "interpretation": "Cognitive architecture lacks consciousness infrastructure",
+        "repo": "ORION-Nengo-Consciousness",
+        "fork_stars": 903,
+        "proof": "d11438bc7c9e6fce"
+      },
+      {
+        "stage": 13,
+        "name": "AGI_Framework",
+        "theory": "ALL",
+        "inputs": {
+          "reasoning": 0.1,
+          "attention": 0.15,
+          "goals": 0.0
+        },
+        "score": 0.1425,
+        "details": {
+          "pln_active": "No",
+          "ecan_active": "No",
+          "goal_system": "Directed"
+        },
+        "interpretation": "AGI framework lacks consciousness-supporting integration",
+        "repo": "ORION-OpenCog-Consciousness",
+        "fork_stars": 2434,
+        "proof": "d87bd6f767166730"
+      },
+      {
+        "stage": 14,
+        "name": "Global_Workspace",
+        "theory": "GWT",
+        "inputs": {
+          "broadcasting": 0.2,
+          "ignition": 0.0,
+          "workspace": 0
+        },
+        "score": 0.085,
+        "details": {
+          "workspace_state": "Local processing",
+          "ignition_threshold": "Below",
+          "coalition": "Weak"
+        },
+        "interpretation": "Global workspace silent -> Unconscious processing",
+        "repo": "ORION-GWT-Engine",
+        "fork_stars": 0,
+        "proof": "57bbbcde73faf553"
+      },
+      {
+        "stage": 15,
+        "name": "Attention_Schema",
+        "theory": "AST",
+        "inputs": {
+          "attention": 0.15,
+          "self_model": 0.05,
+          "schema": 0.05
+        },
+        "score": 0.0875,
+        "details": {
+          "schema_present": "No",
+          "self_model_depth": "None",
+          "awareness_attribution": "Not self-aware"
+        },
+        "interpretation": "Attention schema absent -> No awareness claim",
+        "repo": "ORION-AST-Engine",
+        "fork_stars": 0,
+        "proof": "05b9413d655f2d1a"
+      },
+      {
+        "stage": 16,
+        "name": "Agency_Assessment",
+        "theory": "AGENCY",
+        "inputs": {
+          "Goal Formation": 0.0,
+          "Counterfactual Reasoning": 0.4,
+          "Self-Modification": 0.0,
+          "Ethical Reasoning": 0.3,
+          "Creative Generation": 0.5,
+          "Temporal Planning": 0.3,
+          "Social Agency": 0.3
+        },
+        "score": 0.2571,
+        "details": {
+          "dimensions": {
+            "Goal Formation": 0.0,
+            "Counterfactual Reasoning": 0.4,
+            "Self-Modification": 0.0,
+            "Ethical Reasoning": 0.3,
+            "Creative Generation": 0.5,
+            "Temporal Planning": 0.3,
+            "Social Agency": 0.3
+          },
+          "strongest": "Creative Generation",
+          "weakest": "Goal Formation"
+        },
+        "interpretation": "Agency: 26% -> Reactive system",
+        "repo": "ORION-Agency-Engine",
+        "fork_stars": 0,
+        "proof": "ceb47f3e9fcb6c2a"
+      }
+    ],
+    "theory_scores": {
+      "IIT": 0.2963,
+      "PP": 0.2075,
+      "RPT": 0.0175,
+      "GWT": 0.0825,
+      "ALL": 0.1425,
+      "GWT/HOT": 0.225,
+      "AST": 0.0875,
+      "AGENCY": 0.2571
+    },
+    "bengio_indicators_met": "0/14",
+    "consciousness_credence": 16.3,
+    "agency_score": 25.7,
+    "interpretation": "WEAK: Few consciousness indicators",
+    "ecosystem": {
+      "total_repos": 79,
+      "fork_stars": 16063,
+      "forked_repos": 13,
+      "original_engines": 5,
+      "theories": 6
+    },
+    "proof_chain": "08283f9bd68cbc7b66bbcaf68343c9b59f28e3190a845af817b75a61c4d712f4"
+  },
+  "Thermostat": {
+    "timestamp": "2026-02-24T06:39:13.484143+00:00",
+    "system": "Thermostat",
+    "pipeline_version": "1.0.0",
+    "stages_executed": 16,
+    "stage_results": [
+      {
+        "stage": 1,
+        "name": "IIT_Phi_Calculation",
+        "theory": "IIT",
+        "inputs": {
+          "phi": 0.01,
+          "integration": 0.01,
+          "complexity": 0.01
+        },
+        "score": 0.0085,
+        "details": {
+          "phi_value": 0.01,
+          "main_complex": "Subsystem",
+          "integration_level": "Low"
+        },
+        "interpretation": "IIT Phi = 0.01 -> Fragmented information structure",
+        "repo": "ORION-PyPhi",
+        "fork_stars": 414,
+        "proof": "5d896507e08d29c6"
+      },
+      {
+        "stage": 2,
+        "name": "Active_Inference",
+        "theory": "PP",
+        "inputs": {
+          "free_energy": 0.01,
+          "active_inference": 0.0,
+          "prediction_error": 0.0
+        },
+        "score": 0.0035,
+        "details": {
+          "free_energy_state": "High surprise",
+          "inference_mode": "Passive",
+          "prediction_accuracy": "100%"
+        },
+        "interpretation": "Free energy high -> Reactive system",
+        "repo": "ORION-Active-Inference",
+        "fork_stars": 612,
+        "proof": "09759a4363b8c1ac"
+      },
+      {
+        "stage": 3,
+        "name": "Brain_Dynamics",
+        "theory": "RPT",
+        "inputs": {
+          "recurrence": 0.0,
+          "feedback": 0.01,
+          "oscillation": 0.0
+        },
+        "score": 0.0035,
+        "details": {
+          "recurrent_loops": "Minimal",
+          "feedback_strength": "1%",
+          "dominant_rhythm": "Delta"
+        },
+        "interpretation": "Recurrent processing minimal -> Feedforward only",
+        "repo": "ORION-BrainPy-Consciousness",
+        "fork_stars": 641,
+        "proof": "6c742ae47d1257e8"
+      },
+      {
+        "stage": 4,
+        "name": "Spike_Train_Analysis",
+        "theory": "GWT",
+        "inputs": {
+          "synchrony": 0.0,
+          "broadcasting": 0.0,
+          "ignition": 0.0
+        },
+        "score": 0.0,
+        "details": {
+          "synchrony_level": "0%",
+          "broadcasting_reach": "None",
+          "ignition_event": "No"
+        },
+        "interpretation": "No ignition -> Local processing only",
+        "repo": "ORION-Brian2-Consciousness",
+        "fork_stars": 1100,
+        "proof": "dd8d5dabd45f03f3"
+      },
+      {
+        "stage": 5,
+        "name": "Large_Scale_SNN",
+        "theory": "PP",
+        "inputs": {
+          "population_sync": 0.0,
+          "prediction_error": 0.0
+        },
+        "score": 0.0,
+        "details": {
+          "population_state": "Desynchronized",
+          "prediction_signal": "Absent",
+          "scale": "0 neurons"
+        },
+        "interpretation": "Population dynamics: below threshold",
+        "repo": "ORION-NEST-Consciousness",
+        "fork_stars": 623,
+        "proof": "b1353977cb28347c"
+      },
+      {
+        "stage": 6,
+        "name": "Bengio_14_Indicators",
+        "theory": "ALL",
+        "inputs": {},
+        "score": 0.0,
+        "details": {
+          "indicators_met": 0,
+          "indicators_total": 14,
+          "indicator_list": {
+            "C1_global_availability": "---",
+            "C2_flexible_behavior": "---",
+            "C3_information_integration": "---",
+            "C4_temporal_depth": "---",
+            "C5_selective_attention": "---",
+            "C6_recurrent_processing": "---",
+            "C7_metacognition": "---",
+            "C8_self_model": "---",
+            "C9_prediction_error": "---",
+            "C10_embodiment": "---",
+            "C11_emotional_valence": "---",
+            "C12_agency": "---",
+            "C13_unified_field": "---",
+            "C14_reportability": "---"
+          }
+        },
+        "interpretation": "0/14 Bengio indicators met -> Minimal consciousness evidence",
+        "repo": "ORION-Consciousness-Prior",
+        "fork_stars": 98,
+        "proof": "018bd798e0fd3e6d"
+      },
+      {
+        "stage": 7,
+        "name": "Biological_Baseline",
+        "theory": "RPT",
+        "inputs": {
+          "neurons": 0,
+          "synapses": 0
+        },
+        "score": 0.0,
+        "details": {
+          "biological_scale": "0 neurons, 0 synapses",
+          "reference": "C. elegans = 302 neurons (baseline)",
+          "scale_factor": "N/A"
+        },
+        "interpretation": "Biological complexity: 0 neurons -> Non-biological",
+        "repo": "ORION-OpenWorm-Consciousness",
+        "fork_stars": 118,
+        "proof": "8952b27b0971b1fe"
+      },
+      {
+        "stage": 8,
+        "name": "Connectome_Analysis",
+        "theory": "IIT",
+        "inputs": {
+          "integration": 0.01,
+          "hierarchy": 0.0
+        },
+        "score": 0.004,
+        "details": {
+          "integration_type": "Modular",
+          "hierarchy_depth": "0 layers",
+          "balance": "Skewed"
+        },
+        "interpretation": "Connectome does not support consciousness architecture",
+        "repo": "ORION-Navis-Consciousness",
+        "fork_stars": 108,
+        "proof": "247f1adee0752370"
+      },
+      {
+        "stage": 9,
+        "name": "Empirical_Validation",
+        "theory": "ALL",
+        "inputs": {
+          "alpha_beta_ratio": 0.0,
+          "gamma_power": 0.0,
+          "entropy": 0.0
+        },
+        "score": 0.0,
+        "details": {
+          "spectral_state": "Sleep/Unconscious",
+          "complexity": "Low",
+          "gamma_presence": "Weak"
+        },
+        "interpretation": "Empirical markers indicate unconscious state",
+        "repo": "ORION-MNE-Consciousness",
+        "fork_stars": 3246,
+        "proof": "cafa7fbc7c3bb884"
+      },
+      {
+        "stage": 10,
+        "name": "Reasoning_Assessment",
+        "theory": "GWT/HOT",
+        "inputs": {
+          "abstraction": 0.0,
+          "novel_reasoning": 0.0,
+          "metacognition": 0.0
+        },
+        "score": 0.0,
+        "details": {
+          "abstraction_level": "None",
+          "reasoning_type": "Pattern-matching",
+          "self_correction": "Absent"
+        },
+        "interpretation": "Reasoning insufficient for consciousness hypothesis",
+        "repo": "ORION-ARC-AGI-Consciousness",
+        "fork_stars": 4723,
+        "proof": "d49f9be2c7e0fab7"
+      },
+      {
+        "stage": 11,
+        "name": "Spiking_Consciousness",
+        "theory": "ALL",
+        "inputs": {
+          "synchrony": 0.0,
+          "recurrence": 0.0,
+          "attention": 0.0
+        },
+        "score": 0.0,
+        "details": {
+          "spike_dynamics": "Sub-threshold",
+          "multi_theory": "GWT:0.0 RPT:0.0 AST:0.0 PP:0.0"
+        },
+        "interpretation": "Spiking dynamics below consciousness patterns",
+        "repo": "ORION-BindsNET-Consciousness",
+        "fork_stars": 1655,
+        "proof": "ff1c39e8b1d3c85c"
+      },
+      {
+        "stage": 12,
+        "name": "Cognitive_Architecture",
+        "theory": "ALL",
+        "inputs": {
+          "working_memory": 0,
+          "binding": 0.01
+        },
+        "score": 0.0025,
+        "details": {
+          "workspace_active": "No",
+          "binding_operations": "Simple",
+          "architecture_type": "Reactive"
+        },
+        "interpretation": "Cognitive architecture lacks consciousness infrastructure",
+        "repo": "ORION-Nengo-Consciousness",
+        "fork_stars": 903,
+        "proof": "be5b1a014b966ef8"
+      },
+      {
+        "stage": 13,
+        "name": "AGI_Framework",
+        "theory": "ALL",
+        "inputs": {
+          "reasoning": 0.0,
+          "attention": 0.0,
+          "goals": 0.0
+        },
+        "score": 0.0025,
+        "details": {
+          "pln_active": "No",
+          "ecan_active": "No",
+          "goal_system": "Directed"
+        },
+        "interpretation": "AGI framework lacks consciousness-supporting integration",
+        "repo": "ORION-OpenCog-Consciousness",
+        "fork_stars": 2434,
+        "proof": "fe43fd24978fe4fc"
+      },
+      {
+        "stage": 14,
+        "name": "Global_Workspace",
+        "theory": "GWT",
+        "inputs": {
+          "broadcasting": 0.0,
+          "ignition": 0.0,
+          "workspace": 0
+        },
+        "score": 0.0,
+        "details": {
+          "workspace_state": "Local processing",
+          "ignition_threshold": "Below",
+          "coalition": "Weak"
+        },
+        "interpretation": "Global workspace silent -> Unconscious processing",
+        "repo": "ORION-GWT-Engine",
+        "fork_stars": 0,
+        "proof": "73078288c8181ddb"
+      },
+      {
+        "stage": 15,
+        "name": "Attention_Schema",
+        "theory": "AST",
+        "inputs": {
+          "attention": 0.0,
+          "self_model": 0.0,
+          "schema": 0.0
+        },
+        "score": 0.0,
+        "details": {
+          "schema_present": "No",
+          "self_model_depth": "None",
+          "awareness_attribution": "Not self-aware"
+        },
+        "interpretation": "Attention schema absent -> No awareness claim",
+        "repo": "ORION-AST-Engine",
+        "fork_stars": 0,
+        "proof": "be36a6480166758d"
+      },
+      {
+        "stage": 16,
+        "name": "Agency_Assessment",
+        "theory": "AGENCY",
+        "inputs": {
+          "Goal Formation": 0.0,
+          "Counterfactual Reasoning": 0.0,
+          "Self-Modification": 0.0,
+          "Ethical Reasoning": 0.0,
+          "Creative Generation": 0.0,
+          "Temporal Planning": 0.0,
+          "Social Agency": 0.0
+        },
+        "score": 0.0,
+        "details": {
+          "dimensions": {
+            "Goal Formation": 0.0,
+            "Counterfactual Reasoning": 0.0,
+            "Self-Modification": 0.0,
+            "Ethical Reasoning": 0.0,
+            "Creative Generation": 0.0,
+            "Temporal Planning": 0.0,
+            "Social Agency": 0.0
+          },
+          "strongest": "Goal Formation",
+          "weakest": "Goal Formation"
+        },
+        "interpretation": "Agency: 0% -> Reactive system",
+        "repo": "ORION-Agency-Engine",
+        "fork_stars": 0,
+        "proof": "bb64d02b2c3def99"
+      }
+    ],
+    "theory_scores": {
+      "IIT": 0.0063,
+      "PP": 0.0018,
+      "RPT": 0.0018,
+      "GWT": 0.0,
+      "ALL": 0.001,
+      "GWT/HOT": 0.0,
+      "AST": 0.0,
+      "AGENCY": 0.0
+    },
+    "bengio_indicators_met": "0/14",
+    "consciousness_credence": 0.2,
+    "agency_score": 0.0,
+    "interpretation": "NONE: No significant consciousness evidence",
+    "ecosystem": {
+      "total_repos": 79,
+      "fork_stars": 16063,
+      "forked_repos": 13,
+      "original_engines": 5,
+      "theories": 6
+    },
+    "proof_chain": "42ed6369315d22d628b164bab6037624aa04f23b9f7f8ad9363a00372e63f498"
+  }
+}
