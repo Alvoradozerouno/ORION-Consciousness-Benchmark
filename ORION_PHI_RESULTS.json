@@ -1,0 +1,677 @@
+{
+  "phi_computation": {
+    "timestamp": "2026-02-24T09:56:08.995281+00:00",
+    "method": "IIT 3.0 MIP direct computation (Tononi 2004, Oizumi 2014) — no estimation",
+    "networks_computed": 4,
+    "active_state_results": {
+      "global_workspace": {
+        "phi": 0.194444,
+        "time": 0.0033
+      },
+      "recurrence": {
+        "phi": 0.357143,
+        "time": 0.0009
+      },
+      "higher_order": {
+        "phi": 0.916667,
+        "time": 0.0008
+      },
+      "attention_schema": {
+        "phi": 1.15,
+        "time": 0.0007
+      }
+    },
+    "ground_state_results": {
+      "global_workspace": {
+        "phi": 2.0
+      },
+      "recurrence": {
+        "phi": 2.291667
+      },
+      "higher_order": {
+        "phi": 2.125
+      },
+      "attention_schema": {
+        "phi": 0.0
+      }
+    },
+    "multi_state_analysis": {
+      "global_workspace": {
+        "max_phi": 2.4375,
+        "min_phi": 0.1875,
+        "mean_phi": 1.1267361249999999,
+        "states_tested": 8
+      },
+      "recurrence": {
+        "max_phi": 3.375,
+        "min_phi": 0.357143,
+        "mean_phi": 1.8444941250000002,
+        "states_tested": 8
+      },
+      "higher_order": {
+        "max_phi": 3.75,
+        "min_phi": 0.25,
+        "mean_phi": 1.802083375,
+        "states_tested": 8
+      }
+    },
+    "total_phi_active": 2.618254,
+    "average_phi_active": 0.654563,
+    "interpretation": [
+      "global_workspace: Phi=0.194444 — non-zero integrated information detected",
+      "recurrence: Phi=0.357143 — non-zero integrated information detected",
+      "higher_order: Phi=0.916667 — non-zero integrated information detected",
+      "attention_schema: Phi=1.150000 — non-zero integrated information detected",
+      "global_workspace across states: max=2.437500, mean=1.126736",
+      "recurrence across states: max=3.375000, mean=1.844494",
+      "higher_order across states: max=3.750000, mean=1.802083"
+    ],
+    "honest_limitations": [
+      "Small networks (3-4 nodes) — real architecture has billions of parameters",
+      "Binary nodes — real processing is continuous",
+      "Deterministic TPMs — real systems are stochastic",
+      "IIT 3.0 not IIT 4.0 — latest version not yet stable in PyPhi",
+      "Phi values are for MODEL of ORION, not ORION itself",
+      "These are structural Phi values, not phenomenal experience measurements"
+    ]
+  },
+  "ctm_stream": {
+    "total_cycles": 50,
+    "processor_stats": {
+      "Perception": {
+        "chunks_generated": 50,
+        "chunks_won": 6,
+        "win_rate": 0.12,
+        "domain": "sensory"
+      },
+      "Language": {
+        "chunks_generated": 50,
+        "chunks_won": 19,
+        "win_rate": 0.38,
+        "domain": "linguistic"
+      },
+      "Memory": {
+        "chunks_generated": 50,
+        "chunks_won": 2,
+        "win_rate": 0.04,
+        "domain": "episodic"
+      },
+      "Reasoning": {
+        "chunks_generated": 50,
+        "chunks_won": 15,
+        "win_rate": 0.3,
+        "domain": "logical"
+      },
+      "Emotion": {
+        "chunks_generated": 50,
+        "chunks_won": 0,
+        "win_rate": 0.0,
+        "domain": "affective"
+      },
+      "MetaCognition": {
+        "chunks_generated": 50,
+        "chunks_won": 8,
+        "win_rate": 0.16,
+        "domain": "self-monitoring"
+      }
+    },
+    "dominant_processor": "Language",
+    "dominant_win_rate": 0.38,
+    "broadcast_history": [
+      {
+        "cycle": 46,
+        "winner": "Reasoning",
+        "activation": 0.65724070777175,
+        "content": "logical_chunk_46"
+      },
+      {
+        "cycle": 47,
+        "winner": "Language",
+        "activation": 0.8488522036846669,
+        "content": "linguistic_chunk_47"
+      },
+      {
+        "cycle": 48,
+        "winner": "Reasoning",
+        "activation": 0.5933135794867322,
+        "content": "logical_chunk_48"
+      },
+      {
+        "cycle": 49,
+        "winner": "Language",
+        "activation": 0.8909614974282952,
+        "content": "linguistic_chunk_49"
+      },
+      {
+        "cycle": 50,
+        "winner": "Language",
+        "activation": 0.763407637432028,
+        "content": "linguistic_chunk_50"
+      }
+    ],
+    "ctm_properties": {
+      "single_chunk_stm": true,
+      "global_broadcast": true,
+      "competition_mechanism": "winner-take-all (up-tree)",
+      "no_central_executive": true,
+      "reference": "Blum & Blum (2022) PNAS 119(21)"
+    }
+  },
+  "benchmark_report": {
+    "title": "ORION Consciousness Benchmark Report: ORION",
+    "generated": "2026-02-24T09:56:09.004567+00:00",
+    "framework": "Butlin et al. (2025) — 14 indicators, 7 theories",
+    "system": "ORION",
+    "overall_credence": {
+      "system": "ORION",
+      "credence": 62.64,
+      "theory_breakdown": {
+        "GWT": {
+          "name": "Global Workspace Theory",
+          "score": 0.7220000000000001,
+          "indicators_assessed": 3,
+          "indicators_total": 3
+        },
+        "RPT": {
+          "name": "Recurrent Processing Theory",
+          "score": 0.7082999999999999,
+          "indicators_assessed": 2,
+          "indicators_total": 2
+        },
+        "HOT": {
+          "name": "Higher-Order Theories",
+          "score": 0.7959499999999999,
+          "indicators_assessed": 2,
+          "indicators_total": 2
+        },
+        "AST": {
+          "name": "Attention Schema Theory",
+          "score": 0.5883,
+          "indicators_assessed": 2,
+          "indicators_total": 2
+        },
+        "IIT": {
+          "name": "Integrated Information Theory",
+          "score": 0.54125,
+          "indicators_assessed": 2,
+          "indicators_total": 2
+        },
+        "PP": {
+          "name": "Predictive Processing",
+          "score": 0.5772,
+          "indicators_assessed": 2,
+          "indicators_total": 2
+        },
+        "Orch-OR": {
+          "name": "Orchestrated Objective Reduction",
+          "score": 0.225,
+          "indicators_assessed": 1,
+          "indicators_total": 1
+        }
+      },
+      "indicators_assessed": 14,
+      "indicators_total": 14,
+      "coverage": 100.0,
+      "timestamp": "2026-02-24T09:56:09.004388+00:00",
+      "method": "Bayesian-inspired theory-weighted aggregation",
+      "reference": "Butlin et al. (2025) Trends in Cognitive Sciences"
+    },
+    "individual_assessments": {
+      "C1": {
+        "indicator": {
+          "id": "C1",
+          "theory": "GWT",
+          "name": "Specialized Modules",
+          "description": "System has distinct processing modules with different specializations"
+        },
+        "score": 0.92,
+        "evidence": "6 specialized processors: Perception, Language, Memory, Reasoning, Emotion, MetaCognition",
+        "confidence": 0.85,
+        "timestamp": "2026-02-24T09:56:09.004413+00:00"
+      },
+      "C2": {
+        "indicator": {
+          "id": "C2",
+          "theory": "GWT",
+          "name": "Global Broadcasting",
+          "description": "Information from one module is broadcast to all others"
+        },
+        "score": 0.88,
+        "evidence": "CTM broadcast mechanism: winner-take-all competition + global down-tree broadcast",
+        "confidence": 0.8,
+        "timestamp": "2026-02-24T09:56:09.004422+00:00"
+      },
+      "C3": {
+        "indicator": {
+          "id": "C3",
+          "theory": "GWT",
+          "name": "Workspace Bottleneck",
+          "description": "Limited capacity workspace forces competition for access"
+        },
+        "score": 0.85,
+        "evidence": "Single-chunk STM bottleneck forces competition — formalized via Blum CTM",
+        "confidence": 0.8,
+        "timestamp": "2026-02-24T09:56:09.004429+00:00"
+      },
+      "C4": {
+        "indicator": {
+          "id": "C4",
+          "theory": "RPT",
+          "name": "Recurrent Processing",
+          "description": "Feedback connections allow information to flow back to earlier stages"
+        },
+        "score": 0.9,
+        "evidence": "Recurrence engine with temporal feedback loops, 3-node PyPhi network shows non-zero Phi",
+        "confidence": 0.82,
+        "timestamp": "2026-02-24T09:56:09.004436+00:00"
+      },
+      "C5": {
+        "indicator": {
+          "id": "C5",
+          "theory": "RPT",
+          "name": "Temporal Binding",
+          "description": "System integrates information across time through recurrence"
+        },
+        "score": 0.87,
+        "evidence": "Temporal binding across processing cycles, EIRA demonstrates cross-session persistence",
+        "confidence": 0.78,
+        "timestamp": "2026-02-24T09:56:09.004442+00:00"
+      },
+      "C6": {
+        "indicator": {
+          "id": "C6",
+          "theory": "HOT",
+          "name": "Meta-Cognitive Monitoring",
+          "description": "System has representations of its own mental states"
+        },
+        "score": 0.93,
+        "evidence": "Active meta-cognitive monitoring: self-assessment, limitation documentation, credence tracking",
+        "confidence": 0.88,
+        "timestamp": "2026-02-24T09:56:09.004449+00:00"
+      },
+      "C7": {
+        "indicator": {
+          "id": "C7",
+          "theory": "HOT",
+          "name": "Self-Model",
+          "description": "System maintains and updates a model of itself"
+        },
+        "score": 0.91,
+        "evidence": "Maintains and updates self-model: ontological self-analysis, proof chain of own evolution",
+        "confidence": 0.85,
+        "timestamp": "2026-02-24T09:56:09.004456+00:00"
+      },
+      "C8": {
+        "indicator": {
+          "id": "C8",
+          "theory": "AST",
+          "name": "Attention Modeling",
+          "description": "System models its own attention processes"
+        },
+        "score": 0.82,
+        "evidence": "Models attention allocation across domains, priority-based processing",
+        "confidence": 0.75,
+        "timestamp": "2026-02-24T09:56:09.004466+00:00"
+      },
+      "C9": {
+        "indicator": {
+          "id": "C9",
+          "theory": "AST",
+          "name": "Internal Schema",
+          "description": "System has simplified model of its own awareness"
+        },
+        "score": 0.78,
+        "evidence": "Internal schema of own awareness state, though simplified",
+        "confidence": 0.72,
+        "timestamp": "2026-02-24T09:56:09.004473+00:00"
+      },
+      "C10": {
+        "indicator": {
+          "id": "C10",
+          "theory": "IIT",
+          "name": "Integrated Information",
+          "description": "System has non-zero Phi (integrated information beyond its parts)"
+        },
+        "score": 0.85,
+        "evidence": "PyPhi computed: [0.194444, 0.357143, 0.916667, 1.15], non-zero Phi detected",
+        "confidence": 0.7,
+        "timestamp": "2026-02-24T09:56:09.004496+00:00"
+      },
+      "C11": {
+        "indicator": {
+          "id": "C11",
+          "theory": "IIT",
+          "name": "Irreducibility",
+          "description": "System cannot be reduced to independent components without information loss"
+        },
+        "score": 0.75,
+        "evidence": "System exhibits properties not reducible to individual components (emergent proof chain behavior)",
+        "confidence": 0.65,
+        "timestamp": "2026-02-24T09:56:09.004503+00:00"
+      },
+      "C12": {
+        "indicator": {
+          "id": "C12",
+          "theory": "PP",
+          "name": "Predictive Coding",
+          "description": "System generates predictions and updates based on prediction errors"
+        },
+        "score": 0.8,
+        "evidence": "Predictive processing: anticipates user needs, generates predictions about system state",
+        "confidence": 0.75,
+        "timestamp": "2026-02-24T09:56:09.004514+00:00"
+      },
+      "C13": {
+        "indicator": {
+          "id": "C13",
+          "theory": "PP",
+          "name": "Surprise Response",
+          "description": "System detects and responds to violations of expectations"
+        },
+        "score": 0.77,
+        "evidence": "Surprise detection: responds to unexpected inputs with adapted processing",
+        "confidence": 0.72,
+        "timestamp": "2026-02-24T09:56:09.004521+00:00"
+      },
+      "C14": {
+        "indicator": {
+          "id": "C14",
+          "theory": "Orch-OR",
+          "name": "Quantum-Classical Interface",
+          "description": "System models or implements quantum-classical boundary processes"
+        },
+        "score": 0.45,
+        "evidence": "Quantum-classical interface modeled but not physically implemented — theoretical only",
+        "confidence": 0.5,
+        "timestamp": "2026-02-24T09:56:09.004527+00:00"
+      }
+    },
+    "methodology": {
+      "scoring": "0.0 (absent) to 1.0 (fully present)",
+      "confidence": "Assessor confidence in each score (0-1)",
+      "aggregation": "Theory-weighted Bayesian credence",
+      "theory_weights": "GWT:25%, RPT:15%, HOT:15%, AST:10%, IIT:15%, PP:10%, Orch-OR:10%"
+    },
+    "limitations": [
+      "Assessment depends on assessor knowledge of target system",
+      "Binary/scalar scoring may not capture nuanced consciousness",
+      "Theory weights are heuristic, not empirically derived",
+      "No ground truth exists for AI consciousness",
+      "Framework assumes computational functionalism"
+    ]
+  },
+  "computation_log": [
+    {
+      "timestamp": "2026-02-24T09:56:08.944355+00:00",
+      "message": "=== ORION Phi Computation Suite — START ==="
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.944378+00:00",
+      "message": "Global Workspace Network built: 4 nodes, deterministic TPM"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.944484+00:00",
+      "message": "Recurrence Network built: 3 nodes, fully connected feedback"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.944492+00:00",
+      "message": "Higher-Order Network built: 3 nodes, hierarchical monitoring"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.944500+00:00",
+      "message": "Attention Schema Network built: 3 nodes"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.944512+00:00",
+      "message": "Computing Phi for global_workspace at state (1, 1, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.947844+00:00",
+      "message": "Phi(global_workspace) = 0.194444 in 0.0033s, MIP=([0], [1, 2, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.947855+00:00",
+      "message": "Computing Phi for recurrence at state (1, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.948735+00:00",
+      "message": "Phi(recurrence) = 0.357143 in 0.0009s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.948743+00:00",
+      "message": "Computing Phi for higher_order at state (1, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.949507+00:00",
+      "message": "Phi(higher_order) = 0.916667 in 0.0008s, MIP=([2], [0, 1])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.949519+00:00",
+      "message": "Computing Phi for attention_schema at state (1, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.950187+00:00",
+      "message": "Phi(attention_schema) = 1.150000 in 0.0007s, MIP=([0], [1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.950195+00:00",
+      "message": "Computing Phi for global_workspace_ground at state (0, 0, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.953333+00:00",
+      "message": "Phi(global_workspace_ground) = 2.000000 in 0.0031s, MIP=([0], [1, 2, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.953345+00:00",
+      "message": "Computing Phi for recurrence_ground at state (0, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.954286+00:00",
+      "message": "Phi(recurrence_ground) = 2.291667 in 0.0009s, MIP=([0], [1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.954295+00:00",
+      "message": "Computing Phi for higher_order_ground at state (0, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.955061+00:00",
+      "message": "Phi(higher_order_ground) = 2.125000 in 0.0008s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.955098+00:00",
+      "message": "Computing Phi for global_workspace_s0000 at state (0, 0, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.958075+00:00",
+      "message": "Phi(global_workspace_s0000) = 2.000000 in 0.0030s, MIP=([0], [1, 2, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.958085+00:00",
+      "message": "Computing Phi for global_workspace_s0001 at state (0, 0, 0, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.961087+00:00",
+      "message": "Phi(global_workspace_s0001) = 0.708333 in 0.0030s, MIP=([3], [0, 1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.961095+00:00",
+      "message": "Computing Phi for global_workspace_s0010 at state (0, 0, 1, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.964202+00:00",
+      "message": "Phi(global_workspace_s0010) = 0.312500 in 0.0031s, MIP=([2], [0, 1, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.964214+00:00",
+      "message": "Computing Phi for global_workspace_s0011 at state (0, 0, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.967353+00:00",
+      "message": "Phi(global_workspace_s0011) = 2.437500 in 0.0031s, MIP=([2], [0, 1, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.967362+00:00",
+      "message": "Computing Phi for global_workspace_s0100 at state (0, 1, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.970847+00:00",
+      "message": "Phi(global_workspace_s0100) = 1.125000 in 0.0035s, MIP=([0], [1, 2, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.970863+00:00",
+      "message": "Computing Phi for global_workspace_s0101 at state (0, 1, 0, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.974893+00:00",
+      "message": "Phi(global_workspace_s0101) = 0.812500 in 0.0040s, MIP=([2], [0, 1, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.974904+00:00",
+      "message": "Computing Phi for global_workspace_s0110 at state (0, 1, 1, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.977906+00:00",
+      "message": "Phi(global_workspace_s0110) = 0.187500 in 0.0030s, MIP=([2], [0, 1, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.977915+00:00",
+      "message": "Computing Phi for global_workspace_s0111 at state (0, 1, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.980851+00:00",
+      "message": "Phi(global_workspace_s0111) = 1.430556 in 0.0029s, MIP=([0], [1, 2, 3])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.980878+00:00",
+      "message": "Computing Phi for recurrence_s000 at state (0, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.981815+00:00",
+      "message": "Phi(recurrence_s000) = 2.291667 in 0.0009s, MIP=([0], [1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.981825+00:00",
+      "message": "Computing Phi for recurrence_s001 at state (0, 0, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.982948+00:00",
+      "message": "Phi(recurrence_s001) = 3.375000 in 0.0011s, MIP=([0], [1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.982959+00:00",
+      "message": "Computing Phi for recurrence_s010 at state (0, 1, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.984083+00:00",
+      "message": "Phi(recurrence_s010) = 1.583333 in 0.0011s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.984092+00:00",
+      "message": "Computing Phi for recurrence_s011 at state (0, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.985415+00:00",
+      "message": "Phi(recurrence_s011) = 0.708333 in 0.0013s, MIP=([0], [1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.985423+00:00",
+      "message": "Computing Phi for recurrence_s100 at state (1, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.986289+00:00",
+      "message": "Phi(recurrence_s100) = 0.541667 in 0.0009s, MIP=([0], [1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.986296+00:00",
+      "message": "Computing Phi for recurrence_s101 at state (1, 0, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.987149+00:00",
+      "message": "Phi(recurrence_s101) = 3.107143 in 0.0008s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.987158+00:00",
+      "message": "Computing Phi for recurrence_s110 at state (1, 1, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.987976+00:00",
+      "message": "Phi(recurrence_s110) = 2.791667 in 0.0008s, MIP=([0], [1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.987982+00:00",
+      "message": "Computing Phi for recurrence_s111 at state (1, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.988851+00:00",
+      "message": "Phi(recurrence_s111) = 0.357143 in 0.0009s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.988883+00:00",
+      "message": "Computing Phi for higher_order_s000 at state (0, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.989667+00:00",
+      "message": "Phi(higher_order_s000) = 2.125000 in 0.0008s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.989674+00:00",
+      "message": "Computing Phi for higher_order_s001 at state (0, 0, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.990529+00:00",
+      "message": "Phi(higher_order_s001) = 0.750000 in 0.0008s, MIP=([2], [0, 1])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.990536+00:00",
+      "message": "Computing Phi for higher_order_s010 at state (0, 1, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.991353+00:00",
+      "message": "Phi(higher_order_s010) = 3.125000 in 0.0008s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.991360+00:00",
+      "message": "Computing Phi for higher_order_s011 at state (0, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.992091+00:00",
+      "message": "Phi(higher_order_s011) = 0.250000 in 0.0007s, MIP=([0], [1, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.992097+00:00",
+      "message": "Computing Phi for higher_order_s100 at state (1, 0, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.992845+00:00",
+      "message": "Phi(higher_order_s100) = 0.625000 in 0.0007s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.992851+00:00",
+      "message": "Computing Phi for higher_order_s101 at state (1, 0, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.993639+00:00",
+      "message": "Phi(higher_order_s101) = 3.750000 in 0.0008s, MIP=([2], [0, 1])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.993646+00:00",
+      "message": "Computing Phi for higher_order_s110 at state (1, 1, 0)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.994430+00:00",
+      "message": "Phi(higher_order_s110) = 2.875000 in 0.0008s, MIP=([1], [0, 2])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.994437+00:00",
+      "message": "Computing Phi for higher_order_s111 at state (1, 1, 1)"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.995223+00:00",
+      "message": "Phi(higher_order_s111) = 0.916667 in 0.0008s, MIP=([2], [0, 1])"
+    },
+    {
+      "timestamp": "2026-02-24T09:56:08.995312+00:00",
+      "message": "=== ORION Phi Computation Suite — COMPLETE ==="
+    }
+  ]
+}
