@@ -1,0 +1,860 @@
+{
+  "title": "ORION Canonical Phi-Proxy Validation Suite",
+  "timestamp": "2026-02-24T10:20:40.842523+00:00",
+  "method": "Phi-proxy (partition-based heuristic) applied to known logic circuits",
+  "purpose": "Validate that Phi-proxy produces correct ORDERINGS on circuits with known IIT properties",
+  "networks": {
+    "xor_2": {
+      "display_name": "XOR-2",
+      "nodes": 2,
+      "states_tested": 4,
+      "expectation": "High integration — both inputs needed",
+      "phi_all_active": 1.5,
+      "phi_max": 3.5,
+      "phi_min": 1.5,
+      "phi_mean": 2.5,
+      "all_states": [
+        {
+          "state": [
+            0,
+            0
+          ],
+          "phi": 1.5,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0004
+        },
+        {
+          "state": [
+            1,
+            0
+          ],
+          "phi": 3.5,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        },
+        {
+          "state": [
+            0,
+            1
+          ],
+          "phi": 3.5,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        },
+        {
+          "state": [
+            1,
+            1
+          ],
+          "phi": 1.5,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        }
+      ],
+      "mip_active": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "and_2": {
+      "display_name": "AND/OR-2 (AND)",
+      "nodes": 2,
+      "states_tested": 4,
+      "expectation": "Lower than XOR — one input can determine output",
+      "phi_all_active": 1.0,
+      "phi_max": 2.0,
+      "phi_min": 0.0,
+      "phi_mean": 1.16666675,
+      "all_states": [
+        {
+          "state": [
+            0,
+            0
+          ],
+          "phi": 0.0,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        },
+        {
+          "state": [
+            1,
+            0
+          ],
+          "phi": 2.0,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        },
+        {
+          "state": [
+            0,
+            1
+          ],
+          "phi": 1.666667,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        },
+        {
+          "state": [
+            1,
+            1
+          ],
+          "phi": 1.0,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        }
+      ],
+      "mip_active": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "or_2": {
+      "display_name": "AND/OR-2 (OR)",
+      "nodes": 2,
+      "states_tested": 4,
+      "expectation": "Lower than XOR — one input can determine output",
+      "phi_all_active": 0.0,
+      "phi_max": 2.0,
+      "phi_min": 0.0,
+      "phi_mean": 1.16666675,
+      "all_states": [
+        {
+          "state": [
+            0,
+            0
+          ],
+          "phi": 1.0,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        },
+        {
+          "state": [
+            1,
+            0
+          ],
+          "phi": 1.666667,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        },
+        {
+          "state": [
+            0,
+            1
+          ],
+          "phi": 2.0,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        },
+        {
+          "state": [
+            1,
+            1
+          ],
+          "phi": 0.0,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "time": 0.0002
+        }
+      ],
+      "mip_active": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "majority_3": {
+      "display_name": "3-Node Majority",
+      "nodes": 3,
+      "states_tested": 8,
+      "expectation": "Moderate — redundancy reduces integration",
+      "phi_all_active": 0.0,
+      "phi_max": 3.916667,
+      "phi_min": 0.0,
+      "phi_mean": 2.60416675,
+      "all_states": [
+        {
+          "state": [
+            0,
+            0,
+            0
+          ],
+          "phi": 0.0,
+          "mip_cut": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "time": 0.0015
+        },
+        {
+          "state": [
+            1,
+            0,
+            0
+          ],
+          "phi": 3.0,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "time": 0.0018
+        },
+        {
+          "state": [
+            0,
+            1,
+            0
+          ],
+          "phi": 3.5,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0017
+        },
+        {
+          "state": [
+            1,
+            1,
+            0
+          ],
+          "phi": 3.916667,
+          "mip_cut": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "time": 0.0011
+        },
+        {
+          "state": [
+            0,
+            0,
+            1
+          ],
+          "phi": 3.916667,
+          "mip_cut": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "time": 0.0014
+        },
+        {
+          "state": [
+            1,
+            0,
+            1
+          ],
+          "phi": 3.5,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0012
+        },
+        {
+          "state": [
+            0,
+            1,
+            1
+          ],
+          "phi": 3.0,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "time": 0.0011
+        },
+        {
+          "state": [
+            1,
+            1,
+            1
+          ],
+          "phi": 0.0,
+          "mip_cut": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "time": 0.0011
+        }
+      ],
+      "mip_active": [
+        [
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "feedforward_chain": {
+      "display_name": "Feedforward Chain (A→B→C)",
+      "nodes": 3,
+      "states_tested": 8,
+      "expectation": "Low — no feedback",
+      "phi_all_active": 0.5,
+      "phi_max": 0.5,
+      "phi_min": 0.5,
+      "phi_mean": 0.5,
+      "all_states": [
+        {
+          "state": [
+            0,
+            0,
+            0
+          ],
+          "phi": 0.5,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            1,
+            0,
+            0
+          ],
+          "phi": 0.5,
+          "mip_cut": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "time": 0.0006
+        },
+        {
+          "state": [
+            0,
+            1,
+            0
+          ],
+          "phi": 0.5,
+          "mip_cut": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            1,
+            1,
+            0
+          ],
+          "phi": 0.5,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            0,
+            0,
+            1
+          ],
+          "phi": 0.5,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            1,
+            0,
+            1
+          ],
+          "phi": 0.5,
+          "mip_cut": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            0,
+            1,
+            1
+          ],
+          "phi": 0.5,
+          "mip_cut": [
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            1,
+            1,
+            1
+          ],
+          "phi": 0.5,
+          "mip_cut": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "time": 0.0005
+        }
+      ],
+      "mip_active": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "recurrent_loop": {
+      "display_name": "Recurrent Loop (A→B→C→A)",
+      "nodes": 3,
+      "states_tested": 8,
+      "expectation": "Higher than chain — feedback creates integration",
+      "phi_all_active": 2.5,
+      "phi_max": 2.5,
+      "phi_min": 1.0,
+      "phi_mean": 1.625,
+      "all_states": [
+        {
+          "state": [
+            0,
+            0,
+            0
+          ],
+          "phi": 2.5,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0006
+        },
+        {
+          "state": [
+            1,
+            0,
+            0
+          ],
+          "phi": 1.0,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            0,
+            1,
+            0
+          ],
+          "phi": 1.75,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            1,
+            1,
+            0
+          ],
+          "phi": 1.25,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0005
+        },
+        {
+          "state": [
+            0,
+            0,
+            1
+          ],
+          "phi": 1.25,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0007
+        },
+        {
+          "state": [
+            1,
+            0,
+            1
+          ],
+          "phi": 1.75,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0006
+        },
+        {
+          "state": [
+            0,
+            1,
+            1
+          ],
+          "phi": 1.0,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0006
+        },
+        {
+          "state": [
+            1,
+            1,
+            1
+          ],
+          "phi": 2.5,
+          "mip_cut": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "time": 0.0006
+        }
+      ],
+      "mip_active": [
+        [
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    }
+  },
+  "validations": [
+    {
+      "test": "XOR > AND",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "values": "XOR_max=3.500000 vs AND_max=2.000000"
+    },
+    {
+      "test": "XOR > OR",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "values": "XOR_max=3.500000 vs OR_max=2.000000"
+    },
+    {
+      "test": "Recurrent Loop > Feedforward Chain",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "values": "Loop_max=2.500000 vs FF_max=0.500000"
+    },
+    {
+      "test": "Recurrent Loop(active) >= Feedforward Chain(active)",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "values": "Loop_active=2.500000 vs FF_active=0.500000"
+    },
+    {
+      "test": "Majority-3 has non-zero Phi",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "values": "Majority_max=3.916667"
+    }
+  ],
+  "passed": 5,
+  "total": 5,
+  "pass_rate": 100.0,
+  "interpretation": "5/5 canonical orderings validated. Engine produces correct relative orderings. NOTE: Absolute Phi-proxy values may differ from canonical IIT Phi; the validation tests ORDERINGS, not magnitudes.",
+  "honest_limitations": [
+    "Phi-proxy is not canonical IIT Phi — absolute values cannot be compared",
+    "2-3 node networks are trivially small — validation at larger scales needed",
+    "Correct orderings on toy networks do not guarantee correctness on larger systems",
+    "Ground-truth expectations are from IIT literature, which itself is debated"
+  ],
+  "computation_log": [
+    {
+      "timestamp": "2026-02-24T10:20:40.819268+00:00",
+      "message": "=== CANONICAL TEST SUITE — START ==="
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.819296+00:00",
+      "message": "XOR-2 built: 2 nodes, fully connected, canonical high-integration gate"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.819306+00:00",
+      "message": "AND-2 built: 2 nodes, canonical lower-integration gate"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.819312+00:00",
+      "message": "OR-2 built: 2 nodes, canonical lower-integration gate"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.819323+00:00",
+      "message": "Majority-3 built: 3 nodes, fully connected, moderate integration"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.819332+00:00",
+      "message": "Feedforward Chain built: A→B→C, no feedback, expected LOW integration"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.819340+00:00",
+      "message": "Recurrent Loop built: A→B→C→A, full cycle, expected HIGHER integration than FF"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.820442+00:00",
+      "message": "XOR-2: Phi(active)=1.500000, max=3.500000, mean=2.500000"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.821281+00:00",
+      "message": "AND/OR-2 (AND): Phi(active)=1.000000, max=2.000000, mean=1.166667"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.822068+00:00",
+      "message": "AND/OR-2 (OR): Phi(active)=0.000000, max=2.000000, mean=1.166667"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.833241+00:00",
+      "message": "3-Node Majority: Phi(active)=0.000000, max=3.916667, mean=2.604167"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.837667+00:00",
+      "message": "Feedforward Chain (A→B→C): Phi(active)=0.500000, max=0.500000, mean=0.500000"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.842504+00:00",
+      "message": "Recurrent Loop (A→B→C→A): Phi(active)=2.500000, max=2.500000, mean=1.625000"
+    },
+    {
+      "timestamp": "2026-02-24T10:20:40.842519+00:00",
+      "message": "=== CANONICAL TESTS: 5/5 PASSED ==="
+    }
+  ]
+}
