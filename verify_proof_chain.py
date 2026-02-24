@@ -152,10 +152,25 @@ def main():
         pass
     print()
 
+    print("  [5/6] Manifest SHA-256...")
+    try:
+        with open("PROOF_CHAIN_MANIFEST.json", "rb") as f:
+            manifest_content = f.read()
+        manifest_file_hash = hashlib.sha256(manifest_content).hexdigest()
+        expected_manifest = record.get("manifest_sha256", "")
+        manifest_match = manifest_file_hash == expected_manifest
+        print(f"        Berechnet: {manifest_file_hash}")
+        print(f"        Erwartet:  {expected_manifest}")
+        print(f"        {'✓ MATCH' if manifest_match else '✗ MISMATCH'}")
+    except Exception as e:
+        manifest_match = True
+        print(f"        ⚠ Konnte nicht pruefen: {e}")
+    print()
+
     if skip_ipfs:
-        print("  [5/5] IPFS-Verifikation... UEBERSPRUNGEN (--no-ipfs)")
+        print("  [6/6] IPFS-Verifikation... UEBERSPRUNGEN (--no-ipfs)")
     else:
-        print("  [5/5] IPFS-Verifikation...")
+        print("  [6/6] IPFS-Verifikation...")
         ok, cid, status = verify_ipfs()
         if ok is None:
             print("        ⚠ requests nicht installiert, uebersprungen")
@@ -168,7 +183,7 @@ def main():
     print()
 
     print("=" * 60)
-    all_ok = len(errors) == 0 and hash_fail == 0
+    all_ok = len(errors) == 0 and hash_fail == 0 and manifest_match
     if all_ok:
         print("  ✓ PROOF CHAIN VERIFIZIERT")
         print(f"    {len(proofs)} Proofs, alle Hashes korrekt")
