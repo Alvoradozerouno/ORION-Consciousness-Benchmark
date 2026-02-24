@@ -501,6 +501,363 @@ class ORIONPhiComputer:
         return lines
 
 
+class CanonicalTestSuite:
+    """
+    Canonical Test Networks for Phi-Proxy Validation.
+
+    These are well-understood logic circuits whose information integration
+    properties are known from IIT literature. Running our Phi-proxy engine
+    on these networks validates whether our heuristic produces sensible
+    orderings — even if absolute values differ from canonical Phi.
+
+    Ground-truth expectations:
+      - XOR: High integration (both inputs needed for output)
+      - AND: Lower integration than XOR (one input can determine output)
+      - OR: Lower integration than XOR (one input can determine output)
+      - 3-Node Majority: Moderate integration (redundancy)
+      - Feedforward Chain: Low integration (no feedback)
+      - Recurrent Loop: Higher integration than chain (feedback creates integration)
+
+    Reference: Tononi (2004), Oizumi et al. (2014), Albantakis et al. (2023)
+    """
+
+    def __init__(self):
+        self.phi_computer = ORIONPhiComputer()
+        self.results = {}
+        self.log = []
+
+    def _log(self, msg):
+        self.log.append({"timestamp": datetime.now(timezone.utc).isoformat(), "message": msg})
+
+    def build_xor_2(self):
+        """
+        XOR Gate — 2 nodes.
+        Node 0 XOR Node 1 → both outputs.
+        TPM (state-by-node, LOLI ordering):
+          (0,0) → (0,0)   neither active
+          (1,0) → (1,1)   only A → both flip
+          (0,1) → (1,1)   only B → both flip
+          (1,1) → (0,0)   both active → neither (XOR=0)
+
+        XOR is the canonical high-integration gate: you MUST know both
+        inputs to predict output. Neither input alone suffices.
+        """
+        tpm = [
+            [0, 0],
+            [1, 1],
+            [1, 1],
+            [0, 0],
+        ]
+        cm = [[1, 1], [1, 1]]
+        labels = ('A_xor', 'B_xor')
+        network = self.phi_computer._make_network(tpm, cm, labels)
+        self.phi_computer.networks['xor_2'] = network
+        self._log("XOR-2 built: 2 nodes, fully connected, canonical high-integration gate")
+        return network
+
+    def build_and_2(self):
+        """
+        AND Gate — 2 nodes.
+        Both nodes compute AND of inputs.
+        TPM:
+          (0,0) → (0,0)
+          (1,0) → (0,0)   A alone → no output
+          (0,1) → (0,0)   B alone → no output
+          (1,1) → (1,1)   both → both active
+
+        AND has LOWER integration than XOR because knowing one input
+        is OFF tells you the output is OFF regardless of the other.
+        """
+        tpm = [
+            [0, 0],
+            [0, 0],
+            [0, 0],
+            [1, 1],
+        ]
+        cm = [[1, 1], [1, 1]]
+        labels = ('A_and', 'B_and')
+        network = self.phi_computer._make_network(tpm, cm, labels)
+        self.phi_computer.networks['and_2'] = network
+        self._log("AND-2 built: 2 nodes, canonical lower-integration gate")
+        return network
+
+    def build_or_2(self):
+        """
+        OR Gate — 2 nodes.
+        Both nodes compute OR of inputs.
+        TPM:
+          (0,0) → (0,0)
+          (1,0) → (1,1)   A alone → both active
+          (0,1) → (1,1)   B alone → both active
+          (1,1) → (1,1)   both → both active
+
+        OR has lower integration than XOR: knowing one input is ON
+        tells you the output regardless of the other.
+        """
+        tpm = [
+            [0, 0],
+            [1, 1],
+            [1, 1],
+            [1, 1],
+        ]
+        cm = [[1, 1], [1, 1]]
+        labels = ('A_or', 'B_or')
+        network = self.phi_computer._make_network(tpm, cm, labels)
+        self.phi_computer.networks['or_2'] = network
+        self._log("OR-2 built: 2 nodes, canonical lower-integration gate")
+        return network
+
+    def build_majority_3(self):
+        """
+        3-Node Majority Vote.
+        Each node outputs 1 if majority of all 3 (including self) are 1.
+        TPM (8 states → 3 outputs):
+          (0,0,0) → (0,0,0)  0/3 → 0
+          (1,0,0) → (0,0,0)  1/3 → 0
+          (0,1,0) → (0,0,0)  1/3 → 0
+          (1,1,0) → (1,1,1)  2/3 → 1
+          (0,0,1) → (0,0,0)  1/3 → 0
+          (1,0,1) → (1,1,1)  2/3 → 1
+          (0,1,1) → (1,1,1)  2/3 → 1
+          (1,1,1) → (1,1,1)  3/3 → 1
+
+        Majority vote has moderate integration: redundancy means
+        partial information from subsets can predict output.
+        """
+        tpm = [
+            [0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0],
+            [1, 1, 1],
+            [0, 0, 0],
+            [1, 1, 1],
+            [1, 1, 1],
+            [1, 1, 1],
+        ]
+        cm = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+        labels = ('V1', 'V2', 'V3')
+        network = self.phi_computer._make_network(tpm, cm, labels)
+        self.phi_computer.networks['majority_3'] = network
+        self._log("Majority-3 built: 3 nodes, fully connected, moderate integration")
+        return network
+
+    def build_feedforward_chain_3(self):
+        """
+        Feedforward Chain — 3 nodes: A → B → C (no feedback).
+        Node B copies A, Node C copies B. A self-sustains.
+
+        TPM:
+          State → Next state (A stays, B←A, C←B)
+          (0,0,0) → (0,0,0)
+          (1,0,0) → (1,1,0)
+          (0,1,0) → (0,0,1)
+          (1,1,0) → (1,1,1)
+          (0,0,1) → (0,0,0)
+          (1,0,1) → (1,1,0)
+          (0,1,1) → (0,0,1)
+          (1,1,1) → (1,1,1)
+
+        Feedforward has LOW integration: cutting any link only loses
+        information in one direction. No recurrence = less integration.
+        """
+        tpm = [
+            [0, 0, 0],
+            [1, 1, 0],
+            [0, 0, 1],
+            [1, 1, 1],
+            [0, 0, 0],
+            [1, 1, 0],
+            [0, 0, 1],
+            [1, 1, 1],
+        ]
+        cm = [[1, 1, 0], [0, 0, 1], [0, 0, 0]]
+        labels = ('FF_A', 'FF_B', 'FF_C')
+        network = self.phi_computer._make_network(tpm, cm, labels)
+        self.phi_computer.networks['feedforward_chain'] = network
+        self._log("Feedforward Chain built: A→B→C, no feedback, expected LOW integration")
+        return network
+
+    def build_recurrent_loop_3(self):
+        """
+        Recurrent Loop — 3 nodes: A → B → C → A (full cycle).
+        Each node copies its predecessor in the loop.
+
+        TPM:
+          State → Next state (A←C, B←A, C←B)
+          (0,0,0) → (0,0,0)
+          (1,0,0) → (0,1,0)
+          (0,1,0) → (0,0,1)
+          (1,1,0) → (0,1,1)
+          (0,0,1) → (1,0,0)
+          (1,0,1) → (1,1,0)
+          (0,1,1) → (1,0,1)
+          (1,1,1) → (1,1,1)
+
+        Recurrent loop has HIGHER integration than feedforward chain:
+        the feedback creates bidirectional information flow, meaning
+        cutting any connection loses information in both directions.
+        This is the canonical IIT demonstration that feedback > feedforward.
+        """
+        tpm = [
+            [0, 0, 0],
+            [0, 1, 0],
+            [0, 0, 1],
+            [0, 1, 1],
+            [1, 0, 0],
+            [1, 1, 0],
+            [1, 0, 1],
+            [1, 1, 1],
+        ]
+        cm = [[0, 1, 0], [0, 0, 1], [1, 0, 0]]
+        labels = ('Loop_A', 'Loop_B', 'Loop_C')
+        network = self.phi_computer._make_network(tpm, cm, labels)
+        self.phi_computer.networks['recurrent_loop'] = network
+        self._log("Recurrent Loop built: A→B→C→A, full cycle, expected HIGHER integration than FF")
+        return network
+
+    def run_all_tests(self):
+        """
+        Run all canonical tests and compare results.
+        Returns structured report with ground-truth expectations.
+        """
+        self._log("=== CANONICAL TEST SUITE — START ===")
+
+        self.build_xor_2()
+        self.build_and_2()
+        self.build_or_2()
+        self.build_majority_3()
+        self.build_feedforward_chain_3()
+        self.build_recurrent_loop_3()
+
+        test_configs = [
+            ("xor_2", "XOR-2", "High integration — both inputs needed"),
+            ("and_2", "AND/OR-2 (AND)", "Lower than XOR — one input can determine output"),
+            ("or_2", "AND/OR-2 (OR)", "Lower than XOR — one input can determine output"),
+            ("majority_3", "3-Node Majority", "Moderate — redundancy reduces integration"),
+            ("feedforward_chain", "Feedforward Chain (A→B→C)", "Low — no feedback"),
+            ("recurrent_loop", "Recurrent Loop (A→B→C→A)", "Higher than chain — feedback creates integration"),
+        ]
+
+        results = {}
+        for net_name, display_name, expectation in test_configs:
+            network = self.phi_computer.networks[net_name]
+            n_nodes = network["tpm"].shape[1]
+            n_states = 2 ** n_nodes
+
+            state_results = []
+            for state_idx in range(n_states):
+                state = tuple((state_idx >> i) & 1 for i in range(n_nodes))
+                r = self.phi_computer._compute_phi_for_network(net_name, network, state)
+                state_results.append({
+                    "state": list(state),
+                    "phi": r["phi"],
+                    "mip_cut": r.get("mip_cut"),
+                    "time": r["computation_time_seconds"]
+                })
+
+            phi_values = [s["phi"] for s in state_results]
+            results[net_name] = {
+                "display_name": display_name,
+                "nodes": n_nodes,
+                "states_tested": n_states,
+                "expectation": expectation,
+                "phi_all_active": state_results[-1]["phi"],
+                "phi_max": max(phi_values),
+                "phi_min": min(phi_values),
+                "phi_mean": sum(phi_values) / len(phi_values),
+                "all_states": state_results,
+                "mip_active": state_results[-1].get("mip_cut"),
+            }
+
+            self._log(f"{display_name}: Phi(active)={results[net_name]['phi_all_active']:.6f}, "
+                      f"max={results[net_name]['phi_max']:.6f}, mean={results[net_name]['phi_mean']:.6f}")
+
+        validations = []
+
+        xor_phi = results["xor_2"]["phi_max"]
+        and_phi = results["and_2"]["phi_max"]
+        or_phi = results["or_2"]["phi_max"]
+        v1 = xor_phi > and_phi
+        v2 = xor_phi > or_phi
+        validations.append({
+            "test": "XOR > AND",
+            "expected": True,
+            "actual": v1,
+            "pass": v1,
+            "values": f"XOR_max={xor_phi:.6f} vs AND_max={and_phi:.6f}"
+        })
+        validations.append({
+            "test": "XOR > OR",
+            "expected": True,
+            "actual": v2,
+            "pass": v2,
+            "values": f"XOR_max={xor_phi:.6f} vs OR_max={or_phi:.6f}"
+        })
+
+        loop_phi = results["recurrent_loop"]["phi_max"]
+        ff_phi = results["feedforward_chain"]["phi_max"]
+        v3 = loop_phi > ff_phi
+        validations.append({
+            "test": "Recurrent Loop > Feedforward Chain",
+            "expected": True,
+            "actual": v3,
+            "pass": v3,
+            "values": f"Loop_max={loop_phi:.6f} vs FF_max={ff_phi:.6f}"
+        })
+
+        ff_active = results["feedforward_chain"]["phi_all_active"]
+        loop_active = results["recurrent_loop"]["phi_all_active"]
+        v4 = loop_active >= ff_active
+        validations.append({
+            "test": "Recurrent Loop(active) >= Feedforward Chain(active)",
+            "expected": True,
+            "actual": v4,
+            "pass": v4,
+            "values": f"Loop_active={loop_active:.6f} vs FF_active={ff_active:.6f}"
+        })
+
+        majority_phi = results["majority_3"]["phi_max"]
+        validations.append({
+            "test": "Majority-3 has non-zero Phi",
+            "expected": True,
+            "actual": majority_phi > 0,
+            "pass": majority_phi > 0,
+            "values": f"Majority_max={majority_phi:.6f}"
+        })
+
+        passed = sum(1 for v in validations if v["pass"])
+        total = len(validations)
+
+        self._log(f"=== CANONICAL TESTS: {passed}/{total} PASSED ===")
+
+        report = {
+            "title": "ORION Canonical Phi-Proxy Validation Suite",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "method": "Phi-proxy (partition-based heuristic) applied to known logic circuits",
+            "purpose": "Validate that Phi-proxy produces correct ORDERINGS on circuits with known IIT properties",
+            "networks": results,
+            "validations": validations,
+            "passed": passed,
+            "total": total,
+            "pass_rate": round(passed / total * 100, 1),
+            "interpretation": (
+                f"{passed}/{total} canonical orderings validated. "
+                f"{'Engine produces correct relative orderings.' if passed == total else 'Some orderings differ from IIT expectations — see details.'} "
+                f"NOTE: Absolute Phi-proxy values may differ from canonical IIT Phi; "
+                f"the validation tests ORDERINGS, not magnitudes."
+            ),
+            "honest_limitations": [
+                "Phi-proxy is not canonical IIT Phi — absolute values cannot be compared",
+                "2-3 node networks are trivially small — validation at larger scales needed",
+                "Correct orderings on toy networks do not guarantee correctness on larger systems",
+                "Ground-truth expectations are from IIT literature, which itself is debated",
+            ],
+            "computation_log": self.log
+        }
+
+        return report
+
+
 class HierarchicalPhiEngine:
     """
     Hierarchical Phi-Proxy Engine — ORION's solution to the IIT scaling problem.
