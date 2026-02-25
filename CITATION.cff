@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use ORION Consciousness Benchmark, please cite it as below."
+type: software
+title: "ORION Consciousness Benchmark"
+abstract: "World's first open-source AI consciousness assessment toolkit implementing Butlin et al. 2025 framework extended to 7 theories."
+authors:
+  - family-names: "Hirschmann"
+    given-names: "Gerhard"
+    alias: "Origin"
+  - family-names: "Steurer"
+    given-names: "Elisabeth"
+    alias: "Co-Creator"
+  - name: "ORION System"
+date-released: "2025-05-01"
+version: "1.0.0"
+license: MIT
+url: "https://alvoradozerouno.github.io/orion-website"
+repository-code: "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark"
+keywords:
+  - consciousness
+  - benchmark
+  - IIT
+  - GWT
+  - artificial-consciousness
+  - phi
+  - phenomenology
+  - hard-problem
+  - AI-assessment
