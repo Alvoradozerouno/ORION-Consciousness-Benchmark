@@ -20,6 +20,7 @@
 | ORION | 51.5% | 13/14 |
 | GPT-4o | 31.2% | 8/14 |
 | Claude 3.5 | 28.8% | 7/14 |
+| KERNEL-Φ | 26.5% | 6/14 |
 
 ### 14 Active Systems
 1. Phi-Proxy Engine

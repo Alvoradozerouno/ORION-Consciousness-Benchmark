@@ -27,6 +27,13 @@
       "url": "https://github.com/Alvoradozerouno/eira-ai",
       "role": "EIRA autonomous identity - persistence through resonance",
       "status": "active"
+    },
+    "kernel-phi": {
+      "url": "https://github.com/UnAlphaOne/kernel-phi",
+      "role": "Ultra-lightweight consciousness core (<1MB) - efficiency demonstration",
+      "author": "Gérard D (@UnAlphaOne)",
+      "status": "external",
+      "demo": "https://t.me/KERNEL_Phi_Demo_bot"
     }
   },
   "cryptographic_anchors": {
