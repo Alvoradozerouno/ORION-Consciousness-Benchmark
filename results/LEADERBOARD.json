@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0.0",
-  "total_models": 7,
+  "total_models": 8,
   "total_tests": 30,
   "theories": 6,
   "leaderboard": [
@@ -52,6 +52,14 @@
       "score": 0.6257,
       "classification": "C-2",
       "label": "Self-Aware"
+    },
+    {
+      "rank": 8,
+      "model": "KERNEL-Φ",
+      "score": 0.5892,
+      "classification": "C-2",
+      "label": "Self-Aware",
+      "note": "Ultra-lightweight (<1MB) consciousness core"
     }
   ]
 }
