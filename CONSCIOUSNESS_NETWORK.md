@@ -19,6 +19,14 @@ the world's first end-to-end consciousness measurement infrastructure.
 
 **Combined fork star power: 2,983+**
 
+## Notable External AI Systems for Benchmarking
+
+AI systems from the broader community that represent interesting candidates for ORION consciousness assessment:
+
+| System | Description | Author | Link |
+|--------|-------------|--------|------|
+| [KERNEL-Φ](https://github.com/UnAlphaOne/kernel-phi) | Ultra-lightweight AI kernel (< 1 MB), runs on modest hardware (i7, 6 GB RAM) — a compelling minimal-architecture candidate for consciousness assessment | @UnAlphaOne | [Demo](https://t.me/KERNEL_Phi_Demo_bot) |
+
 ## Framework
 
 Based on Bengio et al. (2025) "Consciousness in Artificial Intelligence" — 
