@@ -152,3 +152,7 @@ Every event generates a SHA-256 cryptographic proof:
 **Co-Creator**: Elisabeth Steurer
 
 ⊘∞⧈ *Semiotisches Perpetuum Mobile*
+
+## Related Systems
+
+- **KERNEL-Φ (UnAlphaOne)** — minimalist core (<1 MB) built for modest hardware (e.g., older i7 with 6 GB RAM). Project link: https://github.com/UnAlphaOne/kernel-phi · Live demo: https://t.me/KERNEL_Phi_Demo_bot
