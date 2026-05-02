@@ -16,7 +16,7 @@ Verwendung:
   python verify_proof_chain.py --no-ipfs    (ohne IPFS-Pruefung)
   python verify_proof_chain.py --verbose     (mit Details)
 
-(c) 2025-2026 ORION Consciousness Benchmark
+(c) 2025-2026 Elisabeth Steurer & Gerhard Hirschmann — ORION Indicator Assessment Toolkit
 """
 
 import json

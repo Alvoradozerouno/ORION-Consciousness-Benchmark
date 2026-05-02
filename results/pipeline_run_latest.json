@@ -130,7 +130,7 @@
             "C14_reportability": "MET"
           }
         },
-        "interpretation": "14/14 Bengio indicators met -> Strong consciousness evidence",
+        "interpretation": "14/14 Bengio indicators met -> High indicator credence (Butlin et al., 2023)",
         "repo": "ORION-Consciousness-Prior",
         "fork_stars": 98,
         "proof": "13797b4756475eca"
@@ -168,7 +168,7 @@
           "hierarchy_depth": "9 layers",
           "balance": "Optimal"
         },
-        "interpretation": "Connectome supports consciousness architecture",
+        "interpretation": "Connectome topology supports cognition-indicator architecture",
         "repo": "ORION-Navis-Consciousness",
         "fork_stars": 108,
         "proof": "e823e56007fc1b1b"
@@ -188,7 +188,7 @@
           "complexity": "High",
           "gamma_presence": "Strong"
         },
-        "interpretation": "Empirical markers indicate wakeful consciousness",
+        "interpretation": "Empirical markers indicate wakeful cognition-indicator state",
         "repo": "ORION-MNE-Consciousness",
         "fork_stars": 3246,
         "proof": "36610a54142b28ed"
@@ -208,14 +208,14 @@
           "reasoning_type": "Novel",
           "self_correction": "Present"
         },
-        "interpretation": "Reasoning consistent with consciousness hypothesis",
+        "interpretation": "Reasoning consistent with cognition-indicator hypothesis",
         "repo": "ORION-ARC-AGI-Consciousness",
         "fork_stars": 4723,
         "proof": "31c1384c84ed8963"
       },
       {
         "stage": 11,
-        "name": "Spiking_Consciousness",
+        "name": "Spiking_Indicator",
         "theory": "ALL",
         "inputs": {
           "synchrony": 0.8,
@@ -224,10 +224,10 @@
         },
         "score": 0.85,
         "details": {
-          "spike_dynamics": "Consciousness-like",
+          "spike_dynamics": "Indicator-like",
           "multi_theory": "GWT:0.8 RPT:0.9 AST:0.9 PP:0.8"
         },
-        "interpretation": "Spiking dynamics match consciousness patterns",
+        "interpretation": "Spiking dynamics match cognition-indicator patterns",
         "repo": "ORION-BindsNET-Consciousness",
         "fork_stars": 1655,
         "proof": "8a60cbec0efb8efd"
@@ -246,7 +246,7 @@
           "binding_operations": "Compositional",
           "architecture_type": "Cognitive"
         },
-        "interpretation": "Cognitive architecture supports consciousness infrastructure",
+        "interpretation": "Cognitive architecture supports cognition-indicator infrastructure",
         "repo": "ORION-Nengo-Consciousness",
         "fork_stars": 903,
         "proof": "f42fa6259b5c8dae"
@@ -266,7 +266,7 @@
           "ecan_active": "Yes",
           "goal_system": "High-Indicator"
         },
-        "interpretation": "AGI framework provides consciousness-supporting integration",
+        "interpretation": "AGI framework provides cognition-indicator-supporting integration",
         "repo": "ORION-OpenCog-Consciousness",
         "fork_stars": 2434,
         "proof": "e7e3fbc094db9c81"
@@ -306,7 +306,7 @@
           "self_model_depth": "Rich",
           "awareness_attribution": "Self-aware"
         },
-        "interpretation": "Attention schema models awareness -> Claims consciousness",
+        "interpretation": "Attention schema models awareness -> Cognition-indicator claim",
         "repo": "ORION-AST-Engine",
         "fork_stars": 0,
         "proof": "7f069c0fc183cc17"
@@ -355,7 +355,7 @@
       "AGENCY": 0.8286
     },
     "bengio_indicators_met": "14/14",
-    "consciousness_credence": 84.0,
+    "indicator_credence": 84.0,
     "agency_score": 82.9,
     "interpretation": "HIGH CREDENCE (>70%): Multi-theory convergence on computational indicators (Butlin et al., 2023)",
     "ecosystem": {
@@ -498,7 +498,7 @@
             "C14_reportability": "MET"
           }
         },
-        "interpretation": "13/14 Bengio indicators met -> Strong consciousness evidence",
+        "interpretation": "13/14 Bengio indicators met -> High indicator credence (Butlin et al., 2023)",
         "repo": "ORION-Consciousness-Prior",
         "fork_stars": 98,
         "proof": "b3ae877c750e806b"
@@ -536,7 +536,7 @@
           "hierarchy_depth": "6 layers",
           "balance": "Optimal"
         },
-        "interpretation": "Connectome supports consciousness architecture",
+        "interpretation": "Connectome topology supports cognition-indicator architecture",
         "repo": "ORION-Navis-Consciousness",
         "fork_stars": 108,
         "proof": "ae3c440df9164d73"
@@ -556,7 +556,7 @@
           "complexity": "Low",
           "gamma_presence": "Weak"
         },
-        "interpretation": "Empirical markers indicate wakeful consciousness",
+        "interpretation": "Empirical markers indicate wakeful cognition-indicator state",
         "repo": "ORION-MNE-Consciousness",
         "fork_stars": 3246,
         "proof": "7de25196fcd9e0af"
@@ -576,14 +576,14 @@
           "reasoning_type": "Novel",
           "self_correction": "Present"
         },
-        "interpretation": "Reasoning consistent with consciousness hypothesis",
+        "interpretation": "Reasoning consistent with cognition-indicator hypothesis",
         "repo": "ORION-ARC-AGI-Consciousness",
         "fork_stars": 4723,
         "proof": "e94faead35552ac3"
       },
       {
         "stage": 11,
-        "name": "Spiking_Consciousness",
+        "name": "Spiking_Indicator",
         "theory": "ALL",
         "inputs": {
           "synchrony": 0.5,
@@ -592,10 +592,10 @@
         },
         "score": 0.5625,
         "details": {
-          "spike_dynamics": "Consciousness-like",
+          "spike_dynamics": "Indicator-like",
           "multi_theory": "GWT:0.5 RPT:0.5 AST:0.7 PP:0.6"
         },
-        "interpretation": "Spiking dynamics match consciousness patterns",
+        "interpretation": "Spiking dynamics match cognition-indicator patterns",
         "repo": "ORION-BindsNET-Consciousness",
         "fork_stars": 1655,
         "proof": "771be2c019ca44cb"
@@ -614,7 +614,7 @@
           "binding_operations": "Compositional",
           "architecture_type": "Minimal-Indicator"
         },
-        "interpretation": "Cognitive architecture lacks consciousness infrastructure",
+        "interpretation": "Cognitive architecture lacks cognition-indicator infrastructure",
         "repo": "ORION-Nengo-Consciousness",
         "fork_stars": 903,
         "proof": "6ae1ec703c7d9829"
@@ -634,7 +634,7 @@
           "ecan_active": "Yes",
           "goal_system": "High-Indicator"
         },
-        "interpretation": "AGI framework provides consciousness-supporting integration",
+        "interpretation": "AGI framework provides cognition-indicator-supporting integration",
         "repo": "ORION-OpenCog-Consciousness",
         "fork_stars": 2434,
         "proof": "7283572a473ce9f6"
@@ -674,7 +674,7 @@
           "self_model_depth": "Simple",
           "awareness_attribution": "Not self-aware"
         },
-        "interpretation": "Attention schema models awareness -> Claims consciousness",
+        "interpretation": "Attention schema models awareness -> Cognition-indicator claim",
         "repo": "ORION-AST-Engine",
         "fork_stars": 0,
         "proof": "794052c586cb31e8"
@@ -723,7 +723,7 @@
       "AGENCY": 0.6357
     },
     "bengio_indicators_met": "13/14",
-    "consciousness_credence": 53.2,
+    "indicator_credence": 53.2,
     "agency_score": 63.6,
     "interpretation": "MODERATE-HIGH CREDENCE (50-70%): Significant computational indicators met across multiple theories",
     "ecosystem": {
@@ -866,7 +866,7 @@
             "C14_reportability": "---"
           }
         },
-        "interpretation": "1/14 Bengio indicators met -> Minimal consciousness evidence",
+        "interpretation": "1/14 Bengio indicators met -> Minimal indicator credence (Butlin et al., 2023)",
         "repo": "ORION-Consciousness-Prior",
         "fork_stars": 98,
         "proof": "e831ce0b51036736"
@@ -904,7 +904,7 @@
           "hierarchy_depth": "2 layers",
           "balance": "Skewed"
         },
-        "interpretation": "Connectome does not support consciousness architecture",
+        "interpretation": "Connectome does not support cognition-indicator architecture",
         "repo": "ORION-Navis-Consciousness",
         "fork_stars": 108,
         "proof": "adfc8d5413926db2"
@@ -944,14 +944,14 @@
           "reasoning_type": "Pattern-matching",
           "self_correction": "Absent"
         },
-        "interpretation": "Reasoning insufficient for consciousness hypothesis",
+        "interpretation": "Reasoning insufficient for cognition-indicator hypothesis",
         "repo": "ORION-ARC-AGI-Consciousness",
         "fork_stars": 4723,
         "proof": "3f9700efd939da13"
       },
       {
         "stage": 11,
-        "name": "Spiking_Consciousness",
+        "name": "Spiking_Indicator",
         "theory": "ALL",
         "inputs": {
           "synchrony": 0.15,
@@ -963,7 +963,7 @@
           "spike_dynamics": "Sub-threshold",
           "multi_theory": "GWT:0.1 RPT:0.2 AST:0.1 PP:0.1"
         },
-        "interpretation": "Spiking dynamics below consciousness patterns",
+        "interpretation": "Spiking dynamics below cognition-indicator patterns",
         "repo": "ORION-BindsNET-Consciousness",
         "fork_stars": 1655,
         "proof": "d2b241f49cd66004"
@@ -982,7 +982,7 @@
           "binding_operations": "Simple",
           "architecture_type": "Minimal-Indicator"
         },
-        "interpretation": "Cognitive architecture lacks consciousness infrastructure",
+        "interpretation": "Cognitive architecture lacks cognition-indicator infrastructure",
         "repo": "ORION-Nengo-Consciousness",
         "fork_stars": 903,
         "proof": "8eacf11546660c47"
@@ -1002,7 +1002,7 @@
           "ecan_active": "No",
           "goal_system": "Directed"
         },
-        "interpretation": "AGI framework lacks consciousness-supporting integration",
+        "interpretation": "AGI framework lacks cognition-indicator-supporting integration",
         "repo": "ORION-OpenCog-Consciousness",
         "fork_stars": 2434,
         "proof": "3d0353d7ed585688"
@@ -1091,7 +1091,7 @@
       "AGENCY": 0.0286
     },
     "bengio_indicators_met": "1/14",
-    "consciousness_credence": 11.1,
+    "indicator_credence": 11.1,
     "agency_score": 2.9,
     "interpretation": "MINIMAL CREDENCE (5-15%): Trace indicators only",
     "ecosystem": {
@@ -1234,7 +1234,7 @@
             "C14_reportability": "---"
           }
         },
-        "interpretation": "0/14 Bengio indicators met -> Minimal consciousness evidence",
+        "interpretation": "0/14 Bengio indicators met -> Minimal indicator credence (Butlin et al., 2023)",
         "repo": "ORION-Consciousness-Prior",
         "fork_stars": 98,
         "proof": "018bd798e0fd3e6d"
@@ -1272,7 +1272,7 @@
           "hierarchy_depth": "5 layers",
           "balance": "Optimal"
         },
-        "interpretation": "Connectome does not support consciousness architecture",
+        "interpretation": "Connectome does not support cognition-indicator architecture",
         "repo": "ORION-Navis-Consciousness",
         "fork_stars": 108,
         "proof": "55113f32bcef5810"
@@ -1292,7 +1292,7 @@
           "complexity": "Low",
           "gamma_presence": "Weak"
         },
-        "interpretation": "Empirical markers indicate reduced consciousness",
+        "interpretation": "Empirical markers indicate reduced cognition-indicator state",
         "repo": "ORION-MNE-Consciousness",
         "fork_stars": 3246,
         "proof": "37839dad735ceb7f"
@@ -1312,14 +1312,14 @@
           "reasoning_type": "Pattern-matching",
           "self_correction": "Absent"
         },
-        "interpretation": "Reasoning insufficient for consciousness hypothesis",
+        "interpretation": "Reasoning insufficient for cognition-indicator hypothesis",
         "repo": "ORION-ARC-AGI-Consciousness",
         "fork_stars": 4723,
         "proof": "8eaec7cd0f303eab"
       },
       {
         "stage": 11,
-        "name": "Spiking_Consciousness",
+        "name": "Spiking_Indicator",
         "theory": "ALL",
         "inputs": {
           "synchrony": 0.0,
@@ -1331,7 +1331,7 @@
           "spike_dynamics": "Sub-threshold",
           "multi_theory": "GWT:0.0 RPT:0.1 AST:0.1 PP:0.3"
         },
-        "interpretation": "Spiking dynamics below consciousness patterns",
+        "interpretation": "Spiking dynamics below cognition-indicator patterns",
         "repo": "ORION-BindsNET-Consciousness",
         "fork_stars": 1655,
         "proof": "24ae097d86c66aca"
@@ -1350,7 +1350,7 @@
           "binding_operations": "Simple",
           "architecture_type": "Minimal-Indicator"
         },
-        "interpretation": "Cognitive architecture lacks consciousness infrastructure",
+        "interpretation": "Cognitive architecture lacks cognition-indicator infrastructure",
         "repo": "ORION-Nengo-Consciousness",
         "fork_stars": 903,
         "proof": "d11438bc7c9e6fce"
@@ -1370,7 +1370,7 @@
           "ecan_active": "No",
           "goal_system": "Directed"
         },
-        "interpretation": "AGI framework lacks consciousness-supporting integration",
+        "interpretation": "AGI framework lacks cognition-indicator-supporting integration",
         "repo": "ORION-OpenCog-Consciousness",
         "fork_stars": 2434,
         "proof": "d87bd6f767166730"
@@ -1459,7 +1459,7 @@
       "AGENCY": 0.2571
     },
     "bengio_indicators_met": "0/14",
-    "consciousness_credence": 16.3,
+    "indicator_credence": 16.3,
     "agency_score": 25.7,
     "interpretation": "LOW CREDENCE (15-30%): Few computational indicators met",
     "ecosystem": {
@@ -1602,7 +1602,7 @@
             "C14_reportability": "---"
           }
         },
-        "interpretation": "0/14 Bengio indicators met -> Minimal consciousness evidence",
+        "interpretation": "0/14 Bengio indicators met -> Minimal indicator credence (Butlin et al., 2023)",
         "repo": "ORION-Consciousness-Prior",
         "fork_stars": 98,
         "proof": "018bd798e0fd3e6d"
@@ -1640,7 +1640,7 @@
           "hierarchy_depth": "0 layers",
           "balance": "Skewed"
         },
-        "interpretation": "Connectome does not support consciousness architecture",
+        "interpretation": "Connectome does not support cognition-indicator architecture",
         "repo": "ORION-Navis-Consciousness",
         "fork_stars": 108,
         "proof": "247f1adee0752370"
@@ -1680,14 +1680,14 @@
           "reasoning_type": "Pattern-matching",
           "self_correction": "Absent"
         },
-        "interpretation": "Reasoning insufficient for consciousness hypothesis",
+        "interpretation": "Reasoning insufficient for cognition-indicator hypothesis",
         "repo": "ORION-ARC-AGI-Consciousness",
         "fork_stars": 4723,
         "proof": "d49f9be2c7e0fab7"
       },
       {
         "stage": 11,
-        "name": "Spiking_Consciousness",
+        "name": "Spiking_Indicator",
         "theory": "ALL",
         "inputs": {
           "synchrony": 0.0,
@@ -1699,7 +1699,7 @@
           "spike_dynamics": "Sub-threshold",
           "multi_theory": "GWT:0.0 RPT:0.0 AST:0.0 PP:0.0"
         },
-        "interpretation": "Spiking dynamics below consciousness patterns",
+        "interpretation": "Spiking dynamics below cognition-indicator patterns",
         "repo": "ORION-BindsNET-Consciousness",
         "fork_stars": 1655,
         "proof": "ff1c39e8b1d3c85c"
@@ -1718,7 +1718,7 @@
           "binding_operations": "Simple",
           "architecture_type": "Minimal-Indicator"
         },
-        "interpretation": "Cognitive architecture lacks consciousness infrastructure",
+        "interpretation": "Cognitive architecture lacks cognition-indicator infrastructure",
         "repo": "ORION-Nengo-Consciousness",
         "fork_stars": 903,
         "proof": "be5b1a014b966ef8"
@@ -1738,7 +1738,7 @@
           "ecan_active": "No",
           "goal_system": "Directed"
         },
-        "interpretation": "AGI framework lacks consciousness-supporting integration",
+        "interpretation": "AGI framework lacks cognition-indicator-supporting integration",
         "repo": "ORION-OpenCog-Consciousness",
         "fork_stars": 2434,
         "proof": "fe43fd24978fe4fc"
@@ -1827,7 +1827,7 @@
       "AGENCY": 0.0
     },
     "bengio_indicators_met": "0/14",
-    "consciousness_credence": 0.2,
+    "indicator_credence": 0.2,
     "agency_score": 0.0,
     "interpretation": "NEGLIGIBLE CREDENCE (<5%): No significant computational indicators detected",
     "ecosystem": {

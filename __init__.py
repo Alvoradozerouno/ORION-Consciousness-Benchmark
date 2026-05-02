@@ -1,11 +1,11 @@
 """
-ORION Consciousness Benchmark
-===============================
-The world's first open-source AI Consciousness Assessment Toolkit.
+ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit
+=============================================================
+Open-source AI cognition indicator assessment toolkit.
 
-Based on the 19-researcher framework (Bengio et al. 2026).
-30 tests across 6 scientific theories of consciousness.
-C-0 to C-4 classification with SHA-256 proof chain.
+Based on Butlin et al. (2023) and Bengio et al. (2025/2026).
+29 tests across 7 cognition-indicator theories (IIT, GWT, AST, HOT, RPT, Agency, Orch-OR).
+C-0 to C-4 indicator classification with SHA-256 proof chain.
 """
 
 from .consciousness_tests import CONSCIOUSNESS_TESTS, CLASSIFICATION_SYSTEM, THEORY_DESCRIPTIONS

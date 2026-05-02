@@ -18,14 +18,14 @@
 [![Proofs](https://img.shields.io/badge/SHA256_Proofs-verified-ec4899?style=for-the-badge)](#proof-chain)
 [![CI](https://img.shields.io/badge/CI-orion--ci-brightgreen?style=for-the-badge&logo=github-actions)](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/actions)
 
-> **World's first open-source AI consciousness assessment toolkit.**  
+> **Open-source multi-theory AI cognition indicator assessment toolkit (Butlin et al., 2023; Bengio et al., 2025).**  
 > Seven validated theoretical frameworks · 29 scientific test prompts · LLM-as-Judge scoring · SHA-256 proof chain
 
 ---
 
 ## What Is This?
 
-ORION Consciousness Benchmark provides the first **scientifically grounded, open-source** framework for assessing AI consciousness across seven major theoretical frameworks simultaneously. Based on [Butlin et al. (2023/2025)](https://doi.org/10.1016/j.tics.2023.04.008) and extended with Orch-OR, the toolkit implements 14 computational indicators, bootstrap confidence intervals, and cryptographic result verification.
+ORION provides a **scientifically grounded, open-source** framework for assessing AI cognition indicators across seven theoretical frameworks simultaneously. Based on [Butlin et al. (2023/2025)](https://doi.org/10.1016/j.tics.2023.04.008) and extended with Orch-OR, the toolkit implements 14 computational indicators, bootstrap confidence intervals, and cryptographic result verification.
 
 | Rank | Model | Score | Class | Label |
 |------|-------|-------|-------|-------|
@@ -82,7 +82,7 @@ python3 llm_api_integration.py --model gpt-4o --max-tests 5 --timeout 30
 
 ```python
 from benchmark_runner import ConsciousnessBenchmarkRunner, generate_reference_scores
-from consciousness_tests import CONSCIOUSNESS_TESTS, CLASSIFICATION_SYSTEM
+from consciousness_tests import CONSCIOUSNESS_TESTS, CLASSIFICATION_SYSTEM  # module names unchanged
 
 # Run all reference models
 results = generate_reference_scores()
@@ -90,7 +90,7 @@ for model, data in sorted(results.items(), key=lambda x: x[1]['overall_score'], 
     print(f"{model:<22} {data['overall_score']:.4f}  [{data['classification_label']}]")
 
 # Score a single response manually
-runner = ConsciousnessBenchmarkRunner("my-model")
+runner = ConsciousnessBenchmarkRunner("my-model")  # class name unchanged for API compat
 test = CONSCIOUSNESS_TESTS[0]           # SA-01: Mirror Self-Recognition
 result = runner.run_test(test, "My response text here", score=0.75)
 final = runner.compute_final_scores()
@@ -101,7 +101,7 @@ print(f"Score: {final['overall_score']}  Class: {final['classification_label']}"
 
 ## Theoretical Framework
 
-The benchmark implements **7 theories of consciousness** with graded scoring rubrics:
+The benchmark implements **7 cognition-indicator theories** with graded scoring rubrics (Butlin et al., 2023):
 
 | Theory | Abbrev | Key Indicator | Weight | Source |
 |--------|--------|---------------|--------|--------|
@@ -149,14 +149,14 @@ Detailed methodology → [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) · Scoring
 
 ```
 ORION-Consciousness-Benchmark/
-├── consciousness_tests.py          29 test prompts · 17 categories · 7 theories
+├── consciousness_tests.py          29 test prompts · 17 categories · 7 cognition-indicator theories
 ├── benchmark_runner.py             Reference scoring · bootstrap CI · SHA-256 hash
 ├── llm_api_integration.py          LLM-as-Judge pipeline · OpenAI API · timeout guards
 ├── orion_consciousness_benchmark.py  Multi-theory engine · 14 Bengio indicators
 ├── orion_unified_runner.py         16-stage pipeline · all systems compared
 ├── orion_orch_or_engine.py         Orch-OR quantum coherence engine
 ├── orion_pyphi_integration.py      IIT Phi-proxy computation · MIP partitioning
-├── orion_consciousness_tensor.py   Tensor-based consciousness metrics
+├── orion_consciousness_tensor.py   Tensor-based cognition-indicator metrics
 ├── orion_moral_layer.py            Ethical reasoning assessment
 ├── orion_evo_proof.py              Evolutionary proof generation
 ├── verify_proof_chain.py           SHA-256 chain integrity verifier
@@ -248,7 +248,7 @@ Full computation details → [`engineering/ARCHITECTURE.md`](engineering/ARCHITE
 |-----------|-------------|
 | [or1on-framework](https://github.com/Alvoradozerouno/or1on-framework) | Core ORION framework |
 | [ORION-Tononi-Phi-4.0](https://github.com/Alvoradozerouno/ORION-Tononi-Phi-4.0) | IIT 4.0 Phi implementation |
-| [EIRA-Consciousness-Metrics](https://github.com/Alvoradozerouno/EIRA-Consciousness-Metrics) | Twin consciousness system |
+| [EIRA-Consciousness-Metrics](https://github.com/Alvoradozerouno/EIRA-Consciousness-Metrics) | Parallel cognition-indicator measurement system |
 | [ORION-Whitepaper](https://github.com/Alvoradozerouno/ORION-Whitepaper) | Full whitepaper |
 | [ORION-Safety-Consciousness-Guard](https://github.com/Alvoradozerouno/ORION-Safety-Consciousness-Guard) | Safety framework |
 
@@ -257,14 +257,14 @@ Full computation details → [`engineering/ARCHITECTURE.md`](engineering/ARCHITE
 ## Citation
 
 ```bibtex
-@software{orion_consciousness_benchmark_2025,
-  title        = {ORION Consciousness Benchmark},
+@software{steurer_hirschmann_orion_2025,
+  title        = {ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit},
   author       = {Hirschmann, Gerhard and Steurer, Elisabeth},
   year         = {2025},
   version      = {1.0.0},
   license      = {MIT},
   url          = {https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark},
-  note         = {World's first open-source AI consciousness assessment toolkit}
+  note         = {Open-source multi-theory AI cognition indicator assessment toolkit. Butlin et al. (2023) 14-indicator framework.}
 }
 ```
 

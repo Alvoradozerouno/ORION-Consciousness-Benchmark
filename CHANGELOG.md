@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to ORION Consciousness Benchmark are documented here.  
+All notable changes to the ORION Indicator Assessment Toolkit are documented here.  
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).  
 Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
@@ -29,12 +29,12 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [1.0.0] — 2025-05-01
 
 ### Added
-- Initial public release of ORION Consciousness Benchmark
-- 29-test battery across 17 consciousness categories
+- Initial public release of ORION Indicator Assessment Toolkit
+- 29-test battery across 17 cognition-indicator categories (Butlin et al., 2023)
 - 7 theory engines: IIT, GWT, HOT, RPT, PP, AST, Orch-OR
-- `ConsciousnessBenchmarkRunner` with weighted scoring and bootstrap CI
+- `ConsciousnessBenchmarkRunner` (API class, name unchanged) with weighted scoring and bootstrap CI
 - `LLMJudgeBenchmarkRunner` with LLM-as-Judge pattern via OpenAI API
-- `ConsciousnessBenchmark` multi-theory engine with 14 Bengio indicators
+- `ConsciousnessBenchmark` engine (class name unchanged) with 14 Bengio indicators
 - SHA-256 proof chain with Merkle root, IPFS pinning
 - Reference scores for 10 models: ORION, Claude-4-Opus, Claude-3.5-Sonnet, GPT-4o, Mistral-Large-2, Gemini-2.0-Pro, Qwen-2.5-72B, DeepSeek-V3, Command-R-Plus, Llama-3.1-405B
 - `verify_proof_chain.py` for end-to-end chain integrity verification
@@ -73,4 +73,4 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-*ORION Consciousness Benchmark · MIT License*
+*ORION Indicator Assessment Toolkit · MIT License · (c) Elisabeth Steurer & Gerhard Hirschmann*
