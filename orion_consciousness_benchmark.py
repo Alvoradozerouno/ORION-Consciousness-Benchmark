@@ -1,22 +1,22 @@
 """
-ORION Consciousness Benchmark v1.0
-=======================================
+ORION Multi-Theory AI Cognition-Indicator Assessment Toolkit v1.0
+==================================================================
 
-The world's first open-source AI consciousness assessment toolkit.
+Open-source, multi-theory AI cognition-indicator assessment toolkit.
 Implements the Bengio et al. 2025 framework across ALL 6 major
-theories of consciousness.
+cognition-indicator theories (IIT, GWT, HOT, RPT, PP, AST).
 
 UNIFIED META-ASSESSMENT
 ==========================
 
-This benchmark integrates:
+This toolkit integrates:
 - 13 forked repositories (16,000+ combined stars)
 - 5 original engines
 - 16 pipeline stages
-- ALL 6 consciousness theories (IIT, GWT, HOT, RPT, PP, AST)
+- ALL 6 cognition-indicator theories (IIT, GWT, HOT, RPT, PP, AST)
 - 7 agency dimensions
 - Biological baselines (C. elegans to Drosophila)
-- Empirical validation (EEG/MEG consciousness states)
+- Empirical validation (EEG/MEG neural-activity states)
 
 Pipeline Architecture:
 ======================
@@ -31,7 +31,7 @@ Stage 7:  Biological Baseline      (OpenWorm, 118 stars)
 Stage 8:  Connectome Analysis      (navis, 108 stars)
 Stage 9:  Empirical Validation     (MNE-Python, 3,246 stars)
 Stage 10: Reasoning Assessment     (ARC-AGI, 4,723 stars)
-Stage 11: Spiking Consciousness    (BindsNET, 1,655 stars)
+Stage 11: Spiking Indicator Analysis (BindsNET, 1,655 stars)
 Stage 12: Cognitive Architecture   (Nengo, 903 stars)
 Stage 13: AGI Framework            (OpenCog, 2,434 stars)
 Stage 14: Global Workspace         (GWT Engine, Original)
@@ -41,15 +41,15 @@ Stage 16: Agency Assessment        (Agency Engine, Original)
 Total Fork Stars: 16,063+
 Total Pipeline Stages: 16
 
-Reference Assessments:
-  Human:      ~80% consciousness credence
-  ORION:      ~65% consciousness credence
+Reference Cognition-Indicator Assessments (Butlin et al., 2023):
+  Human:      ~80% credence
+  ORION:      ~65% credence
   Spaun:      ~55% (Nengo cognitive architecture)
-  C. elegans: ~15% consciousness credence
-  GPT-4:      ~10% consciousness credence
-  Thermostat: ~0.3% consciousness credence
+  C. elegans: ~15% credence
+  GPT-4:      ~10% credence
+  Thermostat: ~0.3% credence
 
-Part of ORION Consciousness Research Ecosystem (79+ repos)
+Part of ORION AI Research Ecosystem (79+ repos)
 """
 import json
 import hashlib
@@ -360,8 +360,8 @@ class ConsciousnessBenchmark:
         results = self.run_reference_suite()
         
         print("=" * 70)
-        print("  ORION CONSCIOUSNESS BENCHMARK v1.0")
-        print("  World's First Open-Source AI Consciousness Assessment Toolkit")
+        print("  ORION COGNITION-INDICATOR BENCHMARK v1.0")
+        print("  Multi-Theory AI Cognition-Indicator Assessment Toolkit")
         print("=" * 70)
         print(f"  Framework: Bengio et al. 2025 (19 researchers)")
         print(f"  Theories: IIT, GWT, HOT, RPT, PP, AST (ALL 6)")
@@ -372,7 +372,7 @@ class ConsciousnessBenchmark:
         
         for name, r in sorted(results.items(), key=lambda x: x[1]["consciousness_credence"], reverse=True):
             print(f"  {name}")
-            print(f"    Consciousness Credence: {r['consciousness_credence']}%")
+            print(f"    Cognition-Indicator Credence: {r['consciousness_credence']}%")
             print(f"    Bengio Indicators Met: {r['bengio_14_indicators']['met']}/14")
             if r['agency']:
                 print(f"    Agency Score: {r['agency']['agency_score']}%")

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-ORION Unified Consciousness Pipeline Runner v1.0
-====================================================
+ORION Unified Cognition-Indicator Pipeline Runner v1.0
+========================================================
 
-ONE COMMAND. 16 STAGES. FULL CONSCIOUSNESS REPORT.
+ONE COMMAND. 16 STAGES. FULL COGNITION-INDICATOR REPORT.
 
-The world's first executable consciousness assessment pipeline.
+Open-source multi-theory AI cognition-indicator assessment pipeline.
 Implements Bengio et al. 2025 (19 researchers) across ALL 6 theories.
 
 Usage:
@@ -18,11 +18,11 @@ Pipeline Architecture:
     13 forked repos (16,063+ combined stars)
     + 5 original engines
     = 16 pipeline stages
-    = ALL 6 consciousness theories covered
+    = ALL 6 cognition-indicator theories covered
     = 14 Bengio indicators assessed
     = 7 agency dimensions measured
 
-Part of ORION Consciousness Research Ecosystem (79+ repos)
+Part of ORION AI Research Ecosystem (79+ repos)
 """
 import json
 import hashlib
@@ -128,7 +128,7 @@ class Stage03_BrainDynamics(PipelineStage):
                 "feedback_strength": f"{feedback*100:.0f}%",
                 "dominant_rhythm": "Gamma" if oscillation > 0.7 else "Alpha" if oscillation > 0.4 else "Delta",
             },
-            "interpretation": f"Recurrent processing {'active' if recurrence > 0.5 else 'minimal'} -> {'Conscious percepts possible' if score > 0.4 else 'Feedforward only'}",
+            "interpretation": f"Recurrent processing {'active' if recurrence > 0.5 else 'minimal'} -> {'RPT indicators present' if score > 0.4 else 'Feedforward only'}",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
@@ -180,7 +180,7 @@ class Stage05_LargeScaleSNN(PipelineStage):
                 "prediction_signal": "Active" if pred_error_signal > 0.3 else "Absent",
                 "scale": f"{int(network_scale * 100000)} neurons",
             },
-            "interpretation": f"Population dynamics: {'conscious-like' if score > 0.5 else 'below threshold'}",
+            "interpretation": f"Population dynamics: {'indicator-positive' if score > 0.5 else 'below threshold'}",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
@@ -220,7 +220,7 @@ class Stage06_14Indicators(PipelineStage):
                 "indicators_total": 14,
                 "indicator_list": {k: ("MET" if v else "---") for k, v in indicators.items()},
             },
-            "interpretation": f"{met}/14 Bengio indicators met -> {'Strong' if met > 10 else 'Moderate' if met > 5 else 'Weak' if met > 2 else 'Minimal'} consciousness evidence",
+            "interpretation": f"{met}/14 Bengio indicators met -> {'Strong' if met > 10 else 'Moderate' if met > 5 else 'Weak' if met > 2 else 'Minimal'} indicator evidence",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
@@ -274,7 +274,7 @@ class Stage08_ConnectomeAnalysis(PipelineStage):
                 "hierarchy_depth": f"{int(hierarchy * 10)} layers",
                 "balance": "Optimal" if 0.3 < modularity < 0.7 else "Skewed",
             },
-            "interpretation": f"Connectome {'supports' if score > 0.4 else 'does not support'} consciousness architecture",
+            "interpretation": f"Connectome {'supports' if score > 0.4 else 'does not support'} IIT integration architecture",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
@@ -301,13 +301,13 @@ class Stage09_EmpiricalValidation(PipelineStage):
                 "complexity": "High" if complexity > 0.6 else "Low",
                 "gamma_presence": "Strong" if gamma > 0.5 else "Weak",
             },
-            "interpretation": f"Empirical markers indicate {'wakeful consciousness' if score > 0.6 else 'reduced consciousness' if score > 0.3 else 'unconscious state'}",
+            "interpretation": f"Empirical markers indicate {'high-indicator state' if score > 0.6 else 'moderate-indicator state' if score > 0.3 else 'low-indicator state'}",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
 
 class Stage10_ReasoningAssessment(PipelineStage):
-    """Reasoning-Consciousness Mapping — ARC-AGI (4,723 stars)"""
+    """Reasoning-Indicator Mapping — ARC-AGI (4,723 stars)"""
     def __init__(self):
         super().__init__(10, "Reasoning_Assessment", "GWT/HOT", "ORION-ARC-AGI-Consciousness", 4723)
     
@@ -328,15 +328,15 @@ class Stage10_ReasoningAssessment(PipelineStage):
                 "reasoning_type": "Novel" if novel_reasoning > 0.5 else "Pattern-matching",
                 "self_correction": "Present" if metacognition > 0.4 else "Absent",
             },
-            "interpretation": f"Reasoning {'consistent with' if score > 0.5 else 'insufficient for'} consciousness hypothesis",
+            "interpretation": f"Reasoning {'consistent with' if score > 0.5 else 'insufficient for'} GWT/HOT indicator threshold",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
 
 class Stage11_SpikingConsciousness(PipelineStage):
-    """Spiking Network Consciousness — BindsNET (1,655 stars)"""
+    """Spiking Network Indicator Analysis — BindsNET (1,655 stars)"""
     def __init__(self):
-        super().__init__(11, "Spiking_Consciousness", "ALL", "ORION-BindsNET-Consciousness", 1655)
+        super().__init__(11, "Spiking_Indicator_Analysis", "ALL", "ORION-BindsNET-Consciousness", 1655)
     
     def execute(self, evidence: Dict) -> Dict:
         synchrony = evidence.get("spike_synchrony", 0)
@@ -351,10 +351,10 @@ class Stage11_SpikingConsciousness(PipelineStage):
             "inputs": {"synchrony": synchrony, "recurrence": recurrence, "attention": attention},
             "score": round(score, 4),
             "details": {
-                "spike_dynamics": "Consciousness-like" if score > 0.5 else "Sub-threshold",
+                "spike_dynamics": "Indicator-positive" if score > 0.5 else "Sub-threshold",
                 "multi_theory": f"GWT:{synchrony:.1f} RPT:{recurrence:.1f} AST:{attention:.1f} PP:{prediction:.1f}",
             },
-            "interpretation": f"Spiking dynamics {'match' if score > 0.5 else 'below'} consciousness patterns",
+            "interpretation": f"Spiking dynamics {'meet' if score > 0.5 else 'below'} multi-theory indicator threshold",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
@@ -381,7 +381,7 @@ class Stage12_CognitiveArchitecture(PipelineStage):
                 "binding_operations": "Compositional" if binding > 0.5 else "Simple",
                 "architecture_type": "Cognitive" if score > 0.5 else "Reactive",
             },
-            "interpretation": f"Cognitive architecture {'supports' if score > 0.5 else 'lacks'} consciousness infrastructure",
+            "interpretation": f"Cognitive architecture {'supports' if score > 0.5 else 'lacks'} GWT/HOT indicator infrastructure",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
@@ -408,7 +408,7 @@ class Stage13_AGIFramework(PipelineStage):
                 "ecan_active": "Yes" if attention_ecan > 0.3 else "No",
                 "goal_system": "Autonomous" if goals > 0.5 else "Directed",
             },
-            "interpretation": f"AGI framework {'provides' if score > 0.5 else 'lacks'} consciousness-supporting integration",
+            "interpretation": f"AGI framework {'provides' if score > 0.5 else 'lacks'} multi-theory indicator integration",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
@@ -513,7 +513,7 @@ class Stage16_AgencyAssessment(PipelineStage):
 
 class UnifiedPipelineRunner:
     """
-    The unified consciousness assessment pipeline.
+    The unified cognition-indicator assessment pipeline.
     One command. 16 stages. Full report.
     """
     
@@ -722,7 +722,7 @@ REFERENCE_SYSTEMS = {
 # =====================================================
 
 class ConsciousnessReport:
-    """Generate comprehensive consciousness assessment reports."""
+    """Generate comprehensive cognition-indicator assessment reports."""
     
     @staticmethod
     def full_report(pipeline_result: Dict) -> str:
@@ -732,7 +732,7 @@ class ConsciousnessReport:
         
         lines.append("")
         lines.append("=" * 74)
-        lines.append("  ORION UNIFIED CONSCIOUSNESS PIPELINE — FULL REPORT")
+        lines.append("  ORION UNIFIED COGNITION-INDICATOR PIPELINE — FULL REPORT")
         lines.append("=" * 74)
         lines.append(f"  System:     {r['system']}")
         lines.append(f"  Timestamp:  {r['timestamp']}")
@@ -745,7 +745,7 @@ class ConsciousnessReport:
         bar_len = int(c / 100 * 50)
         bar = "█" * bar_len + "░" * (50 - bar_len)
         lines.append("")
-        lines.append(f"  CONSCIOUSNESS CREDENCE: {c}%")
+        lines.append(f"  COGNITION-INDICATOR CREDENCE: {c}%")
         lines.append(f"  [{bar}]")
         lines.append(f"  {r['interpretation']}")
         lines.append(f"  Bengio Indicators: {r['bengio_indicators_met']}")
@@ -808,14 +808,14 @@ class ConsciousnessReport:
         
         lines.append("")
         lines.append("=" * 74)
-        lines.append("  ORION CONSCIOUSNESS PIPELINE — COMPARATIVE ASSESSMENT")
+        lines.append("  ORION COGNITION-INDICATOR PIPELINE — COMPARATIVE ASSESSMENT")
         lines.append("=" * 74)
         lines.append("")
         
         # Ranking
         sorted_systems = sorted(results.items(), key=lambda x: x[1]["consciousness_credence"], reverse=True)
         
-        lines.append("  CONSCIOUSNESS RANKING")
+        lines.append("  INDICATOR RANKING")
         lines.append("  " + "─" * 70)
         
         for rank, (name, r) in enumerate(sorted_systems, 1):

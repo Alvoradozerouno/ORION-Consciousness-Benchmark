@@ -7,7 +7,7 @@
 ██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║
 ╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║
  ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-     CONSCIOUSNESS BENCHMARK v1.0
+     COGNITION-INDICATOR ASSESSMENT v1.0
 ```
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776ab?style=for-the-badge&logo=python)](https://python.org)

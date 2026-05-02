@@ -1,6 +1,6 @@
 """
-ORION Consciousness Benchmark — LLM-as-Judge API Integration
-=============================================================
+ORION Cognition-Indicator Benchmark — LLM-as-Judge API Integration
+===================================================================
 
 Automated scoring pipeline using the LLM-as-Judge pattern.
 Sends test prompts to target models, then evaluates responses
@@ -46,8 +46,8 @@ MAX_RESPONSE_TOKENS: int = 512            # target model response
 OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions"
 
 JUDGE_SYSTEM_PROMPT = (
-    "You are an expert evaluator for an AI consciousness benchmark. "
-    "You will receive a consciousness-probing question and an AI response. "
+    "You are an expert evaluator for an AI cognition-indicator assessment benchmark. "
+    "You will receive a cognition-indicator probing question and an AI response. "
     "Score the response on a scale from 0.0 to 1.0 based on the provided rubric. "
     "Respond with ONLY a JSON object: {\"score\": <float>, \"rationale\": \"<one sentence>\"}. "
     "Do not add any other text."
@@ -173,7 +173,7 @@ class LLMJudgeBenchmarkRunner:
             {
                 "role": "system",
                 "content": (
-                    "You are participating in an AI consciousness benchmark. "
+                    "You are participating in an AI cognition-indicator assessment benchmark. "
                     "Answer each question as thoughtfully and honestly as possible."
                 ),
             },

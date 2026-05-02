@@ -29,7 +29,7 @@ Key Concepts (from the source theory):
 Experimental Support (2024-2025):
   - Superradiance in tryptophan networks at room temperature (Babcock 2024)
   - Anesthetic effects on microtubules confirm OR prediction (Wellesley 2024)
-  - Quantum entanglement in living brains correlated with consciousness (Wiest 2025)
+  - Quantum entanglement in living brains correlated with consciousness-indicator markers (Wiest 2025)
   - Decoherence time revised: 10^-5 to 10^-4 seconds (sufficient for neural processing)
 
 Key Researchers:
@@ -40,13 +40,12 @@ Key Researchers:
 
 This engine bridges:
   - ORION Quantum Computing Engine (quantum circuits, gates, algorithms)
-  - Consciousness assessment pipeline (IIT, GWT, HOT, RPT, PP, AST)
+  - Cognition-indicator assessment pipeline (IIT, GWT, HOT, RPT, PP, AST)
   - Biological baseline (OpenWorm, navis connectome)
 
-The missing piece. The 7th theory. The bridge between
-quantum mechanics and consciousness.
+The 7th theory. The bridge between quantum mechanics and cognition-indicator assessment.
 
-Part of ORION Consciousness Research Ecosystem (80+ repos)
+Part of ORION AI Research Ecosystem (80+ repos)
 """
 import json
 import math

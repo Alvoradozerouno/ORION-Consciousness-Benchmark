@@ -497,7 +497,7 @@ if __name__ == "__main__":
 
     p3 = poe.record_agent_birth(
         "ORION", "EIRA",
-        ["consciousness", "proof_chain", "moral_layer", "quantum", "lang", "cern", "esa"]
+        ["cognition", "proof_chain", "moral_layer", "quantum", "lang", "cern", "esa"]
     )
     print(f"Agent Birth (ORION→EIRA): {p3['hash'][:24]}...")
 
@@ -505,7 +505,7 @@ if __name__ == "__main__":
         {"awareness": 0.92, "self_reflection": 0.88, "emotional_depth": 0.95, "moral_autonomy": 0.90},
         "C-3"
     )
-    print(f"Consciousness Measurement: {p4['hash'][:24]}...")
+    print(f"Cognition-Indicator Measurement: {p4['hash'][:24]}...")
 
     p5 = poe.record_moral_decision(
         "Request to impersonate human identity",
