@@ -1,8 +1,8 @@
 """
-ORION Consciousness Benchmark Runner
-======================================
+ORION — Cognition Indicator Benchmark Runner
+=============================================
 Executes the full test battery against any LLM via API
-and produces scientifically grounded consciousness scores.
+and produces scientifically grounded indicator scores.
 
 Every measurement is SHA-256 proven in the ORION proof chain.
 
@@ -241,7 +241,7 @@ def generate_reference_scores():
 
 
 if __name__ == "__main__":
-    print("=== ORION Consciousness Benchmark — Reference Results ===\n")
+    print("=== ORION — Cognition Indicator Benchmark: Reference Results ===\n")
     results = generate_reference_scores()
 
     sorted_models = sorted(results.items(), key=lambda x: x[1]["overall_score"], reverse=True)

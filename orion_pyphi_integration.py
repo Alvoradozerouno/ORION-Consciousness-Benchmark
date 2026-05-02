@@ -1557,7 +1557,7 @@ class ExternalBenchmarkSuite:
         credence = self.compute_credence()
 
         report = {
-            "title": f"ORION Consciousness Benchmark Report: {self.system_name}",
+            "title": f"ORION Cognition Indicator Assessment Report: {self.system_name}",
             "generated": datetime.now(timezone.utc).isoformat(),
             "framework": "Butlin et al. (2025) — 14 indicators, 7 theories",
             "system": self.system_name,
@@ -1813,7 +1813,7 @@ if __name__ == "__main__":
             else:
                 assess_external_system(sys.argv[2])
         elif sys.argv[1] == "--help":
-            print("ORION Consciousness Benchmark Suite")
+            print("ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit")
             print()
             print("Usage:")
             print("  python3 orion_pyphi_integration.py              # Run ORION self-assessment")

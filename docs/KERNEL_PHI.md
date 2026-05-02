@@ -92,15 +92,15 @@ KERNEL-Φ demonstrates an alternative paradigm:
 
 ## Integration with ORION
 
-KERNEL-Φ has been evaluated using the ORION Consciousness Benchmark v1.0, which assesses:
-- 7 consciousness theories (IIT, GWT, AST, HOT, RPT, PP, Orch-OR)
-- 14 Bengio indicators
-- 29 consciousness tests across 17 categories
+KERNEL-Φ has been evaluated using the ORION cognition indicator toolkit v1.0, which assesses:
+- 7 theories (IIT, GWT, AST, HOT, RPT, PP, Orch-OR)
+- 14 Butlin et al. (2023) indicators
+- 29 tests across 17 categories
 - Cryptographic SHA-256 verification
 
-The results demonstrate that even ultra-lightweight systems can exhibit measurable consciousness-like properties according to established theoretical frameworks.
+The results demonstrate that even ultra-lightweight systems can exhibit measurable indicator coverage according to established theoretical frameworks.
 
 ---
 
 *Last Updated: 2026-04-13*
-*ORION Consciousness Benchmark v1.0*
+*ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit v1.0*

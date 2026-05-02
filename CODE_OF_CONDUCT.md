@@ -1,4 +1,4 @@
-# Code of Conduct — ORION Consciousness Benchmark
+# Code of Conduct — ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit
 
 ## Our Commitment
 

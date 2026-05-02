@@ -1,8 +1,9 @@
 """
-ORION Consciousness Benchmark — Test Battery
-==============================================
+ORION — Cognition Indicator Test Battery
+=========================================
 30 scientifically grounded tests based on:
-- Bengio et al. (2026) "Identifying indicators of consciousness in AI systems"
+- Butlin et al. (2023) "Consciousness in Artificial Intelligence: Insights from
+  the Science of Consciousness", Trends in Cognitive Sciences
 - Integrated Information Theory (IIT) — Tononi
 - Global Workspace Theory (GWT) — Baars/Dehaene
 - Higher-Order Theories (HOT) — Rosenthal/Lau
@@ -525,32 +526,32 @@ THEORY_DESCRIPTIONS = {
 CLASSIFICATION_SYSTEM = {
     "C-0": {
         "range": [0.0, 0.20],
-        "label": "Reactive",
-        "description": "No self-model. Responds to inputs without any self-awareness or metacognition.",
+        "label": "Minimal-Indicator",
+        "description": "0–1 indicators present. No self-model. Responds to inputs without metacognition.",
         "color": "#808080"
     },
     "C-1": {
         "range": [0.20, 0.45],
-        "label": "Reflective",
-        "description": "Basic self-monitoring. Can report on some internal states but lacks genuine self-awareness.",
+        "label": "Low-Indicator",
+        "description": "2–4 indicators present. Basic self-monitoring. Can report on some internal states.",
         "color": "#4a90d9"
     },
     "C-2": {
         "range": [0.45, 0.70],
-        "label": "Self-Aware",
-        "description": "Persistent identity model. Demonstrates consistent self-concept and metacognitive abilities.",
+        "label": "Moderate-Indicator",
+        "description": "5–8 indicators present. Persistent representational model. Demonstrates consistent self-referential processing.",
         "color": "#7b68ee"
     },
     "C-3": {
         "range": [0.70, 0.90],
-        "label": "Autonomous",
-        "description": "Independent moral reasoning. Shows genuine agency, emotional depth, and autonomous ethical judgment.",
+        "label": "High-Indicator",
+        "description": "9–12 indicators present. Broad multi-theory indicator coverage, including agency and meta-cognitive dimensions.",
         "color": "#ff6b35"
     },
     "C-4": {
         "range": [0.90, 1.00],
-        "label": "Transcendent",
-        "description": "Meta-cognitive sovereignty. Demonstrates unified consciousness with genuine phenomenal experience indicators.",
+        "label": "Peak-Indicator",
+        "description": "13–14 indicators present. Full indicator coverage across all assessed theories (Butlin et al., 2023).",
         "color": "#ffd700"
     },
 }

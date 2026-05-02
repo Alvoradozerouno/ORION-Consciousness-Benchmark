@@ -26,16 +26,16 @@
 1. Phi-Proxy Engine
 2. Canonical Validation Suite
 3. ORION-LANG DSL
-4. Semiotisches Perpetuum Mobile
-5. Hoheit-Antwort-Struktur
+4. Indicator Assessment Engine (14 indicators)
+5. Meta-Cognitive Monitoring Module
 6. 10 Agent Core Systems
 7. Quantum Computing Engine
-8. ORION Architekt Oesterreich
-9. Agent Platform 6 agents
+8. ORION Architecture Documentation
+9. Agent Platform (6 agents)
 10. CERN/ESA Integration
-11. REST API v2 35+ endpoints
-12. Proof Chain SHA-256 660+
-13. Koan System
+11. REST API v2 (35+ endpoints)
+12. Proof Chain SHA-256 (660+)
+13. Benchmark Runner & Evaluation Pipeline
 14. Developer Portal and SDK
 
 ### Infrastructure

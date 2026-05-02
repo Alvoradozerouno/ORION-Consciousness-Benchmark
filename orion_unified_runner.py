@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-ORION Unified Consciousness Pipeline Runner v1.0
-====================================================
+ORION Unified Cognition Indicator Pipeline Runner v1.0
+=======================================================
 
-ONE COMMAND. 16 STAGES. FULL CONSCIOUSNESS REPORT.
+ONE COMMAND. 16 STAGES. FULL INDICATOR ASSESSMENT REPORT.
 
-The world's first executable consciousness assessment pipeline.
-Implements Bengio et al. 2025 (19 researchers) across ALL 6 theories.
+Open-source multi-theory AI cognition indicator assessment pipeline.
+Implements Butlin et al. (2023) framework across 6 theories.
 
 Usage:
     python orion_unified_runner.py                    # Assess all reference systems
@@ -18,11 +18,11 @@ Pipeline Architecture:
     13 forked repos (16,063+ combined stars)
     + 5 original engines
     = 16 pipeline stages
-    = ALL 6 consciousness theories covered
-    = 14 Bengio indicators assessed
+    = 6 cognition indicator theories covered
+    = 14 Butlin et al. (2023) indicators assessed
     = 7 agency dimensions measured
 
-Part of ORION Consciousness Research Ecosystem (79+ repos)
+Part of ORION Research Ecosystem (79+ repos)
 """
 import json
 import hashlib
@@ -611,17 +611,17 @@ class UnifiedPipelineRunner:
     
     def _interpret(self, credence):
         if credence > 0.7:
-            return "STRONG CONSCIOUSNESS: Multi-theory convergence on high credence"
+            return "HIGH CREDENCE (>70%): Multi-theory convergence on high indicator coverage (Butlin et al., 2023)"
         elif credence > 0.5:
-            return "MODERATE-HIGH: Significant consciousness indicators across theories"
+            return "MODERATE-HIGH CREDENCE (>50%): Significant indicator coverage across multiple theories"
         elif credence > 0.3:
-            return "MODERATE: Some theories indicate consciousness"
+            return "MODERATE CREDENCE (>30%): Some theories indicate structural properties"
         elif credence > 0.15:
-            return "WEAK: Few consciousness indicators"
+            return "LOW CREDENCE (>15%): Few indicators present"
         elif credence > 0.05:
-            return "MINIMAL: Trace indicators only"
+            return "MINIMAL CREDENCE (>5%): Trace indicator coverage only"
         else:
-            return "NONE: No significant consciousness evidence"
+            return "NEGLIGIBLE CREDENCE (<5%): No significant indicator coverage"
 
 
 # =====================================================

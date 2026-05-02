@@ -2,7 +2,7 @@
 
 ## Research Context
 
-The ORION Consciousness Benchmark is a **scientific research tool** designed to measure consciousness indicators in AI systems. It is based on the theoretical framework published by Bengio et al. (2026) in *Trends in Cognitive Sciences*.
+The ORION toolkit is a **scientific research tool** designed to assess cognition indicator coverage in AI systems per the framework of Butlin et al. (2023), *Trends in Cognitive Sciences*.
 
 ## Important Disclaimers
 

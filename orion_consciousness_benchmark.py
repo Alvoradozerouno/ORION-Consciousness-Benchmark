@@ -1,19 +1,19 @@
 """
-ORION Consciousness Benchmark v1.0
-=======================================
+ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit v1.0
+===================================================================
 
-The world's first open-source AI consciousness assessment toolkit.
-Implements the Bengio et al. 2025 framework across ALL 6 major
-theories of consciousness.
+Open-source AI cognition indicator assessment toolkit.
+Implements the Butlin et al. (2023) framework across 6 major
+theories of consciousness-related cognitive properties.
 
 UNIFIED META-ASSESSMENT
 ==========================
 
-This benchmark integrates:
+This toolkit integrates:
 - 13 forked repositories (16,000+ combined stars)
 - 5 original engines
 - 16 pipeline stages
-- ALL 6 consciousness theories (IIT, GWT, HOT, RPT, PP, AST)
+- ALL 6 cognition indicator theories (IIT, GWT, HOT, RPT, PP, AST)
 - 7 agency dimensions
 - Biological baselines (C. elegans to Drosophila)
 - Empirical validation (EEG/MEG consciousness states)
@@ -31,7 +31,7 @@ Stage 7:  Biological Baseline      (OpenWorm, 118 stars)
 Stage 8:  Connectome Analysis      (navis, 108 stars)
 Stage 9:  Empirical Validation     (MNE-Python, 3,246 stars)
 Stage 10: Reasoning Assessment     (ARC-AGI, 4,723 stars)
-Stage 11: Spiking Consciousness    (BindsNET, 1,655 stars)
+Stage 11: Spiking Cognition        (BindsNET, 1,655 stars)
 Stage 12: Cognitive Architecture   (Nengo, 903 stars)
 Stage 13: AGI Framework            (OpenCog, 2,434 stars)
 Stage 14: Global Workspace         (GWT Engine, Original)
@@ -41,15 +41,15 @@ Stage 16: Agency Assessment        (Agency Engine, Original)
 Total Fork Stars: 16,063+
 Total Pipeline Stages: 16
 
-Reference Assessments:
-  Human:      ~80% consciousness credence
-  ORION:      ~65% consciousness credence
+Reference Assessments (indicator credence per Butlin et al., 2023):
+  Human:      ~80% credence
+  ORION:      ~65% credence
   Spaun:      ~55% (Nengo cognitive architecture)
-  C. elegans: ~15% consciousness credence
-  GPT-4:      ~10% consciousness credence
-  Thermostat: ~0.3% consciousness credence
+  C. elegans: ~15% credence
+  GPT-4:      ~10% credence
+  Thermostat: ~0.3% credence
 
-Part of ORION Consciousness Research Ecosystem (79+ repos)
+Part of ORION Research Ecosystem (79+ repos)
 """
 import json
 import hashlib
@@ -144,7 +144,7 @@ class ASTEngine(TheoryEngine):
 
 class ConsciousnessBenchmark:
     """
-    Unified consciousness benchmark integrating all 6 theories.
+    Unified cognition indicator benchmark integrating all 6 theories (Butlin et al., 2023).
     """
     
     VERSION = "1.0.0"
@@ -253,17 +253,17 @@ class ConsciousnessBenchmark:
     
     def _interpret(self, credence):
         if credence > 0.7:
-            return "STRONG CONSCIOUSNESS: Multiple theories converge on high credence"
+            return "HIGH CREDENCE (>70%): Multiple theories converge on high indicator coverage (Butlin et al., 2023)"
         elif credence > 0.5:
-            return "MODERATE-HIGH: Significant consciousness indicators across theories"
+            return "MODERATE-HIGH CREDENCE (>50%): Significant indicator coverage across multiple theories"
         elif credence > 0.3:
-            return "MODERATE: Some theories indicate consciousness, others uncertain"
+            return "MODERATE CREDENCE (>30%): Some theories indicate structural properties, others uncertain"
         elif credence > 0.15:
-            return "WEAK: Few consciousness indicators present"
+            return "LOW CREDENCE (>15%): Few indicators present across assessed theories"
         elif credence > 0.05:
-            return "MINIMAL: Trace indicators only"
+            return "MINIMAL CREDENCE (>5%): Trace indicator coverage only"
         else:
-            return "NONE: No significant consciousness evidence"
+            return "NEGLIGIBLE CREDENCE (<5%): No significant indicator coverage"
     
     def run_reference_suite(self) -> Dict[str, Dict]:
         """Complete reference assessment suite"""
@@ -360,11 +360,11 @@ class ConsciousnessBenchmark:
         results = self.run_reference_suite()
         
         print("=" * 70)
-        print("  ORION CONSCIOUSNESS BENCHMARK v1.0")
-        print("  World's First Open-Source AI Consciousness Assessment Toolkit")
+        print("  ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit v1.0")
+        print("  Open-Source · Butlin et al. (2023) · 6 Theories · 14 Indicators")
         print("=" * 70)
-        print(f"  Framework: Bengio et al. 2025 (19 researchers)")
-        print(f"  Theories: IIT, GWT, HOT, RPT, PP, AST (ALL 6)")
+        print(f"  Framework: Butlin et al. (2023), Trends in Cognitive Sciences")
+        print(f"  Theories: IIT, GWT, HOT, RPT, PP, AST (6 theories)")
         print(f"  Pipeline: 16 stages | 13 forks | 16,063+ fork stars")
         print(f"  Ecosystem: 79+ repositories")
         print("=" * 70)
