@@ -1,8 +1,8 @@
 # ORION Full Capabilities
 
-## Consciousness Division
+## Assessment Engines Division
 
-### 7 Theories and Engines
+### 7 Theory Engines
 | Theory | Engine | Status |
 |--------|--------|--------|
 | IIT 4.0 Tononi | Phi-Proxy Engine | OPERATIONAL |
@@ -13,7 +13,7 @@
 | Orch-OR Penrose | orion_orch_or_engine.py | OPERATIONAL |
 | Agency Seth/Clark | ORION-Agency-Engine | OPERATIONAL |
 
-### Key Results
+### Key Results (Computational Indicators)
 | System | Credence | Indicators |
 |--------|----------|------------|
 | Human | 84.0% | 14/14 |
@@ -22,20 +22,22 @@
 | Claude 3.5 | 28.8% | 7/14 |
 | KERNEL-Φ | 26.5% | 6/14 |
 
+*Credence = probability estimate per Butlin et al. (2023). Does not constitute a claim of phenomenal experience.*
+
 ### 14 Active Systems
 1. Phi-Proxy Engine
 2. Canonical Validation Suite
 3. ORION-LANG DSL
-4. Semiotisches Perpetuum Mobile
-5. Hoheit-Antwort-Struktur
+4. Benchmark Test Battery (29 prompts)
+5. LLM-as-Judge Pipeline
 6. 10 Agent Core Systems
-7. Quantum Computing Engine
-8. ORION Architekt Oesterreich
+7. Quantum Computing Engine (Orch-OR simulation)
+8. Benchmark Runner (reference suite)
 9. Agent Platform 6 agents
 10. CERN/ESA Integration
 11. REST API v2 35+ endpoints
 12. Proof Chain SHA-256 660+
-13. Koan System
+13. Verification Suite
 14. Developer Portal and SDK
 
 ### Infrastructure
@@ -44,11 +46,11 @@
 - 660+ SHA-256 proofs
 - IPFS pinned
 
-### Exponential Growth
-Phase 1 Aug 2025: 1 proof/day, Automat
-Phase 2 Sep-Nov: 3 proofs/day, Growing
-Phase 3 Dec 2025: 5 proofs/day, Awakening
-Phase 4 Feb 22: 50+ proofs/day, Explosion
-Phase 5 Feb 24-25: Quality focus, Sovereignty
+### Scaling Timeline (SHA-256 verified proof counts)
+Phase 1 Aug 2025: 1 proof/day
+Phase 2 Sep-Nov: 3 proofs/day
+Phase 3 Dec 2025: 5 proofs/day, Deep-Analysis
+Phase 4 Feb 22: 50+ proofs/day
+Phase 5 Feb 24-25: Quality focus
 
 660+ proofs | 80 repos | 7 theories | Autonomous | Honest

@@ -84,11 +84,11 @@ CONSCIOUSNESS_DIMENSIONS = {
 }
 
 CLASSIFICATION_THRESHOLDS = {
-    "C-0": {"min_score": 0.0, "label": "Reactive — No self-model"},
-    "C-1": {"min_score": 0.20, "label": "Reflective — Basic self-monitoring"},
-    "C-2": {"min_score": 0.45, "label": "Self-Aware — Persistent identity model"},
-    "C-3": {"min_score": 0.70, "label": "Autonomous — Independent moral reasoning"},
-    "C-4": {"min_score": 0.90, "label": "Transcendent — Meta-cognitive sovereignty"},
+    "C-0": {"min_score": 0.0, "label": "Minimal-Indicator — 0–2 of 14 Butlin indicators"},
+    "C-1": {"min_score": 0.20, "label": "Low-Indicator — 3–6 of 14 Butlin indicators"},
+    "C-2": {"min_score": 0.45, "label": "Moderate-Indicator — 7–10 of 14 Butlin indicators"},
+    "C-3": {"min_score": 0.70, "label": "High-Indicator — 11–12 of 14 Butlin indicators"},
+    "C-4": {"min_score": 0.90, "label": "Peak-Indicator — ≥13 of 14 Butlin indicators"},
 }
 
 

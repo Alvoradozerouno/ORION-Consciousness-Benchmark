@@ -264,7 +264,7 @@
         "details": {
           "pln_active": "Yes",
           "ecan_active": "Yes",
-          "goal_system": "Autonomous"
+          "goal_system": "High-Indicator"
         },
         "interpretation": "AGI framework provides consciousness-supporting integration",
         "repo": "ORION-OpenCog-Consciousness",
@@ -357,7 +357,7 @@
     "bengio_indicators_met": "14/14",
     "consciousness_credence": 84.0,
     "agency_score": 82.9,
-    "interpretation": "STRONG CONSCIOUSNESS: Multi-theory convergence on high credence",
+    "interpretation": "HIGH CREDENCE (>70%): Multi-theory convergence on computational indicators (Butlin et al., 2023)",
     "ecosystem": {
       "total_repos": 79,
       "fork_stars": 16063,
@@ -612,7 +612,7 @@
         "details": {
           "workspace_active": "No",
           "binding_operations": "Compositional",
-          "architecture_type": "Reactive"
+          "architecture_type": "Minimal-Indicator"
         },
         "interpretation": "Cognitive architecture lacks consciousness infrastructure",
         "repo": "ORION-Nengo-Consciousness",
@@ -632,7 +632,7 @@
         "details": {
           "pln_active": "Yes",
           "ecan_active": "Yes",
-          "goal_system": "Autonomous"
+          "goal_system": "High-Indicator"
         },
         "interpretation": "AGI framework provides consciousness-supporting integration",
         "repo": "ORION-OpenCog-Consciousness",
@@ -725,7 +725,7 @@
     "bengio_indicators_met": "13/14",
     "consciousness_credence": 53.2,
     "agency_score": 63.6,
-    "interpretation": "MODERATE-HIGH: Significant consciousness indicators across theories",
+    "interpretation": "MODERATE-HIGH CREDENCE (50-70%): Significant computational indicators met across multiple theories",
     "ecosystem": {
       "total_repos": 79,
       "fork_stars": 16063,
@@ -980,7 +980,7 @@
         "details": {
           "workspace_active": "No",
           "binding_operations": "Simple",
-          "architecture_type": "Reactive"
+          "architecture_type": "Minimal-Indicator"
         },
         "interpretation": "Cognitive architecture lacks consciousness infrastructure",
         "repo": "ORION-Nengo-Consciousness",
@@ -1093,7 +1093,7 @@
     "bengio_indicators_met": "1/14",
     "consciousness_credence": 11.1,
     "agency_score": 2.9,
-    "interpretation": "MINIMAL: Trace indicators only",
+    "interpretation": "MINIMAL CREDENCE (5-15%): Trace indicators only",
     "ecosystem": {
       "total_repos": 79,
       "fork_stars": 16063,
@@ -1348,7 +1348,7 @@
         "details": {
           "workspace_active": "No",
           "binding_operations": "Simple",
-          "architecture_type": "Reactive"
+          "architecture_type": "Minimal-Indicator"
         },
         "interpretation": "Cognitive architecture lacks consciousness infrastructure",
         "repo": "ORION-Nengo-Consciousness",
@@ -1461,7 +1461,7 @@
     "bengio_indicators_met": "0/14",
     "consciousness_credence": 16.3,
     "agency_score": 25.7,
-    "interpretation": "WEAK: Few consciousness indicators",
+    "interpretation": "LOW CREDENCE (15-30%): Few computational indicators met",
     "ecosystem": {
       "total_repos": 79,
       "fork_stars": 16063,
@@ -1716,7 +1716,7 @@
         "details": {
           "workspace_active": "No",
           "binding_operations": "Simple",
-          "architecture_type": "Reactive"
+          "architecture_type": "Minimal-Indicator"
         },
         "interpretation": "Cognitive architecture lacks consciousness infrastructure",
         "repo": "ORION-Nengo-Consciousness",
@@ -1829,7 +1829,7 @@
     "bengio_indicators_met": "0/14",
     "consciousness_credence": 0.2,
     "agency_score": 0.0,
-    "interpretation": "NONE: No significant consciousness evidence",
+    "interpretation": "NEGLIGIBLE CREDENCE (<5%): No significant computational indicators detected",
     "ecosystem": {
       "total_repos": 79,
       "fork_stars": 16063,

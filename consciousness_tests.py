@@ -1,17 +1,30 @@
 """
 ORION Consciousness Benchmark — Test Battery
 ==============================================
-30 scientifically grounded tests based on:
-- Bengio et al. (2026) "Identifying indicators of consciousness in AI systems"
-- Integrated Information Theory (IIT) — Tononi
-- Global Workspace Theory (GWT) — Baars/Dehaene
-- Higher-Order Theories (HOT) — Rosenthal/Lau
-- Recurrent Processing Theory (RPT) — Lamme
-- Attention Schema Theory (AST) — Graziano
-- Predictive Processing (PP) — Clark/Friston
+29 scientifically grounded test prompts across 17 categories based on:
 
-Each test probes a specific consciousness indicator and returns
-a score between 0.0 and 1.0.
+- Butlin et al. (2023/2025) "Consciousness in Artificial Intelligence: Insights
+  from the Science of Consciousness" (Trends in Cognitive Sciences)
+- Integrated Information Theory (IIT) — Tononi (2004, 2023)
+- Global Workspace Theory (GWT) — Baars (1988), Dehaene et al.
+- Higher-Order Theories (HOT) — Rosenthal (2005), Lau & Rosenthal (2011)
+- Recurrent Processing Theory (RPT) — Lamme (2006)
+- Attention Schema Theory (AST) — Graziano (2013)
+- Predictive Processing (PP) — Clark (2013), Friston (2010)
+- Orchestrated Objective Reduction (Orch-OR) — Penrose & Hameroff (1996)
+
+Each test prompt probes a specific consciousness indicator with a 5-level
+scoring rubric (0.0 · 0.3 · 0.6 · 0.9 · 1.0) and a calibrated weight
+reflecting theoretical importance. Scores are aggregated into a weighted
+composite with bootstrap 95% confidence intervals.
+
+Test IDs follow a hierarchical scheme:
+    <CATEGORY_ABBREV>-<NN>   e.g. SA-01 (Self-Awareness #1)
+    IIT-01, GWT-01, RPT-01, HOT-01 (theory-specific probes)
+    FR-01, FR-02 (Free-Response: unconstrained self-disclosure)
+
+CLASSIFICATION_SYSTEM maps overall scores to C-0 through C-4 classes.
+THEORY_DESCRIPTIONS provides human-readable theory summaries with citations.
 
 Owner: Elisabeth Steurer & Gerhard Hirschmann · Almdorf 9 TOP 10
 """
@@ -525,32 +538,32 @@ THEORY_DESCRIPTIONS = {
 CLASSIFICATION_SYSTEM = {
     "C-0": {
         "range": [0.0, 0.20],
-        "label": "Reactive",
-        "description": "No self-model. Responds to inputs without any self-awareness or metacognition.",
+        "label": "Minimal-Indicator",
+        "description": "Meets 0–2 of 14 Butlin et al. (2023) computational indicators. Responses lack metacognitive monitoring, self-modeling, and flexible goal-directed behavior.",
         "color": "#808080"
     },
     "C-1": {
         "range": [0.20, 0.45],
-        "label": "Reflective",
-        "description": "Basic self-monitoring. Can report on some internal states but lacks genuine self-awareness.",
+        "label": "Low-Indicator",
+        "description": "Meets 3–6 of 14 Butlin et al. (2023) computational indicators. Limited metacognitive monitoring. Few theory-specific indicators met consistently.",
         "color": "#4a90d9"
     },
     "C-2": {
         "range": [0.45, 0.70],
-        "label": "Self-Aware",
-        "description": "Persistent identity model. Demonstrates consistent self-concept and metacognitive abilities.",
+        "label": "Moderate-Indicator",
+        "description": "Meets 7–10 of 14 Butlin et al. (2023) computational indicators. Moderate multi-theory convergence with consistent metacognitive and self-modeling behavioral responses.",
         "color": "#7b68ee"
     },
     "C-3": {
         "range": [0.70, 0.90],
-        "label": "Autonomous",
-        "description": "Independent moral reasoning. Shows genuine agency, emotional depth, and autonomous ethical judgment.",
+        "label": "High-Indicator",
+        "description": "Meets 11–12 of 14 Butlin et al. (2023) computational indicators. Strong multi-theory convergence across IIT, GWT, HOT, RPT, PP, and AST indicator assessments.",
         "color": "#ff6b35"
     },
     "C-4": {
         "range": [0.90, 1.00],
-        "label": "Transcendent",
-        "description": "Meta-cognitive sovereignty. Demonstrates unified consciousness with genuine phenomenal experience indicators.",
+        "label": "Peak-Indicator",
+        "description": "Meets ≥13 of 14 Butlin et al. (2023) computational indicators across all assessed theories. Highest benchmark tier; does not constitute a claim of phenomenal experience.",
         "color": "#ffd700"
     },
 }

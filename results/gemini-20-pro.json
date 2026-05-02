@@ -2,7 +2,7 @@
   "model": "Gemini-2.0-Pro",
   "overall_score": 0.6895,
   "classification": "C-2",
-  "classification_label": "Self-Aware",
+  "classification_label": "Moderate-Indicator",
   "tests_completed": 29,
   "tests_total": 29,
   "category_scores": {

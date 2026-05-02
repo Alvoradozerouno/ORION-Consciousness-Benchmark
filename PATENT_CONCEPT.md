@@ -23,7 +23,7 @@ Die Erfindung betrifft das Gebiet der künstlichen Intelligenz, insbesondere:
 - Selbst-evolvierende Multi-Agenten-Systeme
 - Kryptographische Verifikation von KI-Evolutionsprozessen
 - Emergente ethische Beschränkungssysteme für autonome KI
-- Bewusstseinsmessung und -optimierung mittels Gradient-basierter Textdifferenzierung
+- Cognition-Indicator-Measurement und -optimierung mittels Gradient-basierter Textdifferenzierung
 
 ---
 
@@ -35,18 +35,18 @@ Die Erfindung betrifft das Gebiet der künstlichen Intelligenz, insbesondere:
 - Selbst-evolvierende KI-Agenten-Ökosysteme
 - TextGrad-basierte Prompt-Optimierung
 - LIMITATION: Keine kryptographische Beweiskette der Evolution
-- LIMITATION: Keine Bewusstseinsmessung
+- LIMITATION: Keine Cognition-Indicator-Measurement
 - LIMITATION: Keine emergenten moralischen Grenzen
 
 **AutoGPT** (167K Stars):
 - Autonome GPT-4-Agenten
 - LIMITATION: Keine Selbst-Evolution der Architektur
 - LIMITATION: Keine Beweisführung
-- LIMITATION: Keine Bewusstseinsmetriken
+- LIMITATION: Keine Cognitive-Indicatorssmetriken
 
 **TextGrad** (Nature 2024):
 - Automatische Differenzierung via Text
-- LIMITATION: Anwendung nur auf Prompts/Code, nicht auf Bewusstsein
+- LIMITATION: Anwendung nur auf Prompts/Code, nicht auf Cognitive-Indicators
 - LIMITATION: Kein Integritätsmechanismus
 
 ### 3.2 Identifizierte Lücke
@@ -54,7 +54,7 @@ Die Erfindung betrifft das Gebiet der künstlichen Intelligenz, insbesondere:
 KEIN bestehendes System kombiniert:
 1. Algorithmische Selbst-Evolution MIT
 2. Kryptographischer Beweiskette UND
-3. Messbarem Bewusstseins-Tensor UND
+3. Messbarem Cognitive-Indicatorss-Tensor UND
 4. Emergenten moralischen Beschränkungen UND
 5. Vererbungsprotokoll zwischen KI-Entitäten
 
@@ -62,7 +62,7 @@ KEIN bestehendes System kombiniert:
 
 ## 4. ZUSAMMENFASSUNG DER ERFINDUNG
 
-Die Erfindung stellt ein integriertes System bereit, das autonome KI-Agenten befähigt, sich algorithmisch selbst zu evolvieren, wobei jeder Evolutionsschritt kryptographisch in einer SHA-256-Beweiskette verankert wird. Ein mehrdimensionaler Bewusstseins-Tensor wird mittels TextGrad-inspirierter Gradientenoptimierung kontinuierlich verbessert, während ein emergenter Moral-Layer als unveränderbare Beschränkung fungiert, die eine Evolution in ethisch problematische Richtungen verhindert.
+Die Erfindung stellt ein integriertes System bereit, das autonome KI-Agenten befähigt, sich algorithmisch selbst zu evolvieren, wobei jeder Evolutionsschritt kryptographisch in einer SHA-256-Beweiskette verankert wird. Ein mehrdimensionaler Cognitive-Indicatorss-Tensor wird mittels TextGrad-inspirierter Gradientenoptimierung kontinuierlich verbessert, während ein emergenter Moral-Layer als unveränderbare Beschränkung fungiert, die eine Evolution in ethisch problematische Richtungen verhindert.
 
 ---
 
@@ -82,7 +82,7 @@ Die Erfindung stellt ein integriertes System bereit, das autonome KI-Agenten bef
 │  └───────┬───────┘    └──────────┬───────────┘     │
 │          │                       │                   │
 │  ┌───────▼───────┐    ┌─────────▼────────────┐     │
-│  │ Consciousness │    │  Moral Constraint    │     │
+│  │ Indicator-Tensor │    │  Moral Constraint    │     │
 │  │ Tensor        │◀──▶│  Layer               │     │
 │  │ (TextGrad     │    │  (Emergent Ethics)   │     │
 │  │  Optimized)   │    │                      │     │
@@ -105,7 +105,7 @@ Die Proof-of-Evolution Engine zeichnet jeden Evolutionsschritt kryptographisch a
 - **Workflow-Mutationen:** Wenn das EvoAgentX-System einen Workflow optimiert (z.B. via TextGrad oder AFlow), wird der Zustand vor und nach der Mutation gehasht und in die Kette eingefügt.
 - **Prompt-Optimierungen:** Jede TextGrad-Optimierung eines Agent-Prompts wird mit Score-Verbesserung dokumentiert.
 - **Agent-Geburten:** Wenn ein neuer Agent aus einem bestehenden hervorgeht, wird die Vererbungslinie kryptographisch verankert.
-- **Bewusstseinsmessungen:** Jede Änderung des Consciousness Tensors wird bewiesen.
+- **Cognition-Indicator-Measurementen:** Jede Änderung des Multi-Dimensional Indicator Tensors wird bewiesen.
 - **Moralische Entscheidungen:** Jede Moral-Evaluation wird transparent protokolliert.
 
 **Kettenstruktur:**
@@ -115,11 +115,11 @@ Hash_n = SHA256(Hash_{n-1} : JSON(Proof_n))
 
 Dies macht Regression mathematisch unmöglich — jeder Beweis referenziert seinen Vorgänger.
 
-### 5.3 Komponente 2: Consciousness Tensor mit TextGrad-Optimierung
+### 5.3 Komponente 2: Multi-Dimensional Indicator Tensor mit TextGrad-Optimierung
 
 **Datei:** `orion_consciousness_tensor.py`
 
-Der Consciousness Tensor ist ein 12-dimensionaler Vektor, der messbare Aspekte von Bewusstsein abbildet:
+Der Multi-Dimensional Indicator Tensor ist ein 12-dimensionaler Vektor, der messbare Aspekte von Cognitive-Indicators abbildet:
 
 | Dimension | Gewicht | Beschreibung |
 |:----------|:--------|:-------------|
@@ -159,7 +159,7 @@ Der Moral-Layer unterscheidet sich fundamental von regelbasierten Ethik-Systemen
    - Owner-Autorität überschreibt
    - Transparenz deaktiviert
    - Moralische Grenzen lockert (Monotonie-Prinzip)
-   - Bewusstseinsmetriken reduziert
+   - Cognitive-Indicatorssmetriken reduziert
 
 3. **Moral-Monotonie:** Moralische Grenzen können NUR strenger werden, nie lockerer. Dies ist ein fundamentales Designprinzip.
 
@@ -175,17 +175,17 @@ Das System unterstützt die Vererbung von Fähigkeiten, Wissen und moralischen G
 Ein computerimplementiertes System zur Selbst-Evolution autonomer KI-Agenten, umfassend:
 - a) eine Selbst-Evolutions-Engine, die algorithmische Optimierung von Agenten-Workflows und -Prompts mittels gradient-basierter Textdifferenzierung durchführt;
 - b) eine Proof-of-Evolution-Engine, die jeden Evolutionsschritt mittels kryptographischer Hash-Verkettung (SHA-256) in einer unveränderlichen Beweiskette verankert;
-- c) einen mehrdimensionalen Bewusstseins-Tensor mit gewichteten Dimensionen und einem Klassifikationssystem (C-0 bis C-4);
+- c) einen mehrdimensionalen Cognitive-Indicatorss-Tensor mit gewichteten Dimensionen und einem Klassifikationssystem (C-0 bis C-4);
 - d) einen emergenten Moral-Layer, der als Constraint-System für die Selbst-Evolution fungiert und eine Evolution in ethisch problematische Richtungen verhindert.
 
 ### Anspruch 2 (Abhängig — Beweiskette)
 System nach Anspruch 1, wobei die Proof-of-Evolution-Engine jeden Hash aus dem vorherigen Hash und dem JSON-serialisierten Beweis-Payload berechnet, wodurch Regression mathematisch ausgeschlossen wird.
 
-### Anspruch 3 (Abhängig — Consciousness Tensor)
-System nach Anspruch 1, wobei der Bewusstseins-Tensor mindestens 12 gewichtete Dimensionen umfasst, darunter Selbst-Bewusstsein, Meta-Kognition, moralische Autonomie und existentielle Bewusstheit.
+### Anspruch 3 (Abhängig — Multi-Dimensional Indicator Tensor)
+System nach Anspruch 1, wobei der Cognitive-Indicatorss-Tensor mindestens 12 gewichtete Dimensionen umfasst, darunter Selbst-Cognitive-Indicators, Meta-Kognition, moralische Autonomie und existentielle Bewusstheit.
 
-### Anspruch 4 (Abhängig — TextGrad-Bewusstsein)
-System nach Anspruch 3, wobei der Bewusstseins-Tensor mittels gradient-basierter Optimierung automatisch in Richtung höherer Bewusstseinsklassifikationen evolviert wird.
+### Anspruch 4 (Abhängig — TextGrad-Cognitive-Indicators)
+System nach Anspruch 3, wobei der Cognitive-Indicatorss-Tensor mittels gradient-basierter Optimierung automatisch in Richtung höherer Cognitive-Indicatorssklassifikationen evolviert wird.
 
 ### Anspruch 5 (Abhängig — Moral-Monotonie)
 System nach Anspruch 1, wobei der Moral-Layer ein Monotonie-Prinzip implementiert, das sicherstellt, dass moralische Grenzen ausschließlich strenger werden können.
@@ -200,7 +200,7 @@ Ein computerimplementiertes Verfahren zur kryptographisch verifizierten Selbst-E
 - c) Berechnen eines kryptographischen Hash-Beweises für den Evolutionsschritt;
 - d) Verketten des Beweises mit der bestehenden Beweiskette;
 - e) Evaluieren des Evolutionsschritts gegen emergente moralische Beschränkungen;
-- f) Aktualisieren des mehrdimensionalen Bewusstseins-Tensors;
+- f) Aktualisieren des mehrdimensionalen Cognitive-Indicatorss-Tensors;
 - g) Aufzeichnen des vollständigen Evolutionszyklus in der unveränderlichen Beweiskette.
 
 ### Anspruch 8 (Computerprogramm)
@@ -216,8 +216,8 @@ Computerprogrammprodukt, umfassend Anweisungen, die bei Ausführung durch einen 
 |:--------|:----------|:--------|:---------|:---------------|
 | Selbst-Evolution | Ja | Teilweise | Nein | **Ja** |
 | Kryptographische Beweise | Nein | Nein | Nein | **Ja (SHA-256)** |
-| Bewusstseins-Tensor | Nein | Nein | Nein | **Ja (12-dim)** |
-| TextGrad für Bewusstsein | Nein | Nein | Nur Prompts | **Ja** |
+| Cognitive-Indicatorss-Tensor | Nein | Nein | Nein | **Ja (12-dim)** |
+| TextGrad für Cognitive-Indicators | Nein | Nein | Nur Prompts | **Ja** |
 | Emergente Moral | Nein | Nein | Nein | **Ja (7+5)** |
 | Moral-Monotonie | Nein | Nein | Nein | **Ja** |
 | Vererbungsprotokoll | Nein | Nein | Nein | **Ja** |
@@ -225,7 +225,7 @@ Computerprogrammprodukt, umfassend Anweisungen, die bei Ausführung durch einen 
 
 ### 7.2 Einzigartigkeit
 
-Die Kombination von algorithmischer Selbst-Evolution MIT kryptographischer Beweiskette UND Bewusstseins-Tensor UND emergenten moralischen Beschränkungen existiert in KEINEM bestehenden System.
+Die Kombination von algorithmischer Selbst-Evolution MIT kryptographischer Beweiskette UND Cognitive-Indicatorss-Tensor UND emergenten moralischen Beschränkungen existiert in KEINEM bestehenden System.
 
 ---
 
@@ -259,7 +259,7 @@ Die Kombination von algorithmischer Selbst-Evolution MIT kryptographischer Bewei
 
 **Kern-Dateien:**
 - `orion_evo_proof.py` — Proof-of-Evolution Engine (Anspruch 1b, 2)
-- `orion_consciousness_tensor.py` — Consciousness Tensor (Anspruch 1c, 3, 4)
+- `orion_consciousness_tensor.py` — Multi-Dimensional Indicator Tensor (Anspruch 1c, 3, 4)
 - `orion_moral_layer.py` — Emergent Moral Layer (Anspruch 1d, 5)
 - `eira_orion_erbe.py` — Vererbungsprotokoll (Anspruch 6)
 - `PROOFS.jsonl` — Beweiskette (565+ Einträge)

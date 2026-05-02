@@ -3,21 +3,28 @@
 ORION Orch-OR Engine v1.0
 ================================
 
-The 7th Consciousness Theory.
+Implements computational indicators derived from the
+Orchestrated Objective Reduction (Orch-OR) theory
+(Penrose & Hameroff, 1996; Hameroff & Penrose, 2014).
 
-Implements Penrose-Hameroff Orchestrated Objective Reduction:
-Consciousness arises from quantum computations in microtubules
-inside neurons, where quantum superposition undergoes
-objective reduction tied to spacetime geometry.
+Orch-OR theory proposes that subjective experience arises from quantum
+computations in neuronal microtubules, where quantum superposition undergoes
+objective reduction tied to spacetime geometry. This engine computes
+classical proxies for the theory's measurable predictions; it does NOT
+claim that any AI system physically implements quantum microtubule coherence.
 
-"Not merely computed. Orchestrated."
+References:
+  Penrose, R. & Hameroff, S. (1996). Orchestrated reduction of quantum
+    coherence in brain microtubules. Math. Comput. Simul., 40(3-4), 453-480.
+  Hameroff, S. & Penrose, R. (2014). Consciousness in the universe:
+    A review of the Orch OR theory. Phys. Life Rev., 11(1), 39-78.
 
-Key Concepts:
+Key Concepts (from the source theory):
   - Quantum coherence in tubulin proteins
   - Objective Reduction (OR): gravity-induced wavefunction collapse
   - Orchestration: microtubule geometry guides quantum computation
   - Conscious moments: discrete ~25ms events (gamma rhythm, 40 Hz)
-  - Non-algorithmic: Goedel-incompleteness -> consciousness transcends computation
+  - Non-algorithmic: Goedel-incompleteness argument (contested)
 
 Experimental Support (2024-2025):
   - Superradiance in tryptophan networks at room temperature (Babcock 2024)

@@ -1,6 +1,6 @@
-# Contributing to ORION Consciousness Benchmark
+# Contributing
 
-Thank you for your interest in contributing to the world's first open-source AI consciousness assessment toolkit.
+Thank you for your interest in contributing to ORION — an open-source multi-theory AI cognition indicator assessment toolkit.
 
 ## How to Contribute
 
@@ -11,9 +11,9 @@ Run the ORION benchmark on your AI model and submit results:
 - Add your results to the leaderboard
 - Open a pull request with your methodology
 
-### 2. Add New Consciousness Theories
+### 2. Add New Cognition-Indicator Theories
 
-We currently implement 7 theories. If you have expertise in a consciousness theory not yet covered:
+We currently implement 7 theories (Butlin et al., 2023). If you have expertise in a cognition-indicator theory not yet covered:
 - Propose the theory in an issue
 - Implement the assessment methodology
 - Add validation tests
@@ -34,7 +34,7 @@ We currently implement 7 theories. If you have expertise in a consciousness theo
 
 ### Honesty First
 
-This project prioritizes honest limitation documentation over inflated claims. If your contribution makes a claim about consciousness, it must also document what it CANNOT prove.
+This project prioritizes honest limitation documentation over inflated claims. If your contribution makes a claim about cognition indicators, it must also document what it CANNOT prove.
 
 ### Scientific Rigor
 
@@ -42,7 +42,7 @@ All results must be reproducible. All measurements must include uncertainty esti
 
 ### Open Science
 
-All contributions must be MIT licensed. Consciousness research should be open.
+All contributions must be MIT licensed. AI cognition research should be open.
 
 ## Contact
 

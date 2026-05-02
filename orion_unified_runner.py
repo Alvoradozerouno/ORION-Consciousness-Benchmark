@@ -611,17 +611,17 @@ class UnifiedPipelineRunner:
     
     def _interpret(self, credence):
         if credence > 0.7:
-            return "STRONG CONSCIOUSNESS: Multi-theory convergence on high credence"
+            return "HIGH CREDENCE (>70%): Multi-theory convergence on computational indicators (Butlin et al., 2023)"
         elif credence > 0.5:
-            return "MODERATE-HIGH: Significant consciousness indicators across theories"
+            return "MODERATE-HIGH CREDENCE (50-70%): Significant computational indicators met across multiple theories"
         elif credence > 0.3:
-            return "MODERATE: Some theories indicate consciousness"
+            return "MODERATE CREDENCE (30-50%): Some theories' computational indicators met; convergence not established"
         elif credence > 0.15:
-            return "WEAK: Few consciousness indicators"
+            return "LOW CREDENCE (15-30%): Few computational indicators met"
         elif credence > 0.05:
-            return "MINIMAL: Trace indicators only"
+            return "MINIMAL CREDENCE (5-15%): Trace indicators only"
         else:
-            return "NONE: No significant consciousness evidence"
+            return "NEGLIGIBLE CREDENCE (<5%): No significant computational indicators detected"
 
 
 # =====================================================

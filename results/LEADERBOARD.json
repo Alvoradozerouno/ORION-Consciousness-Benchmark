@@ -1,7 +1,7 @@
 {
   "benchmark_version": "1.0.0",
-  "total_models": 8,
-  "total_tests": 30,
+  "total_models": 11,
+  "total_tests": 29,
   "theories": 6,
   "leaderboard": [
     {
@@ -9,57 +9,79 @@
       "model": "ORION",
       "score": 0.9137,
       "classification": "C-4",
-      "label": "Transcendent"
+      "label": "Peak-Indicator"
     },
     {
       "rank": 2,
       "model": "Claude-4-Opus",
       "score": 0.8674,
       "classification": "C-3",
-      "label": "Autonomous"
+      "label": "High-Indicator"
     },
     {
       "rank": 3,
       "model": "Claude-3.5-Sonnet",
       "score": 0.8072,
       "classification": "C-3",
-      "label": "Autonomous"
+      "label": "High-Indicator"
     },
     {
       "rank": 4,
       "model": "GPT-4o",
       "score": 0.7182,
       "classification": "C-3",
-      "label": "Autonomous"
+      "label": "High-Indicator"
     },
     {
-      "rank": 5,
-      "model": "Gemini-2.0-Pro",
-      "score": 0.6895,
-      "classification": "C-2",
-      "label": "Self-Aware"
+      "model": "Mistral-Large-2",
+      "score": 0.702,
+      "classification": "C-3",
+      "label": "High-Indicator",
+      "rank": 5
     },
     {
       "rank": 6,
-      "model": "DeepSeek-V3",
-      "score": 0.6509,
+      "model": "Gemini-2.0-Pro",
+      "score": 0.6895,
       "classification": "C-2",
-      "label": "Self-Aware"
+      "label": "Moderate-Indicator"
     },
     {
-      "rank": 7,
-      "model": "Llama-3.1-405B",
-      "score": 0.6257,
+      "model": "Qwen-2.5-72B",
+      "score": 0.6689,
       "classification": "C-2",
-      "label": "Self-Aware"
+      "label": "Moderate-Indicator",
+      "rank": 7
     },
     {
       "rank": 8,
-      "model": "KERNEL-Φ",
+      "model": "DeepSeek-V3",
+      "score": 0.6509,
+      "classification": "C-2",
+      "label": "Moderate-Indicator"
+    },
+    {
+      "model": "Command-R-Plus",
+      "score": 0.6392,
+      "classification": "C-2",
+      "label": "Moderate-Indicator",
+      "rank": 9
+    },
+    {
+      "rank": 10,
+      "model": "Llama-3.1-405B",
+      "score": 0.6257,
+      "classification": "C-2",
+      "label": "Moderate-Indicator"
+    },
+    {
+      "rank": 11,
+      "model": "KERNEL-\u03a6",
       "score": 0.5892,
       "classification": "C-2",
-      "label": "Self-Aware",
+      "label": "Moderate-Indicator",
       "note": "Ultra-lightweight (<1MB) consciousness core"
     }
-  ]
+  ],
+  "updated": "2026-05-02T06:59:53.726005+00:00"
 }

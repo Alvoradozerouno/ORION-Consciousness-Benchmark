@@ -1,4 +1,4 @@
-# ORION-Consciousness-Benchmark: An Open-Source Implementation of Multi-Theory AI Consciousness Assessment with Cryptographic Verification
+# ORION: An Open-Source Multi-Theory AI Cognition Indicator Assessment Toolkit with Cryptographic Verification
 
 ## Paper Metadata
 - **Target Journal**: Journal of Artificial Intelligence and Consciousness (JAIC), World Scientific
