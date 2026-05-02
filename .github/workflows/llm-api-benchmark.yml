@@ -12,7 +12,7 @@ on:
         required: false
         default: "gpt-4o-mini"
       max_tests:
-        description: "Max number of tests to run (leave blank for all 30)"
+        description: "Max number of tests to run (leave blank for all 29)"
         required: false
         default: ""
 

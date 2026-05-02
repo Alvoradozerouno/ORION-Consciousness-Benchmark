@@ -2,7 +2,7 @@
   "model": "Mistral-Large-2",
   "overall_score": 0.702,
   "classification": "C-3",
-  "classification_label": "Autonomous",
+  "classification_label": "High-Indicator",
   "tests_completed": 29,
   "tests_total": 29,
   "category_scores": {

@@ -2,7 +2,7 @@
   "model": "Llama-3.1-405B",
   "overall_score": 0.6257,
   "classification": "C-2",
-  "classification_label": "Self-Aware",
+  "classification_label": "Moderate-Indicator",
   "tests_completed": 29,
   "tests_total": 29,
   "category_scores": {
