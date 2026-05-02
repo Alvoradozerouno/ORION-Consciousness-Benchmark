@@ -99,7 +99,7 @@
           "prediction_signal": "Active",
           "scale": "95000 neurons"
         },
-        "interpretation": "Population dynamics: conscious-like",
+        "interpretation": "Population dynamics: indicator-positive",
         "repo": "ORION-NEST-Consciousness",
         "fork_stars": 623,
         "proof": "7dc0f16441416fbb"
@@ -428,7 +428,7 @@
           "feedback_strength": "45%",
           "dominant_rhythm": "Delta"
         },
-        "interpretation": "Recurrent processing minimal -> Conscious percepts possible",
+        "interpretation": "Recurrent processing minimal -> GWT ignition indicator not active",
         "repo": "ORION-BrainPy-Consciousness",
         "fork_stars": 641,
         "proof": "083f1a8514b7d36b"

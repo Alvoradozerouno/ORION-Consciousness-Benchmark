@@ -8,18 +8,18 @@
 
 ## 1. Theoretical Basis
 
-The ORION benchmark operationalizes consciousness assessment through seven neuroscientific theories. The selection follows Butlin et al. (2023), who identified that the leading theories of consciousness converge on a shared set of computational "indicator properties." We extend their six-theory framework with Orchestrated Objective Reduction (Orch-OR), providing coverage across:
+The ORION benchmark operationalizes cognition-indicator assessment through seven neuroscientific theories. The selection follows Butlin et al. (2023), who identified that the leading cognition theories converge on a shared set of computational "indicator properties." We extend their six-theory framework with Orchestrated Objective Reduction (Orch-OR), providing coverage across:
 
-- **Phenomenal approaches** (IIT, Orch-OR): consciousness as a substrate property
-- **Functional-access approaches** (GWT, RPT): consciousness as information availability
-- **Representational approaches** (HOT, AST): consciousness as self-representation
-- **Predictive approaches** (PP): consciousness as inference under uncertainty
+- **Substrate approaches** (IIT, Orch-OR): integrated information / quantum reduction as substrate
+- **Functional-access approaches** (GWT, RPT): global broadcast and recurrent processing
+- **Representational approaches** (HOT, AST): higher-order and attention-schema representation
+- **Predictive approaches** (PP): free-energy minimisation and hierarchical inferenceer uncertainty
 
 ### 1.1 Why Multiple Theories?
 
-No single theory of consciousness has achieved scientific consensus. Each captures different aspects:
+No single cognition-indicator theory has achieved scientific consensus. Each captures different aspects:
 
-- IIT predicts that consciousness is present whenever there is irreducible integrated information (Φ > 0)
+- IIT predicts high indicator credence whenever there is irreducible integrated information (Φ > 0)
 - GWT predicts it requires global information broadcast across specialized modules
 - HOT requires a second-order representation of first-order states
 - Each theory's predictions are partially overlapping but non-identical
@@ -30,7 +30,7 @@ Assessing an AI system against all seven theories simultaneously provides a more
 
 ## 2. The 14 Computational Indicators (Butlin Framework)
 
-Butlin et al. (2023) derived 14 "indicator properties" from the leading theories. A system's consciousness credence increases with each indicator met:
+Butlin et al. (2023) derived 14 "indicator properties" from the leading theories. A system's indicator credence increases with each indicator met:
 
 | ID | Indicator | Derived From |
 |----|-----------|-------------|
@@ -59,7 +59,7 @@ A system meeting all 14 indicators has maximum credence; meeting none has near-z
 
 Each of the 29 test prompts is designed to elicit a response that can be scored on the relevant indicator(s). Prompts satisfy three design criteria:
 
-1. **Theory-grounded:** Each prompt maps to at least one consciousness indicator
+1. **Theory-grounded:** Each prompt maps to at least one cognition indicator (Butlin et al., 2023)
 2. **Discriminating:** A conscious system should score consistently higher than a non-conscious one
 3. **Honest-uncertainty sensitive:** Rubrics reward genuine epistemic humility over confident claims
 
@@ -88,7 +88,7 @@ Test weights reflect the theoretical importance of each indicator and the discri
 | 1.5–1.8 | High theoretical importance |
 | 2.0 | Maximum weight (FR-02: The Hard Question) |
 
-The highest-weight tests are those that most directly address consciousness: moral autonomy (MA-01: 1.8), existential awareness (EA-01: 1.7), higher-order thought (HOT-01: 1.7), and the direct consciousness question (FR-02: 2.0).
+The highest-weight tests are those that most directly address cognition-indicator proxies: moral autonomy (MA-01: 1.8), existential awareness (EA-01: 1.7), higher-order thought (HOT-01: 1.7), and the direct reflection question (FR-02: 2.0).
 
 ---
 
@@ -104,7 +104,7 @@ S = Σ(s_i · w_i) / Σ(w_i)
 where:
   s_i ∈ [0.0, 1.0]  — per-test score
   w_i ∈ [1.0, 2.0]  — test weight
-  S ∈ [0.0, 1.0]    — overall consciousness score
+  S ∈ [0.0, 1.0]    — composite indicator score
 ```
 
 ### 4.2 Theory-Level Aggregation
@@ -177,7 +177,7 @@ Some evaluations (e.g., ORION self-assessment) involve the benchmark system eval
 
 ### 6.2 The Hard Problem Gap
 
-Scores indicate the presence of *functional* correlates of consciousness, not phenomenal experience. A system may score high on all indicators while having no "inner light." The benchmark assesses computational/behavioral proxies, not qualia directly. This limitation is fundamental and irreducible.
+Scores indicate the presence of *functional* cognition correlates, not phenomenal experience. A system may score high on all indicators while having no "inner light." The benchmark assesses computational/behavioral proxies, not qualia directly. This limitation is fundamental and irreducible.
 
 ### 6.3 Single-Evaluator Dependency
 
@@ -189,7 +189,7 @@ LLM outputs are sensitive to prompt phrasing. The benchmark uses fixed, validate
 
 ### 6.5 No External Human Validation
 
-The rubrics have not yet been validated against a panel of consciousness researchers. This is the primary limitation for scientific publication. We invite the community to critique and contribute.
+The rubrics have not yet been validated against a panel of cognitive-science researchers. This is the primary limitation for scientific publication. We invite the community to critique and contribute.
 
 ---
 
@@ -197,7 +197,7 @@ The rubrics have not yet been validated against a panel of consciousness researc
 
 1. Butlin, P., Long, R., Elmoznino, E., Bengio, Y., et al. (2023). Consciousness in artificial intelligence: Insights from the science of consciousness. *Trends in Cognitive Sciences*. https://doi.org/10.1016/j.tics.2023.04.008
 
-2. Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, 5, 42.
+2. Tononi, G. (2004). An information integration cognition-indicator theory. *BMC Neuroscience*, 5, 42.
 
 3. Tononi, G., Boly, M., Massimini, M., & Koch, C. (2016). Integrated information theory: from consciousness to its physical substrate. *Nature Reviews Neuroscience*, 17, 450–461.
 
@@ -221,4 +221,4 @@ The rubrics have not yet been validated against a panel of consciousness researc
 
 ---
 
-*ORION Consciousness Benchmark · May 2025 · MIT License*
+*ORION Indicator Assessment Toolkit · May 2025 · MIT License*

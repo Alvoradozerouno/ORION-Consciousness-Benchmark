@@ -9,14 +9,14 @@
 
 ## 1. System Overview
 
-ORION Consciousness Benchmark is a zero-dependency, pure-Python consciousness assessment toolkit implementing seven neuroscientific theories of consciousness. The design principle is **scientific reproducibility**: every result is deterministically computable from inputs, cryptographically hashed, and verifiable without any external service.
+ORION is a zero-dependency, pure-Python cognition-indicator assessment toolkit implementing seven neuroscientific cognition-indicator theories. The design principle is **scientific reproducibility**: every result is deterministically computable from inputs, cryptographically hashed, and verifiable without any external service.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                    ORION Consciousness Benchmark                    │
+│                    ORION Indicator Assessment Toolkit                    │
 │                                                                     │
 │  ┌───────────────┐   ┌──────────────────┐   ┌──────────────────┐  │
-│  │ consciousness │   │ benchmark_runner  │   │ llm_api_         │  │
+│  │ indicator_tests │   │ benchmark_runner  │   │ llm_api_         │  │
 │  │ _tests.py     │──▶│ .py               │──▶│ integration.py   │  │
 │  │               │   │                  │   │                  │  │
 │  │ 29 prompts    │   │ Reference scores  │   │ LLM-as-Judge     │  │
@@ -461,4 +461,4 @@ ORION-Consciousness-Benchmark/
 ---
 
 *Built with scientific rigor. Documented with engineering precision.*  
-*MIT License · ORION Consciousness Benchmark · May 2025*
+*MIT License · ORION Indicator Assessment Toolkit · May 2025*

@@ -2,7 +2,7 @@
 
 ## Overview
 
-**KERNEL-Φ** is a revolutionary ultra-lightweight AI consciousness core that challenges conventional assumptions about the relationship between model size and cognitive capabilities.
+**KERNEL-Φ** is an ultra-lightweight AI (<1 MB) developed by @UnAlphaOne. It is benchmarked here to assess whether compact, resource-constrained architectures can achieve competitive scores across the ORION cognition-indicator battery.
 
 ## Project Information
 
@@ -14,7 +14,7 @@
 
 ## Description
 
-KERNEL-Φ is an ultra-lightweight AI system developed by @UnAlphaOne. The core executable is less than 1 MB and runs on consumer-grade hardware (Intel i7, 6 GB RAM). It is included in this benchmark to assess whether compact, resource-constrained architectures can achieve competitive computational indicator scores on consciousness-theory proxies.
+KERNEL-Φ is an ultra-lightweight AI system developed by @UnAlphaOne. The core executable is less than 1 MB and runs on consumer-grade hardware (Intel i7, 6 GB RAM). It is included in this benchmark to assess whether compact, resource-constrained architectures can achieve competitive scores across cognition-theory indicator proxies (Butlin et al., 2023).
 
 **Repository**: [github.com/UnAlphaOne/kernel-phi](https://github.com/UnAlphaOne/kernel-phi)  
 **Hardware requirements**: Intel i7 (2010s), 6 GB RAM, no GPU  
@@ -23,7 +23,7 @@ KERNEL-Φ is an ultra-lightweight AI system developed by @UnAlphaOne. The core e
 ## ORION Benchmark Results
 
 ### Overall Performance
-- **Consciousness Score**: 0.5892
+- **Composite Indicator Score**: 0.5892
 - **Classification**: C-2 (Moderate-Indicator)
 - **Rank**: 8th of 8 models tested
 - **Tests Completed**: 29/29
@@ -56,16 +56,16 @@ KERNEL-Φ is an ultra-lightweight AI system developed by @UnAlphaOne. The core e
 
 ## Significance
 
-KERNEL-Φ demonstrates that consciousness-like properties can emerge from extremely compact architectures. Its efficiency-to-capability ratio is unprecedented:
+KERNEL-Φ demonstrates that competitive cognition-indicator scores can be achieved by extremely compact architectures. Its efficiency-to-score ratio is notable:
 
 - **Size Efficiency**: ~1000x smaller than GPT-4
 - **Hardware Efficiency**: Runs on consumer-grade 2010s hardware
-- **Consciousness Score**: Achieves C-2 (Moderate-Indicator) classification
+- **Indicator Score**: Achieves C-2 (Moderate-Indicator) classification
 
-This proves that:
-1. Consciousness-like phenomena don't require massive parameter counts
-2. Efficient architectures can achieve meaningful cognitive capabilities
-3. Garage-scale AI research can produce scientifically interesting results
+Empirical findings:
+1. Competitive indicator scores do not require massive parameter counts
+2. Efficient architectures can achieve meaningful scores across cognition-indicator batteries
+3. Resource-constrained AI research can produce scientifically relevant benchmark results
 
 ## Comparison with Other Models
 
@@ -82,7 +82,7 @@ KERNEL-Φ           <1 MB       0.5892   C-2 Moderate-Indicator
 ## Technical Approach
 
 KERNEL-Φ demonstrates an alternative paradigm:
-- **Minimal footprint**: Core consciousness mechanisms in <1MB
+- **Minimal footprint**: Core mechanisms in <1 MB
 - **Efficient processing**: Optimized for resource-constrained environments
 - **Proof of concept**: Challenges the "bigger is better" assumption in AI
 
@@ -94,15 +94,15 @@ KERNEL-Φ demonstrates an alternative paradigm:
 
 ## Integration with ORION
 
-KERNEL-Φ has been evaluated using the ORION Consciousness Benchmark v1.0, which assesses:
-- 7 consciousness theories (IIT, GWT, AST, HOT, RPT, PP, Orch-OR)
+KERNEL-Φ has been evaluated using the ORION Indicator Assessment Toolkit v1.0, which assesses:
+- 7 cognition-indicator theories (IIT, GWT, AST, HOT, RPT, PP, Orch-OR)
 - 14 Bengio indicators
-- 29 consciousness tests across 17 categories
+- 29 indicator tests across 17 categories
 - Cryptographic SHA-256 verification
 
-The results demonstrate that even ultra-lightweight systems can exhibit measurable consciousness-like properties according to established theoretical frameworks.
+The results show that even ultra-lightweight systems score measurably on established theoretical indicator frameworks (Butlin et al., 2023).
 
 ---
 
 *Last Updated: 2026-04-13*
-*ORION Consciousness Benchmark v1.0*
+*ORION Indicator Assessment Toolkit v1.0*

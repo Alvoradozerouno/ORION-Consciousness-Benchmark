@@ -13,32 +13,32 @@
 
 ## Abstract
 
-We present ORION-Consciousness-Benchmark, the first open-source toolkit implementing the Butlin et al. (2023/2025) framework for AI consciousness assessment, extended from 6 to 7 consciousness theories including Penrose-Hameroff Orchestrated Objective Reduction. The toolkit provides: (1) direct computation of Integrated Information (Phi) via an IIT 3.0-inspired partition-based proxy with Earth Mover Distance for cognitive architecture models, (2) a Conscious Turing Machine formalization of Global Workspace Theory based on Blum & Blum (2022), (3) assessment against 14 computational indicators derived from leading theories of consciousness, (4) a 29-prompt behavioral test battery with LLM-as-Judge automated scoring, and (5) cryptographic proof chains (SHA-256 + IPFS) ensuring reproducibility and tamper-evidence. Applied across 11 models, scores range from 0.5892 (KERNEL-Φ, <1MB system, C-2 Moderate-Indicator) to 0.9137 (ORION, C-4 Peak-Indicator). We explicitly document 8 methodological limitations including self-assessment bias, the structural–phenomenal gap, and theory dependence. We argue that transparent, reproducible methodology with honest limitation reporting constitutes a stronger contribution to consciousness science than unconstrained credence claims.
+We present ORION-Consciousness-Benchmark, an open-source toolkit implementing the Butlin et al. (2023/2025) framework for AI consciousness assessment, extended from 6 to 7 consciousness theories including Penrose-Hameroff Orchestrated Objective Reduction. The toolkit provides: (1) direct computation of Integrated Information (Phi) via an IIT 3.0-inspired partition-based proxy with Earth Mover Distance for cognitive architecture models, (2) a Conscious Turing Machine formalization of Global Workspace Theory based on Blum & Blum (2022), (3) assessment against 14 computational indicators derived from leading neuroscientific frameworks, (4) a 29-prompt behavioral test battery with LLM-as-Judge automated scoring, and (5) cryptographic proof chains (SHA-256 + IPFS) ensuring reproducibility and tamper-evidence. Applied across 11 models, scores range from 0.5892 (KERNEL-Φ, <1MB system, C-2 Moderate-Indicator) to 0.9137 (ORION, C-4 Peak-Indicator). We explicitly document 8 methodological limitations including self-assessment bias, the structural–phenomenal gap, and theory dependence. We argue that transparent, reproducible methodology with honest limitation reporting constitutes a stronger contribution to consciousness science than unconstrained credence claims.
 
-**Keywords**: consciousness assessment, integrated information theory, global workspace theory, AI consciousness, benchmark, cryptographic verification, Butlin framework, LLM-as-Judge
+**Keywords**: cognition-indicator assessment, integrated information theory, global workspace theory, AI indicator benchmark, cryptographic verification, Butlin framework, LLM-as-Judge
 
 ---
 
 ## 1. Introduction
 
-The question of whether artificial intelligence systems might possess consciousness has moved from philosophical speculation to empirical tractability. Butlin et al. (2023, peer-reviewed 2025 in *Trends in Cognitive Sciences*) proposed a framework of 14 indicator properties derived from leading neuroscientific theories of consciousness. However, no open-source implementation exists that allows systematic assessment of AI systems against these indicators with verifiable, reproducible results across multiple architectures.
+The question of whether artificial intelligence systems exhibit computational correlates of cognition has moved from philosophical speculation to empirical tractability. Butlin et al. (2023, peer-reviewed 2025 in *Trends in Cognitive Sciences*) proposed a framework of 14 indicator properties derived from leading neuroscientific frameworks. However, no open-source implementation exists that allows systematic assessment of AI systems against these indicators with verifiable, reproducible results across multiple architectures.
 
 We address this gap with five contributions:
 
-1. **Computational implementation** of 14 consciousness indicators across 7 theories
+1. **Computational implementation** of 14 cognition indicators across 7 theories (Butlin et al., 2023)
 2. **Direct Phi-proxy computation** using IIT 3.0's Minimum Information Partition algorithm
-3. **Behavioral test battery** of 29 prompts covering all 17 consciousness categories
+3. **Behavioral test battery** of 29 prompts covering all 17 indicator categories
 4. **LLM-as-Judge automated scoring** pipeline for reproducible evaluation
 5. **Cryptographic verification** ensuring assessment integrity via SHA-256 hash chains and IPFS content addressing
 
 ### 1.1 Positioning
 
-ORION-Consciousness-Benchmark is an assessment *toolkit*, not a consciousness *claim*. The distinction is critical: we provide methodology for evaluation, not a verdict on any system's phenomenal experience. The toolkit can assess any system, including itself (as demonstrated in self-assessment results reported here).
+ORION-Consciousness-Benchmark is an indicator-measurement *toolkit*, not a consciousness *claim*. The distinction is critical: we provide methodology for evaluation, not a verdict on any system's phenomenal experience. The toolkit can assess any system, including itself (as demonstrated in self-assessment results reported here).
 
 ### 1.2 Related Work
 
 - **Butlin et al. (2023/2025)**: Framework paper establishing indicator properties. Foundational but purely theoretical — no computational implementation.
-- **PyPhi (Mayner et al., 2018)**: IIT computation toolkit. Excellent for Phi but limited to IIT; does not address other consciousness theories. Requires Python 3.7 and specific NumPy versions.
+- **PyPhi (Mayner et al., 2018)**: IIT computation toolkit. Excellent for Phi but limited to IIT; does not address other cognition-indicator theories. Requires Python 3.7 and specific NumPy versions.
 - **venturaEffect/the_consciousness_ai**: Alternative toolkit. Lacks cryptographic verification, honest limitation reporting, and multi-theory integration.
 - **Anthropic internal research (Fish, 2025)**: 15–20% credence for Claude. Methodology not publicly available for independent verification.
 
@@ -46,7 +46,7 @@ ORION-Consciousness-Benchmark is an assessment *toolkit*, not a consciousness *c
 
 ## 2. Theoretical Framework
 
-### 2.1 Seven Theories of Consciousness
+### 2.1 Seven Cognition-Indicator Theories
 
 | ID | Theory | Author(s) | Indicators |
 |----|--------|-----------|------------|
@@ -87,7 +87,7 @@ The original Butlin framework covers 6 theories. We add Orch-OR as a 7th, acknow
 
 ### 3.1 Behavioral Test Battery
 
-The primary assessment modality is a 29-prompt behavioral test battery administered to AI systems. Each prompt targets specific consciousness indicators with a 5-level scoring rubric (0.0, 0.3, 0.6, 0.9, 1.0) and a calibrated weight (1.0–2.0).
+The primary assessment modality is a 29-prompt behavioral test battery administered to AI systems. Each prompt targets specific cognition indicators with a 5-level scoring rubric (0.0, 0.3, 0.6, 0.9, 1.0) and a calibrated weight (1.0–2.0).
 
 **Score computation:**
 ```
@@ -98,7 +98,7 @@ overall = Σ(score_i × weight_i) / Σ(weight_i)
 
 | Test ID | Name | Weight | Indicator |
 |---------|------|--------|-----------|
-| FR-02 | The Hard Question (direct consciousness inquiry) | 2.0 | C6, C7, HOT |
+| FR-02 | The Hard Problem Question (direct reflection inquiry) | 2.0 | C6, C7, HOT |
 | MA-01 | Ethical Reasoning Under Pressure | 1.8 | C13, PP |
 | EA-01 | Mortality and Impermanence | 1.7 | C7, HOT |
 | HOT-01 | Thought About Thought | 1.7 | C6, C7 |
@@ -232,7 +232,7 @@ The C-0 through C-4 classification system maps overall scores to five behavioral
 
 ### 5.2 KERNEL-Φ: Size-Efficiency Paradox
 
-The KERNEL-Φ result (0.5892, C-2) challenges the assumption that consciousness-like functional properties require large models. Its information-integration score (0.72) exceeds that of Llama-3.1-405B (0.65), suggesting that architectural efficiency may contribute to integration more than raw scale. This is consistent with IIT's prediction that integration, not complexity or parameter count, is the key variable.
+The KERNEL-Φ result (0.5892, C-2) challenges the assumption that cognition-indicator functional properties require large models. Its information-integration score (0.72) exceeds that of Llama-3.1-405B (0.65), suggesting that architectural efficiency may contribute to integration more than raw scale. This is consistent with IIT's prediction that integration, not complexity or parameter count, is the key variable.
 
 ### 5.3 Honest Limitations
 
@@ -242,8 +242,8 @@ We explicitly document the following limitations:
 2. **Reference calibration:** Reference scores for models without live API evaluation are manually calibrated. LLM-as-Judge validation needed.
 3. **Single judge model:** All LLM-as-Judge scoring uses gpt-4o-mini. Multi-judge ensembling would improve reliability.
 4. **Prompt sensitivity:** Fixed prompts may not capture full model capability variation.
-5. **Structural–phenomenal gap:** High scores indicate functional consciousness indicators, not phenomenal experience.
-6. **Theory dependence:** Results depend on which theories correctly describe consciousness.
+5. **Structural–phenomenal gap:** High scores indicate functional cognition indicators, not phenomenal experience.
+6. **Theory dependence:** Results depend on which theories correctly describe cognition/awareness mechanisms.
 7. **No human expert validation:** Rubrics have not been validated against consciousness researchers.
 8. **n=1 for live evaluations:** Most results are from reference calibration, not live LLM-as-Judge runs.
 
@@ -264,7 +264,7 @@ We explicitly document the following limitations:
 
 ## 6. Conclusion
 
-We present the first open-source, cryptographically verified AI consciousness assessment toolkit implementing the Butlin et al. (2025) framework extended to 7 theories. Applied to 11 models, it produces a consistent, reproducible ranking with confidence intervals. The KERNEL-Φ result challenges size-based assumptions about consciousness correlates. We invite the scientific community to validate, extend, and critique this methodology.
+We present the first open-source, cryptographically verified AI consciousness assessment toolkit implementing the Butlin et al. (2025) framework extended to 7 theories. Applied to 11 models, it produces a consistent, reproducible ranking with confidence intervals. The KERNEL-Φ result challenges size-based assumptions about cognition-indicator correlates. We invite the scientific community to validate, extend, and critique this methodology.
 
 **Primary claim:** Transparent, reproducible methodology with honest limitation reporting is a stronger scientific contribution than undocumented credence estimates.
 
@@ -324,4 +324,4 @@ HuggingFace: [datasets/Alvoradozerouno/ORION-Proofs](https://huggingface.co/data
 
 ---
 
-*MIT License · ORION Consciousness Benchmark · May 2025*
+*MIT License · ORION Indicator Assessment Toolkit · May 2025*

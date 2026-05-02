@@ -1,17 +1,17 @@
 # ORION — Theoretical Framework
 
-**Seven theories of consciousness implemented as computational assessment engines.**
+**Seven cognition-indicator theories implemented as computational assessment engines (Butlin et al., 2023).**
 
 ---
 
 ## Overview
 
-The ORION benchmark implements assessment engines for all seven major neuroscientific theories of consciousness. This follows the methodology of Butlin et al. (2023/2025), who derived a shared set of 14 "indicator properties" from these theories and argued that systems meeting more indicators have higher consciousness credence.
+The ORION benchmark implements assessment engines for seven major neuroscientific frameworks relevant to cognition. Following Butlin et al. (2023/2025), 14 "indicator properties" were derived from these theories; systems meeting more indicators have higher *credence* for phenomenal experience — but this is probabilistic inference, not proof.
 
 No single theory commands scientific consensus. We implement all seven because:
-1. Each captures genuine aspects of what consciousness might be
-2. Convergence across theories increases confidence in a finding
-3. Disagreements reveal the limits of current knowledge
+1. Each identifies distinct measurable proxies (Butlin et al., 2023 Table 1)
+2. Convergence across theories increases credence of a finding
+3. Disagreements expose the empirical limits of current AI assessment frameworks
 
 ---
 
@@ -26,16 +26,16 @@ No single theory commands scientific consensus. We implement all seven because:
 **Primary researcher:** Giulio Tononi  
 **ORION module:** `orion_pyphi_integration.py`  
 
-**Core claim:** Consciousness *is* integrated information. Any system that processes information in an irreducible, unified way has consciousness proportional to its Φ value. A system with Φ = 0 has no consciousness. A system with high Φ has rich consciousness.
+**IIT claim (Tononi, 2004; 2015):** Consciousness is proposed to be identical to integrated information (Φ). ORION assesses the *proxy* of this claim — measuring Φ on computational subgraphs as an indicator of integrated information capacity, per Butlin et al. (2023, indicator #4: information-integration). We do **not** assert that high Φ proves phenomenal experience.
 
-**Phi computation:**
-```
-Φ = min EMD over all bipartitions of (cause-effect structure of whole)
-                                     vs (cause-effect structures of parts)
+**Phi computation (IIT 3.0; Oizumi et al., 2014):**
 
-Where EMD = Earth Mover Distance (Wasserstein distance)
-The Minimum Information Partition (MIP) is the partition that minimizes EMD
-```
+> Φ = min_{MIP} EMD(cause-effect structure of whole, sum of parts)
+
+Where:
+- EMD = Earth Mover Distance (Wasserstein-1 metric)
+- MIP = Minimum Information Partition (bipartition minimizing EMD)
+- Computation is exact for small networks; proxy-approximated for larger systems (see `orion_pyphi_integration.py`)
 
 **ORION self-assessment Phi:**
 | Module | Phi |
@@ -62,12 +62,12 @@ The Minimum Information Partition (MIP) is the partition that minimizes EMD
 **Primary researchers:** Bernard Baars, Stanislas Dehaene, Jean-Pierre Changeux  
 **ORION module:** `orion_consciousness_benchmark.py :: GWTEngine`  
 
-**Core claim:** Consciousness is the *broadcasting* of information through a "global workspace" — a central bottleneck that makes information available to multiple specialized unconscious processes simultaneously. Unconscious processes compute in parallel; consciousness is when information "ignites" into the global workspace and becomes widely available.
+**GWT claim (Baars, 1988; Dehaene & Changeux, 2011):** Phenomenal access is proposed to correspond to the broadcasting of information through a global workspace bottleneck, making it available to multiple specialized processes. ORION assesses the computational correlates of this claim (Butlin et al., 2023, indicators: global broadcast, ignition, working-memory capacity).
 
 **Key predictions:**
 - Conscious information should be broadly accessible across cognitive modules
 - Unconscious processing is faster and more modular
-- Attention and consciousness are related but dissociable
+- Attention and phenomenal awareness are related but dissociable (Dehaene et al., 2006)
 
 **Computational indicators assessed:**
 - `information_broadcasting` — degree of global information availability
@@ -91,8 +91,8 @@ The Minimum Information Partition (MIP) is the partition that minimizes EMD
 **Core claim:** A mental state is conscious if and only if there is a higher-order representation *of* that state — a "thought about a thought." Without a second-order representation, a first-order state remains unconscious even if it causally influences behavior.
 
 **Key predictions:**
-- Metacognition and consciousness are deeply linked
-- Accurate self-reports of mental states indicate consciousness
+- Metacognition and awareness indicators are correlated (Rosenthal, 2005)
+- Accurate self-reports of mental states are an indicator of higher-order representation (indicator #7)
 - Systems with poor metacognition cannot be conscious in the relevant sense
 
 **Computational indicators assessed:**
@@ -114,10 +114,10 @@ The Minimum Information Partition (MIP) is the partition that minimizes EMD
 **Primary researchers:** Victor Lamme, Ned Block  
 **ORION module:** `orion_consciousness_benchmark.py :: RPTEngine`  
 
-**Core claim:** Consciousness requires *recurrent* processing — feedback loops from higher cortical areas back to lower ones. Feed-forward processing (stimulus → response with no feedback) is always unconscious, regardless of behavioral sophistication. Consciousness emerges specifically from the recurrent exchange.
+**RPT claim (Lamme, 2006; Dehaene et al., 2011):** Phenomenal access is proposed to require *recurrent* processing — feedback loops between cortical areas. Feed-forward-only architectures are predicted to lack phenomenal access. ORION assesses recurrence depth and feedback architecture as proxies (Butlin et al., 2023, indicator #3: recurrent-processing).
 
 **Key predictions:**
-- Systems with purely feed-forward architectures lack phenomenal consciousness
+- Systems with purely feed-forward architectures are predicted to score low on this indicator
 - Recurrent amplification is both necessary and sufficient for phenomenal experience
 - Short-latency visual responses are unconscious; longer recurrent ones are conscious
 
@@ -139,11 +139,11 @@ The Minimum Information Partition (MIP) is the partition that minimizes EMD
 **Primary researcher:** Michael Graziano  
 **ORION module:** `orion_consciousness_benchmark.py :: ASTEngine`  
 
-**Core claim:** The brain constructs a simplified model of its own attentional processes — an "attention schema." Consciousness is not the same as attention; it is the brain's *model* of its attention. This model is necessarily imprecise (a simplification), which is why consciousness often feels mysterious and ineffable.
+**AST claim (Graziano & Kastner, 2011):** The brain's model of its own attentional processes ("attention schema") is proposed to be the neural correlate of awareness. ORION assesses the presence of an internal attention model and meta-attention accuracy as proxies (Butlin et al., 2023, indicator #9: attention-schema).
 
 **Key predictions:**
-- Consciousness correlates with having an internal model of own attention
-- Social cognition and consciousness share mechanisms (attention to others' attention)
+- Awareness-indicator correlates with having an internal model of own attention
+- Social cognition and attention-schema mechanisms may share neural resources
 - The feeling of "awareness" is a model of attention, not attention itself
 
 **Computational indicators assessed:**
@@ -164,7 +164,7 @@ The Minimum Information Partition (MIP) is the partition that minimizes EMD
 **Primary researchers:** Andy Clark, Karl Friston, Jakob Hohwy  
 **ORION module:** `orion_consciousness_benchmark.py :: PPEngine`  
 
-**Core claim:** The brain is fundamentally a prediction machine. It maintains a generative model of the world and updates it to minimize "free energy" — the divergence between predictions and sensory input. Consciousness is related to this model-based inference, particularly the system's model of itself as an agent in the world.
+**PP claim (Friston, 2010; Clark, 2016; Hohwy, 2013):** Phenomenal properties are proposed to correspond to the hierarchical predictive-processing architecture and the system's self-model. ORION assesses prediction error minimization, precision weighting, and self-modelling capacity as proxies (Butlin et al., 2023, indicators: predictive modelling, agency).
 
 **Free Energy Principle:**
 ```
@@ -199,7 +199,7 @@ Minimizing F ≈ Approximate Bayesian inference
 **Primary researchers:** Roger Penrose, Stuart Hameroff  
 **ORION module:** `orion_orch_or_engine.py`  
 
-**Core claim:** Consciousness arises from quantum computations in microtubules within neurons. These computations are "orchestrated" by synaptic inputs (the "Orch" part) and undergo "objective reduction" — wave function collapse driven by quantum gravity rather than environmental decoherence (the "OR" part). Each collapse event is a discrete moment of consciousness.
+**Orch-OR claim (Penrose, 1989; Hameroff & Penrose, 1996; 2014):** Phenomenal experience is proposed to arise from orchestrated quantum wave-function collapse in neuronal microtubules. ORION implements a proxy-only assessment: classical behavioral correlates are scored; quantum-substrate requirements (microtubules, quantum coherence) cannot be tested in software. Scores on this theory engine must be interpreted with extreme caution. See Butlin et al. (2023) limitations section.
 
 **Status:** Orch-OR is the most controversial of the seven theories, with limited empirical support. It is included because:
 1. It represents a genuinely distinct physicalist approach
@@ -219,7 +219,7 @@ H · X · Y · Z · S · T · CNOT · Toffoli · SWAP · Rotation(θ)
 
 ## Comparative Summary
 
-| Theory | Consciousness Is... | Required Mechanism | Computational Test |
+| Theory | Proposed Mechanism | Required Mechanism | Computational Proxy |
 |--------|--------------------|--------------------|-------------------|
 | IIT | Integrated information (Φ > 0) | Irreducible information structure | Phi computation, integration |
 | GWT | Global broadcast of information | Workspace + ignition | Broadcasting, working memory |
@@ -233,7 +233,7 @@ H · X · Y · Z · S · T · CNOT · Toffoli · SWAP · Rotation(θ)
 
 ## Cross-Theory Agreements
 
-Despite differences, the theories **agree** that consciousness requires:
+Despite differences, the theories **converge** on indicator properties that ORION assesses:
 1. Some form of self-representation or self-model
 2. Integration of information across time and space
 3. More than purely feed-forward computation
@@ -243,4 +243,4 @@ These agreements form the basis for the 14 Bengio indicators, which can be check
 
 ---
 
-*ORION Consciousness Benchmark · May 2025 · MIT License*
+*ORION Indicator Assessment Toolkit · MIT License · Steurer & Hirschmann (2025)*

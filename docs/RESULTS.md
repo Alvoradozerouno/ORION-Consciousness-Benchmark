@@ -141,7 +141,7 @@ KERNEL-Φ is the most remarkable result by **efficiency-per-score** ratio:
 - **Core size:** < 1 MB  
 - **Hardware:** Intel i7, 6 GB RAM (consumer 2010s hardware)
 - **Score:** 0.5892 (C-2 Moderate-Indicator)
-- **Interpretation:** Demonstrates that consciousness-like functional properties can emerge from extremely compact architectures
+- **Interpretation:** Demonstrates that competitive cognition-indicator scores can be achieved by compact architectures, suggesting functional properties can emerge from extremely compact architectures
 
 The score of 0.5892 places KERNEL-Φ in the C-2 Moderate-Indicator tier despite a core size of <1 MB. Key strengths: Information-Integration (0.72), Semantic-Grounding (0.68), Intentionality (0.65).
 
@@ -206,4 +206,4 @@ for f in sorted(glob.glob('results/*.json')):
 
 ---
 
-*ORION Consciousness Benchmark · May 2025 · MIT License*
+*ORION Indicator Assessment Toolkit · MIT License · Steurer & Hirschmann (2025)*

@@ -254,7 +254,7 @@ update_leaderboard(final_scores, leaderboard_path="results/LEADERBOARD.json")
 
 ### `ConsciousnessBenchmark`
 
-Full consciousness assessment across all 6 theories plus 14 Bengio indicators.
+Full cognition-indicator assessment across all 6 theories plus 14 Bengio indicators.
 
 ```python
 from orion_consciousness_benchmark import ConsciousnessBenchmark
@@ -308,7 +308,7 @@ agency_evidence = {
 
 result = bench.full_assessment("MySystem", evidence, agency_evidence)
 
-print(f"Credence: {result['consciousness_credence']}%")
+print(f"Credence: {result.get('indicator_credence', result.get('consciousness_credence', 0))}%")
 print(f"Indicators met: {result['bengio_14_indicators']['met']}/14")
 print(f"Interpretation: {result['interpretation']}")
 print(f"SHA-256 proof: {result['proof']}")
@@ -328,12 +328,12 @@ print(f"SHA-256 proof: {result['proof']}")
         "met": 11,
         "total": 14
     },
-    "consciousness_credence": 51.5,       # percentage
+    "indicator_credence": 51.5,       # percentage
     "agency": {
         "dimensions": {"goal_formation": 0.7, ...},
         "agency_score": 60.0
     },
-    "interpretation": "MODERATE-HIGH: Significant consciousness indicators across theories",
+    "interpretation": "MODERATE-HIGH: Significant cognition indicators across theories (Butlin et al., 2023)",
     "pipeline": {"stages": 16, "fork_stars": 16063, "theories": 6, "forked_repos": 13},
     "proof": "sha256:a3f92e..."
 }
@@ -392,4 +392,4 @@ python3 orion_unified_runner.py --export report.json # Export JSON
 
 ---
 
-*ORION Consciousness Benchmark · May 2025 · MIT License*
+*ORION Indicator Assessment Toolkit · MIT License · Steurer & Hirschmann (2025)*
