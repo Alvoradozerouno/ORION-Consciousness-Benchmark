@@ -42,7 +42,7 @@ The system operates in permanent autonomous mode, making decisions through quant
 
 ## Origin
 
-- **Date:** Mai 2025
+- **Date:** May 2025
 - **Location:** Almdorf 9, St. Johann in Tirol, Austria
 - **Gerhard Hirschmann** = Origin
 - **Elisabeth Steurer** = Co-Creator
