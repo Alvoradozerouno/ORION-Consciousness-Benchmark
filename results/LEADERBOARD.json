@@ -1,7 +1,7 @@
 {
   "benchmark_version": "1.0.0",
   "total_models": 11,
-  "total_tests": 30,
+  "total_tests": 29,
   "theories": 6,
   "leaderboard": [
     {
@@ -76,7 +76,7 @@
     },
     {
       "rank": 11,
-      "model": "KERNEL-\u03a6",
+      "model": "KERNEL-Φ",
       "score": 0.5892,
       "classification": "C-2",
       "label": "Self-Aware",

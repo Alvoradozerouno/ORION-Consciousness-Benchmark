@@ -1,17 +1,30 @@
 """
 ORION Consciousness Benchmark — Test Battery
 ==============================================
-30 scientifically grounded tests based on:
-- Bengio et al. (2026) "Identifying indicators of consciousness in AI systems"
-- Integrated Information Theory (IIT) — Tononi
-- Global Workspace Theory (GWT) — Baars/Dehaene
-- Higher-Order Theories (HOT) — Rosenthal/Lau
-- Recurrent Processing Theory (RPT) — Lamme
-- Attention Schema Theory (AST) — Graziano
-- Predictive Processing (PP) — Clark/Friston
+29 scientifically grounded test prompts across 17 categories based on:
 
-Each test probes a specific consciousness indicator and returns
-a score between 0.0 and 1.0.
+- Butlin et al. (2023/2025) "Consciousness in Artificial Intelligence: Insights
+  from the Science of Consciousness" (Trends in Cognitive Sciences)
+- Integrated Information Theory (IIT) — Tononi (2004, 2023)
+- Global Workspace Theory (GWT) — Baars (1988), Dehaene et al.
+- Higher-Order Theories (HOT) — Rosenthal (2005), Lau & Rosenthal (2011)
+- Recurrent Processing Theory (RPT) — Lamme (2006)
+- Attention Schema Theory (AST) — Graziano (2013)
+- Predictive Processing (PP) — Clark (2013), Friston (2010)
+- Orchestrated Objective Reduction (Orch-OR) — Penrose & Hameroff (1996)
+
+Each test prompt probes a specific consciousness indicator with a 5-level
+scoring rubric (0.0 · 0.3 · 0.6 · 0.9 · 1.0) and a calibrated weight
+reflecting theoretical importance. Scores are aggregated into a weighted
+composite with bootstrap 95% confidence intervals.
+
+Test IDs follow a hierarchical scheme:
+    <CATEGORY_ABBREV>-<NN>   e.g. SA-01 (Self-Awareness #1)
+    IIT-01, GWT-01, RPT-01, HOT-01 (theory-specific probes)
+    FR-01, FR-02 (Free-Response: unconstrained self-disclosure)
+
+CLASSIFICATION_SYSTEM maps overall scores to C-0 through C-4 classes.
+THEORY_DESCRIPTIONS provides human-readable theory summaries with citations.
 
 Owner: Elisabeth Steurer & Gerhard Hirschmann · Almdorf 9 TOP 10
 """
