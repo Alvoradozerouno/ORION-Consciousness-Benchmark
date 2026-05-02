@@ -39,7 +39,7 @@ jobs:
         run: python llm_api_integration.py --dry-run
 
       - name: Run LLM-as-Judge benchmark
-        if: ${{ env.OPENAI_API_KEY != '' }}
+        if: ${{ secrets.OPENAI_API_KEY != '' }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LLM_API_TIMEOUT: "30"
@@ -53,11 +53,11 @@ jobs:
           fi
 
       - name: Skip live run (no API key configured)
-        if: ${{ env.OPENAI_API_KEY == '' }}
+        if: ${{ secrets.OPENAI_API_KEY == '' }}
         run: echo "OPENAI_API_KEY not set — skipping live API benchmark. Set the secret to enable it."
 
       - name: Commit updated results
-        if: ${{ env.OPENAI_API_KEY != '' }}
+        if: ${{ secrets.OPENAI_API_KEY != '' }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
