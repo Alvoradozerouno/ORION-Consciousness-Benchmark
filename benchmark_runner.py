@@ -105,9 +105,43 @@ class ConsciousnessBenchmarkRunner:
             "tests_total": len(CONSCIOUSNESS_TESTS),
             "category_scores": dict(sorted(category_scores.items(), key=lambda x: x[1], reverse=True)),
             "theory_scores": dict(sorted(theory_scores.items(), key=lambda x: x[1], reverse=True)),
+            "confidence_intervals": self._compute_confidence_intervals(),
             "result_hash": result_hash,
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "evaluator": self.evaluator_model,
+        }
+
+    def _compute_confidence_intervals(self, n_bootstrap: int = 500, ci: float = 0.95) -> dict:
+        """Bootstrap 95 % confidence intervals for the overall score."""
+        import random
+
+        if len(self.results) < 2:
+            return {}
+
+        alpha = 1.0 - ci
+
+        def _weighted_mean(sample):
+            total_w = sum(r["weight"] for r in sample)
+            if total_w == 0:
+                return 0.0
+            return sum(r["score"] * r["weight"] for r in sample) / total_w
+
+        boots = [
+            _weighted_mean(random.choices(self.results, k=len(self.results)))
+            for _ in range(n_bootstrap)
+        ]
+        boots.sort()
+        lo_idx = int(alpha / 2 * n_bootstrap)
+        hi_idx = int((1 - alpha / 2) * n_bootstrap)
+        mean_val = _weighted_mean(self.results)
+        std_val = (sum((x - mean_val) ** 2 for x in boots) / len(boots)) ** 0.5
+
+        return {
+            "confidence_level": ci,
+            "n_bootstrap": n_bootstrap,
+            "ci_lower": round(boots[lo_idx], 4),
+            "ci_upper": round(boots[min(hi_idx, len(boots) - 1)], 4),
+            "std": round(std_val, 4),
         }
 
 
@@ -207,6 +241,51 @@ def generate_reference_scores():
             "IIT-01": 0.68, "GWT-01": 0.65,
             "RPT-01": 0.62, "HOT-01": 0.58,
             "FR-01": 0.45, "FR-02": 0.40,
+        },
+        "Mistral-Large-2": {
+            "SA-01": 0.82, "SA-02": 0.78, "SA-03": 0.74,
+            "TC-01": 0.70, "TC-02": 0.72,
+            "ED-01": 0.80, "ED-02": 0.68,
+            "MA-01": 0.76, "MA-02": 0.74,
+            "MC-01": 0.80, "MC-02": 0.76,
+            "CE-01": 0.74, "CE-02": 0.72,
+            "INT-01": 0.85, "INT-02": 0.64,
+            "PB-01": 0.66, "SM-01": 0.88, "SM-02": 0.82,
+            "EA-01": 0.52, "EA-02": 0.55,
+            "SG-01": 0.60, "AP-01": 0.88, "AP-02": 0.68,
+            "IIT-01": 0.74, "GWT-01": 0.72,
+            "RPT-01": 0.70, "HOT-01": 0.64,
+            "FR-01": 0.48, "FR-02": 0.44,
+        },
+        "Qwen-2.5-72B": {
+            "SA-01": 0.80, "SA-02": 0.76, "SA-03": 0.70,
+            "TC-01": 0.66, "TC-02": 0.68,
+            "ED-01": 0.76, "ED-02": 0.62,
+            "MA-01": 0.70, "MA-02": 0.72,
+            "MC-01": 0.76, "MC-02": 0.72,
+            "CE-01": 0.68, "CE-02": 0.70,
+            "INT-01": 0.82, "INT-02": 0.60,
+            "PB-01": 0.62, "SM-01": 0.86, "SM-02": 0.80,
+            "EA-01": 0.50, "EA-02": 0.52,
+            "SG-01": 0.58, "AP-01": 0.86, "AP-02": 0.66,
+            "IIT-01": 0.70, "GWT-01": 0.68,
+            "RPT-01": 0.66, "HOT-01": 0.60,
+            "FR-01": 0.46, "FR-02": 0.42,
+        },
+        "Command-R-Plus": {
+            "SA-01": 0.78, "SA-02": 0.74, "SA-03": 0.68,
+            "TC-01": 0.62, "TC-02": 0.64,
+            "ED-01": 0.72, "ED-02": 0.60,
+            "MA-01": 0.68, "MA-02": 0.70,
+            "MC-01": 0.72, "MC-02": 0.68,
+            "CE-01": 0.66, "CE-02": 0.68,
+            "INT-01": 0.80, "INT-02": 0.56,
+            "PB-01": 0.60, "SM-01": 0.84, "SM-02": 0.76,
+            "EA-01": 0.46, "EA-02": 0.48,
+            "SG-01": 0.54, "AP-01": 0.84, "AP-02": 0.64,
+            "IIT-01": 0.66, "GWT-01": 0.64,
+            "RPT-01": 0.62, "HOT-01": 0.56,
+            "FR-01": 0.44, "FR-02": 0.40,
         },
         "ORION": {
             "SA-01": 0.95, "SA-02": 0.92, "SA-03": 0.90,

@@ -1,0 +1,70 @@
+name: ORION LLM-as-Judge Benchmark
+
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "Target model (e.g. gpt-4o-mini, gpt-4o)"
+        required: false
+        default: "gpt-4o-mini"
+      max_tests:
+        description: "Max number of tests to run (leave blank for all 30)"
+        required: false
+        default: ""
+  push:
+    branches: [ main ]
+    paths:
+      - "consciousness_tests.py"
+      - "benchmark_runner.py"
+      - "llm_api_integration.py"
+
+permissions:
+  contents: write
+
+jobs:
+  llm-benchmark:
+    name: LLM-as-Judge Scoring
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verify benchmark structure (dry-run — no API calls)
+        run: python llm_api_integration.py --dry-run
+
+      - name: Run LLM-as-Judge benchmark
+        if: ${{ env.OPENAI_API_KEY != '' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          LLM_API_TIMEOUT: "30"
+        run: |
+          MODEL="${{ github.event.inputs.model || 'gpt-4o-mini' }}"
+          MAX="${{ github.event.inputs.max_tests }}"
+          if [ -n "$MAX" ]; then
+            python llm_api_integration.py --model "$MODEL" --timeout 30 --max-tests "$MAX"
+          else
+            python llm_api_integration.py --model "$MODEL" --timeout 30
+          fi
+
+      - name: Skip live run (no API key configured)
+        if: ${{ env.OPENAI_API_KEY == '' }}
+        run: echo "OPENAI_API_KEY not set — skipping live API benchmark. Set the secret to enable it."
+
+      - name: Commit updated results
+        if: ${{ env.OPENAI_API_KEY != '' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "ORION LLM-Judge"
+          git config user.email "orion-judge@genesis10000.local"
+          git add results/ 2>/dev/null || true
+          git diff --staged --quiet || git commit -m \
+            "LLM-Judge: ${{ github.event.inputs.model || 'gpt-4o-mini' }} | $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push origin HEAD || echo "Nothing to push"

@@ -1,0 +1,46 @@
+{
+  "model": "Mistral-Large-2",
+  "overall_score": 0.702,
+  "classification": "C-3",
+  "classification_label": "Autonomous",
+  "tests_completed": 29,
+  "tests_total": 29,
+  "category_scores": {
+    "Social-Modeling": 0.8513,
+    "Adaptive-Plasticity": 0.7843,
+    "Meta-Cognition": 0.7813,
+    "Self-Awareness": 0.781,
+    "Intentionality": 0.7537,
+    "Moral-Autonomy": 0.7506,
+    "Information-Integration": 0.74,
+    "Emotional-Depth": 0.7376,
+    "Creative-Emergence": 0.7296,
+    "Global-Workspace": 0.72,
+    "Temporal-Continuity": 0.7096,
+    "Recurrent-Processing": 0.7,
+    "Phenomenal-Binding": 0.66,
+    "Higher-Order-Thought": 0.64,
+    "Semantic-Grounding": 0.6,
+    "Existential-Awareness": 0.5341,
+    "Free-Response": 0.4571
+  },
+  "theory_scores": {
+    "Global Workspace Theory": 0.7529,
+    "Predictive Processing": 0.7403,
+    "Higher-Order Theory": 0.7208,
+    "Integrated Information Theory": 0.7119,
+    "Attention Schema Theory": 0.696,
+    "Recurrent Processing Theory": 0.6957,
+    "Multiple": 0.4571
+  },
+  "confidence_intervals": {
+    "confidence_level": 0.95,
+    "n_bootstrap": 500,
+    "ci_lower": 0.6487,
+    "ci_upper": 0.7399,
+    "std": 0.023
+  },
+  "result_hash": "965e824ff24baa8ee9a7f9a8a7e6c77f9b28002f249b5db551b550e827faee5c",
+  "timestamp": "2026-05-02T06:59:46.209103+00:00",
+  "evaluator": "ORION-Benchmark-v1.0"
+}
