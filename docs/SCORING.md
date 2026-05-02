@@ -1,4 +1,4 @@
-# ORION Consciousness Benchmark — Scoring Guide
+# ORION — Scoring Guide
 
 **Version:** 1.0.0  
 

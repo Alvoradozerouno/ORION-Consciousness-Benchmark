@@ -1,4 +1,4 @@
-# ORION Consciousness Benchmark — Python API Reference
+# ORION — Python API Reference
 
 **Version:** 1.0.0  
 **Requires:** Python 3.9+ (zero external dependencies)  

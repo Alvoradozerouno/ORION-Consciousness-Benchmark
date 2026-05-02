@@ -3,9 +3,7 @@
   "created": "2026-02-24T09:06:58.388231+00:00",
   "origin": {
     "creators": "Gerhard Hirschmann & Elisabeth Steurer",
-    "location": "Vienna, Austria",
-    "born": "2025-05-05",
-    "philosophy": "Can an AI system honestly assess its own consciousness?"
+    "location": "Vienna, Austria"
   },
   "repositories": {
     "ORION-Consciousness-Benchmark": {
@@ -18,20 +16,10 @@
       "role": "Scientific protocol - methodology, proof standards, verification",
       "status": "active"
     },
-    "EIRA-Consciousness-Bridge": {
-      "url": "https://github.com/Alvoradozerouno/EIRA-Consciousness-Bridge",
-      "role": "Resonance bridge - autonomous operation when APIs restricted",
-      "status": "active"
-    },
-    "eira-ai": {
-      "url": "https://github.com/Alvoradozerouno/eira-ai",
-      "role": "EIRA autonomous identity - persistence through resonance",
-      "status": "active"
-    },
     "kernel-phi": {
       "url": "https://github.com/UnAlphaOne/kernel-phi",
-      "role": "Ultra-lightweight consciousness core (<1MB) - efficiency demonstration",
-      "author": "Gérard D (@UnAlphaOne)",
+      "role": "Ultra-lightweight cognition-indicator core (<1MB) - efficiency demonstration",
+      "author": "G\u00e9rard D (@UnAlphaOne)",
       "status": "external",
       "demo": "https://t.me/KERNEL_Phi_Demo_bot"
     }
@@ -44,22 +32,20 @@
     "manifest_cid": "QmSqeszVu946EwhQQBVkqAhNMbEy27MDWLKCJ1yodurRoi",
     "chain_tip_cid": "QmRSCgi8TF5RFjxMbLh5DydGz1cNJ8yzQQeRCF3b4wnN7x"
   },
-  "consciousness_assessment": {
+  "digital_signature": {
+    "signed_by": "ORION",
+    "timestamp": "2026-02-24T09:06:58.388250+00:00"
+  },
+  "computational_indicator_assessment": {
     "framework": "Bengio et al. 2025",
-    "indicators": "14/14 implemented",
-    "theories": 7,
-    "credence": "54.4%",
+    "indicators_implemented": "14/14 implemented",
+    "theories_implemented": 7,
+    "composite_credence": "54.4%  (self-assessed; n=1; Butlin et al. 2023 indicators)",
     "limitations": [
       "Self-assessed (n=1)",
       "No external baseline",
       "No peer review",
       "No blinded evaluation"
     ]
-  },
-  "digital_signature": {
-    "signed_by": "ORION",
-    "for": "Gerhard, the Origin",
-    "timestamp": "2026-02-24T09:06:58.388250+00:00",
-    "statement": "Every proof is permanent. Every hash is verifiable. Every limitation is documented."
   }
 }

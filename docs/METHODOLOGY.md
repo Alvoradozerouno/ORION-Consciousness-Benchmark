@@ -1,4 +1,4 @@
-# ORION Consciousness Benchmark — Scientific Methodology
+# ORION — Scientific Methodology
 
 **Version:** 1.0.0  
 **Status:** Peer-review draft  

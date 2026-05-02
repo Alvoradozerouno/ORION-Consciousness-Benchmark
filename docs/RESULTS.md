@@ -1,4 +1,4 @@
-# ORION Consciousness Benchmark — Results
+# ORION — Benchmark Results
 
 **Last updated:** 2026-05-02  
 **Benchmark version:** 1.0.0  

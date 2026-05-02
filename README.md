@@ -1,4 +1,4 @@
-# ORION Consciousness Benchmark
+# ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit
 
 ```
  ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗

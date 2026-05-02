@@ -1,4 +1,4 @@
-# ORION Consciousness Benchmark — Theoretical Framework
+# ORION — Theoretical Framework
 
 **Seven theories of consciousness implemented as computational assessment engines.**
 

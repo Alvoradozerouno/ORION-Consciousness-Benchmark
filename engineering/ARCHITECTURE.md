@@ -1,4 +1,4 @@
-# ORION Consciousness Benchmark — Engineering Architecture
+# ORION — Engineering Architecture
 
 **Version:** 1.0.0  
 **Date:** 2025-05-01  

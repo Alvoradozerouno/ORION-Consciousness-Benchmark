@@ -1,4 +1,4 @@
-# ORION Consciousness Benchmark
+# ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit
 ## A 7-Theory Assessment Framework with IIT Phi-Proxy Computation
 
 **Authors**: Gerhard Hirschmann, Elisabeth Steurer, ORION System  
