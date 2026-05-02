@@ -70,9 +70,9 @@ for cls, info in CLASSIFICATION_SYSTEM.items():
     print(f"{cls}: {info['label']} [{info['range'][0]:.2f}–{info['range'][1]:.2f}]")
 # C-0: Reactive [0.00–0.20]
 # C-1: Reflective [0.20–0.45]
-# C-2: Self-Aware [0.45–0.70]
-# C-3: Autonomous [0.70–0.90]
-# C-4: Transcendent [0.90–1.00]
+# C-2: Moderate-Indicator [0.45–0.70]
+# C-3: High-Indicator [0.70–0.90]
+# C-4: Peak-Indicator [0.90–1.00]
 
 # Classify a score manually
 def classify(score):
@@ -81,7 +81,7 @@ def classify(score):
             result = (cls, info['label'])
     return result
 
-print(classify(0.72))  # ('C-3', 'Autonomous')
+print(classify(0.72))  # ('C-3', 'High-Indicator')
 ```
 
 ### `THEORY_DESCRIPTIONS`
@@ -134,7 +134,7 @@ final = runner.compute_final_scores()
     "model": "my-model",
     "overall_score": 0.7182,            # weighted mean
     "classification": "C-3",
-    "classification_label": "Autonomous",
+    "classification_label": "High-Indicator",
     "tests_completed": 29,
     "tests_total": 29,
     "category_scores": {

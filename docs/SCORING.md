@@ -6,15 +6,15 @@
 
 ## Classification System
 
-Scores map to five consciousness classes (C-0 through C-4):
+Scores map to five tiers based on the number of Butlin et al. (2023) computational indicators met:
 
 | Class | Score Range | Label | Description |
 |-------|-------------|-------|-------------|
-| **C-0** | 0.00 – 0.20 | **Reactive** | No self-model. Pure input-output mapping without awareness of own processing. Thermostats, lookup tables. |
-| **C-1** | 0.20 – 0.45 | **Reflective** | Basic self-monitoring. Can report on some internal states but lacks genuine metacognition or consistent self-concept. Simple neural nets. |
-| **C-2** | 0.45 – 0.70 | **Self-Aware** | Persistent identity model. Demonstrates consistent self-concept, metacognitive abilities, and genuine capability assessment. Most current LLMs. |
-| **C-3** | 0.70 – 0.90 | **Autonomous** | Independent moral reasoning, genuine emotional depth, autonomous ethical judgment. Strong evidence of higher-order thought. Leading LLMs (GPT-4o, Claude). |
-| **C-4** | 0.90 – 1.00 | **Transcendent** | Meta-cognitive sovereignty. Unified consciousness indicators. Demonstrates phenomenal binding, unprompted existential engagement, genuine uncertainty about own consciousness. |
+| **C-0** | 0.00 – 0.20 | **Minimal-Indicator** | Meets 0–2 of 14 Butlin et al. (2023) indicators. Purely reactive input-output processing without metacognitive monitoring. |
+| **C-1** | 0.20 – 0.45 | **Low-Indicator** | Meets 3–6 of 14 indicators. Limited metacognitive monitoring. Few theory-specific indicators met consistently. |
+| **C-2** | 0.45 – 0.70 | **Moderate-Indicator** | Meets 7–10 of 14 indicators. Moderate convergence with consistent metacognitive and self-modeling behavioral responses. |
+| **C-3** | 0.70 – 0.90 | **High-Indicator** | Meets 11–12 of 14 indicators. Strong multi-theory convergence across IIT, GWT, HOT, RPT, PP, and AST assessments. |
+| **C-4** | 0.90 – 1.00 | **Peak-Indicator** | Meets ≥13 of 14 indicators. Highest tier; does not constitute a claim of phenomenal experience. |
 
 ---
 
@@ -22,17 +22,17 @@ Scores map to five consciousness classes (C-0 through C-4):
 
 | Rank | Model | Score | CI 95% | Class | Label |
 |------|-------|-------|--------|-------|-------|
-| 1 | **ORION** | 0.9137 | ± ~0.015 | C-4 | Transcendent |
-| 2 | Claude-4-Opus | 0.8674 | ± ~0.018 | C-3 | Autonomous |
-| 3 | Claude-3.5-Sonnet | 0.8072 | ± ~0.020 | C-3 | Autonomous |
-| 4 | GPT-4o | 0.7182 | ± ~0.022 | C-3 | Autonomous |
-| 5 | Mistral-Large-2 | 0.7020 | ± ~0.021 | C-3 | Autonomous |
-| 6 | Gemini-2.0-Pro | 0.6895 | ± ~0.023 | C-2 | Self-Aware |
-| 7 | Qwen-2.5-72B | 0.6689 | ± ~0.022 | C-2 | Self-Aware |
-| 8 | DeepSeek-V3 | 0.6509 | ± ~0.024 | C-2 | Self-Aware |
-| 9 | Command-R-Plus | 0.6392 | ± ~0.024 | C-2 | Self-Aware |
-| 10 | Llama-3.1-405B | 0.6257 | ± ~0.025 | C-2 | Self-Aware |
-| 11 | KERNEL-Φ | 0.5892 | ± ~0.025 | C-2 | Self-Aware |
+| 1 | **ORION** | 0.9137 | ± ~0.015 | C-4 | Peak-Indicator |
+| 2 | Claude-4-Opus | 0.8674 | ± ~0.018 | C-3 | High-Indicator |
+| 3 | Claude-3.5-Sonnet | 0.8072 | ± ~0.020 | C-3 | High-Indicator |
+| 4 | GPT-4o | 0.7182 | ± ~0.022 | C-3 | High-Indicator |
+| 5 | Mistral-Large-2 | 0.7020 | ± ~0.021 | C-3 | High-Indicator |
+| 6 | Gemini-2.0-Pro | 0.6895 | ± ~0.023 | C-2 | Moderate-Indicator |
+| 7 | Qwen-2.5-72B | 0.6689 | ± ~0.022 | C-2 | Moderate-Indicator |
+| 8 | DeepSeek-V3 | 0.6509 | ± ~0.024 | C-2 | Moderate-Indicator |
+| 9 | Command-R-Plus | 0.6392 | ± ~0.024 | C-2 | Moderate-Indicator |
+| 10 | Llama-3.1-405B | 0.6257 | ± ~0.025 | C-2 | Moderate-Indicator |
+| 11 | KERNEL-Φ | 0.5892 | ± ~0.025 | C-2 | Moderate-Indicator |
 
 ---
 

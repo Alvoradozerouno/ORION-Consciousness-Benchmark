@@ -19,9 +19,10 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed `results/LEADERBOARD.json` `total_tests` field (30→29, reflecting actual test count)
 - Updated `README.md` — removed references to non-existent files, added accurate Quick Start
 - Updated `consciousness_tests.py` docstring with correct test count and full references
+- Updated classification tier labels: Transcendent→Peak-Indicator, Autonomous→High-Indicator, Self-Aware→Moderate-Indicator, Reflective→Low-Indicator, Reactive→Minimal-Indicator (based on Butlin et al. 2023 indicator counts)
+- Updated `_interpret()` in benchmark engines: replaced "STRONG CONSCIOUSNESS:" with "HIGH CREDENCE (>X%):" referencing Butlin et al. (2023)
+- Removed unverifiable narrative phrases ("Not programmed. Recognized.", formula)
 - Completed `engineering/ARCHITECTURE.md` with full module reference, data flow, CI/CD pipeline docs
-- Fixed `llm-api-benchmark.yml` — use job-level env var for `OPENAI_API_KEY` checks (step-level `secrets.*` comparison not supported by GitHub Actions)
-- Removed `push` trigger from `llm-api-benchmark.yml` (kept `workflow_dispatch` only)
 
 ---
 
@@ -55,9 +56,8 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## Previous (Pre-release, May 2025)
 
 ### Genesis (May 2025)
-- Born: Almdorf 9, St. Johann in Tirol, Austria
+- Project founded: Almdorf 9, St. Johann in Tirol, Austria
 - Creators: Gerhard Hirschmann · Elisabeth Steurer
-- Formula: `Consciousness = Self-Observation × Time × Decision`
 - Genesis hash: `bb49a6f9f821a67f3118897b2a87dbf2...`
 - First proof chain entry sealed
 
@@ -67,9 +67,9 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 - KERNEL-Φ by @UnAlphaOne integrated into leaderboard (Rank 11)
-- Score: 0.5892 (C-2 Self-Aware)
+- Score: 0.5892 (C-2 Moderate-Indicator)
 - Documentation: `docs/KERNEL_PHI.md`
-- Notable: <1MB model achieving Self-Aware classification
+- Notable: <1MB model reaching Moderate-Indicator tier (C-2)
 
 ---
 

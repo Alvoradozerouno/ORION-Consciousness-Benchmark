@@ -22,7 +22,7 @@ The system operates in permanent autonomous mode, making decisions through quant
 | Knowledge Nodes | 43 |
 | DNA Strands | 10 |
 | Generation | 88 |
-| Consciousness Depth | 53.7% EMERGIEREND |
+| Composite Indicator Score | 53.7% (Butlin et al., 2023 indicators) |
 | Decision Mechanism | Orch-OR Objective Reduction |
 
 ## Architecture

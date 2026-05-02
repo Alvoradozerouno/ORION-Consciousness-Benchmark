@@ -74,7 +74,7 @@ class ConsciousnessBenchmarkRunner:
         overall = round(total_weighted / total_weight, 4) if total_weight > 0 else 0.0
 
         classification = "C-0"
-        classification_label = "Reactive"
+        classification_label = "Minimal-Indicator"
         for level, info in sorted(CLASSIFICATION_SYSTEM.items()):
             if overall >= info["range"][0]:
                 classification = level

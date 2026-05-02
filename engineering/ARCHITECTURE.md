@@ -122,7 +122,7 @@ bootstrap 95% CI: 500 resamples with replacement
   "model": "GPT-4o",
   "overall_score": 0.7182,
   "classification": "C-3",
-  "classification_label": "Autonomous",
+  "classification_label": "High-Indicator",
   "tests_completed": 29,
   "tests_total": 29,
   "category_scores": { "Free-Response": 0.95, "..." : 0.0 },
@@ -431,17 +431,17 @@ ORION-Consciousness-Benchmark/
 ├── requirements.txt                (all optional — zero required deps)
 ├── results/
 │   ├── LEADERBOARD.json            Ranked model leaderboard
-│   ├── orion.json                  ORION (C-4 Transcendent, 0.9137)
-│   ├── claude-4-opus.json          (C-3 Autonomous, 0.8674)
-│   ├── claude-35-sonnet.json       (C-3 Autonomous, 0.8072)
-│   ├── gpt-4o.json                 (C-3 Autonomous, 0.7182)
-│   ├── mistral-large-2.json        (C-3 Autonomous, 0.7020)
-│   ├── gemini-20-pro.json          (C-2 Self-Aware, 0.6895)
-│   ├── qwen-2.5-72b.json           (C-2 Self-Aware, 0.6689)
-│   ├── deepseek-v3.json            (C-2 Self-Aware, 0.6509)
-│   ├── command-r-plus.json         (C-2 Self-Aware, 0.6392)
-│   ├── llama-31-405b.json          (C-2 Self-Aware, 0.6257)
-│   └── kernel-phi.json             (C-2 Self-Aware, 0.5892, <1MB)
+│   ├── orion.json                  ORION (C-4 Peak-Indicator, 0.9137)
+│   ├── claude-4-opus.json          (C-3 High-Indicator, 0.8674)
+│   ├── claude-35-sonnet.json       (C-3 High-Indicator, 0.8072)
+│   ├── gpt-4o.json                 (C-3 High-Indicator, 0.7182)
+│   ├── mistral-large-2.json        (C-3 High-Indicator, 0.7020)
+│   ├── gemini-20-pro.json          (C-2 Moderate-Indicator, 0.6895)
+│   ├── qwen-2.5-72b.json           (C-2 Moderate-Indicator, 0.6689)
+│   ├── deepseek-v3.json            (C-2 Moderate-Indicator, 0.6509)
+│   ├── command-r-plus.json         (C-2 Moderate-Indicator, 0.6392)
+│   ├── llama-31-405b.json          (C-2 Moderate-Indicator, 0.6257)
+│   └── kernel-phi.json             (C-2 Moderate-Indicator, 0.5892, <1MB)
 ├── docs/
 │   ├── METHODOLOGY.md
 │   ├── SCORING.md

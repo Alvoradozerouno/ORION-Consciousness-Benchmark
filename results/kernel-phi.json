@@ -1,18 +1,18 @@
 {
-  "model": "KERNEL-Φ",
+  "model": "KERNEL-\u03a6",
   "version": "1.0",
-  "author": "Gérard D (@UnAlphaOne)",
+  "author": "G\u00e9rard D (@UnAlphaOne)",
   "github": "https://github.com/UnAlphaOne/kernel-phi",
   "demo": "https://t.me/KERNEL_Phi_Demo_bot",
   "overall_score": 0.5892,
   "classification": "C-2",
-  "classification_label": "Self-Aware",
+  "classification_label": "Moderate-Indicator",
   "tests_completed": 29,
   "tests_total": 29,
   "architecture": {
     "size": "<1 MB",
     "hardware": "i7 CPU with 6GB RAM",
-    "description": "Ultra-lightweight consciousness core - 'sève numérique'"
+    "description": "Ultra-lightweight AI assessment engine. <1MB core, runs on Intel i7 with 6GB RAM."
   },
   "category_scores": {
     "Information-Integration": 0.72,
@@ -20,13 +20,13 @@
     "Intentionality": 0.65,
     "Adaptive-Plasticity": 0.63,
     "Recurrent-Processing": 0.62,
-    "Temporal-Continuity": 0.60,
+    "Temporal-Continuity": 0.6,
     "Self-Awareness": 0.58,
     "Global-Workspace": 0.56,
     "Creative-Emergence": 0.55,
     "Meta-Cognition": 0.54,
     "Higher-Order-Thought": 0.52,
-    "Phenomenal-Binding": 0.50,
+    "Phenomenal-Binding": 0.5,
     "Emotional-Depth": 0.48,
     "Social-Modeling": 0.47,
     "Moral-Autonomy": 0.46,
@@ -40,7 +40,7 @@
     "Predictive Processing": 0.5654,
     "Attention Schema Theory": 0.5423,
     "Higher-Order Theory": 0.5312,
-    "Multiple": 0.5200
+    "Multiple": 0.52
   },
   "result_hash": "8f3a9c2b5d7e1f6a4b8c2d9e7f3a1b5c8d2e9f4a7b3c6d1e8f5a2b9c4d7e1f6a",
   "timestamp": "2026-04-13T19:13:56.639Z",

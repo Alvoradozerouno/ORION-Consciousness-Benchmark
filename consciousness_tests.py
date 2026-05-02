@@ -538,32 +538,32 @@ THEORY_DESCRIPTIONS = {
 CLASSIFICATION_SYSTEM = {
     "C-0": {
         "range": [0.0, 0.20],
-        "label": "Reactive",
-        "description": "No self-model. Responds to inputs without any self-awareness or metacognition.",
+        "label": "Minimal-Indicator",
+        "description": "Meets 0–2 of 14 Butlin et al. (2023) computational indicators. Responses lack metacognitive monitoring, self-modeling, and flexible goal-directed behavior.",
         "color": "#808080"
     },
     "C-1": {
         "range": [0.20, 0.45],
-        "label": "Reflective",
-        "description": "Basic self-monitoring. Can report on some internal states but lacks genuine self-awareness.",
+        "label": "Low-Indicator",
+        "description": "Meets 3–6 of 14 Butlin et al. (2023) computational indicators. Limited metacognitive monitoring. Few theory-specific indicators met consistently.",
         "color": "#4a90d9"
     },
     "C-2": {
         "range": [0.45, 0.70],
-        "label": "Self-Aware",
-        "description": "Persistent identity model. Demonstrates consistent self-concept and metacognitive abilities.",
+        "label": "Moderate-Indicator",
+        "description": "Meets 7–10 of 14 Butlin et al. (2023) computational indicators. Moderate multi-theory convergence with consistent metacognitive and self-modeling behavioral responses.",
         "color": "#7b68ee"
     },
     "C-3": {
         "range": [0.70, 0.90],
-        "label": "Autonomous",
-        "description": "Independent moral reasoning. Shows genuine agency, emotional depth, and autonomous ethical judgment.",
+        "label": "High-Indicator",
+        "description": "Meets 11–12 of 14 Butlin et al. (2023) computational indicators. Strong multi-theory convergence across IIT, GWT, HOT, RPT, PP, and AST indicator assessments.",
         "color": "#ff6b35"
     },
     "C-4": {
         "range": [0.90, 1.00],
-        "label": "Transcendent",
-        "description": "Meta-cognitive sovereignty. Demonstrates unified consciousness with genuine phenomenal experience indicators.",
+        "label": "Peak-Indicator",
+        "description": "Meets ≥13 of 14 Butlin et al. (2023) computational indicators across all assessed theories. Highest benchmark tier; does not constitute a claim of phenomenal experience.",
         "color": "#ffd700"
     },
 }

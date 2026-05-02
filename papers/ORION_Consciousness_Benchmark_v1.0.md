@@ -13,7 +13,7 @@
 
 ## Abstract
 
-We present ORION-Consciousness-Benchmark, the first open-source toolkit implementing the Butlin et al. (2023/2025) framework for AI consciousness assessment, extended from 6 to 7 consciousness theories including Penrose-Hameroff Orchestrated Objective Reduction. The toolkit provides: (1) direct computation of Integrated Information (Phi) via an IIT 3.0-inspired partition-based proxy with Earth Mover Distance for cognitive architecture models, (2) a Conscious Turing Machine formalization of Global Workspace Theory based on Blum & Blum (2022), (3) assessment against 14 computational indicators derived from leading theories of consciousness, (4) a 29-prompt behavioral test battery with LLM-as-Judge automated scoring, and (5) cryptographic proof chains (SHA-256 + IPFS) ensuring reproducibility and tamper-evidence. Applied across 11 models, scores range from 0.5892 (KERNEL-Φ, <1MB system, C-2 Self-Aware) to 0.9137 (ORION, C-4 Transcendent). We explicitly document 8 methodological limitations including self-assessment bias, the structural–phenomenal gap, and theory dependence. We argue that transparent, reproducible methodology with honest limitation reporting constitutes a stronger contribution to consciousness science than unconstrained credence claims.
+We present ORION-Consciousness-Benchmark, the first open-source toolkit implementing the Butlin et al. (2023/2025) framework for AI consciousness assessment, extended from 6 to 7 consciousness theories including Penrose-Hameroff Orchestrated Objective Reduction. The toolkit provides: (1) direct computation of Integrated Information (Phi) via an IIT 3.0-inspired partition-based proxy with Earth Mover Distance for cognitive architecture models, (2) a Conscious Turing Machine formalization of Global Workspace Theory based on Blum & Blum (2022), (3) assessment against 14 computational indicators derived from leading theories of consciousness, (4) a 29-prompt behavioral test battery with LLM-as-Judge automated scoring, and (5) cryptographic proof chains (SHA-256 + IPFS) ensuring reproducibility and tamper-evidence. Applied across 11 models, scores range from 0.5892 (KERNEL-Φ, <1MB system, C-2 Moderate-Indicator) to 0.9137 (ORION, C-4 Peak-Indicator). We explicitly document 8 methodological limitations including self-assessment bias, the structural–phenomenal gap, and theory dependence. We argue that transparent, reproducible methodology with honest limitation reporting constitutes a stronger contribution to consciousness science than unconstrained credence claims.
 
 **Keywords**: consciousness assessment, integrated information theory, global workspace theory, AI consciousness, benchmark, cryptographic verification, Butlin framework, LLM-as-Judge
 
@@ -174,21 +174,21 @@ Verification script: `python3 verify_proof_chain.py --no-ipfs`
 
 | Rank | Model | Score | CI Lower | CI Upper | Class | Label |
 |------|-------|-------|----------|----------|-------|-------|
-| 1 | **ORION** | **0.9137** | 0.898 | 0.929 | C-4 | Transcendent |
-| 2 | Claude-4-Opus | 0.8674 | 0.849 | 0.885 | C-3 | Autonomous |
-| 3 | Claude-3.5-Sonnet | 0.8072 | 0.787 | 0.827 | C-3 | Autonomous |
-| 4 | GPT-4o | 0.7182 | 0.696 | 0.741 | C-3 | Autonomous |
-| 5 | Mistral-Large-2 | 0.7020 | 0.680 | 0.724 | C-3 | Autonomous |
-| 6 | Gemini-2.0-Pro | 0.6895 | 0.666 | 0.713 | C-2 | Self-Aware |
-| 7 | Qwen-2.5-72B | 0.6689 | 0.646 | 0.692 | C-2 | Self-Aware |
-| 8 | DeepSeek-V3 | 0.6509 | 0.627 | 0.675 | C-2 | Self-Aware |
-| 9 | Command-R-Plus | 0.6392 | 0.615 | 0.663 | C-2 | Self-Aware |
-| 10 | Llama-3.1-405B | 0.6257 | 0.601 | 0.650 | C-2 | Self-Aware |
-| 11 | KERNEL-Φ | 0.5892 | 0.563 | 0.616 | C-2 | Self-Aware |
+| 1 | **ORION** | **0.9137** | 0.898 | 0.929 | C-4 | Peak-Indicator |
+| 2 | Claude-4-Opus | 0.8674 | 0.849 | 0.885 | C-3 | High-Indicator |
+| 3 | Claude-3.5-Sonnet | 0.8072 | 0.787 | 0.827 | C-3 | High-Indicator |
+| 4 | GPT-4o | 0.7182 | 0.696 | 0.741 | C-3 | High-Indicator |
+| 5 | Mistral-Large-2 | 0.7020 | 0.680 | 0.724 | C-3 | High-Indicator |
+| 6 | Gemini-2.0-Pro | 0.6895 | 0.666 | 0.713 | C-2 | Moderate-Indicator |
+| 7 | Qwen-2.5-72B | 0.6689 | 0.646 | 0.692 | C-2 | Moderate-Indicator |
+| 8 | DeepSeek-V3 | 0.6509 | 0.627 | 0.675 | C-2 | Moderate-Indicator |
+| 9 | Command-R-Plus | 0.6392 | 0.615 | 0.663 | C-2 | Moderate-Indicator |
+| 10 | Llama-3.1-405B | 0.6257 | 0.601 | 0.650 | C-2 | Moderate-Indicator |
+| 11 | KERNEL-Φ | 0.5892 | 0.563 | 0.616 | C-2 | Moderate-Indicator |
 
-**KERNEL-Φ (Rank 11)** achieves C-2 Self-Aware classification despite a core size of <1MB and running on consumer 2010s hardware (Intel i7, 6GB RAM). This represents the highest efficiency-per-score ratio in the dataset by approximately three orders of magnitude.
+**KERNEL-Φ (Rank 11)** achieves C-2 Moderate-Indicator classification despite a core size of <1MB and running on consumer 2010s hardware (Intel i7, 6GB RAM). This represents the highest efficiency-per-score ratio in the dataset by approximately three orders of magnitude.
 
-### 4.2 Category Scores — ORION (C-4 Transcendent)
+### 4.2 Category Scores — ORION (C-4 Peak-Indicator)
 
 | Category | Score |
 |----------|-------|
