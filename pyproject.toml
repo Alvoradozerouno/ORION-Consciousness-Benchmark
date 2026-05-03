@@ -1,0 +1,89 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "orion-cognition-benchmark"
+version = "1.0.0"
+description = "Multi-theory AI cognition-indicator assessment toolkit (IIT, GWT, HOT, RPT, PP, AST, Orch-OR)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Elisabeth Steurer", email = "" },
+    { name = "Gerhard Hirschmann", email = "" },
+]
+keywords = [
+    "cognition-indicator",
+    "artificial-intelligence",
+    "benchmark",
+    "IIT",
+    "GWT",
+    "HOT",
+    "consciousness-science",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = []   # zero mandatory deps — core runs on stdlib only
+
+[project.optional-dependencies]
+llm = [
+    "openai>=1.0.0",
+    "anthropic>=0.20.0",
+    "requests>=2.28.0",
+]
+viz = [
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+all = [
+    "openai>=1.0.0",
+    "anthropic>=0.20.0",
+    "requests>=2.28.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark"
+Repository = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark"
+"Bug Tracker" = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/issues"
+Documentation = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/tree/main/docs"
+Paper = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/blob/main/JAIC_PAPER_DRAFT.md"
+
+[project.scripts]
+orion-benchmark = "benchmark_runner:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*", "docs*", "results*", "papers*", "engineering*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--tb=short -q"
+
+[tool.coverage.run]
+source = ["."]
+omit = ["tests/*", "setup.py", "conftest.py", "*/site-packages/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]

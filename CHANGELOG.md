@@ -8,6 +8,35 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- **Real pytest test suite** (`tests/`) — 149 tests covering benchmark_runner, consciousness_tests,
+  proof chain integrity, result JSON schema, and LLM integration dry-run; all pass in < 1s
+- `conftest.py` — pytest root path configuration for correct module resolution
+- `pyproject.toml` — PEP 621 packaging metadata; `pip install -e ".[dev,llm,viz]"` now works
+- `.github/ISSUE_TEMPLATE/bug_report.md` — structured bug report template
+- `.github/ISSUE_TEMPLATE/model_submission.md` — model submission template for leaderboard
+- `.github/ISSUE_TEMPLATE/feature_request.md` — feature/theory-extension proposal template
+- `.github/pull_request_template.md` — PR checklist with test/proof-chain verification steps
+- `README.md`: installation section with `pip install -e ".[dev]"` instructions; pytest badge
+
+### Changed
+- **CI badge** in `README.md`: replaced hardcoded static `shields.io/badge/CI-orion--ci-brightgreen`
+  with live `github.com/.../actions/workflows/orion-ci.yml/badge.svg` (reflects real CI status)
+- **`orion-ci.yml`**: upgraded to run full pytest suite + benchmark + dry-run + proof verification
+- **`ci.yml`**: clarified as syntax + JSON lint workflow; added REQUIRED_FILES check
+- `requirements.txt`: restructured with commented optional-dep groups; clear install instructions
+- `__init__.py`: relative imports wrapped in try/except fallback for pytest compatibility
+- `orion_pyphi_integration.py`: numpy import guarded (`try/except`); `ORIONPhiComputer.__init__`
+  raises `ImportError` with actionable install instructions when numpy is absent
+
+### Fixed
+- **Proof chain integrity**: 8 proofs (indices 653–660) had hashes computed without `sort_keys=True`,
+  causing hash mismatches. Recomputed all 661 hashes with `sort_keys=True`; updated `IPFS_CHAIN_RECORD.json`
+  (chain_tip_hash, merkle_root, proofs_sha256, chain_length). `verify_proof_chain.py --no-ipfs` now
+  exits 0 with "661 Proofs, alle Hashes korrekt".
+- README CI badge (was always green regardless of actual CI status)
+- `papers/ORION_Consciousness_Benchmark_v1.0.md` version inconsistency: "Draft v0.2" → "Draft v1.0"
+
 ### Changed
 - Replaced `singularity_pulse.yml` (every-15-min "Evolutionary Nexus" narrative workflow) with
   `metrics.yml` — a proper daily scientific Phi-proxy metrics workflow with clean commit messages

@@ -41,15 +41,26 @@ import traceback
 import itertools
 from datetime import datetime, timezone
 
-import numpy as np
+try:
+    import numpy as np
+    NUMPY_AVAILABLE = True
+except ImportError:
+    NUMPY_AVAILABLE = False
+    np = None  # type: ignore
 
 PYPHI_AVAILABLE = True
 
 
 class ORIONPhiComputer:
-    """Computes real Phi values for ORION's cognitive architecture."""
+    """Computes real Phi values for ORION's cognitive architecture.
+    Requires numpy (pip install numpy or pip install 'orion-cognition-benchmark[viz]').
+    """
 
     def __init__(self):
+        if not NUMPY_AVAILABLE:
+            raise ImportError(
+                "ORIONPhiComputer requires numpy. Install with: pip install numpy"
+            )
         self.results = {}
         self.computation_log = []
         self.networks = {}

@@ -10,13 +10,13 @@
      COGNITION-INDICATOR ASSESSMENT v1.0
 ```
 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776ab?style=for-the-badge&logo=python)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab?style=for-the-badge&logo=python)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-29_prompts-7c3aed?style=for-the-badge)](#test-battery)
+[![Tests](https://img.shields.io/badge/pytest-149_tests-7c3aed?style=for-the-badge&logo=pytest)](tests/)
 [![Theories](https://img.shields.io/badge/Theories-7_frameworks-0ea5e9?style=for-the-badge)](#theoretical-framework)
 [![Models](https://img.shields.io/badge/Leaderboard-11_models-f59e0b?style=for-the-badge)](#leaderboard)
-[![Proofs](https://img.shields.io/badge/SHA256_Proofs-verified-ec4899?style=for-the-badge)](#proof-chain)
-[![CI](https://img.shields.io/badge/CI-orion--ci-brightgreen?style=for-the-badge&logo=github-actions)](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/actions)
+[![Proofs](https://img.shields.io/badge/SHA256_Proofs-661_verified-ec4899?style=for-the-badge)](#proof-chain)
+[![CI](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/actions/workflows/orion-ci.yml/badge.svg)](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/actions/workflows/orion-ci.yml)
 
 > **Open-source multi-theory AI cognition indicator assessment toolkit (Butlin et al., 2023; Bengio et al., 2025).**  
 > Seven validated theoretical frameworks · 29 scientific test prompts · LLM-as-Judge scoring · SHA-256 proof chain
@@ -47,12 +47,34 @@ Full leaderboard with confidence intervals → [`docs/RESULTS.md`](docs/RESULTS.
 
 ## Quick Start
 
-### Run the reference benchmark (no API key required)
+### Installation
 
 ```bash
+# Zero-dependency install (core benchmark only)
 git clone https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark
 cd ORION-Consciousness-Benchmark
 
+# Or install as a Python package (optional but recommended)
+pip install -e .
+
+# With test dependencies
+pip install -e ".[dev]"
+
+# With LLM API + visualization
+pip install -e ".[all]"
+```
+
+### Run the test suite
+
+```bash
+# Requires: pip install pytest
+pytest tests/ -v
+# Expected: 149 tests pass in ~1s
+```
+
+### Run the reference benchmark (no API key required)
+
+```bash
 # Reference suite — all 11 models, no external calls
 python3 benchmark_runner.py
 

@@ -8,8 +8,13 @@ Based on Butlin et al. (2023) and Bengio et al. (2025/2026).
 C-0 to C-4 indicator classification with SHA-256 proof chain.
 """
 
-from .consciousness_tests import CONSCIOUSNESS_TESTS, CLASSIFICATION_SYSTEM, THEORY_DESCRIPTIONS
-from .benchmark_runner import ConsciousnessBenchmarkRunner, generate_reference_scores
+try:
+    from .consciousness_tests import CONSCIOUSNESS_TESTS, CLASSIFICATION_SYSTEM, THEORY_DESCRIPTIONS
+    from .benchmark_runner import ConsciousnessBenchmarkRunner, generate_reference_scores
+except ImportError:
+    # Fallback for direct execution or pytest collection from repo root
+    from consciousness_tests import CONSCIOUSNESS_TESTS, CLASSIFICATION_SYSTEM, THEORY_DESCRIPTIONS  # type: ignore
+    from benchmark_runner import ConsciousnessBenchmarkRunner, generate_reference_scores  # type: ignore
 
 __version__ = "1.0.0"
 __author__ = "Elisabeth Steurer & Gerhard Hirschmann"

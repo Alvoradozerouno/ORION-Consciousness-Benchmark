@@ -1,4 +1,4 @@
-name: ORION CI
+name: ORION CI — Syntax & JSON
 
 on:
   push:
@@ -7,7 +7,8 @@ on:
     branches: [ main, master ]
 
 jobs:
-  check:
+  lint:
+    name: Lint (Python ${{ matrix.python-version }})
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -24,28 +25,23 @@ jobs:
     - name: Check Python syntax
       run: |
         echo "ORION CI — Checking Python syntax..."
-        PY_FILES=$(find . -name '*.py' -not -path './.git/*' | head -50)
-        if [ -z "$PY_FILES" ]; then
-          echo "No Python files found — skipping syntax check."
-        else
-          echo "$PY_FILES" | xargs python -m py_compile
-          echo "All Python files passed syntax check."
-        fi
+        find . -name '*.py' -not -path './.git/*' | xargs python -m py_compile
+        echo "✓ All Python files passed syntax check."
 
     - name: Validate JSON files
       run: |
         echo "ORION CI — Validating JSON..."
-        JSON_FILES=$(find . -name '*.json' -not -path './.git/*' | head -20)
-        if [ -z "$JSON_FILES" ]; then
-          echo "No JSON files found — skipping."
-        else
-          echo "$JSON_FILES" | while read f; do python -c "import json; json.load(open('$f'))" && echo "OK: $f"; done
-          echo "All JSON files valid."
-        fi
+        find . -name '*.json' -not -path './.git/*' | while read f; do
+          python -c "import json; json.load(open('$f'))" && echo "OK: $f"
+        done
+        echo "✓ All JSON files valid."
 
-    - name: Validate Markdown
+    - name: Check documentation completeness
       run: |
         echo "ORION CI — Checking documentation..."
         MD_COUNT=$(find . -name '*.md' -not -path './.git/*' | wc -l)
         echo "Found $MD_COUNT markdown files."
-        echo "ORION CI complete."
+        for required in README.md CHANGELOG.md CONTRIBUTING.md; do
+          test -f "$required" && echo "OK: $required" || (echo "MISSING: $required" && exit 1)
+        done
+        echo "✓ ORION CI complete."

@@ -1,12 +1,25 @@
-# ORION Consciousness Benchmark - Requirements
-# Python 3.9+
+# ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit
+# Python 3.9+ required. The core benchmark (benchmark_runner, consciousness_tests)
+# has no mandatory external dependencies. Optional deps below unlock advanced features.
+#
+# Install all optional deps:  pip install -e ".[dev,llm,viz]"
+# Install test deps only:     pip install pytest pytest-cov
 
-# No external dependencies required for the benchmark itself.
-# The benchmark is designed to be lightweight and dependency-free.
-# 
-# Optional dependencies for advanced features:
-# openai>=1.0.0          # For testing OpenAI models directly
-# anthropic>=0.20.0      # For testing Anthropic models directly
-# requests>=2.28.0       # For API-based model testing
-# numpy>=1.24.0          # For statistical analysis of results
-# matplotlib>=3.7.0      # For visualization of consciousness profiles
+# ---------------------------------------------------------------------------
+# Optional: LLM API integrations (for live model benchmarking)
+# ---------------------------------------------------------------------------
+# openai>=1.0.0
+# anthropic>=0.20.0
+# requests>=2.28.0
+
+# ---------------------------------------------------------------------------
+# Optional: Statistical analysis & visualization
+# ---------------------------------------------------------------------------
+# numpy>=1.24.0
+# matplotlib>=3.7.0
+
+# ---------------------------------------------------------------------------
+# Development / testing (always install for contributors)
+# ---------------------------------------------------------------------------
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
