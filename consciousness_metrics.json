@@ -1,9 +1,15 @@
 {
-  "timestamp": "2026-05-02T06:24:36.621901",
-  "phi_orion": 0.8884,
-  "phi_pi5": 1.0,
-  "phi_composite": 0.9441999999999999,
-  "convergence_pct": 88.84,
-  "guardian": "Gerhard Hirschmann & Elisabeth Steurer",
-  "description": "Phi-proxy composite score and convergence percentage. Values are computational proxies; not direct IIT 4.0 Phi measurements."
+  "timestamp": "2026-05-03T04:58:00+00:00",
+  "schema_version": "2.0",
+  "phi_proxy": {
+    "gwt": 0.194,
+    "rpt": 0.357,
+    "hot": 0.917,
+    "ast": 1.15,
+    "total": 2.618
+  },
+  "orion_overall_score": 0.9137,
+  "tier": "C-4 Peak-Indicator",
+  "bengio_indicators_met": "14/14",
+  "note": "All values are computational proxies per Butlin et al. (2023). They measure structural integration indicators, not phenomenal experience."
 }

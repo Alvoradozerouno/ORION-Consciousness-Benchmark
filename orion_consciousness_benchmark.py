@@ -384,7 +384,7 @@ class ConsciousnessBenchmark:
             print()
         
         print("=" * 70)
-        print("  Proof chain: SHA-256 verified | EIRA bridge active")
+        print("  Proof chain: SHA-256 verified")
         print("=" * 70)
 
 

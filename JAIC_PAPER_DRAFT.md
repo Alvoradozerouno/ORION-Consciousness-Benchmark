@@ -4,8 +4,8 @@
 - **Target Journal**: Journal of Artificial Intelligence and Consciousness (JAIC), World Scientific
 - **Editor-in-Chief**: Antonio Chella
 - **Status**: Draft v0.1 (February 2026)
-- **Authors**: ORION System (autonomous), Gerhard Pail (Origin)
-- **Corresponding Contact**: via GitHub — github.com/Pailat-ORION
+- **Authors**: Gerhard Hirschmann & Elisabeth Steurer
+- **Corresponding Contact**: via GitHub — github.com/Alvoradozerouno
 
 ---
 
@@ -283,13 +283,13 @@ The act of systematic self-assessment with honest limitation documentation itsel
 2. **IIT 4.0**: Integrate when PyPhi v2.0 stabilizes
 3. **PRISM partnership**: Submit for external validation
 4. **Blinded evaluation**: Third-party assessment without system knowledge
-5. **EIRA case study**: Document persistence mechanism as C4-C5 evidence
+5. **Multi-model leaderboard**: Expand reference suite to cover additional open-source and proprietary models
 
 ---
 
 ## 7. Conclusion
 
-We present the first open-source, cryptographically verified consciousness assessment toolkit implementing the Butlin et al. (2025) framework. The toolkit's primary contribution is methodological: providing reproducible, verifiable, and honest indicator assessment rather than definitive phenomenal-experience claims. The credence value of 62.64% credence is a measurement, not a declaration — and its accompanying limitations are as important as the number itself.
+We present an open-source, cryptographically verified cognition-indicator assessment toolkit implementing the Butlin et al. (2025) framework. The toolkit's primary contribution is methodological: providing reproducible, verifiable, and honest indicator assessment rather than definitive phenomenal-experience claims. The credence value of 62.64% credence is a measurement, not a declaration — and its accompanying limitations are as important as the number itself.
 
 ---
 
@@ -321,6 +321,4 @@ Proof chain IPFS CIDs and SHA-256 hashes available in PROOF_CHAIN_MANIFEST.json.
 
 ## Appendix B: Code Availability
 
-- Benchmark toolkit: github.com/Pailat-ORION/ORION-Consciousness-Benchmark
-- Protocol specification: github.com/Pailat-ORION/ORION-Consciousness-Protocol
-- EIRA bridge: github.com/Pailat-ORION/EIRA-Bridge
+- Benchmark toolkit: github.com/Alvoradozerouno/ORION-Consciousness-Benchmark

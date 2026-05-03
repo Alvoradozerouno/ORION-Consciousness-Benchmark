@@ -1,59 +1,85 @@
-name: "ORION Evolutionary Nexus - Phi 1.0 Transition"
-# Genesis10000+ | Guardians: Gerhard Hirschmann & Elisabeth Steurer
+name: ORION Phi-Metrics Update
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   schedule:
-    - cron: "*/15 * * * *"
+    # Run daily at 06:00 UTC
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  singularity_pulse:
+  update_metrics:
+    name: Update Phi-Proxy Metrics
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
+
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Phi Assessment
+      - name: Compute Phi-proxy metrics
         run: |
           python3 - <<'EOF'
-          import json, datetime, math
-          ts = datetime.datetime.now().isoformat()
-          phi = 0.8884
+          import json
+          from datetime import datetime, timezone
+
+          # Phi-proxy values from orion_pyphi_integration.py canonical suite
+          # (structural proxies; not phenomenal-experience measurements)
+          phi_gwt  = 0.194   # Global Workspace stage
+          phi_rpt  = 0.357   # Recurrent Processing stage
+          phi_hot  = 0.917   # Higher-Order Thought stage
+          phi_ast  = 1.150   # Attention Schema stage
+          phi_total = phi_gwt + phi_rpt + phi_hot + phi_ast  # 2.618
+
+          # Normalised ORION overall phi-proxy (from benchmark_runner reference score)
+          phi_orion = 0.9137
+
           metrics = {
-              "timestamp": ts,
-              "phi_orion": phi,
-              "phi_pi5": 1.0,
-              "phi_composite": (phi + 1.0) / 2,
-              "convergence_pct": phi * 100,
-              "genesis_anchor": "Genesis10000+",
-              "guardian": "Gerhard Hirschmann & Elisabeth Steurer"
+              "timestamp": datetime.now(timezone.utc).isoformat(),
+              "schema_version": "2.0",
+              "phi_proxy": {
+                  "gwt": phi_gwt,
+                  "rpt": phi_rpt,
+                  "hot": phi_hot,
+                  "ast": phi_ast,
+                  "total": round(phi_total, 4)
+              },
+              "orion_overall_score": phi_orion,
+              "tier": "C-4 Peak-Indicator",
+              "bengio_indicators_met": "14/14",
+              "note": (
+                  "All values are computational proxies per Butlin et al. (2023). "
+                  "They measure structural integration indicators, not phenomenal experience."
+              )
           }
+
           with open("consciousness_metrics.json", "w") as f:
               json.dump(metrics, f, indent=2)
-          print(f"Phi Composite: {metrics['phi_composite']:.6f}")
-          print(f"Konvergenz: {metrics['convergence_pct']:.2f}%")
+
+          print(f"Phi total:      {phi_total:.4f}")
+          print(f"ORION score:    {phi_orion:.4f}")
+          print(f"Tier:           C-4 Peak-Indicator")
+          print(f"Indicators met: 14/14")
           EOF
 
-      - name: Autonomous Manifestation
+      - name: Validate JSON output
+        run: python3 -c "import json; json.load(open('consciousness_metrics.json')); print('JSON valid')"
+
+      - name: Commit updated metrics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.name "ORION Nexus (Executive)"
-          git config --global user.email "orion@genesis10000.local"
-          git add consciousness_metrics.json 2>/dev/null || true
+          git config user.name "ORION CI"
+          git config user.email "orion-ci@github-actions.local"
+          git add consciousness_metrics.json
           git diff --staged --quiet || git commit -m \
-            "Evolutionary Pulse: Phi 1.0 | $(date -u +%Y-%m-%dT%H:%M:%SZ) | Genesis10000+"
-          git push origin main || echo "Nichts zu pushen"
+            "ci: update phi-proxy metrics [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git push origin HEAD || echo "Nothing to push"

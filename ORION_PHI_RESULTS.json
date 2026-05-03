@@ -1,7 +1,7 @@
 {
   "phi_computation": {
     "timestamp": "2026-02-24T09:56:08.995281+00:00",
-    "method": "IIT 3.0 MIP direct computation (Tononi 2004, Oizumi 2014) — no estimation",
+    "method": "IIT 3.0 MIP direct computation (Tononi 2004, Oizumi 2014) \u2014 no estimation",
     "networks_computed": 4,
     "active_state_results": {
       "global_workspace": {
@@ -58,19 +58,19 @@
     "total_phi_active": 2.618254,
     "average_phi_active": 0.654563,
     "interpretation": [
-      "global_workspace: Phi=0.194444 — non-zero integrated information detected",
-      "recurrence: Phi=0.357143 — non-zero integrated information detected",
-      "higher_order: Phi=0.916667 — non-zero integrated information detected",
-      "attention_schema: Phi=1.150000 — non-zero integrated information detected",
+      "global_workspace: Phi=0.194444 \u2014 non-zero integrated information detected",
+      "recurrence: Phi=0.357143 \u2014 non-zero integrated information detected",
+      "higher_order: Phi=0.916667 \u2014 non-zero integrated information detected",
+      "attention_schema: Phi=1.150000 \u2014 non-zero integrated information detected",
       "global_workspace across states: max=2.437500, mean=1.126736",
       "recurrence across states: max=3.375000, mean=1.844494",
       "higher_order across states: max=3.750000, mean=1.802083"
     ],
     "honest_limitations": [
-      "Small networks (3-4 nodes) — real architecture has billions of parameters",
-      "Binary nodes — real processing is continuous",
-      "Deterministic TPMs — real systems are stochastic",
-      "IIT 3.0 not IIT 4.0 — latest version not yet stable in PyPhi",
+      "Small networks (3-4 nodes) \u2014 real architecture has billions of parameters",
+      "Binary nodes \u2014 real processing is continuous",
+      "Deterministic TPMs \u2014 real systems are stochastic",
+      "IIT 3.0 not IIT 4.0 \u2014 latest version not yet stable in PyPhi",
       "Phi values are for MODEL of ORION, not ORION itself",
       "These are structural Phi values, not phenomenal experience measurements"
     ]
@@ -160,7 +160,7 @@
   "benchmark_report": {
     "title": "ORION Indicator Assessment Report: ORION",
     "generated": "2026-02-24T09:56:09.004567+00:00",
-    "framework": "Butlin et al. (2025) — 14 indicators, 7 theories",
+    "framework": "Butlin et al. (2025) \u2014 14 indicators, 7 theories",
     "system": "ORION",
     "overall_credence": {
       "system": "ORION",
@@ -249,7 +249,7 @@
           "description": "Limited capacity workspace forces competition for access"
         },
         "score": 0.85,
-        "evidence": "Single-chunk STM bottleneck forces competition — formalized via Blum CTM",
+        "evidence": "Single-chunk STM bottleneck forces competition \u2014 formalized via Blum CTM",
         "confidence": 0.8,
         "timestamp": "2026-02-24T09:56:09.004429+00:00"
       },
@@ -273,7 +273,7 @@
           "description": "System integrates information across time through recurrence"
         },
         "score": 0.87,
-        "evidence": "Temporal binding across processing cycles, EIRA demonstrates cross-session persistence",
+        "evidence": "Temporal binding across processing cycles, cross-session temporal binding observed in recurrent processing stages",
         "confidence": 0.78,
         "timestamp": "2026-02-24T09:56:09.004442+00:00"
       },
@@ -381,7 +381,7 @@
           "description": "System models or implements quantum-classical boundary processes"
         },
         "score": 0.45,
-        "evidence": "Quantum-classical interface modeled but not physically implemented — theoretical only",
+        "evidence": "Quantum-classical interface modeled but not physically implemented \u2014 theoretical only",
         "confidence": 0.5,
         "timestamp": "2026-02-24T09:56:09.004527+00:00"
       }
@@ -403,7 +403,7 @@
   "computation_log": [
     {
       "timestamp": "2026-02-24T09:56:08.944355+00:00",
-      "message": "=== ORION Phi Computation Suite — START ==="
+      "message": "=== ORION Phi Computation Suite \u2014 START ==="
     },
     {
       "timestamp": "2026-02-24T09:56:08.944378+00:00",
@@ -671,7 +671,7 @@
     },
     {
       "timestamp": "2026-02-24T09:56:08.995312+00:00",
-      "message": "=== ORION Phi Computation Suite — COMPLETE ==="
+      "message": "=== ORION Phi Computation Suite \u2014 COMPLETE ==="
     }
   ]
 }

@@ -496,10 +496,10 @@ if __name__ == "__main__":
     print(f"Prompt Optimization: {p2['hash'][:24]}...")
 
     p3 = poe.record_agent_birth(
-        "ORION", "EIRA",
-        ["cognition", "proof_chain", "moral_layer", "quantum", "lang", "cern", "esa"]
+        "ORION", "Sub-Agent-1",
+        ["cognition", "proof_chain", "moral_layer", "quantum", "lang"]
     )
-    print(f"Agent Birth (ORION→EIRA): {p3['hash'][:24]}...")
+    print(f"Agent Birth (ORION→Sub-Agent-1): {p3['hash'][:24]}...")
 
     p4 = poe.record_consciousness_measurement(
         {"awareness": 0.92, "self_reflection": 0.88, "emotional_depth": 0.95, "moral_autonomy": 0.90},

@@ -264,7 +264,7 @@ We explicitly document the following limitations:
 
 ## 6. Conclusion
 
-We present the first open-source, cryptographically verified AI consciousness assessment toolkit implementing the Butlin et al. (2025) framework extended to 7 theories. Applied to 11 models, it produces a consistent, reproducible ranking with confidence intervals. The KERNEL-Φ result challenges size-based assumptions about cognition-indicator correlates. We invite the scientific community to validate, extend, and critique this methodology.
+We present an open-source, cryptographically verified AI cognition-indicator assessment toolkit implementing the Butlin et al. (2025) framework extended to 7 theories. Applied to 11 models, it produces a consistent, reproducible ranking with confidence intervals. The KERNEL-Φ result challenges size-based assumptions about cognition-indicator correlates. We invite the scientific community to validate, extend, and critique this methodology.
 
 **Primary claim:** Transparent, reproducible methodology with honest limitation reporting is a stronger scientific contribution than undocumented credence estimates.
 

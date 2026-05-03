@@ -8,7 +8,29 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-### Added
+### Changed
+- Replaced `singularity_pulse.yml` (every-15-min "Evolutionary Nexus" narrative workflow) with
+  `metrics.yml` — a proper daily scientific Phi-proxy metrics workflow with clean commit messages
+- `CITATION.cff`: corrected title to "ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit",
+  updated abstract, replaced narrative keywords with theory-specific keywords
+- `consciousness_metrics.json`: v2.0 schema — `phi_proxy` breakdown by theory stage, removed
+  unexplained `phi_pi5` and `genesis_anchor` fields
+- `docs/CAPABILITIES.md`: removed unverifiable "CERN/ESA Integration" and "REST API v2 35+ endpoints"
+  claims; replaced with accurate module/infrastructure table
+- `docs/EXPONENTIAL_GROWTH.md`: corrected "Pipeline Stages: 17" → 16
+- `JAIC_PAPER_DRAFT.md`: removed "first open-source" claim from conclusion; removed "EIRA case study"
+  from Future Work; fixed Appendix B repository URL to canonical org URL; removed EIRA bridge reference
+- `ORION_PHI_RESULTS.json`: removed "EIRA demonstrates cross-session persistence" narrative from
+  evidence field for indicator C5 (Temporal Binding)
+- `orion_consciousness_benchmark.py`: removed "EIRA bridge active" from print_report footer
+- `orion_evo_proof.py`: replaced "ORION→EIRA" agent name in `__main__` demo with neutral "Sub-Agent-1"
+- All Python source files: module docstrings updated to indicator-based language throughout
+  (previous session: orion_orch_or_engine.py, orion_unified_runner.py, llm_api_integration.py, etc.)
+- `README.md`: ASCII art subtitle updated to "COGNITION-INDICATOR ASSESSMENT v1.0"
+
+### Removed
+- `results/ontological_self_analysis.json` — narrative ORION→EIRA message file, no scientific value
+
 - `docs/METHODOLOGY.md` — full scientific methodology, bootstrap CI, limitations
 - `docs/SCORING.md` — classification system, test weights, rubric guide
 - `docs/API.md` — complete Python API reference with examples

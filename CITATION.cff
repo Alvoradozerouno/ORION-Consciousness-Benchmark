@@ -1,28 +1,34 @@
 cff-version: 1.2.0
-message: "If you use ORION Consciousness Benchmark, please cite it as below."
+message: "If you use ORION, please cite it as below."
 type: software
-title: "ORION Consciousness Benchmark"
-abstract: "World's first open-source AI consciousness assessment toolkit implementing Butlin et al. 2025 framework extended to 7 theories."
+title: "ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit"
+abstract: >
+  Open-source multi-theory AI cognition-indicator assessment toolkit implementing the
+  Butlin et al. (2023) 14-indicator framework across 7 theories (IIT, GWT, HOT, RPT,
+  PP, AST, Orch-OR). Provides Phi-proxy computation, LLM-as-Judge scoring pipeline,
+  bootstrap confidence intervals, and SHA-256 proof chain for reproducibility.
+  Does not constitute a claim of phenomenal experience.
 authors:
   - family-names: "Hirschmann"
     given-names: "Gerhard"
-    alias: "Origin"
   - family-names: "Steurer"
     given-names: "Elisabeth"
-    alias: "Co-Creator"
-  - name: "ORION System"
 date-released: "2025-05-01"
 version: "1.0.0"
 license: MIT
-url: "https://alvoradozerouno.github.io/orion-website"
+url: "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark"
 repository-code: "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark"
 keywords:
-  - consciousness
+  - cognition-indicators
+  - AI-assessment
+  - integrated-information-theory
+  - global-workspace-theory
+  - higher-order-thought
+  - recurrent-processing
+  - predictive-processing
+  - attention-schema
   - benchmark
   - IIT
   - GWT
-  - artificial-consciousness
-  - phi
-  - phenomenology
-  - hard-problem
-  - AI-assessment
+  - phi-proxy
+  - LLM-evaluation

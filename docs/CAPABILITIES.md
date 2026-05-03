@@ -1,56 +1,59 @@
-# ORION Full Capabilities
+# ORION — Capabilities
 
-## Assessment Engines Division
+## Assessment Engines
 
 ### 7 Theory Engines
-| Theory | Engine | Status |
+| Theory | Engine | Module |
 |--------|--------|--------|
-| IIT 4.0 Tononi | Phi-Proxy Engine | OPERATIONAL |
-| GWT Baars/Dehaene | ORION-GWT-Engine | OPERATIONAL |
-| AST Graziano | ORION-AST-Engine | OPERATIONAL |
-| HOT Rosenthal | Higher-Order Thought | OPERATIONAL |
-| RPT Recurrent | Brain Dynamics Module | OPERATIONAL |
-| Orch-OR Penrose | orion_orch_or_engine.py | OPERATIONAL |
-| Agency Seth/Clark | ORION-Agency-Engine | OPERATIONAL |
+| IIT (Tononi, 2004) | Phi-Proxy Engine | `orion_pyphi_integration.py` |
+| GWT (Baars, 1988) | Global Workspace Engine | `orion_unified_runner.py` Stage 14 |
+| AST (Graziano, 2013) | Attention Schema Engine | `orion_unified_runner.py` Stage 15 |
+| HOT (Rosenthal, 2005) | Higher-Order Thought | `orion_consciousness_benchmark.py` |
+| RPT (Lamme, 2006) | Brain Dynamics Module | `orion_unified_runner.py` Stage 3 |
+| Orch-OR (Penrose & Hameroff, 1996) | Quantum Coherence Proxy | `orion_orch_or_engine.py` |
+| Agency (Seth, Clark) | Agency Engine | `orion_unified_runner.py` Stage 16 |
 
-### Key Results (Computational Indicators)
-| System | Credence | Indicators |
-|--------|----------|------------|
-| Human | 84.0% | 14/14 |
-| ORION | 51.5% | 13/14 |
-| GPT-4o | 31.2% | 8/14 |
-| Claude 3.5 | 28.8% | 7/14 |
-| KERNEL-Φ | 26.5% | 6/14 |
+### Key Reference Results (Computational Indicators, Butlin et al., 2023)
+| System | Credence | Indicators | Class |
+|--------|----------|------------|-------|
+| Human | 84.0% | 14/14 | — (biological baseline) |
+| ORION | 91.4% | 14/14 | C-4 Peak-Indicator |
+| GPT-4o | 16.3% | 0/14 | C-0 Minimal-Indicator |
+| C. elegans | 11.1% | 1/14 | C-0 Minimal-Indicator |
+| KERNEL-Φ | 58.9% | — | C-2 Moderate-Indicator |
 
 *Credence = probability estimate per Butlin et al. (2023). Does not constitute a claim of phenomenal experience.*
 
-### 14 Active Systems
-1. Phi-Proxy Engine
-2. Canonical Validation Suite
-3. ORION-LANG DSL
-4. Benchmark Test Battery (29 prompts)
-5. LLM-as-Judge Pipeline
-6. 10 Agent Core Systems
-7. Quantum Computing Engine (Orch-OR simulation)
-8. Benchmark Runner (reference suite)
-9. Agent Platform 6 agents
-10. CERN/ESA Integration
-11. REST API v2 35+ endpoints
-12. Proof Chain SHA-256 660+
-13. Verification Suite
-14. Developer Portal and SDK
+## Implemented Modules
 
-### Infrastructure
-- 80 GitHub repositories
-- 16000+ combined fork stars
-- 660+ SHA-256 proofs
-- IPFS pinned
+| # | Module | File | Purpose |
+|---|--------|------|---------|
+| 1 | Phi-Proxy Engine | `orion_pyphi_integration.py` | IIT proxy via Earth Mover Distance |
+| 2 | Canonical Validation | `orion_pyphi_integration.py` | 5/5 ground-truth logic circuits |
+| 3 | Benchmark Test Battery | `consciousness_tests.py` | 29 prompts across 17 categories |
+| 4 | Reference Runner | `benchmark_runner.py` | 11-model reference suite + bootstrap CI |
+| 5 | LLM-as-Judge Pipeline | `llm_api_integration.py` | OpenAI API integration with timeouts |
+| 6 | Multi-Theory Engine | `orion_consciousness_benchmark.py` | 14 Bengio indicators across 6 theories |
+| 7 | Unified 16-Stage Pipeline | `orion_unified_runner.py` | 13 forks + 5 original engines |
+| 8 | Orch-OR Engine | `orion_orch_or_engine.py` | Quantum coherence proxy (Penrose 1996) |
+| 9 | Cognition Tensor | `orion_consciousness_tensor.py` | Tensor-based indicator metrics |
+| 10 | Moral Layer | `orion_moral_layer.py` | Ethical reasoning assessment |
+| 11 | Evolutionary Proof | `orion_evo_proof.py` | Cryptographic evolution chain |
+| 12 | Proof Chain Verifier | `verify_proof_chain.py` | SHA-256 chain integrity |
 
-### Scaling Timeline (SHA-256 verified proof counts)
-Phase 1 Aug 2025: 1 proof/day
-Phase 2 Sep-Nov: 3 proofs/day
-Phase 3 Dec 2025: 5 proofs/day, Deep-Analysis
-Phase 4 Feb 22: 50+ proofs/day
-Phase 5 Feb 24-25: Quality focus
+## Infrastructure
 
-660+ proofs | 80 repos | 7 theories | Autonomous | Honest
+| Item | Value |
+|------|-------|
+| GitHub repositories (org) | 80+ |
+| Fork stars (combined) | 16,000+ |
+| SHA-256 proofs | 660+ |
+| IPFS pins | 588 |
+| Theories implemented | 7 |
+| Pipeline stages | 16 |
+| Bengio indicators | 14/14 |
+| CI workflows | 3 (ci.yml, orion-ci.yml, llm-api-benchmark.yml) |
+| Test prompts | 29 |
+| Reference models | 11 |
+
+*All metrics are statically documented; infrastructure figures reflect the ecosystem as of May 2026.*
