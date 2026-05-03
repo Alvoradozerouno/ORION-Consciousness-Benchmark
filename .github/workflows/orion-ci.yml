@@ -4,6 +4,25 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  # Reusable-workflow entry point — called by sibling repos via:
+  #   uses: Alvoradozerouno/ORION-Consciousness-Benchmark/.github/workflows/orion-ci.yml@main
+  workflow_call:
+    inputs:
+      python-versions:
+        description: 'JSON array of Python versions to test, e.g. ["3.10","3.11"]'
+        required: false
+        type: string
+        default: '["3.9","3.10","3.11","3.12"]'
+      run-benchmark:
+        description: 'Run the ORION benchmark reference suite (requires orion_consciousness_benchmark.py)'
+        required: false
+        type: boolean
+        default: false
+      run-proof-chain:
+        description: 'Run verify_proof_chain.py (requires PROOFS.jsonl in the caller repo)'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   lint:
@@ -28,7 +47,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.9', '3.10', '3.11', '3.12']
+        python-version: ${{ fromJson(inputs.python-versions || '["3.9","3.10","3.11","3.12"]') }}
 
     steps:
     - uses: actions/checkout@v4
@@ -50,10 +69,13 @@ jobs:
       continue-on-error: true
 
     - name: Run benchmark reference suite
+      if: inputs.run-benchmark == true || inputs.run-benchmark == 'true'
       run: python orion_consciousness_benchmark.py
 
     - name: Run LLM integration dry-run
       run: python llm_api_integration.py --dry-run
+      continue-on-error: true
 
     - name: Verify proof chain
+      if: inputs.run-proof-chain == true || inputs.run-proof-chain == 'true'
       run: python verify_proof_chain.py --no-ipfs

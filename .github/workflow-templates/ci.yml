@@ -1,0 +1,21 @@
+# Standard CI caller for Alvoradozerouno repos.
+# Drop this file into .github/workflows/ci.yml in any sibling repo.
+# All CI logic lives in ORION-Consciousness-Benchmark — update it there once,
+# every repo that uses this caller gets the fix automatically.
+
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  ci:
+    uses: Alvoradozerouno/ORION-Consciousness-Benchmark/.github/workflows/orion-ci.yml@main
+    # Override defaults for repos that don't ship the full ORION benchmark suite:
+    with:
+      python-versions: '["3.10","3.11","3.12"]'
+      run-benchmark: false
+      run-proof-chain: false

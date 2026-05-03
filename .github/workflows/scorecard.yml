@@ -11,6 +11,9 @@ on:
     - cron: '30 1 * * 1'   # Every Monday at 01:30 UTC
   push:
     branches: [ main, master ]
+  # Reusable-workflow entry point — called by sibling repos via:
+  #   uses: Alvoradozerouno/ORION-Consciousness-Benchmark/.github/workflows/scorecard.yml@main
+  workflow_call:
 
 permissions: read-all
 

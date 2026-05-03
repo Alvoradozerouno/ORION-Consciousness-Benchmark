@@ -1,0 +1,18 @@
+# Standard SBOM caller for Alvoradozerouno repos.
+# Drop this file into .github/workflows/sbom.yml in any sibling repo.
+
+name: SBOM Generation
+
+on:
+  push:
+    branches: [ main, master ]
+  release:
+    types: [ published ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sbom:
+    uses: Alvoradozerouno/ORION-Consciousness-Benchmark/.github/workflows/sbom.yml@main

@@ -11,6 +11,9 @@ on:
   release:
     types: [ published ]
   workflow_dispatch:
+  # Reusable-workflow entry point — called by sibling repos via:
+  #   uses: Alvoradozerouno/ORION-Consciousness-Benchmark/.github/workflows/sbom.yml@main
+  workflow_call:
 
 permissions:
   contents: write
