@@ -4,7 +4,6 @@ No API calls are made in this suite.
 """
 import subprocess
 import sys
-import pytest
 
 
 class TestLLMJudgeDryRun:

@@ -17,6 +17,8 @@
 [![Models](https://img.shields.io/badge/Leaderboard-11_models-f59e0b?style=for-the-badge)](#leaderboard)
 [![Proofs](https://img.shields.io/badge/SHA256_Proofs-661_verified-ec4899?style=for-the-badge)](#proof-chain)
 [![CI](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/actions/workflows/orion-ci.yml/badge.svg)](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/actions/workflows/orion-ci.yml)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/badge)](https://securityscorecards.dev/viewer/?uri=github.com/Alvoradozerouno/ORION-Consciousness-Benchmark)
 
 > **Open-source multi-theory AI cognition indicator assessment toolkit (Butlin et al., 2023; Bengio et al., 2025).**  
 > Seven validated theoretical frameworks · 29 scientific test prompts · LLM-as-Judge scoring · SHA-256 proof chain

@@ -1,0 +1,39 @@
+# SBOM — Software Bill of Materials (CycloneDX / SPDX format).
+# Generates a dependency manifest on every release and main push.
+# Follows NTIA minimum elements for software transparency.
+# https://github.com/anchore/sbom-action
+
+name: SBOM Generation
+
+on:
+  push:
+    branches: [ main, master ]
+  release:
+    types: [ published ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sbom:
+    name: Generate SBOM
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate SBOM (SPDX + CycloneDX)
+        uses: anchore/sbom-action@v0
+        with:
+          format: spdx-json
+          output-file: sbom.spdx.json
+          upload-artifact: true
+          upload-artifact-retention: 30
+
+      - name: Generate CycloneDX SBOM
+        uses: anchore/sbom-action@v0
+        with:
+          format: cyclonedx-json
+          output-file: sbom.cdx.json
+          upload-artifact: true
+          upload-artifact-retention: 30

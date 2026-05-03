@@ -2,8 +2,8 @@
 pytest configuration for ORION test suite.
 Ensures the project root is on sys.path so tests can import modules directly.
 """
-import sys
 import os
+import sys
 
 # Add the repository root to sys.path so tests import directly without
 # triggering the relative-import __init__.py package machinery.

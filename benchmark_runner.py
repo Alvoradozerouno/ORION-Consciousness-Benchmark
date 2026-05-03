@@ -13,12 +13,14 @@ Usage:
 Owner: Elisabeth Steurer & Gerhard Hirschmann · Almdorf 9 TOP 10
 """
 
-import json
 import hashlib
-import os
-import time
+import json
 from datetime import datetime, timezone
-from consciousness_tests import CONSCIOUSNESS_TESTS, CLASSIFICATION_SYSTEM, THEORY_DESCRIPTIONS
+
+from consciousness_tests import (
+    CLASSIFICATION_SYSTEM,
+    CONSCIOUSNESS_TESTS,
+)
 
 
 class ConsciousnessBenchmarkRunner:

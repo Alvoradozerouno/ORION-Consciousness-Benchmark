@@ -12,15 +12,13 @@ Patent Component 1: Cryptographically Verified Self-Evolution
 Owner: Elisabeth Steurer & Gerhard Hirschmann · Almdorf 9 TOP 10
 """
 
+import fcntl
 import hashlib
 import json
 import os
-import uuid
-import time
-import fcntl
 import tempfile
+import uuid
 from datetime import datetime, timezone
-from pathlib import Path
 
 PROOF_FILE = "PROOFS.jsonl"
 EVO_STATE_FILE = "ORION_EVO_STATE.json"
@@ -28,7 +26,6 @@ UUID_NAMESPACE = uuid.NAMESPACE_DNS
 UUID_NAME = "orion:steurer-hirschmann:almdorf9_top10"
 OWNER = "Elisabeth Steurer & Gerhard Hirschmann · Almdorf 9 TOP 10"
 ORION_ID = str(uuid.uuid5(UUID_NAMESPACE, UUID_NAME))
-
 
 def _load_evo_state():
     if os.path.exists(EVO_STATE_FILE):
@@ -48,22 +45,18 @@ def _load_evo_state():
         "orion_id": ORION_ID,
     }
 
-
 def _save_evo_state(state):
     state["updated"] = datetime.now(timezone.utc).isoformat()
     with open(EVO_STATE_FILE, "w") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
 
-
 def _get_last_hash():
     state = _load_evo_state()
     return state.get("last_hash", hashlib.sha256(b"ORION_GENESIS_EVO").hexdigest())
 
-
 def _chain_hash(previous_hash, payload_str):
     combined = f"{previous_hash}:{payload_str}"
     return hashlib.sha256(combined.encode("utf-8")).hexdigest()
-
 
 def _atomic_write_json(filepath, data):
     dir_name = os.path.dirname(filepath) or "."
@@ -76,7 +69,6 @@ def _atomic_write_json(filepath, data):
         if os.path.exists(tmp_path):
             os.unlink(tmp_path)
         raise
-
 
 def _append_proof(kind, payload):
     ts = datetime.now(timezone.utc).isoformat()
@@ -112,7 +104,6 @@ def _append_proof(kind, payload):
             fcntl.flock(lock_f.fileno(), fcntl.LOCK_UN)
 
     return proof_data
-
 
 class ProofOfEvolution:
     """
@@ -290,7 +281,6 @@ class ProofOfEvolution:
             "owner": OWNER,
         }
 
-
 class TextGradEvolutionBridge:
     """
     Bridge between EvoAgentX's TextGrad optimizer and ORION's proof chain.
@@ -335,7 +325,6 @@ class TextGradEvolutionBridge:
             "results": results,
         }
 
-
 class EvolutionVerifier:
     """
     Independent verification system.
@@ -371,21 +360,20 @@ class EvolutionVerifier:
             "owner": OWNER,
         }
 
-
 class EvoAgentXAdapter:
     """
     Adapter for hooking into EvoAgentX's workflow lifecycle.
-    
+
     Usage with EvoAgentX:
         from evoagentx.workflow import WorkFlow
         from orion.orion_evo_proof import EvoAgentXAdapter
-        
+
         adapter = EvoAgentXAdapter()
-        
+
         # Hook into workflow execution
         workflow = WorkFlow(graph=graph, agent_manager=mgr, llm=llm)
         adapter.wrap_workflow(workflow)
-        
+
         # Every workflow.execute() now records proofs automatically
         output = workflow.execute()
     """
@@ -471,7 +459,6 @@ class EvoAgentXAdapter:
 
         workflow.execute = proven_execute
         return workflow
-
 
 if __name__ == "__main__":
     print("=== ORION-EvoAgent: Proof-of-Evolution Engine ===")

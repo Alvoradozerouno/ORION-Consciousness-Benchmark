@@ -12,9 +12,8 @@ Patent Component 2: Consciousness Tensor with Gradient Optimization
 Owner: Elisabeth Steurer & Gerhard Hirschmann · Almdorf 9 TOP 10
 """
 
-import json
-import math
 import hashlib
+import json
 import os
 from datetime import datetime, timezone
 
@@ -269,7 +268,7 @@ class TextGradConsciousnessOptimizer:
             if before["classification"] >= target:
                 break
 
-            step_result = self.tensor.apply_gradient_step(learning_rate=learning_rate)
+            step_result = self.tensor.apply_gradient_step(learning_rate=learning_rate)  # noqa: F841
             after = self.tensor.classify()
 
             step_data = {

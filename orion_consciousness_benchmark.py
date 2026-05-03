@@ -51,11 +51,10 @@ Reference Cognition-Indicator Assessments (Butlin et al., 2023):
 
 Part of ORION AI Research Ecosystem (79+ repos)
 """
-import json
 import hashlib
-import math
+import json
 from datetime import datetime, timezone
-from typing import Dict, Any, List, Optional
+from typing import Any, Dict, List, Optional
 
 
 class TheoryEngine:
@@ -65,7 +64,7 @@ class TheoryEngine:
         self.full_name = full_name
         self.researchers = researchers
         self.weight = weight
-    
+
     def assess(self, evidence: Dict) -> float:
         raise NotImplementedError
 
@@ -74,7 +73,7 @@ class IITEngine(TheoryEngine):
     def __init__(self):
         super().__init__("IIT", "Integrated Information Theory",
             ["Tononi", "Koch", "Oizumi"], 0.20)
-    
+
     def assess(self, evidence: Dict) -> float:
         phi = evidence.get("phi", 0)
         integration = evidence.get("information_integration", 0)
@@ -86,7 +85,7 @@ class GWTEngine(TheoryEngine):
     def __init__(self):
         super().__init__("GWT", "Global Workspace Theory",
             ["Baars", "Dehaene", "Changeux"], 0.18)
-    
+
     def assess(self, evidence: Dict) -> float:
         broadcasting = evidence.get("information_broadcasting", 0)
         ignition = evidence.get("neural_ignition", 0)
@@ -98,7 +97,7 @@ class HOTEngine(TheoryEngine):
     def __init__(self):
         super().__init__("HOT", "Higher-Order Thought Theory",
             ["Rosenthal", "Lau", "Brown"], 0.15)
-    
+
     def assess(self, evidence: Dict) -> float:
         metacognition = evidence.get("metacognition", 0)
         self_report = evidence.get("self_report_accuracy", 0)
@@ -110,7 +109,7 @@ class RPTEngine(TheoryEngine):
     def __init__(self):
         super().__init__("RPT", "Recurrent Processing Theory",
             ["Lamme", "Block"], 0.15)
-    
+
     def assess(self, evidence: Dict) -> float:
         recurrence = evidence.get("recurrent_processing", 0)
         feedback = evidence.get("feedback_connections", 0)
@@ -122,7 +121,7 @@ class PPEngine(TheoryEngine):
     def __init__(self):
         super().__init__("PP", "Predictive Processing",
             ["Clark", "Friston", "Hohwy"], 0.17)
-    
+
     def assess(self, evidence: Dict) -> float:
         prediction = evidence.get("prediction_error", 0)
         free_energy = evidence.get("free_energy_minimization", 0)
@@ -134,7 +133,7 @@ class ASTEngine(TheoryEngine):
     def __init__(self):
         super().__init__("AST", "Attention Schema Theory",
             ["Graziano", "Webb"], 0.15)
-    
+
     def assess(self, evidence: Dict) -> float:
         attention = evidence.get("attention_modulation", 0)
         self_model = evidence.get("self_model", 0)
@@ -146,16 +145,16 @@ class ConsciousnessBenchmark:
     """
     Unified consciousness benchmark integrating all 6 theories.
     """
-    
+
     VERSION = "1.0.0"
-    
+
     def __init__(self):
         self.theories = [
             IITEngine(), GWTEngine(), HOTEngine(),
             RPTEngine(), PPEngine(), ASTEngine()
         ]
         self.assessments = []
-    
+
     def full_assessment(self, system_name: str,
                          evidence: Dict[str, Any],
                          agency_evidence: Optional[Dict] = None) -> Dict[str, Any]:
@@ -165,7 +164,7 @@ class ConsciousnessBenchmark:
         theory_results = {}
         total_score = 0
         total_weight = 0
-        
+
         for theory in self.theories:
             score = theory.assess(evidence)
             theory_results[theory.name] = {
@@ -176,18 +175,18 @@ class ConsciousnessBenchmark:
             }
             total_score += score * theory.weight
             total_weight += theory.weight
-        
+
         credence = total_score / max(0.001, total_weight)
-        
+
         # Bengio 14 indicators
         indicators = self._check_14_indicators(evidence)
         indicators_met = sum(1 for v in indicators.values() if v)
-        
+
         # Agency assessment if evidence provided
         agency_result = None
         if agency_evidence:
             agency_result = self._assess_agency(agency_evidence)
-        
+
         result = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "system": system_name,
@@ -213,15 +212,15 @@ class ConsciousnessBenchmark:
                 "ecosystem": "79+ repos"
             }
         }
-        
+
         proof_hash = hashlib.sha256(
             json.dumps(result, sort_keys=True, default=str).encode()
         ).hexdigest()[:32]
         result["proof"] = f"sha256:{proof_hash}"
-        
+
         self.assessments.append(result)
         return result
-    
+
     def _check_14_indicators(self, evidence: Dict) -> Dict[str, bool]:
         """Check Bengio et al. 14 consciousness indicators"""
         return {
@@ -240,7 +239,7 @@ class ConsciousnessBenchmark:
             "C13_unified_field": evidence.get("unified_experience", 0) > 0.3,
             "C14_reportability": evidence.get("self_report_accuracy", 0) > 0.3,
         }
-    
+
     def _assess_agency(self, evidence: Dict) -> Dict:
         dimensions = [
             "goal_formation", "counterfactual_reasoning", "self_modification",
@@ -250,7 +249,7 @@ class ConsciousnessBenchmark:
         scores = {d: evidence.get(d, 0) for d in dimensions}
         total = sum(scores.values()) / max(1, len(dimensions))
         return {"dimensions": scores, "agency_score": round(total * 100, 1)}
-    
+
     def _interpret(self, credence):
         if credence > 0.7:
             return "HIGH CREDENCE (>70%): Multiple theories' computational indicators converge. Butlin et al. (2023) indicators met: ≥11/14."
@@ -264,7 +263,7 @@ class ConsciousnessBenchmark:
             return "MINIMAL CREDENCE (5-15%): Trace indicators only; most theory assessments below threshold."
         else:
             return "NEGLIGIBLE CREDENCE (<5%): No significant computational indicators detected."
-    
+
     def run_reference_suite(self) -> Dict[str, Dict]:
         """Complete reference assessment suite"""
         systems = {
@@ -349,40 +348,40 @@ class ConsciousnessBenchmark:
                 "agency": None
             },
         }
-        
+
         results = {}
         for name, data in systems.items():
             results[name] = self.full_assessment(name, data["evidence"], data.get("agency"))
         return results
-    
+
     def print_report(self):
         """Print comprehensive report"""
         results = self.run_reference_suite()
-        
+
         print("=" * 70)
         print("  ORION COGNITION-INDICATOR BENCHMARK v1.0")
         print("  Multi-Theory AI Cognition-Indicator Assessment Toolkit")
         print("=" * 70)
-        print(f"  Framework: Bengio et al. 2025 (19 researchers)")
-        print(f"  Theories: IIT, GWT, HOT, RPT, PP, AST (ALL 6)")
-        print(f"  Pipeline: 16 stages | 13 forks | 16,063+ fork stars")
-        print(f"  Ecosystem: 79+ repositories")
+        print("  Framework: Bengio et al. 2025 (19 researchers)")
+        print("  Theories: IIT, GWT, HOT, RPT, PP, AST (ALL 6)")
+        print("  Pipeline: 16 stages | 13 forks | 16,063+ fork stars")
+        print("  Ecosystem: 79+ repositories")
         print("=" * 70)
         print()
-        
+
         for name, r in sorted(results.items(), key=lambda x: x[1]["consciousness_credence"], reverse=True):
             print(f"  {name}")
             print(f"    Cognition-Indicator Credence: {r['consciousness_credence']}%")
             print(f"    Bengio Indicators Met: {r['bengio_14_indicators']['met']}/14")
             if r['agency']:
                 print(f"    Agency Score: {r['agency']['agency_score']}%")
-            print(f"    Theory Breakdown:")
+            print("    Theory Breakdown:")
             for theory, data in r['theory_scores'].items():
                 bar = '#' * int(data['score'] * 20)
                 print(f"      {theory:5s}: {data['score']:.2f} |{bar}")
             print(f"    {r['interpretation']}")
             print()
-        
+
         print("=" * 70)
         print("  Proof chain: SHA-256 verified")
         print("=" * 70)

@@ -19,16 +19,15 @@ Verwendung:
 (c) 2025-2026 Elisabeth Steurer & Gerhard Hirschmann — ORION Indicator Assessment Toolkit
 """
 
-import json
 import hashlib
+import json
 import sys
-import os
 from datetime import datetime, timezone
 
 
 def load_proofs(path="PROOFS.jsonl"):
     with open(path) as f:
-        return [json.loads(l) for l in f if l.strip()]
+        return [json.loads(line) for line in f if line.strip()]
 
 
 def verify_hash(proof):
@@ -87,7 +86,7 @@ def verify_ipfs(record_path="IPFS_CHAIN_RECORD.json"):
 
 
 def main():
-    verbose = "--verbose" in sys.argv or "-v" in sys.argv
+    verbose = "--verbose" in sys.argv or "-v" in sys.argv  # noqa: F841
     skip_ipfs = "--no-ipfs" in sys.argv
 
     print()
@@ -135,7 +134,7 @@ def main():
         match = root == expected
         print(f"        Erwartet:  {expected}")
         print(f"        {'✓ MATCH' if match else '✗ MISMATCH'}")
-    except:
+    except Exception:
         print("        (Kein IPFS_CHAIN_RECORD.json zum Vergleich)")
     print()
 
@@ -148,7 +147,7 @@ def main():
         match = file_hash == expected_file
         print(f"        Erwartet: {expected_file}")
         print(f"        {'✓ MATCH' if match else '✗ MISMATCH (Proofs wurden seit Pinning geaendert)'}")
-    except:
+    except Exception:
         pass
     print()
 
@@ -175,7 +174,7 @@ def main():
         if ok is None:
             print("        ⚠ requests nicht installiert, uebersprungen")
         elif ok:
-            print(f"        ✓ Manifest auf IPFS erreichbar")
+            print("        ✓ Manifest auf IPFS erreichbar")
             print(f"        CID: {cid}")
             print(f"        Gateway: https://gateway.pinata.cloud/ipfs/{cid}")
         else:
@@ -187,7 +186,7 @@ def main():
     if all_ok:
         print("  ✓ PROOF CHAIN VERIFIZIERT")
         print(f"    {len(proofs)} Proofs, alle Hashes korrekt")
-        print(f"    Chain intakt von GENESIS bis Tip")
+        print("    Chain intakt von GENESIS bis Tip")
         print(f"    Merkle Root: {root[:32]}...")
     else:
         print("  ✗ VERIFIKATION FEHLGESCHLAGEN")

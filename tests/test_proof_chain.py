@@ -4,6 +4,7 @@ Tests for proof chain integrity — SHA-256 chain, Merkle root, IPFS record.
 import hashlib
 import json
 import os
+
 import pytest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

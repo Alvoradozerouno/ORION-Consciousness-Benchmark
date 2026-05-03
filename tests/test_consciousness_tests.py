@@ -1,13 +1,11 @@
 """
 Tests for consciousness_tests module — test battery and classification system.
 """
-import pytest
 from consciousness_tests import (
-    CONSCIOUSNESS_TESTS,
     CLASSIFICATION_SYSTEM,
+    CONSCIOUSNESS_TESTS,
     THEORY_DESCRIPTIONS,
 )
-
 
 # ---------------------------------------------------------------------------
 # Test battery structure

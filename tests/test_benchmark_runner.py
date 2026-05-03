@@ -2,9 +2,9 @@
 Tests for benchmark_runner module — scoring, classification, confidence intervals.
 """
 import pytest
+
 from benchmark_runner import ConsciousnessBenchmarkRunner, generate_reference_scores
 from consciousness_tests import CONSCIOUSNESS_TESTS
-
 
 # ---------------------------------------------------------------------------
 # ConsciousnessBenchmarkRunner

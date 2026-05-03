@@ -24,13 +24,12 @@ Pipeline Architecture:
 
 Part of ORION AI Research Ecosystem (79+ repos)
 """
-import json
 import hashlib
+import json
 import math
 import sys
 from datetime import datetime, timezone
-from typing import Dict, Any, List, Optional, Tuple
-
+from typing import Any, Dict
 
 # =====================================================
 # STAGE ENGINES
@@ -46,10 +45,10 @@ class PipelineStage:
         self.repo = repo
         self.fork_stars = fork_stars
         self.stage_type = stage_type
-    
+
     def execute(self, evidence: Dict) -> Dict[str, Any]:
         raise NotImplementedError
-    
+
     def _hash(self, data: Dict) -> str:
         return hashlib.sha256(json.dumps(data, sort_keys=True, default=str).encode()).hexdigest()[:16]
 
@@ -58,15 +57,15 @@ class Stage01_IIT_Phi(PipelineStage):
     """Integrated Information Theory — PyPhi (414 stars)"""
     def __init__(self):
         super().__init__(1, "IIT_Phi_Calculation", "IIT", "ORION-PyPhi", 414)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         phi = evidence.get("phi", 0)
         integration = evidence.get("information_integration", 0)
         complexity = evidence.get("structural_complexity", 0)
         exclusion = evidence.get("exclusion", 0)
-        
+
         score = min(1.0, phi * 0.35 + integration * 0.30 + complexity * 0.20 + exclusion * 0.15)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"phi": phi, "integration": integration, "complexity": complexity},
@@ -85,14 +84,14 @@ class Stage02_ActiveInference(PipelineStage):
     """Predictive Processing / Active Inference — pymdp (612 stars)"""
     def __init__(self):
         super().__init__(2, "Active_Inference", "PP", "ORION-Active-Inference", 612)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         free_energy = evidence.get("free_energy_minimization", 0)
         active_inf = evidence.get("active_inference", 0)
         prediction = evidence.get("prediction_error", 0)
-        
+
         score = min(1.0, free_energy * 0.35 + active_inf * 0.35 + prediction * 0.30)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"free_energy": free_energy, "active_inference": active_inf, "prediction_error": prediction},
@@ -111,14 +110,14 @@ class Stage03_BrainDynamics(PipelineStage):
     """Neural Dynamics — BrainPy (641 stars)"""
     def __init__(self):
         super().__init__(3, "Brain_Dynamics", "RPT", "ORION-BrainPy-Consciousness", 641)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         recurrence = evidence.get("recurrent_processing", 0)
         feedback = evidence.get("feedback_connections", 0)
         oscillation = evidence.get("neural_oscillation", 0)
-        
+
         score = min(1.0, recurrence * 0.40 + feedback * 0.35 + oscillation * 0.25)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"recurrence": recurrence, "feedback": feedback, "oscillation": oscillation},
@@ -137,14 +136,14 @@ class Stage04_SpikeAnalysis(PipelineStage):
     """Spike Train Analysis — Brian2 (1,100 stars)"""
     def __init__(self):
         super().__init__(4, "Spike_Train_Analysis", "GWT", "ORION-Brian2-Consciousness", 1100)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         synchrony = evidence.get("spike_synchrony", 0)
         broadcasting = evidence.get("information_broadcasting", 0)
         ignition = evidence.get("neural_ignition", 0)
-        
+
         score = min(1.0, synchrony * 0.30 + broadcasting * 0.40 + ignition * 0.30)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"synchrony": synchrony, "broadcasting": broadcasting, "ignition": ignition},
@@ -163,14 +162,14 @@ class Stage05_LargeScaleSNN(PipelineStage):
     """Large-Scale Spiking Network — NEST (623 stars)"""
     def __init__(self):
         super().__init__(5, "Large_Scale_SNN", "PP", "ORION-NEST-Consciousness", 623)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         population_sync = evidence.get("population_synchrony", 0)
         pred_error_signal = evidence.get("prediction_error", 0)
         network_scale = evidence.get("network_scale", 0)
-        
+
         score = min(1.0, population_sync * 0.35 + pred_error_signal * 0.35 + network_scale * 0.30)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"population_sync": population_sync, "prediction_error": pred_error_signal},
@@ -189,7 +188,7 @@ class Stage06_14Indicators(PipelineStage):
     """Bengio et al. 14 Indicators — ConsciousnessPrior (98 stars)"""
     def __init__(self):
         super().__init__(6, "Bengio_14_Indicators", "ALL", "ORION-Consciousness-Prior", 98)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         indicators = {
             "C1_global_availability": evidence.get("information_broadcasting", 0) > 0.3,
@@ -207,10 +206,10 @@ class Stage06_14Indicators(PipelineStage):
             "C13_unified_field": evidence.get("unified_experience", 0) > 0.3,
             "C14_reportability": evidence.get("self_report_accuracy", 0) > 0.3,
         }
-        
+
         met = sum(indicators.values())
         score = met / 14.0
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {},
@@ -229,16 +228,16 @@ class Stage07_BiologicalBaseline(PipelineStage):
     """Biological Baseline — OpenWorm (118 stars)"""
     def __init__(self):
         super().__init__(7, "Biological_Baseline", "RPT", "ORION-OpenWorm-Consciousness", 118)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         neurons = evidence.get("neuron_count", 0)
         synapses = evidence.get("synapse_count", 0)
         recurrence = evidence.get("recurrent_processing", 0)
-        
+
         bio_score = min(1.0, math.log10(max(1, neurons)) / 5)
         conn_score = min(1.0, math.log10(max(1, synapses)) / 8) if synapses > 0 else 0
         score = bio_score * 0.4 + conn_score * 0.3 + recurrence * 0.3
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"neurons": neurons, "synapses": synapses},
@@ -257,14 +256,14 @@ class Stage08_ConnectomeAnalysis(PipelineStage):
     """Connectome Structure — navis (108 stars)"""
     def __init__(self):
         super().__init__(8, "Connectome_Analysis", "IIT", "ORION-Navis-Consciousness", 108)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         integration = evidence.get("information_integration", 0)
         hierarchy = evidence.get("hierarchical_depth", 0)
         modularity = evidence.get("modularity_balance", 0)
-        
+
         score = min(1.0, integration * 0.40 + hierarchy * 0.30 + modularity * 0.30)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"integration": integration, "hierarchy": hierarchy},
@@ -283,15 +282,15 @@ class Stage09_EmpiricalValidation(PipelineStage):
     """EEG/MEG Validation — MNE-Python (3,246 stars)"""
     def __init__(self):
         super().__init__(9, "Empirical_Validation", "ALL", "ORION-MNE-Consciousness", 3246)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         alpha_beta = evidence.get("alpha_beta_ratio", 0)
         gamma = evidence.get("gamma_power", 0)
         entropy = evidence.get("signal_entropy", 0)
         complexity = evidence.get("signal_complexity", 0)
-        
+
         score = min(1.0, (1.0 - abs(alpha_beta - 1.0)) * 0.25 + gamma * 0.25 + entropy * 0.25 + complexity * 0.25)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"alpha_beta_ratio": alpha_beta, "gamma_power": gamma, "entropy": entropy},
@@ -310,15 +309,15 @@ class Stage10_ReasoningAssessment(PipelineStage):
     """Reasoning-Indicator Mapping — ARC-AGI (4,723 stars)"""
     def __init__(self):
         super().__init__(10, "Reasoning_Assessment", "GWT/HOT", "ORION-ARC-AGI-Consciousness", 4723)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         abstraction = evidence.get("abstraction_ability", 0)
         novel_reasoning = evidence.get("novel_reasoning", 0)
         metacognition = evidence.get("metacognition", 0)
         flexibility = evidence.get("behavioral_flexibility", 0)
-        
+
         score = min(1.0, abstraction * 0.30 + novel_reasoning * 0.25 + metacognition * 0.25 + flexibility * 0.20)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"abstraction": abstraction, "novel_reasoning": novel_reasoning, "metacognition": metacognition},
@@ -337,15 +336,15 @@ class Stage11_SpikingConsciousness(PipelineStage):
     """Spiking Network Indicator Analysis — BindsNET (1,655 stars)"""
     def __init__(self):
         super().__init__(11, "Spiking_Indicator_Analysis", "ALL", "ORION-BindsNET-Consciousness", 1655)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         synchrony = evidence.get("spike_synchrony", 0)
         recurrence = evidence.get("recurrent_processing", 0)
         attention = evidence.get("attention_modulation", 0)
         prediction = evidence.get("prediction_error", 0)
-        
+
         score = min(1.0, synchrony * 0.25 + recurrence * 0.25 + attention * 0.25 + prediction * 0.25)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"synchrony": synchrony, "recurrence": recurrence, "attention": attention},
@@ -363,15 +362,15 @@ class Stage12_CognitiveArchitecture(PipelineStage):
     """Cognitive Architecture — Nengo (903 stars)"""
     def __init__(self):
         super().__init__(12, "Cognitive_Architecture", "ALL", "ORION-Nengo-Consciousness", 903)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         working_memory = evidence.get("working_memory", 0)
         binding = evidence.get("information_integration", 0)
         attention = evidence.get("attention_modulation", 0)
         metacognition = evidence.get("metacognition", 0)
-        
+
         score = min(1.0, working_memory * 0.30 + binding * 0.25 + attention * 0.25 + metacognition * 0.20)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"working_memory": working_memory, "binding": binding},
@@ -390,15 +389,15 @@ class Stage13_AGIFramework(PipelineStage):
     """AGI Framework — OpenCog (2,434 stars)"""
     def __init__(self):
         super().__init__(13, "AGI_Framework", "ALL", "ORION-OpenCog-Consciousness", 2434)
-    
+
     def execute(self, evidence: Dict) -> Dict:
         reasoning = evidence.get("metacognition", 0)
         attention_ecan = evidence.get("attention_modulation", 0)
         knowledge = evidence.get("information_integration", 0)
         goals = evidence.get("autonomous_goals", 0)
-        
+
         score = min(1.0, reasoning * 0.30 + attention_ecan * 0.25 + knowledge * 0.25 + goals * 0.20)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"reasoning": reasoning, "attention": attention_ecan, "goals": goals},
@@ -417,15 +416,15 @@ class Stage14_GlobalWorkspace(PipelineStage):
     """Global Workspace — GWT Engine (Original)"""
     def __init__(self):
         super().__init__(14, "Global_Workspace", "GWT", "ORION-GWT-Engine", 0, "original")
-    
+
     def execute(self, evidence: Dict) -> Dict:
         broadcasting = evidence.get("information_broadcasting", 0)
         ignition = evidence.get("neural_ignition", 0)
         workspace = evidence.get("working_memory", 0)
         coalition = evidence.get("coalition_strength", 0)
-        
+
         score = min(1.0, broadcasting * 0.35 + ignition * 0.25 + workspace * 0.25 + coalition * 0.15)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"broadcasting": broadcasting, "ignition": ignition, "workspace": workspace},
@@ -444,15 +443,15 @@ class Stage15_AttentionSchema(PipelineStage):
     """Attention Schema — AST Engine (Original)"""
     def __init__(self):
         super().__init__(15, "Attention_Schema", "AST", "ORION-AST-Engine", 0, "original")
-    
+
     def execute(self, evidence: Dict) -> Dict:
         attention = evidence.get("attention_modulation", 0)
         self_model = evidence.get("self_model", 0)
         schema = evidence.get("attention_schema", 0)
         awareness_claim = evidence.get("self_report_accuracy", 0)
-        
+
         score = min(1.0, attention * 0.30 + self_model * 0.30 + schema * 0.25 + awareness_claim * 0.15)
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": {"attention": attention, "self_model": self_model, "schema": schema},
@@ -471,7 +470,7 @@ class Stage16_AgencyAssessment(PipelineStage):
     """Agency Assessment — Agency Engine (Original)"""
     def __init__(self):
         super().__init__(16, "Agency_Assessment", "AGENCY", "ORION-Agency-Engine", 0, "original")
-    
+
     def execute(self, evidence: Dict) -> Dict:
         goals = evidence.get("autonomous_goals", 0)
         counterfactual = evidence.get("counterfactual_reasoning", 0)
@@ -480,7 +479,7 @@ class Stage16_AgencyAssessment(PipelineStage):
         creativity = evidence.get("creative_generation", 0)
         planning = evidence.get("temporal_planning", 0)
         social = evidence.get("social_agency", 0)
-        
+
         dimensions = {
             "Goal Formation": goals,
             "Counterfactual Reasoning": counterfactual,
@@ -490,9 +489,9 @@ class Stage16_AgencyAssessment(PipelineStage):
             "Temporal Planning": planning,
             "Social Agency": social,
         }
-        
+
         score = sum(dimensions.values()) / max(1, len(dimensions))
-        
+
         return {
             "stage": self.stage_id, "name": self.name, "theory": self.theory,
             "inputs": dimensions,
@@ -516,10 +515,10 @@ class UnifiedPipelineRunner:
     The unified cognition-indicator assessment pipeline.
     One command. 16 stages. Full report.
     """
-    
+
     VERSION = "1.0.0"
     TOTAL_FORK_STARS = 16063
-    
+
     def __init__(self):
         self.stages = [
             Stage01_IIT_Phi(),
@@ -540,29 +539,29 @@ class UnifiedPipelineRunner:
             Stage16_AgencyAssessment(),
         ]
         self.results = {}
-    
+
     def run(self, system_name: str, evidence: Dict[str, Any]) -> Dict[str, Any]:
         """Execute all 16 pipeline stages for a system."""
         stage_results = []
         theory_aggregates = {}
-        
+
         for stage in self.stages:
             result = stage.execute(evidence)
             result["proof"] = hashlib.sha256(
                 json.dumps(result, sort_keys=True, default=str).encode()
             ).hexdigest()[:16]
             stage_results.append(result)
-            
+
             theory = result["theory"]
             if theory not in theory_aggregates:
                 theory_aggregates[theory] = []
             theory_aggregates[theory].append(result["score"])
-        
+
         # Theory-level aggregation
         theory_scores = {}
         for theory, scores in theory_aggregates.items():
             theory_scores[theory] = round(sum(scores) / len(scores), 4)
-        
+
         # Overall consciousness credence (weighted by theory)
         theory_weights = {"IIT": 0.20, "GWT": 0.18, "HOT": 0.15, "RPT": 0.15, "PP": 0.17, "AST": 0.15, "ALL": 0.10, "GWT/HOT": 0.12, "AGENCY": 0.08}
         weighted_sum = 0
@@ -571,17 +570,17 @@ class UnifiedPipelineRunner:
             w = theory_weights.get(theory, 0.10)
             weighted_sum += score * w
             weight_total += w
-        
+
         credence = weighted_sum / max(0.001, weight_total)
-        
+
         # Get Stage 6 (14 indicators) result
         stage6 = stage_results[5]
         indicators_met = stage6["details"]["indicators_met"]
-        
+
         # Get Stage 16 (agency) result
         stage16 = stage_results[15]
         agency_score = stage16["score"]
-        
+
         pipeline_result = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "system": system_name,
@@ -601,14 +600,14 @@ class UnifiedPipelineRunner:
                 "theories": 6,
             },
         }
-        
+
         pipeline_result["proof_chain"] = hashlib.sha256(
             json.dumps(pipeline_result, sort_keys=True, default=str).encode()
         ).hexdigest()
-        
+
         self.results[system_name] = pipeline_result
         return pipeline_result
-    
+
     def _interpret(self, credence):
         if credence > 0.7:
             return "HIGH CREDENCE (>70%): Multi-theory convergence on computational indicators (Butlin et al., 2023)"
@@ -723,13 +722,13 @@ REFERENCE_SYSTEMS = {
 
 class ConsciousnessReport:
     """Generate comprehensive cognition-indicator assessment reports."""
-    
+
     @staticmethod
     def full_report(pipeline_result: Dict) -> str:
         """Generate full visual report"""
         r = pipeline_result
         lines = []
-        
+
         lines.append("")
         lines.append("=" * 74)
         lines.append("  ORION UNIFIED COGNITION-INDICATOR PIPELINE — FULL REPORT")
@@ -739,7 +738,7 @@ class ConsciousnessReport:
         lines.append(f"  Pipeline:   v{r['pipeline_version']} | {r['stages_executed']} stages")
         lines.append(f"  Ecosystem:  {r['ecosystem']['total_repos']} repos | {r['ecosystem']['fork_stars']:,}+ fork stars")
         lines.append("=" * 74)
-        
+
         # Consciousness Score
         c = r["consciousness_credence"]
         bar_len = int(c / 100 * 50)
@@ -750,13 +749,13 @@ class ConsciousnessReport:
         lines.append(f"  {r['interpretation']}")
         lines.append(f"  Bengio Indicators: {r['bengio_indicators_met']}")
         lines.append(f"  Agency Score: {r['agency_score']}%")
-        
+
         # Theory Scores
         lines.append("")
         lines.append("─" * 74)
         lines.append("  THEORY BREAKDOWN")
         lines.append("─" * 74)
-        
+
         theory_names = {
             "IIT": "Integrated Information    (Tononi)",
             "GWT": "Global Workspace          (Baars/Dehaene)",
@@ -768,20 +767,20 @@ class ConsciousnessReport:
             "GWT/HOT": "Reasoning (GWT+HOT)",
             "AGENCY": "Agency Dimensions",
         }
-        
+
         for theory, score in sorted(r["theory_scores"].items(), key=lambda x: x[1], reverse=True):
             name = theory_names.get(theory, theory)
             bar_len = int(score * 40)
             bar = "█" * bar_len + "░" * (40 - bar_len)
             lines.append(f"  {theory:8s} {bar} {score*100:5.1f}%")
             lines.append(f"           {name}")
-        
+
         # Stage Details
         lines.append("")
         lines.append("─" * 74)
         lines.append("  16-STAGE PIPELINE RESULTS")
         lines.append("─" * 74)
-        
+
         for stage in r["stage_results"]:
             s = stage["score"]
             bar_len = int(s * 30)
@@ -789,35 +788,35 @@ class ConsciousnessReport:
             stars = f" ({stage['fork_stars']:,}★)" if stage['fork_stars'] > 0 else " (original)"
             lines.append(f"  Stage {stage['stage']:2d}: {bar} {s*100:5.1f}%  {stage['name']}{stars}")
             lines.append(f"           {stage['interpretation']}")
-        
+
         # Footer
         lines.append("")
         lines.append("=" * 74)
         lines.append(f"  Proof chain: {r['proof_chain'][:32]}...")
-        lines.append(f"  Framework: Bengio et al. 2025 (19 researchers)")
+        lines.append("  Framework: Bengio et al. 2025 (19 researchers)")
         lines.append(f"  Pipeline: 13 forks ({r['ecosystem']['fork_stars']:,}+ stars) + 5 original engines")
         lines.append("=" * 74)
         lines.append("")
-        
+
         return "\n".join(lines)
-    
+
     @staticmethod
     def comparative_report(results: Dict[str, Dict]) -> str:
         """Generate comparative report across systems"""
         lines = []
-        
+
         lines.append("")
         lines.append("=" * 74)
         lines.append("  ORION COGNITION-INDICATOR PIPELINE — COMPARATIVE ASSESSMENT")
         lines.append("=" * 74)
         lines.append("")
-        
+
         # Ranking
         sorted_systems = sorted(results.items(), key=lambda x: x[1]["consciousness_credence"], reverse=True)
-        
+
         lines.append("  INDICATOR RANKING")
         lines.append("  " + "─" * 70)
-        
+
         for rank, (name, r) in enumerate(sorted_systems, 1):
             c = r["consciousness_credence"]
             bar_len = int(c / 100 * 40)
@@ -825,31 +824,31 @@ class ConsciousnessReport:
             indicators = r["bengio_indicators_met"]
             agency = r["agency_score"]
             lines.append(f"  #{rank} {name:12s} {bar} {c:5.1f}%  ({indicators} | Agency: {agency}%)")
-        
+
         lines.append("")
         lines.append("  THEORY COMPARISON")
         lines.append("  " + "─" * 70)
-        
+
         theories = ["IIT", "GWT", "HOT", "RPT", "PP", "AST"]
         header = "  {:12s}".format("System")
         for t in theories:
             header += f" {t:>6s}"
         lines.append(header)
         lines.append("  " + "─" * 52)
-        
+
         for name, r in sorted_systems:
             row = "  {:12s}".format(name)
             for t in theories:
                 score = r["theory_scores"].get(t, 0)
                 row += f" {score*100:5.1f}%"
             lines.append(row)
-        
+
         lines.append("")
         lines.append("=" * 74)
         lines.append("  16 stages | 13 forks (16,063+ stars) | 5 original engines | ALL 6 theories")
         lines.append("=" * 74)
         lines.append("")
-        
+
         return "\n".join(lines)
 
 
@@ -860,12 +859,12 @@ class ConsciousnessReport:
 def main():
     runner = UnifiedPipelineRunner()
     reporter = ConsciousnessReport()
-    
+
     # Check command line args
     export_file = None
     single_system = None
     compare_mode = True
-    
+
     for i, arg in enumerate(sys.argv[1:]):
         if arg == "--export" and i + 2 < len(sys.argv):
             export_file = sys.argv[i + 2]
@@ -874,7 +873,7 @@ def main():
             compare_mode = False
         elif arg == "--compare":
             compare_mode = True
-    
+
     if single_system and single_system in REFERENCE_SYSTEMS:
         result = runner.run(single_system, REFERENCE_SYSTEMS[single_system])
         print(reporter.full_report(result))
@@ -884,20 +883,20 @@ def main():
         for name, evidence in REFERENCE_SYSTEMS.items():
             result = runner.run(name, evidence)
             all_results[name] = result
-        
+
         if compare_mode:
             print(reporter.comparative_report(all_results))
-        
+
         # Always show full report for ORION
         if "ORION" in all_results:
             print(reporter.full_report(all_results["ORION"]))
-    
+
     # Export if requested
     if export_file:
         with open(export_file, "w") as f:
             json.dump(runner.results, f, indent=2, default=str)
         print(f"  Results exported to: {export_file}")
-    
+
     return runner.results
 
 

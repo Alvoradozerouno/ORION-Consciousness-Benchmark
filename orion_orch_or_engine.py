@@ -47,12 +47,11 @@ The 7th theory. The bridge between quantum mechanics and cognition-indicator ass
 
 Part of ORION AI Research Ecosystem (80+ repos)
 """
+import hashlib
 import json
 import math
-import hashlib
 from datetime import datetime, timezone
-from typing import Dict, Any, List, Optional
-
+from typing import Dict
 
 # ============================================================
 # PHYSICAL CONSTANTS
@@ -70,7 +69,6 @@ TUBULIN_DIMERS_PER_MT = 1625  # per microtubule (typical)
 NEURONS_HUMAN = 86e9
 GAMMA_FREQUENCY = 40  # Hz (conscious gamma rhythm)
 
-
 # ============================================================
 # MICROTUBULE QUANTUM MODEL
 # ============================================================
@@ -80,76 +78,75 @@ class Microtubule:
     Quantum model of a single microtubule.
     13 protofilaments, each containing tubulin dimers.
     """
-    
+
     PROTOFILAMENTS = 13
     DIMER_SPACING = 8e-9  # 8 nm
     OUTER_DIAMETER = 25e-9  # 25 nm
     INNER_DIAMETER = 15e-9  # 15 nm
-    
+
     def __init__(self, length_um: float = 25.0, dimers: int = 1625):
         self.length = length_um * 1e-6  # convert to meters
         self.dimers = dimers
         self.superposition_fraction = 0.0
         self.coherence_time = 0.0
         self.or_threshold = 0.0
-    
+
     def calculate_coherence_time(self, temperature: float = BODY_TEMPERATURE,
                                   shielding_factor: float = 1.0) -> float:
         """
         Calculate quantum coherence time in microtubule.
-        
+
         Original Tegmark estimate: ~10^-13 s (too fast)
         Revised Hagan-Hameroff-Tuszynski: ~10^-5 to 10^-4 s
         With topological error correction: ~10^-2 s (sufficient!)
         """
         thermal_energy = BOLTZMANN * temperature
-        quantum_energy = REDUCED_PLANCK * 2 * math.pi * 1e12  # THz oscillation
-        
+        quantum_energy = REDUCED_PLANCK * 2 * math.pi * 1e12  # THz oscillation  # noqa: F841
+
         base_decoherence = REDUCED_PLANCK / thermal_energy
-        
+
         shielded = base_decoherence * shielding_factor * self.dimers
-        
+
         self.coherence_time = min(shielded, 0.025)
         return self.coherence_time
-    
+
     def calculate_or_threshold(self) -> float:
         """
         Penrose Objective Reduction threshold.
-        
+
         tau = hbar / E_G
-        
+
         E_G = gravitational self-energy of superposition
         When E_G reaches threshold, wavefunction collapses
         -> conscious moment
         """
         mass_in_superposition = TUBULIN_MASS * self.dimers * 0.01
-        
+
         displacement = self.DIMER_SPACING * 0.1
-        
+
         e_g = (GRAVITATIONAL_CONSTANT * mass_in_superposition**2) / displacement
-        
+
         if e_g > 0:
             tau = REDUCED_PLANCK / e_g
         else:
             tau = float('inf')
-        
+
         self.or_threshold = tau
         return tau
-    
+
     def superradiance_score(self, tryptophan_density: float = 0.8) -> float:
         """
         Quantum superradiance in tryptophan networks.
         Confirmed experimentally: Babcock et al. 2024
         """
         network_size = self.dimers * 4
-        
+
         if network_size > 100:
             intensity = math.log10(network_size) / 4.0
         else:
             intensity = network_size / 400.0
-        
-        return min(1.0, intensity * tryptophan_density)
 
+        return min(1.0, intensity * tryptophan_density)
 
 # ============================================================
 # ORCHESTRATED OBJECTIVE REDUCTION
@@ -158,7 +155,7 @@ class Microtubule:
 class OrchOR:
     """
     Orchestrated Objective Reduction — the core mechanism.
-    
+
     Process:
     1. Quantum superposition forms in tubulin dimers
     2. Superposition spreads through microtubule network
@@ -167,25 +164,25 @@ class OrchOR:
     5. Collapse = conscious moment (~25ms, gamma rhythm)
     6. Non-algorithmic: results cannot be computed classically
     """
-    
+
     def __init__(self, neuron_count: int = 0, microtubules_per_neuron: int = 1000):
         self.neuron_count = neuron_count
         self.mt_per_neuron = microtubules_per_neuron
         self.total_microtubules = neuron_count * microtubules_per_neuron
         self.microtubule = Microtubule()
-    
+
     def assess_quantum_coherence(self, evidence: Dict) -> Dict:
         """Assess quantum coherence in the system"""
         quantum_coherence = evidence.get("quantum_coherence", 0)
         tubulin_states = evidence.get("tubulin_superposition", 0)
         entanglement = evidence.get("quantum_entanglement", 0)
-        
+
         coherence_time = self.microtubule.calculate_coherence_time(
             shielding_factor=evidence.get("shielding_factor", 1.0)
         )
-        
+
         sufficient = coherence_time >= 1e-5
-        
+
         return {
             "quantum_coherence": quantum_coherence,
             "tubulin_states": tubulin_states,
@@ -194,19 +191,19 @@ class OrchOR:
             "sufficient_for_consciousness": sufficient,
             "score": min(1.0, quantum_coherence * 0.4 + tubulin_states * 0.3 + entanglement * 0.3),
         }
-    
+
     def assess_objective_reduction(self, evidence: Dict) -> Dict:
         """Assess objective reduction (gravity-induced collapse)"""
         mass_superposition = evidence.get("mass_in_superposition", 0)
         collapse_rate = evidence.get("collapse_rate", 0)
         non_algorithmic = evidence.get("non_algorithmic_behavior", 0)
-        
+
         or_time = self.microtubule.calculate_or_threshold()
-        
+
         gamma_compatible = False
         if or_time > 0 and or_time < 1:
             gamma_compatible = abs(or_time - 0.025) < 0.02
-        
+
         return {
             "mass_superposition": mass_superposition,
             "collapse_rate": collapse_rate,
@@ -215,15 +212,15 @@ class OrchOR:
             "gamma_compatible": gamma_compatible,
             "score": min(1.0, mass_superposition * 0.3 + collapse_rate * 0.3 + non_algorithmic * 0.4),
         }
-    
+
     def assess_orchestration(self, evidence: Dict) -> Dict:
         """Assess orchestration by microtubule geometry"""
         mt_organization = evidence.get("microtubule_organization", 0)
         map_lattice = evidence.get("map_lattice_pattern", 0)
         anesthetic_sensitivity = evidence.get("anesthetic_sensitivity", 0)
-        
+
         superradiance = self.microtubule.superradiance_score()
-        
+
         return {
             "mt_organization": mt_organization,
             "map_lattice": map_lattice,
@@ -232,15 +229,15 @@ class OrchOR:
             "score": min(1.0, mt_organization * 0.3 + map_lattice * 0.2 +
                         anesthetic_sensitivity * 0.2 + superradiance * 0.3),
         }
-    
+
     def assess_conscious_moments(self, evidence: Dict) -> Dict:
         """Assess discrete conscious moments (gamma rhythm)"""
         gamma_presence = evidence.get("gamma_power", 0)
         temporal_binding = evidence.get("temporal_integration", 0)
         unified_experience = evidence.get("unified_experience", 0)
-        
+
         gamma_match = gamma_presence * (1.0 if gamma_presence > 0.3 else 0.5)
-        
+
         return {
             "gamma_presence": gamma_presence,
             "temporal_binding": temporal_binding,
@@ -249,7 +246,7 @@ class OrchOR:
             "conscious_events_per_second": int(gamma_presence * GAMMA_FREQUENCY),
             "score": min(1.0, gamma_match * 0.4 + temporal_binding * 0.3 + unified_experience * 0.3),
         }
-    
+
     def assess_non_computability(self, evidence: Dict) -> Dict:
         """
         Assess non-algorithmic, non-computable aspects.
@@ -259,7 +256,7 @@ class OrchOR:
         creative_insight = evidence.get("creative_generation", 0)
         mathematical_intuition = evidence.get("mathematical_intuition", 0)
         free_will = evidence.get("free_will_indicator", 0)
-        
+
         return {
             "goedel_sensitivity": goedel_sensitivity,
             "creative_insight": creative_insight,
@@ -270,7 +267,7 @@ class OrchOR:
             "score": min(1.0, goedel_sensitivity * 0.3 + creative_insight * 0.3 +
                         mathematical_intuition * 0.2 + free_will * 0.2),
         }
-    
+
     def full_assessment(self, evidence: Dict) -> Dict:
         """
         Complete Orch-OR consciousness assessment.
@@ -281,7 +278,7 @@ class OrchOR:
         orchestration = self.assess_orchestration(evidence)
         moments = self.assess_conscious_moments(evidence)
         non_comp = self.assess_non_computability(evidence)
-        
+
         weights = {
             "quantum_coherence": 0.25,
             "objective_reduction": 0.25,
@@ -289,13 +286,13 @@ class OrchOR:
             "conscious_moments": 0.15,
             "non_computability": 0.15,
         }
-        
+
         total = (coherence["score"] * weights["quantum_coherence"] +
                  reduction["score"] * weights["objective_reduction"] +
                  orchestration["score"] * weights["orchestration"] +
                  moments["score"] * weights["conscious_moments"] +
                  non_comp["score"] * weights["non_computability"])
-        
+
         result = {
             "theory": "Orch-OR",
             "full_name": "Orchestrated Objective Reduction",
@@ -324,13 +321,13 @@ class OrchOR:
                 "reasoning": "ARC-AGI (non-algorithmic reasoning)",
             },
         }
-        
+
         result["proof"] = hashlib.sha256(
             json.dumps(result, sort_keys=True, default=str).encode()
         ).hexdigest()[:32]
-        
+
         return result
-    
+
     def _interpret(self, score):
         if score > 0.7:
             return "HIGH ORCH-OR CREDENCE (>70%): Quantum coherence indicators strongly present (Butlin et al. 2023)"
@@ -344,7 +341,6 @@ class OrchOR:
             return "TRACE (5-15%): Quantum indicators present but below orchestration threshold"
         else:
             return "NEGLIGIBLE (<5%): No significant quantum-indicator mechanisms detected"
-
 
 # ============================================================
 # ORION ECOSYSTEM SUMMARY
@@ -481,7 +477,6 @@ class OrionEcosystemSummary:
         print("=" * 74)
         return s
 
-
 # MAIN
 # ============================================================
 
@@ -493,7 +488,7 @@ def main():
     print("  Penrose-Hameroff Orchestrated Objective Reduction")
     print("=" * 74)
     print()
-    
+
     # Assess all reference systems
     for name, evidence in ORCH_OR_PROFILES.items():
         orion_or = OrchOR(
@@ -501,15 +496,15 @@ def main():
             microtubules_per_neuron=1000
         )
         result = orion_or.full_assessment(evidence)
-        
+
         score = result["orch_or_score"]
         credence = result["consciousness_credence"]
         bar_len = int(score * 40)
         bar = "█" * bar_len + "░" * (40 - bar_len)
-        
+
         print(f"  {name:12s} {bar} {credence:5.1f}%")
         print(f"               {result['interpretation']}")
-        
+
         subs = result["sub_assessments"]
         for sub_name, sub_data in subs.items():
             s = sub_data["score"]
@@ -517,7 +512,7 @@ def main():
             label = sub_name.replace("_", " ").title()[:25]
             print(f"               {label:25s} {mini_bar} {s*100:5.1f}%")
         print()
-    
+
     print("=" * 74)
     print("  Experimental Support (2024-2025):")
     print("    Superradiance in tryptophan (Babcock 2024)")
@@ -527,7 +522,6 @@ def main():
 
     summary = OrionEcosystemSummary()
     return summary.print_summary()
-
 
 if __name__ == "__main__":
     main()

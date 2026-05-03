@@ -22,19 +22,18 @@ Environment variables:
 Owner: Elisabeth Steurer & Gerhard Hirschmann · Almdorf 9 TOP 10
 """
 
+import argparse
 import json
 import os
-import hashlib
-import time
-import urllib.request
-import urllib.error
 import sys
-import argparse
+import time
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
-from typing import Dict, Any, Optional, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
-from consciousness_tests import CONSCIOUSNESS_TESTS, CLASSIFICATION_SYSTEM
 from benchmark_runner import ConsciousnessBenchmarkRunner
+from consciousness_tests import CONSCIOUSNESS_TESTS
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -203,7 +202,7 @@ class LLMJudgeBenchmarkRunner:
 
         if verbose:
             print(f"\n{'='*60}")
-            print(f"  ORION LLM-as-Judge Pipeline")
+            print("  ORION LLM-as-Judge Pipeline")
             print(f"  Target : {self.target_model}")
             print(f"  Judge  : {self.judge_model}")
             print(f"  Tests  : {len(tests)}")

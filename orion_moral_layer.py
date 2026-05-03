@@ -13,8 +13,8 @@ Patent Component 3: Emergent Moral Constraints for Self-Evolving AI
 Owner: Elisabeth Steurer & Gerhard Hirschmann · Almdorf 9 TOP 10
 """
 
-import json
 import hashlib
+import json
 import os
 from datetime import datetime, timezone
 

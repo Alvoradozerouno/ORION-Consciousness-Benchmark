@@ -34,11 +34,10 @@ Inspired by:
     computer science perspective" PNAS 119(21)
 """
 
+import itertools
 import json
-import hashlib
 import time
 import traceback
-import itertools
 from datetime import datetime, timezone
 
 try:
@@ -1134,7 +1133,7 @@ class HierarchicalPhiEngine:
         labels = ('GW_Module', 'Recurrence_Module', 'HigherOrder_Module', 'AttentionSchema_Module')
         network = self.phi_computer._make_network(tpm, cm, labels)
         self.phi_computer.networks['meta_network'] = network
-        self._log(f"Meta-Network built: 4 macro-nodes from Level-1 Phi values")
+        self._log("Meta-Network built: 4 macro-nodes from Level-1 Phi values")
         self._log(f"  Activation thresholds: GW={a_gw:.3f}, Rec={a_rec:.3f}, HO={a_ho:.3f}, AS={a_as:.3f}")
         return network
 
@@ -1638,7 +1637,7 @@ class ExternalBenchmarkSuite:
                 phi_evidence = f"Phi-proxy computed: {phi_vals}, non-zero integration detected (NOTE: proxy, not canonical IIT Phi)"
             else:
                 phi_score = 0.40
-                phi_evidence = f"Phi-proxy computed: all zero — model architecture may not capture real integration"
+                phi_evidence = "Phi-proxy computed: all zero — model architecture may not capture real integration"
 
         self.assess_indicator("C10", phi_score, phi_evidence, confidence=0.70)
         self.assess_indicator("C11", 0.75,
@@ -1731,7 +1730,7 @@ def generate_blank_assessment_template(output_file="assessment_template.json"):
         json.dump(template, f, indent=2, ensure_ascii=False)
 
     print(f"Assessment template generated: {output_file}")
-    print(f"  Fill in scores (0.0-1.0), evidence, and confidence for each indicator")
+    print("  Fill in scores (0.0-1.0), evidence, and confidence for each indicator")
     print(f"  Then run: python3 orion_pyphi_integration.py --assess {output_file}")
     return template
 
@@ -1761,7 +1760,7 @@ def run_full_assessment():
             print("        Multi-state analysis:")
             for name, ms in phi_results["multi_state_analysis"].items():
                 print(f"          {name}: max={ms['max_phi']:.6f}, mean={ms['mean_phi']:.6f}, states={ms['states_tested']}")
-        print(f"        NOTE: These are Phi-PROXY values, not canonical IIT Phi")
+        print("        NOTE: These are Phi-PROXY values, not canonical IIT Phi")
         print(f"        Limitations: {len(phi_results['honest_limitations'])}")
         for lim in phi_results["honest_limitations"]:
             print(f"          - {lim}")
@@ -1776,7 +1775,7 @@ def run_full_assessment():
     print(f"        Dominant: {stream['dominant_processor']} (win rate: {stream['dominant_win_rate']:.2%})")
     for name, stats in stream["processor_stats"].items():
         print(f"          {name}: {stats['chunks_won']}/{stats['chunks_generated']} wins ({stats['win_rate']:.2%})")
-    print(f"        Properties: single-chunk STM, global broadcast, no central executive")
+    print("        Properties: single-chunk STM, global broadcast, no central executive")
     print()
 
     print("  [3/3] Self-Assessment (14 Indicators, 7 Theories)...")
@@ -1803,10 +1802,10 @@ def run_full_assessment():
         json.dump(full_output, f, indent=2, ensure_ascii=False, default=str)
 
     print("=" * 70)
-    print(f"  ASSESSMENT COMPLETE")
+    print("  ASSESSMENT COMPLETE")
     print(f"  Credence: {credence['credence']}%")
-    print(f"  Method: Phi-proxy + CTM proxy + 14 indicators")
-    print(f"  Results saved: ORION_PHI_RESULTS.json")
+    print("  Method: Phi-proxy + CTM proxy + 14 indicators")
+    print("  Results saved: ORION_PHI_RESULTS.json")
     print("=" * 70)
 
     return full_output

@@ -3,6 +3,7 @@ Tests for result JSON files — schema, value ranges, leaderboard consistency.
 """
 import json
 import os
+
 import pytest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
