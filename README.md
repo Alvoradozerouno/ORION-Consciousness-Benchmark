@@ -1,19 +1,13 @@
 # ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit
 
-```
- ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗
-██╔═══██╗██╔══██╗██║██╔═══██╗████╗  ██║
-██║   ██║██████╔╝██║██║   ██║██╔██╗ ██║
-██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║
-╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║
- ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-     COGNITION-INDICATOR ASSESSMENT v1.0
-```
+<p align="center">
+  <img src="assets/banner.png" alt="ORION — Multi-Theory AI Cognition Indicator Assessment Toolkit" width="100%">
+</p>
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab?style=for-the-badge&logo=python)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/orion-cognition-benchmark?style=for-the-badge&logo=pypi&label=pip)](https://pypi.org/project/orion-cognition-benchmark/)
-[![Tests](https://img.shields.io/badge/pytest-149_tests-7c3aed?style=for-the-badge&logo=pytest)](tests/)
+[![Tests](https://img.shields.io/badge/pytest-150_tests-7c3aed?style=for-the-badge&logo=pytest)](tests/)
 [![Theories](https://img.shields.io/badge/Theories-7_frameworks-0ea5e9?style=for-the-badge)](#theoretical-framework)
 [![Models](https://img.shields.io/badge/Leaderboard-10_models-f59e0b?style=for-the-badge)](#leaderboard)
 [![Proofs](https://img.shields.io/badge/SHA256_Proofs-661_verified-ec4899?style=for-the-badge)](#proof-chain)
