@@ -51,6 +51,9 @@ dev = [
     "ruff>=0.4.0",
     "pre-commit>=3.5.0",
 ]
+space = [
+    "gradio>=4.0.0",
+]
 all = [
     "openai>=1.0.0",
     "anthropic>=0.20.0",
@@ -69,6 +72,7 @@ Repository = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark"
 "Bug Tracker" = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/issues"
 Documentation = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/tree/main/docs"
 Paper = "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/blob/main/JAIC_PAPER_DRAFT.md"
+"HuggingFace Space" = "https://huggingface.co/spaces/Alvoradozerouno/ORION-Leaderboard"
 
 [project.scripts]
 orion-benchmark = "benchmark_runner:main"

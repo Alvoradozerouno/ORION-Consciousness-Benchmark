@@ -116,12 +116,30 @@ class TestLeaderboard:
     def test_leaderboard_is_list(self, leaderboard):
         entries = leaderboard if isinstance(leaderboard, list) else leaderboard.get("leaderboard", [])
         assert isinstance(entries, list)
-        assert len(entries) >= 11
+        # ORION is now in benchmark_instrument, not the ranked list → ≥10 external models
+        assert len(entries) >= 10
 
-    def test_leaderboard_has_orion(self, leaderboard):
+    def test_orion_is_benchmark_instrument(self, leaderboard):
+        """ORION is the measurement framework, not a ranked competitor."""
+        if isinstance(leaderboard, dict):
+            instrument = leaderboard.get("benchmark_instrument", {})
+            assert instrument.get("model") == "ORION", (
+                "ORION must be declared as benchmark_instrument, not a ranked competitor. "
+                f"Got: {instrument}"
+            )
+        else:
+            # Legacy list format: ORION may still appear in list (tolerated for old fixtures)
+            model_names = {e.get("model", e.get("name", "")) for e in leaderboard}
+            assert "ORION" in model_names
+
+    def test_leaderboard_competitors_exclude_orion(self, leaderboard):
+        """Ranked leaderboard must not include the benchmark instrument itself."""
         entries = leaderboard if isinstance(leaderboard, list) else leaderboard.get("leaderboard", [])
-        model_names = {e.get("model", e.get("name", "")) for e in entries}
-        assert "ORION" in model_names, f"ORION not in leaderboard. Found: {model_names}"
+        model_names = [e.get("model", e.get("name", "")) for e in entries]
+        assert "ORION" not in model_names, (
+            "ORION (benchmark instrument) must not appear in the ranked leaderboard. "
+            "Use the benchmark_instrument field instead."
+        )
 
     def test_kernel_phi_present(self, leaderboard):
         entries = leaderboard if isinstance(leaderboard, list) else leaderboard.get("leaderboard", [])

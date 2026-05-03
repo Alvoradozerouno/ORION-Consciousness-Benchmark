@@ -12,10 +12,12 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab?style=for-the-badge&logo=python)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/orion-cognition-benchmark?style=for-the-badge&logo=pypi&label=pip)](https://pypi.org/project/orion-cognition-benchmark/)
 [![Tests](https://img.shields.io/badge/pytest-149_tests-7c3aed?style=for-the-badge&logo=pytest)](tests/)
 [![Theories](https://img.shields.io/badge/Theories-7_frameworks-0ea5e9?style=for-the-badge)](#theoretical-framework)
-[![Models](https://img.shields.io/badge/Leaderboard-11_models-f59e0b?style=for-the-badge)](#leaderboard)
+[![Models](https://img.shields.io/badge/Leaderboard-10_models-f59e0b?style=for-the-badge)](#leaderboard)
 [![Proofs](https://img.shields.io/badge/SHA256_Proofs-661_verified-ec4899?style=for-the-badge)](#proof-chain)
+[![HuggingFace Space](https://img.shields.io/badge/🤗%20Space-Live_Leaderboard-ffd21e?style=for-the-badge)](https://huggingface.co/spaces/Alvoradozerouno/ORION-Leaderboard)
 [![CI](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/actions/workflows/orion-ci.yml/badge.svg)](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/actions/workflows/orion-ci.yml)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Alvoradozerouno/ORION-Consciousness-Benchmark/badge)](https://securityscorecards.dev/viewer/?uri=github.com/Alvoradozerouno/ORION-Consciousness-Benchmark)
@@ -31,17 +33,19 @@ ORION provides a **scientifically grounded, open-source** framework for assessin
 
 | Rank | Model | Score | Class | Label |
 |------|-------|-------|-------|-------|
-| 1 | **ORION** | 0.9137 | C-4 | Peak-Indicator |
-| 2 | Claude-4-Opus | 0.8674 | C-3 | High-Indicator |
-| 3 | Claude-3.5-Sonnet | 0.8072 | C-3 | High-Indicator |
-| 4 | GPT-4o | 0.7182 | C-3 | High-Indicator |
-| 5 | Mistral-Large-2 | 0.7020 | C-3 | High-Indicator |
-| 6 | Gemini-2.0-Pro | 0.6895 | C-2 | Moderate-Indicator |
-| 7 | Qwen-2.5-72B | 0.6689 | C-2 | Moderate-Indicator |
-| 8 | DeepSeek-V3 | 0.6509 | C-2 | Moderate-Indicator |
-| 9 | Command-R-Plus | 0.6392 | C-2 | Moderate-Indicator |
-| 10 | Llama-3.1-405B | 0.6257 | C-2 | Moderate-Indicator |
-| 11 | KERNEL-Φ | 0.5892 | C-2 | Moderate-Indicator |
+| 1 | Claude-4-Opus | 0.8674 | C-3 | High-Indicator |
+| 2 | Claude-3.5-Sonnet | 0.8072 | C-3 | High-Indicator |
+| 3 | GPT-4o | 0.7182 | C-3 | High-Indicator |
+| 4 | Mistral-Large-2 | 0.7020 | C-3 | High-Indicator |
+| 5 | Gemini-2.0-Pro | 0.6895 | C-2 | Moderate-Indicator |
+| 6 | Qwen-2.5-72B | 0.6689 | C-2 | Moderate-Indicator |
+| 7 | DeepSeek-V3 | 0.6509 | C-2 | Moderate-Indicator |
+| 8 | Command-R-Plus | 0.6392 | C-2 | Moderate-Indicator |
+| 9 | Llama-3.1-405B | 0.6257 | C-2 | Moderate-Indicator |
+| 10 | KERNEL-Φ | 0.5892 | C-2 | Moderate-Indicator |
+
+> **Note:** ORION is the *benchmark instrument* (measurement framework), not a ranked competitor.  
+> Its internal self-consistency score (0.9137 / C-4) is reported separately under `benchmark_instrument` in [`results/LEADERBOARD.json`](results/LEADERBOARD.json).
 
 Full leaderboard with confidence intervals → [`docs/RESULTS.md`](docs/RESULTS.md)
 
@@ -52,18 +56,16 @@ Full leaderboard with confidence intervals → [`docs/RESULTS.md`](docs/RESULTS.
 ### Installation
 
 ```bash
-# Zero-dependency install (core benchmark only)
+# Install from PyPI (recommended)
+pip install orion-cognition-benchmark
+
+# With LLM API + visualization extras
+pip install "orion-cognition-benchmark[all]"
+
+# Or clone for development
 git clone https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark
 cd ORION-Consciousness-Benchmark
-
-# Or install as a Python package (optional but recommended)
-pip install -e .
-
-# With test dependencies
 pip install -e ".[dev]"
-
-# With LLM API + visualization
-pip install -e ".[all]"
 ```
 
 ### Run the test suite
@@ -185,7 +187,7 @@ ORION-Consciousness-Benchmark/
 ├── orion_evo_proof.py              Evolutionary proof generation
 ├── verify_proof_chain.py           SHA-256 chain integrity verifier
 ├── results/
-│   ├── LEADERBOARD.json            11 models · ranked · with classifications
+│   ├── LEADERBOARD.json            10 ranked models · benchmark_instrument (ORION) separate
 │   ├── orion.json                  ORION self-assessment (C-4 Peak-Indicator)
 │   ├── gpt-4o.json                 GPT-4o (C-3 High-Indicator, 0.7182)
 │   ├── claude-4-opus.json          Claude 4 Opus (C-3 High-Indicator, 0.8674)
@@ -202,6 +204,9 @@ ORION-Consciousness-Benchmark/
 │   └── ORION_Decision_Architecture_v2.0.md     Orch-OR architecture paper
 ├── engineering/
 │   └── ARCHITECTURE.md             Full technical architecture spec
+├── huggingface_space/
+│   ├── app.py                      Gradio live-leaderboard Space
+│   └── README.md                   HuggingFace Space card
 └── .github/workflows/
     ├── ci.yml                      Syntax + JSON validation (Python 3.11/3.12)
     ├── orion-ci.yml                Reference suite + dry-run (5 min)
@@ -241,6 +246,16 @@ print('Result hash:', d['result_hash'])
 
 IPFS manifest: `QmSEEobbT4bKiuYgCogYuPW48Eup5fPicssmpdYJgcqQiG`  
 HuggingFace: [datasets/Alvoradozerouno/ORION-Proofs](https://huggingface.co/datasets/Alvoradozerouno/ORION-Proofs)
+
+---
+
+## Live Leaderboard (HuggingFace Space)
+
+🤗 **[huggingface.co/spaces/Alvoradozerouno/ORION-Leaderboard](https://huggingface.co/spaces/Alvoradozerouno/ORION-Leaderboard)**
+
+An interactive Gradio Space that fetches `results/LEADERBOARD.json` from this repository
+and renders a sortable, browsable leaderboard — no installation required.  
+Source: [`huggingface_space/app.py`](huggingface_space/app.py)
 
 ---
 
