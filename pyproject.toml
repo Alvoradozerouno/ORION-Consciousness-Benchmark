@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "orion-cognition-benchmark"
@@ -9,8 +9,8 @@ description = "Multi-theory AI cognition-indicator assessment toolkit (IIT, GWT,
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
-    { name = "Elisabeth Steurer", email = "" },
-    { name = "Gerhard Hirschmann", email = "" },
+    { name = "Elisabeth Steurer" },
+    { name = "Gerhard Hirschmann" },
 ]
 keywords = [
     "cognition-indicator",

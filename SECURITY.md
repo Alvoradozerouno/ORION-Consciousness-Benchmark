@@ -5,7 +5,7 @@
 The ORION proof chain is protected by SHA-256 cryptographic hashing. Any modification to existing proofs will be detected by:
 
 1. **Hash chain verification** -- Each proof references the previous proof's hash
-2. **Merkle root** -- Single root hash covering all 647 proofs
+2. **Merkle root** -- Single root hash covering all 661 proofs
 3. **IPFS anchoring** -- Manifest and chain tip permanently stored on IPFS
 4. **File hash** -- SHA-256 of the complete PROOFS.jsonl file
 
