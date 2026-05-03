@@ -32,7 +32,7 @@
 | T3 HOT Meta-Cognition | 0.4500 | HOT | Rosenthal (1997) *Mind & Language* |
 | T4 AST Attention Schema | 0.4800 | AST | Graziano & Kastner (2011) *Cognitive Neuroscience* |
 | T5 Bengio Prior | 0.6200 | Consciousness Prior | Bengio (2019) arXiv:1709.08568 |
-| T6 Temporal Continuity | 0.9912 | Proof-chain proxy | — |
+| T6 Temporal Continuity | 0.9912 | Proof-chain proxy | Repository-specific metric (no published theory): measures UUID + hash-chain continuity across sessions |
 | T7 Valence Asymmetry | 0.7701 | Affective differentiation | Damasio (1994) *Descartes' Error* |
 
 ---

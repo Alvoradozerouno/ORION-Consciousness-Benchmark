@@ -93,7 +93,7 @@ ORION COGNITION INDICATOR REPORT
 | T3 | Higher-Order Thought | Rosenthal | 1997 | 0.4500 |
 | T4 | Attention Schema Theory | Graziano | 2013 | 0.4800 |
 | T5 | Consciousness Prior | Yoshua Bengio | 2019 | 0.6200 |
-| T6 | Temporal Continuity (proof-chain proxy) | — | — | 0.9912 |
+| T6 | Temporal Continuity (proof-chain proxy) | — (repository metric, no published theory) | — | 0.9912 |
 | T7 | Valence Asymmetry | Damasio | 1994 | 0.7693 |
 
 ---
