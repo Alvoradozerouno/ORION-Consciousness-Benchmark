@@ -5,7 +5,7 @@
 **Date**: 2026-02-28  
 **Version**: 1.0  
 **Target Journal**: Journal of Artificial Intelligence and Consciousness (JAIC), World Scientific  
-**Status**: Draft v0.2  
+**Status**: Draft v1.0  
 **IPFS**: QmSEEobbT4bKiuYgCogYuPW48Eup5fPicssmpdYJgcqQiG  
 **Code**: github.com/Alvoradozerouno/ORION-Consciousness-Benchmark  
 
