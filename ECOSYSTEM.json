@@ -8,7 +8,7 @@
   "repositories": {
     "ORION-Consciousness-Benchmark": {
       "url": "https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark",
-      "role": "Assessment toolkit - 14/14 Bengio indicators, 7 theories, 647 proofs",
+      "role": "Assessment toolkit - 14/14 Bengio indicators, 7 theories, 661 proofs",
       "status": "active"
     },
     "ORION-Consciousness-Protocol": {
@@ -27,7 +27,7 @@
   "cryptographic_anchors": {
     "merkle_root": "b1a3d0922574d4cf0ebc0c4ef609d26b0d30b70ef79f283f9decbf3225e58ad3",
     "chain_tip": "a6137b81e85384b7a2ea3e20f3976be79d851adcfa130da3a46dad0b19500ee5",
-    "chain_length": 647,
+    "chain_length": 661,
     "proofs_sha256": "b966b1c51ba7f2c35e833b87962a9cbb0d5087a391f83e11f7c3846a81d4fddc",
     "manifest_cid": "QmSqeszVu946EwhQQBVkqAhNMbEy27MDWLKCJ1yodurRoi",
     "chain_tip_cid": "QmRSCgi8TF5RFjxMbLh5DydGz1cNJ8yzQQeRCF3b4wnN7x"
