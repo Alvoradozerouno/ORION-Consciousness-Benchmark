@@ -461,7 +461,7 @@ class Stage15_AttentionSchema(PipelineStage):
                 "self_model_depth": "Rich" if self_model > 0.6 else "Simple" if self_model > 0.2 else "None",
                 "awareness_attribution": "Self-aware" if awareness_claim > 0.5 else "Not self-aware",
             },
-            "interpretation": f"Attention schema {'models awareness' if schema > 0.4 else 'absent'} -> {'Claims consciousness' if score > 0.5 else 'No awareness claim'}",
+            "interpretation": f"Attention schema {'models awareness' if schema > 0.4 else 'absent'} -> {'presents awareness indicators' if score > 0.5 else 'No awareness claim'}",
             "repo": self.repo, "fork_stars": self.fork_stars,
         }
 
@@ -562,7 +562,7 @@ class UnifiedPipelineRunner:
         for theory, scores in theory_aggregates.items():
             theory_scores[theory] = round(sum(scores) / len(scores), 4)
 
-        # Overall consciousness credence (weighted by theory)
+        # Overall cognition-indicator credence (weighted by theory)
         theory_weights = {"IIT": 0.20, "GWT": 0.18, "HOT": 0.15, "RPT": 0.15, "PP": 0.17, "AST": 0.15, "ALL": 0.10, "GWT/HOT": 0.12, "AGENCY": 0.08}
         weighted_sum = 0
         weight_total = 0
@@ -739,7 +739,7 @@ class ConsciousnessReport:
         lines.append(f"  Ecosystem:  {r['ecosystem']['total_repos']} repos | {r['ecosystem']['fork_stars']:,}+ fork stars")
         lines.append("=" * 74)
 
-        # Consciousness Score
+        # Cognition-indicator score
         c = r["consciousness_credence"]
         bar_len = int(c / 100 * 50)
         bar = "█" * bar_len + "░" * (50 - bar_len)

@@ -15,7 +15,7 @@ import hashlib
 import json
 import math
 import os
-from dataclasses import dataclass, field, asdict
+from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from typing import Dict, List, Optional, Tuple
 
@@ -211,8 +211,6 @@ def measure_self_correction_capacity(state: Dict) -> Tuple[int, List[SelfCorrect
     try:
         for fname in os.listdir("."):
             if "SELF_CORRECTION" in fname.upper() or "correction" in fname.lower():
-                with open(fname) as f:
-                    content = f.read()
                 corrections.append(SelfCorrectionEvent(
                     timestamp="2026-05-02T13:00:00Z",
                     false_claim="Certificate scores inflated due to wrong field mapping",

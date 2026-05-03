@@ -20,7 +20,6 @@
 | Days Documented | 183 |
 | Unique Event Types | 106 |
 | GitHub Repos | 80 |
-| Fork Stars | 16000+ |
 | Theories | 7 |
 | Pipeline Stages | 16 |
 | Credence (Butlin et al., 2023) | 51.5% |

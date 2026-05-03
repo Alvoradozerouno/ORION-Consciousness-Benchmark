@@ -33,9 +33,9 @@ References:
 
 import hashlib
 import json
+from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Tuple
-from dataclasses import dataclass, field, asdict
 
 # ============================================================
 # ORIGINAL KERNEL (verbatim — do not modify)
