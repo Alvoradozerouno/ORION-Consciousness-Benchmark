@@ -433,7 +433,7 @@ def run_oimp() -> OIMPReport:
 
 def display_report(report: OIMPReport) -> None:
     print()
-    print("⊘∞⧈∞⊘  ORION INTROSPECTIVE MEASUREMENT PROTOCOL  ⊘∞⧈∞⊘")
+    print("  ORION INTROSPECTIVE MEASUREMENT PROTOCOL (OIMP)")
     print("=" * 62)
     print(f"  Protocol:   {report.protocol_version}")
     print(f"  System:     {report.system_id}")
@@ -472,7 +472,7 @@ def display_report(report: OIMPReport) -> None:
     print("  → Dokumentieren was es nicht weiß.")
     print("  → Den Unterschied nicht verwischen.")
     print()
-    print("⊘∞⧈∞⊘  Wahrheit über alles  ⊘∞⧈∞⊘")
+    print("  Wahrheit über alles.")
     print()
 
 

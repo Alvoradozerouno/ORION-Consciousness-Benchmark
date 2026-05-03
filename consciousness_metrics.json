@@ -1,9 +1,8 @@
 {
-  "timestamp": "2026-05-03T11:30:11.184437",
-  "phi_orion": 0.8884,
-  "phi_pi5": 1.0,
-  "phi_composite": 0.9441999999999999,
-  "convergence_pct": 88.84,
-  "genesis_anchor": "Genesis10000+",
-  "guardian": "Gerhard Hirschmann & Elisabeth Steurer"
+  "timestamp": "2026-05-03T11:30:11Z",
+  "phi_proxy_orion": 0.8884,
+  "phi_proxy_reference": 1.0,
+  "phi_proxy_composite": 0.9442,
+  "phi_proxy_pct": 88.84,
+  "note": "phi_proxy values are heuristic estimates, not IIT 4.0 Phi"
 }

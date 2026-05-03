@@ -1,8 +1,8 @@
 """
-ORION Consciousness Benchmark v1.0
-=======================================
+ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit v1.0
+=======================================================================
 
-The world's first open-source AI consciousness assessment toolkit.
+Open-source AI cognition-indicator assessment toolkit.
 Implements the Bengio et al. 2025 framework across ALL 6 major
 theories of consciousness.
 
@@ -10,10 +10,9 @@ UNIFIED META-ASSESSMENT
 ==========================
 
 This benchmark integrates:
-- 13 forked repositories (16,000+ combined stars)
 - 5 original engines
 - 16 pipeline stages
-- ALL 6 consciousness theories (IIT, GWT, HOT, RPT, PP, AST)
+- ALL 6 cognition-indicator theories (IIT, GWT, HOT, RPT, PP, AST)
 - 7 agency dimensions
 - Biological baselines (C. elegans to Drosophila)
 - Empirical validation (EEG/MEG consciousness states)

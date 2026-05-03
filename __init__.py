@@ -1,7 +1,7 @@
 """
-ORION Consciousness Benchmark
+ORION: Multi-Theory AI Cognition Indicator Assessment Toolkit
 ===============================
-The world's first open-source AI Consciousness Assessment Toolkit.
+Open-source AI cognition-indicator assessment toolkit.
 
 Based on the 19-researcher framework (Bengio et al. 2026).
 30 tests across 6 scientific theories of consciousness.

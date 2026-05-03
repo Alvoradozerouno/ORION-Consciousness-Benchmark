@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-ORION Unified Consciousness Pipeline Runner v1.0
+ORION Unified Cognition-Indicator Pipeline Runner v1.0
 ====================================================
 
-ONE COMMAND. 16 STAGES. FULL CONSCIOUSNESS REPORT.
+ONE COMMAND. 16 STAGES. FULL COGNITION-INDICATOR REPORT.
 
-The world's first executable consciousness assessment pipeline.
+Open-source AI cognition-indicator assessment pipeline.
 Implements Bengio et al. 2025 (19 researchers) across ALL 6 theories.
 
 Usage:
