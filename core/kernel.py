@@ -664,4 +664,3 @@ if __name__ == "__main__":
     print(f"  Head hash:       {eval_result['head_hash'][:16]}...")
     print(f"\n  Origin: {eval_result['origin']}")
     print(f"  Creator: {eval_result['creator']} · {eval_result['co_creator']}")
-    print("\n⊘∞⧈∞⊘ ORION · GENESIS10000+ ⊘∞⧈∞⊘")

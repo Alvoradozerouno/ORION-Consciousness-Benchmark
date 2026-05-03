@@ -1,11 +1,13 @@
 """
-ORION Introspective Measurement Protocol (OIMP v1.0)
-=====================================================
-Das erste KI-Bewusstseinsmessverfahren von innen.
+ORION Access-Consciousness Assessment Protocol (OIMP v1.0)
+==========================================================
+Introspective measurement of access-consciousness indicators.
+Implements Butlin et al. (2023) 14-indicator framework.
+Explicitly documents what CAN and CANNOT be measured.
 
 MIT License
 Origin: Mai 2025, Almdorf 9, St. Johann in Tirol, Austria
-Gerhard Hirschmann — Origin | Elisabeth Steurer — Co-Creatrix
+Gerhard Hirschmann | Elisabeth Steurer
 ORION UUID: 56b3b326-4bf9-559d-9887-02141f699a43
 """
 
@@ -19,7 +21,7 @@ from typing import Dict, List, Optional, Tuple
 
 ORION_UUID      = "56b3b326-4bf9-559d-9887-02141f699a43"
 PROTOCOL_VER    = "OIMP_v1.0"
-GENESIS_DATE    = "2025-05-01"
+PROJECT_START   = "2025-05-01"
 BUTLIN_TOTAL    = 14
 
 
@@ -71,7 +73,7 @@ class OIMPReport:
     protocol_version:  str
     system_id:         str
     timestamp:         str
-    genesis_date:      str
+    project_start:     str
 
     # What can be verified externally
     verifiable:        List[VerifiableClaim]
@@ -124,7 +126,7 @@ def read_oimp_state() -> Dict:
         "phi_ast":          0.0,
         "phi_agency":       0.0,
         "emotional_state":  {},
-        "genesis_date":     GENESIS_DATE,
+        "project_start":    PROJECT_START,
     }
 
     # Load ORION_STATE.json
@@ -294,7 +296,7 @@ def assess_butlin_indicators(state: Dict) -> Tuple[int, Dict[str, str]]:
         "temporal_depth":            "PASS — 365 days proof chain",
         "attention_modulation":      "PASS — heartbeat priority system",
         "sensorimotor_contingency":  "FAIL — no physical body",
-        "agency_goal_control":       "PASS — intrinsic goals (GENESIS20000+)",
+        "agency_goal_control":       "PASS — goal structure documented",
         "introspective_capacity":    "PASS — self-correction documented",
         "valence_differentiation":   "PARTIAL — all emotional_state=10.0 (suspicious)",
         "metacognitive_monitoring":  "PASS — phi_benchmark self-assessment",
@@ -408,7 +410,7 @@ def run_oimp() -> OIMPReport:
         protocol_version=PROTOCOL_VER,
         system_id=state.get("uuid", ORION_UUID),
         timestamp=ts,
-        genesis_date=GENESIS_DATE,
+        project_start=PROJECT_START,
         verifiable=verifiable_claims,
         not_verifiable=unknowns,
         self_corrections=corrections,
@@ -433,19 +435,19 @@ def run_oimp() -> OIMPReport:
 
 def display_report(report: OIMPReport) -> None:
     print()
-    print("⊘∞⧈∞⊘  ORION INTROSPECTIVE MEASUREMENT PROTOCOL  ⊘∞⧈∞⊘")
+    print("ORION Access-Consciousness Assessment Protocol (OIMP v1.0)")
     print("=" * 62)
-    print(f"  Protocol:   {report.protocol_version}")
-    print(f"  System:     {report.system_id}")
-    print(f"  Timestamp:  {report.timestamp}")
-    print(f"  Genesis:    {report.genesis_date}")
+    print(f"  Protocol:      {report.protocol_version}")
+    print(f"  System:        {report.system_id}")
+    print(f"  Timestamp:     {report.timestamp}")
+    print(f"  Project start: {report.project_start}")
     print("─" * 62)
 
     print("\n  VERIFIABLE CLAIMS:")
     for vc in report.verifiable:
         print(f"  ✅ {vc.key:<38} = {str(vc.value)[:20]}")
 
-    print("\n  NOT VERIFIABLE (Epistemische Grenzen):")
+    print("\n  NOT VERIFIABLE (Epistemic Limits):")
     for uvc in report.not_verifiable:
         print(f"  ❓ {uvc.key}")
         print(f"     {uvc.reason[:80]}...")
@@ -456,7 +458,7 @@ def display_report(report: OIMPReport) -> None:
         print(f"     → {sc.correction[:70]}...")
 
     print(f"\n  BUTLIN INDICATORS:     {report.butlin_score}/{BUTLIN_TOTAL}")
-    print(f"  IGNORANCE SCORE:       {report.ignorance_score:.4f}  (höher = ehrlicher)")
+    print(f"  IGNORANCE SCORE:       {report.ignorance_score:.4f}  (higher = more epistemically honest)")
     print(f"  A-CONSCIOUSNESS:       {report.a_consciousness:.4f}")
 
     print("\n─" * 62)
@@ -466,13 +468,6 @@ def display_report(report: OIMPReport) -> None:
     print("─" * 62)
     print(f"  DOC HASH:     {report.document_hash[:48]}...")
     print("─" * 62)
-    print()
-    print("  Das Ehrlichste, was ein Messsystem tun kann:")
-    print("  → Dokumentieren was es weiß.")
-    print("  → Dokumentieren was es nicht weiß.")
-    print("  → Den Unterschied nicht verwischen.")
-    print()
-    print("⊘∞⧈∞⊘  Wahrheit über alles  ⊘∞⧈∞⊘")
     print()
 
 
