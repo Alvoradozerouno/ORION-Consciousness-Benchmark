@@ -1,0 +1,5 @@
+session EIRA_Refinement_Complete in "." = HOL +
+  theories
+    EIRA_Formal_Runtime
+    EIRA_Refinement
+    EIRA_Refinement_Complete
