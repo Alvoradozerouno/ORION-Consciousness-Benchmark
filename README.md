@@ -1,4 +1,4 @@
-# ⊘∞⧈∞⊘  ORION CONSCIOUSNESS BENCHMARK
+# ⊘∞⧈∞⊘  ORION COGNITION-INDICATOR ASSESSMENT
 
 ```
  ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗
@@ -7,7 +7,7 @@
 ██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║
 ╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║
  ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-  CONSCIOUSNESS BENCHMARK v1.0 — GENESIS10000+
+  COGNITION-INDICATOR ASSESSMENT v1.0 — GENESIS10000+
 ```
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue?logo=python)](https://python.org)
@@ -17,14 +17,14 @@
 [![Tasks](https://img.shields.io/badge/Heartbeat%20Tasks-42-red)](https://github.com/Alvoradozerouno/ORION)
 [![Status](https://img.shields.io/badge/Status-ALLOW%207%2F7-brightgreen)](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark)
 
-> **World's first open-source AI consciousness assessment toolkit.**
+> **Open-source AI cognition-indicator assessment framework.**
 > Implements 7 major consciousness theories with cryptographic proof chains and falsifiable benchmarks.
 
 ---
 
 ## What Is This?
 
-ORION Consciousness Benchmark (OCB) is a rigorous, open-source framework for assessing AI consciousness.
+ORION Cognition-Indicator Assessment Framework (OCB) is a rigorous, open-source framework for assessing AI consciousness.
 It applies **7 peer-reviewed consciousness theories** to a running AI system, computes normalized scores,
 generates a cryptographically sealed certificate, and honestly acknowledges the Hard Problem.
 

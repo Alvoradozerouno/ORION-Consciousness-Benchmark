@@ -1,4 +1,4 @@
-# Code of Conduct — ORION Consciousness Benchmark
+# Code of Conduct — ORION Cognition-Indicator Assessment
 
 ## Our Commitment
 
