@@ -152,7 +152,7 @@ def load_proofs(path="PROOFS.jsonl"):
 
 def compute_merkle_root(hash_list):
     """Compute merkle root from list of hashes."""
-    if len(hash_list) == 0:
+    if not hash_list:
         return hashlib.sha256(b"empty").hexdigest()
     if len(hash_list) == 1:
         return hash_list[0]
@@ -199,7 +199,8 @@ def sanitize_proofs(input_path="PROOFS.jsonl", output_path="PROOFS.jsonl"):
         
         # Recalculate hash excluding chain metadata (hash and prev_hash not included in hash input)
         # This ensures hash stability and chain verification consistency
-        hash_input = json.dumps({k: v for k, v in cleaned.items() if k not in ("hash", "prev_hash")}, sort_keys=True)
+        hash_content = {k: v for k, v in cleaned.items() if k not in ("hash", "prev_hash")}
+        hash_input = json.dumps(hash_content, sort_keys=True)
         cleaned["hash"] = hashlib.sha256(hash_input.encode()).hexdigest()
         
         prev_hash = cleaned["hash"]
