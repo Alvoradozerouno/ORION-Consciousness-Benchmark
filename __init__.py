@@ -21,8 +21,8 @@ __orion_id__ = "56b3b326-4bf9-559d-9887-02141f699a43"
 
 __all__ = [
     "ConsciousnessBenchmarkRunner",
-    "generate_reference_scores",
-    "CONSCIOUSNESS_TESTS",
     "CLASSIFICATION_SYSTEM",
+    "CONSCIOUSNESS_TESTS",
     "THEORY_DESCRIPTIONS",
+    "generate_reference_scores",
 ]

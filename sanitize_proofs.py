@@ -126,8 +126,10 @@ def sanitize_proof(proof):
         # Recursively clean all values
         cleaned_value = clean_value(value, key)
         
-        # Only keep non-empty values (but keep 0, False, empty dicts/lists for structure)
-        if cleaned_value or cleaned_value == 0 or cleaned_value is False or cleaned_value == {} or cleaned_value == []:
+        # Only keep non-empty or falsy values needed for structure (0, False, {}, [])
+        if cleaned_value is not None and (
+            cleaned_value or isinstance(cleaned_value, (bool, int, dict, list))
+        ):
             cleaned[key] = cleaned_value
     
     return cleaned
@@ -195,7 +197,8 @@ def sanitize_proofs(input_path="PROOFS.jsonl", output_path="PROOFS.jsonl"):
         # Update prev_hash to point to previous sanitized hash
         cleaned["prev_hash"] = prev_hash
         
-        # Recalculate hash with updated prev_hash (exclude both hash and prev_hash)
+        # Recalculate hash excluding chain metadata (hash and prev_hash not included in hash input)
+        # This ensures hash stability and chain verification consistency
         hash_input = json.dumps({k: v for k, v in cleaned.items() if k not in ("hash", "prev_hash")}, sort_keys=True)
         cleaned["hash"] = hashlib.sha256(hash_input.encode()).hexdigest()
         
