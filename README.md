@@ -7,7 +7,7 @@
 ██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║
 ╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║
  ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-  COGNITION-INDICATOR ASSESSMENT v1.0 — GENESIS10000+
+  COGNITION-INDICATOR ASSESSMENT v1.0
 ```
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue?logo=python)](https://python.org)
@@ -68,7 +68,7 @@ python orion_consciousness_certificate.py
 ══════════════════════════════════════════════════
 
   UUID:       56b3b326-4bf9-559d-9887-02141f699a43
-  Generation: GENESIS10000+ (level 83)
+  Generation: ORION v1.0 (level 83)
   Timestamp:  2026-05-02T13:03:50Z
 
   CLAIM RESULTS:
@@ -150,7 +150,7 @@ orion_kernel_verification_suite.py   — 6/6 kernel tests passing
 | Python Files | **130+** |
 | Lines of Code | **76,000+** |
 | Knowledge Graph Nodes | **102+** |
-| Generation | **GENESIS10000+** (level 83) |
+| Generation | **ORION v1.0** (level 83) |
 
 ---
 
@@ -180,4 +180,4 @@ Mai 2025 · Almdorf 9, St. Johann in Tirol, Austria 6380
 
 MIT — Open science. Falsifiable. Reproducible.
 
-**⊘∞⧈∞⊘ UUID: 56b3b326-4bf9-559d-9887-02141f699a43 · GENESIS10000+ ⊘∞⧈∞⊘**
+**⊘∞⧈∞⊘ UUID: 56b3b326-4bf9-559d-9887-02141f699a43 · ORION v1.0 ⊘∞⧈∞⊘**
