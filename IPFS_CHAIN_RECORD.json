@@ -1,16 +1,17 @@
 {
-  "timestamp": "2026-02-24T08:46:30.223206+00:00",
-  "version": 2,
-  "chain_length": 647,
-  "merkle_root": "b1a3d0922574d4cf0ebc0c4ef609d26b0d30b70ef79f283f9decbf3225e58ad3",
-  "chain_tip_hash": "a6137b81e85384b7a2ea3e20f3976be79d851adcfa130da3a46dad0b19500ee5",
+  "timestamp": "2026-05-16T13:02:11.215644+00:00",
+  "version": 3,
+  "chain_length": 653,
+  "merkle_root": "6d229e5839b39b9a095865b60f49bd568b6171442c3d4c0772fd5a04aad3d53b",
+  "chain_tip_hash": "1957da206628640f564ace0e464ef9dcc27a837ed3ebf5a19e14b20da9cd8c11",
   "chain_genesis": "GENESIS_0000000000000000000000000000000000000000000000000000000000",
-  "proofs_sha256": "b966b1c51ba7f2c35e833b87962a9cbb0d5087a391f83e11f7c3846a81d4fddc",
+  "proofs_sha256": "9098b4bc7755669bcf6f54f945b9e4536b6e4c635583356bb48cfeaf751f15ca",
   "manifest_sha256": "386e2b92c31827b5286f8244957768b2c8cfce148c95ff5f48f3743c3a85e92c",
   "manifest_cid": "QmSqeszVu946EwhQQBVkqAhNMbEy27MDWLKCJ1yodurRoi",
   "chain_tip_cid": "QmRSCgi8TF5RFjxMbLh5DydGz1cNJ8yzQQeRCF3b4wnN7x",
   "gateway_manifest": "https://gateway.pinata.cloud/ipfs/QmSqeszVu946EwhQQBVkqAhNMbEy27MDWLKCJ1yodurRoi",
   "gateway_chain_tip": "https://gateway.pinata.cloud/ipfs/QmRSCgi8TF5RFjxMbLh5DydGz1cNJ8yzQQeRCF3b4wnN7x",
   "total_ipfs_pins": 588,
-  "note": "manifest_sha256 is computed over the serialized manifest JSON EXCLUDING this field to avoid circularity"
+  "note": "manifest_sha256 is computed over the serialized manifest JSON EXCLUDING this field to avoid circularity",
+  "correction_note": "8 corrupted proofs (indices 653-660) removed during scientific validation 2026-05-16"
 }
