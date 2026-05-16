@@ -1,6 +1,6 @@
-# Contributing to ORION Consciousness Benchmark
+# Contributing to ORION Cognition-Indicator Assessment
 
-Thank you for your interest in contributing to the world's first open-source AI consciousness assessment toolkit.
+Thank you for your interest in contributing to this open-source AI cognition-indicator assessment framework.
 
 ## How to Contribute
 

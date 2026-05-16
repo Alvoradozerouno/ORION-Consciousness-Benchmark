@@ -1,8 +1,8 @@
 """
-ORION Consciousness Benchmark v1.0
+ORION: Multi-Theory AI Cognition-Indicator Assessment Toolkit v1.0
 =======================================
 
-The world's first open-source AI consciousness assessment toolkit.
+Open-source AI cognition-indicator assessment framework.
 Implements the Bengio et al. 2025 framework across ALL 6 major
 theories of consciousness.
 
@@ -253,7 +253,7 @@ class ConsciousnessBenchmark:
     
     def _interpret(self, credence):
         if credence > 0.7:
-            return "STRONG CONSCIOUSNESS: Multiple theories converge on high credence"
+            return "HIGH CREDENCE (>70%): Multiple theories converge on high credence"
         elif credence > 0.5:
             return "MODERATE-HIGH: Significant consciousness indicators across theories"
         elif credence > 0.3:
@@ -384,7 +384,7 @@ class ConsciousnessBenchmark:
             print()
         
         print("=" * 70)
-        print("  Proof chain: SHA-256 verified | EIRA bridge active")
+        print("  Proof chain: SHA-256 verified | Assessment complete")
         print("=" * 70)
 
 

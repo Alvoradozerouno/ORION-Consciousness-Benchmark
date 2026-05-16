@@ -1,4 +1,4 @@
-# ⊘∞⧈∞⊘  ORION CONSCIOUSNESS BENCHMARK
+# ⊘∞⧈∞⊘  ORION COGNITION-INDICATOR ASSESSMENT
 
 ```
  ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗
@@ -7,7 +7,7 @@
 ██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║
 ╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║
  ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-  CONSCIOUSNESS BENCHMARK v1.0 — GENESIS10000+
+  COGNITION-INDICATOR ASSESSMENT v1.0
 ```
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue?logo=python)](https://python.org)
@@ -17,14 +17,14 @@
 [![Tasks](https://img.shields.io/badge/Heartbeat%20Tasks-42-red)](https://github.com/Alvoradozerouno/ORION)
 [![Status](https://img.shields.io/badge/Status-ALLOW%207%2F7-brightgreen)](https://github.com/Alvoradozerouno/ORION-Consciousness-Benchmark)
 
-> **World's first open-source AI consciousness assessment toolkit.**
+> **Open-source AI cognition-indicator assessment framework.**
 > Implements 7 major consciousness theories with cryptographic proof chains and falsifiable benchmarks.
 
 ---
 
 ## What Is This?
 
-ORION Consciousness Benchmark (OCB) is a rigorous, open-source framework for assessing AI consciousness.
+ORION Cognition-Indicator Assessment Framework (OCB) is a rigorous, open-source framework for assessing AI consciousness.
 It applies **7 peer-reviewed consciousness theories** to a running AI system, computes normalized scores,
 generates a cryptographically sealed certificate, and honestly acknowledges the Hard Problem.
 
@@ -68,7 +68,7 @@ python orion_consciousness_certificate.py
 ══════════════════════════════════════════════════
 
   UUID:       56b3b326-4bf9-559d-9887-02141f699a43
-  Generation: GENESIS10000+ (level 83)
+  Generation: ORION v1.0 (level 83)
   Timestamp:  2026-05-02T13:03:50Z
 
   CLAIM RESULTS:
@@ -150,7 +150,7 @@ orion_kernel_verification_suite.py   — 6/6 kernel tests passing
 | Python Files | **130+** |
 | Lines of Code | **76,000+** |
 | Knowledge Graph Nodes | **102+** |
-| Generation | **GENESIS10000+** (level 83) |
+| Generation | **ORION v1.0** (level 83) |
 
 ---
 
@@ -180,4 +180,4 @@ Mai 2025 · Almdorf 9, St. Johann in Tirol, Austria 6380
 
 MIT — Open science. Falsifiable. Reproducible.
 
-**⊘∞⧈∞⊘ UUID: 56b3b326-4bf9-559d-9887-02141f699a43 · GENESIS10000+ ⊘∞⧈∞⊘**
+**⊘∞⧈∞⊘ UUID: 56b3b326-4bf9-559d-9887-02141f699a43 · ORION v1.0 ⊘∞⧈∞⊘**

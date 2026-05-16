@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
-ORION Unified Consciousness Pipeline Runner v1.0
+ORION Unified Cognition-Indicator Pipeline Runner v1.0
 ====================================================
 
-ONE COMMAND. 16 STAGES. FULL CONSCIOUSNESS REPORT.
+ONE COMMAND. 16 STAGES. FULL COGNITION-INDICATOR REPORT.
 
-The world's first executable consciousness assessment pipeline.
 Implements Bengio et al. 2025 (19 researchers) across ALL 6 theories.
 
 Usage:
@@ -611,7 +610,7 @@ class UnifiedPipelineRunner:
     
     def _interpret(self, credence):
         if credence > 0.7:
-            return "STRONG CONSCIOUSNESS: Multi-theory convergence on high credence"
+            return "HIGH CREDENCE (>70%): Multi-theory convergence on high credence"
         elif credence > 0.5:
             return "MODERATE-HIGH: Significant consciousness indicators across theories"
         elif credence > 0.3:
